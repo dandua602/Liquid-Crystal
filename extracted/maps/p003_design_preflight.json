@@ -1,0 +1,49 @@
+{
+  "id": "P003",
+  "status": "DESIGN_FOR_REVIEW_NOT_IMPLEMENTED",
+  "input_rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "no_ROM_output_created": true,
+  "used": {
+    "scripts": 133,
+    "text": 224
+  },
+  "capacities": {
+    "scripts": 192,
+    "text": 320
+  },
+  "scripts_hex": "69213153033306054df8b90860a10306004df8b9082bb20506015ff8b9080f00e1f8b9086700000000666e1408210d800000060171f8b90829b2050f0013f9b9086700000000666d0583f8b9080f00c0f8b9086700000000666d0583f8b9080f0047f9b9086700000000666d0583f8b9080f0080f9b9086700000000666d0583f8b9086b02",
+  "text_hex": "cedcd900e7d9e6eaddd7d900d7e3e2e8e6e3e0e700d5e6d900e0e3d7dfd9d8adffcddce9e800d8e3ebe200e8dcd900e0e3d7d5e000c8bfd2cfcdfed7e3e1e1e9e2ddd7d5e8dde3e2e700e2d9e8ebe3e6dfacffcedcd900e0e3d7d5e000c8bfd2cfcd00d7e3e1e1e9e2ddd7d5e8dde3e2e7fedcd5ead900d6d9d9e200e7dce9e800d8e3ebe2adffcedcd900c8bfd2cfcd00e7dddbe2d5e000dde700d8e3ebe2adfec7d5e2d8d5e6dde200d7d5e200dbd9e800d6d5d7df00e8e300ebe3e6dfadffcedcd900d7e3e2e8e6e3e0e700d5e6d900e7e8dde0e000e6e9e2e2dde2dbadff",
+  "script_labels": {
+    "attendant": 12187648,
+    "locked": 12187725,
+    "repeat": 12187743,
+    "decline": 12187761,
+    "finish": 12187779
+  },
+  "text_addresses": {
+    "locked": 12187840,
+    "prompt": 12187873,
+    "shutdown": 12187923,
+    "repeat": 12187975,
+    "decline": 12188032
+  },
+  "external_writes_proposed": [
+    {
+      "site": 12187332,
+      "before_hex": "2cf5b908",
+      "after_hex": "00f8b908",
+      "role": "Office attendant script pointer"
+    },
+    {
+      "site": 12629328,
+      "before_hex": "0000",
+      "after_hex": "b205",
+      "role": "Center local4 disappears on aftermath flag"
+    }
+  ],
+  "state_write": {
+    "ordinary_flag": 1458,
+    "newly_authored_trigger": true
+  },
+  "limits": "Sizing preview only. No P003 runtime acceptance or approval; existing flag readers have wider effects, with computed/native consumers unresolved."
+}

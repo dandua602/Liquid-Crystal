@@ -18,8 +18,26 @@ Output: builds/dev/Liquid Crystal P002.gba. SHA256:
 `9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70`.
 Package: builds/P002-prototype.zip, with standalone/P001-relative forward/reverse
 BPS, manifests, applier, current player walkthrough and screenshots; no ROM/save.
-Originals, footer and exact P001 ROM remain unchanged. No commit/push, hardware
-validation or ordinary full-game playthrough is claimed.
+Originals, footer and exact P001 ROM remain unchanged. Hardware validation and
+an ordinary full-game playthrough remain unverified.
+
+## GitHub and next review
+
+The project is committed and pushed to `main` at
+https://github.com/dandua602/Liquid-Crystal. The first published commit is
+`c503441964b80552ed1d7b269e059308642d5042`. The user has requested ongoing
+GitHub synchronization; commit/push each meaningful tested checkpoint and verify
+the remote. See GITHUB.md for patch/guide links and publishing instructions.
+Cloud environment Publish is a separate filesystem/configuration snapshot.
+
+P003 is now a concrete review proposal: Office attendant communications shutdown
+using existing Mandarin aftermath flag5B2, with a newly authored hostile NPC
+departure to avoid its original empty text branch. Read research/P003_review.md
+and walkthrough/P003-preview.md. Ten new native fixture expectations pass on
+unchanged P002; they are original branch/visibility evidence, not P003 runtime
+acceptance. The preview fits133/192 script bytes and224/320 text bytes, with a
+new512-byte bounded space screen. The current project suite passes152 tests.
+No P003 ROM/patch or implementation approval exists. The kickoff requires review before that next ROM change.
 
 Visual review caught a P001 flagless rock respawn after movement that immediate
 visibility checks missed. P002 fixes it with two same-size call hooks and56 bytes

@@ -1,0 +1,15 @@
+{
+  "id": "P003",
+  "status": "DESIGN_FOR_REVIEW_NOT_IMPLEMENTED",
+  "input_rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "gate": {"variable": 21297, "value": 13059, "trainer_id": 929, "trainer_bit_required": true},
+  "aftermath_flag": 1458,
+  "classification": "Existing aftermath state and dialogue recovered; communications shutdown, causal trigger and hostile NPC departure newly authored.",
+  "messages": {
+    "locked": "The service controls are locked.",
+    "prompt": "Shut down the local NEXUS\ncommunications network?",
+    "shutdown": "The local NEXUS communications\nhave been shut down.",
+    "repeat": "The NEXUS signal is down.\nMandarin can get back to work.",
+    "decline": "The controls are still running."
+  }
+}

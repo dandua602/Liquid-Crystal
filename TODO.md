@@ -30,7 +30,7 @@
 - [x] Complete concrete P001 space/address/state ledgers and review proposal.
 - [x] User approved the concrete P001 implementation with “approved, next steps.”
 - [x] Build first warehouse prototype, forward/reverse BPS, real battles, tagged-state matrix, save/reload and affected regressions.
-- [ ] Human prototype playtest and battle balance; publish tested P001 checkpoint.
+- [ ] Human prototype playtest and battle balance. P001 content is published in P002.
 - [ ] Steps 3–5: map/script archaeology and exact dead-end diagnosis.
 - [ ] Steps 6–7: evidence-based reconstruction and reviewed patch architecture.
 - [ ] Only then: incremental continuation and emulator/hardware QA.
@@ -43,4 +43,6 @@
 
 - [x] Fix native flagless cleared-rock respawn after walking; verify both moves, reentry and reload.
 - [x] P002 milestone:150 project tests and166 new runtime checks; four reversible patch directions.
-- [ ] Publish tested P002 checkpoint; prepare the next bounded Office story design and its storage plan.
+- [x] Commit/push tested P002 checkpoint, patch-only ZIP and walkthrough to GitHub main.
+- [x] Prepare concrete P003 aftermath design, original native evidence, storage preview and draft walkthrough.
+- [ ] Review P003 proposal, then implement/test/package its chapter and update the playable walkthrough.

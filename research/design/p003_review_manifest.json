@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "status": "DESIGN_FOR_REVIEW_NOT_IMPLEMENTED",
+  "artifacts": {
+    "research/P003_review.md": "c4e0ee4a712981b71746c49058e642944db0a4ec916ee7dc8187154f732e945e",
+    "research/design/p003.json": "56205cccd3659ad1758a551bc35b954782b30194e50529fdcfafbb7335b760a4",
+    "tools/p003_design.py": "6dd8026534385cd78dc572c3caf83bbbbce0ee8fbf7c0ec3d473d82b2b564612",
+    "extracted/maps/p003_design_preflight.json": "e315890263a75a2a9e0674ee5ec68eeb1dac58cc568db2d68be11bd3fa0b4ecd",
+    "extracted/maps/p003_space_preview.json": "1e12fa23f6a3833e9cf2c485333400b93d9068d6ba2da0515161f44261038a33",
+    "extracted/runtime/mandarin_aftermath/aftermath.json": "26e9b79462f20729e02aa435fc0820b88ddbb45b87a2168ce0035bf9f18f8ae3",
+    "walkthrough/P003-preview.md": "bdbb1bb85ddf9c7afb842a462a933da9707ec56ae734d71dfc794f81f45d60a5"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "start": 12187648,
+  "end_exclusive": 12188160,
+  "bytes": 512,
+  "guard": 256,
+  "incoming_shape_hits": [],
+  "expected_bytes": "FF repeated 512 times",
+  "expected_sha256": "9f56cda75fefeab90f6fa5d5ddc9601544b121732c5ecccab32e631060453a5d",
+  "input_rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "native_bounds": {
+    "left_table": {
+      "start": 12181512,
+      "conservative_end_exclusive": 12181816,
+      "scan_rows": 38,
+      "direct_getter_maximum_id": 37,
+      "note": "Scan includes trailing FF records; this audit does not fix the existing bound discrepancy."
+    },
+    "right_table": {
+      "start": 12189408,
+      "index_source": "LDRB, then unsigned shift left by 3",
+      "stride": 8,
+      "minimum_address": 12189408,
+      "maximum_index": 255
+    },
+    "native_signatures": [
+      {
+        "offset": 785488,
+        "raw_hex": "10b50004040c0904090c0023054a00201056a04208d101201056884204d1581c07e0000008e0b90808320133252beed9002010bc02bc084700b50004000c0904090cfff7ddff002806d0c0000149401803e0000000e0b908002002bc0847000000b5002808d0252806d8c0000149401803e0000000e0b908002002bc08470000"
+      },
+      {
+        "offset": 12189536,
+        "raw_hex": "0fb4184b16495a78d200891808791a78824202da01321a7006e000221a704a795a700868104912df"
+      }
+    ]
+  },
+  "limits": "Bounded signatures and alias shapes; unknown computed references, hidden extents and hardware remain unverified. No allocation implemented."
+}

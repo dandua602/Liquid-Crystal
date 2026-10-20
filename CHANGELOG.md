@@ -1,5 +1,19 @@
 # Change ledger
 
+- GitHub synchronization fixed: created the repository's first commit and pushed
+  main; verified remote HEAD/main. Published the tested P002 patch-only ZIP,
+  walkthrough, project tools and research with no ROM/save files. Added GITHUB.md
+  with direct navigation/download instructions and separated cloud Publish from
+  Git push. Added the original project brief and exact-byte Git attributes.
+- P003 review checkpoint:22 original literal flag5B2 reads, no direct literal
+  set/clear shapes, bounded owners and messages retained. Ten native expectations
+  on disposable P002 copies confirm citizen branches, scientist departure and the
+  hostile Center actor's empty aftermath branch. Proposed attendant shutdown and
+  local4 departure are explicitly newly authored. Review-only compiler fits133/192
+  script bytes and224/320 text bytes in a new512-byte bounded candidate. Added
+  concrete hooks/state/rollback/acceptance plan and unreleased player-guide preview.
+  No P003 ROM or patch; original inputs and P002 remain unchanged.
+
 - Orange progression runtime/design milestone: 31 controlled expectations and 104 passing project tests. Route 54 cutscenes work on both IDs; variant cave return selects original 3:101. Science Complex default layout has 1,989 ocean cells and no door behavior at its copied cave warp. Charging/rejection work; real intruder-battle escape decrements counter/marks controller without consuming charge, repeat guard works, and final boundary sets shutdown state even after escape. Added bounded fixture runner, native state-access evidence, progression-state ledger, boundary analysis and provisional first-continuation architecture. Normal entry/beta boundary and allocation remain unresolved; no story, ROM/save modification or patch. Publish this substantial checkpoint; no commit/push performed.
 
 - Combined Mister R diagnosis and first runtime milestone: 608 room cells, movement endpoints, native flavor interactions, Iron Tail clue/menu and 4,037 candidate script owners audited. Strong evidence of an unfinished default-room puzzle/battle; whole-beta progression boundary remains unresolved. Built pinned headless mGBA, verified ROM boot, previous-save recovery, forced-room introduction/removal, four interactions and stair to 0:0. Retained screenshots, exact replay and reusable optional builder. All 96 tests pass; source hashes unchanged. Publish this combined checkpoint; no commit/push performed.

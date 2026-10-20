@@ -13,6 +13,7 @@ Main Office floors, later islands and the ending remain future work.
 - [Player walkthrough with directions, route map and screenshots](WALKTHROUGH.md)
 - [P002 implementation and exact test scope](research/P002_implementation.md)
 - [P002 build manifest](extracted/builds/P002-manifest.json) and [acceptance](extracted/builds/P002-validation.json)
+- [Next chapter proposal: P003 communications shutdown](research/P003_review.md) (review only)
 - [Current state](PROJECT_STATE.md) and [remaining work](research/remaining_work.md)
 - [Frozen P002 proposal](research/P002_review.md) and [implementation approval](research/design/p002_approval.json)
 - [Earlier P001 implementation](research/P001_implementation.md), [native-stat combat](research/P001_native_combat.md) and [P001-only guide](walkthrough/P001.md)

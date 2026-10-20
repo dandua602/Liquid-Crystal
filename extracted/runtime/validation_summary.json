@@ -29,15 +29,18 @@
     "python3 tools/build_p002.py",
     "python3 tools/p002_runtime.py --case NAME (all seven cases)",
     "python3 tools/package_p002.py",
-    "Packaged P002 CLI: all four patch directions and guide/image links"
+    "Packaged P002 CLI: all four patch directions and guide/image links",
+    "python3 tools/mandarin_aftermath.py",
+    "python3 tools/p003_design.py"
   ],
   "project_tests": {
-    "run": 150,
-    "passed": 150,
+    "run": 152,
+    "passed": 152,
     "failed": 0,
-    "seconds": 7.964,
+    "seconds": 8.768,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log_sha256": "1b1258403846aab003211a4f0722ba1a83011a95cbc8e3c972361acf781d5117"
+    "log": "extracted/builds/GitHub-P003-review-unittest.log",
+    "log_sha256": "305fa37d50c2602a85860c1dd2afca125ab5c011393d0a2e7a59a651e156a8c7"
   },
   "runtime": {
     "smoke": {
@@ -346,7 +349,7 @@
     "approval": "research/design/approval.json"
   },
   "p001_rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
-  "current_configuration_draft_id": "bb6ef383-a9e1-427a-b6a5-dbdc1c452660~cecfgdraft_6ad6dc36bfb0819b808db70749f7eef9",
+  "current_configuration_draft_id": "bb6ef383-a9e1-427a-b6a5-dbdc1c452660~cecfgdraft_6ad75fb26d24819b82b32bf97a5fda4d",
   "p001_package": {
     "path": "builds/P001-prototype.zip",
     "sha256": "db9c5b59bbbfa9dcde884432ff663eaf29b5af9eb758b26ca1c477539ad71a32",
@@ -356,23 +359,23 @@
     "ROM_unchanged": true
   },
   "prior_P001_configuration_publication_observed": true,
-  "current_P002_or_guide_publication_verified": false,
+  "current_P002_or_guide_publication_verified": true,
   "walkthrough": {
     "artifact": "WALKTHROUGH.md",
     "playable_version": "P002 including P001",
-    "future_preview": "walkthrough/P002-preview.md (historical frozen review)",
+    "future_preview": "walkthrough/P003-preview.md (not released)",
     "requirement": "Update clear player directions, prerequisites, puzzles, battle/retry/save instructions, rewards/endpoints and screenshots with every newly released story slice.",
     "sha256": "538a222d4cb858efd8ea22a4c9d5f07c39c7706c85932974dc0ed382b7dc14c4",
     "packaged_relative_links_verified": true,
     "archived_p001": "walkthrough/P001.md"
   },
   "next_design": {
-    "id": "P002",
-    "proposal": "research/P002_review.md",
-    "spec": "research/design/p002.json",
-    "status": "approved_implemented_and_tested",
-    "rom_implementation_authorized": true,
-    "approval": "research/design/p002_approval.json"
+    "id": "P003",
+    "proposal": "research/P003_review.md",
+    "spec": "research/design/p003.json",
+    "manifest": "research/design/p003_review_manifest.json",
+    "status": "concrete_review_only_not_implemented",
+    "rom_implementation_authorized": false
   },
   "p002_rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
   "prior_P001_guide_configuration_publication_observed": true,
@@ -382,5 +385,32 @@
     "all_four_packaged_cli_directions_verified": true,
     "guide_relative_links_verified": true,
     "contains_rom_or_save": false
+  },
+  "github": {
+    "repository": "https://github.com/dandua602/Liquid-Crystal",
+    "branch": "main",
+    "first_published_commit": "c503441964b80552ed1d7b269e059308642d5042",
+    "remote_head_and_main_verified": true,
+    "rom_save_files_excluded": true
+  },
+  "p003_review_evidence": {
+    "artifact": "extracted/runtime/mandarin_aftermath/aftermath.json",
+    "sha256": "26e9b79462f20729e02aa435fc0820b88ddbb45b87a2168ce0035bf9f18f8ae3",
+    "runtime_ROM": "P002 unchanged",
+    "expectations": 10,
+    "all_expectations_passed": true,
+    "complete": true,
+    "source_unchanged": true,
+    "P003_implemented": false
+  },
+  "current_configuration_requires_publish": true,
+  "configuration_note": "Published P002 startup contents observed in current base; new startup-only GitHub/P003 review draft saved, not published. Install/network/repository settings preserved. Independent fresh-task restoration remains unverified.",
+  "p002_design": {
+    "id": "P002",
+    "proposal": "research/P002_review.md",
+    "spec": "research/design/p002.json",
+    "status": "approved_implemented_and_tested",
+    "rom_implementation_authorized": true,
+    "approval": "research/design/p002_approval.json"
   }
 }

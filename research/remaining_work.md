@@ -4,15 +4,20 @@
 includes both the warehouse chapter and the new Office service room. See
 [implementation](P002_implementation.md) for exact behavior and limitations.
 
-1. **Publish the tested P002 checkpoint.** Use builds/P002-prototype.zip, which
-   includes P001 content, standalone/upgrade/rollback patches and the player guide.
-   Review/save the updated environment settings and publish. Publication and Git
-   backup are separate; independent fresh-task restoration remains unverified.
-2. **Prepare the next Office story slice.** Recover the relevant surviving
-   antagonist/rank/progression evidence before proposing its battle, reward or
-   upper-floor route. No P003 design/implementation approval exists yet. Keep
-   scope bounded and make the design concrete for the kickoff-required review.
-   A larger feature needs a new space plan; P002 reserve has72 bytes left.
+1. **GitHub checkpoint published.** Main now contains the tested P002 patch-only
+   download, walkthrough, project tools and research. See [GitHub instructions](../GITHUB.md).
+   The user requested ongoing GitHub synchronization. Commit/push tested milestones
+   and verify the remote. Cloud environment Publish is separate; use it when setup
+   or the prepared filesystem needs a new snapshot, not for each chat turn.
+2. **Review concrete P003, then implement the approved chapter.**
+   [P003 proposal](P003_review.md) and [draft guide](../walkthrough/P003-preview.md)
+   define the attendant shutdown, reuse of existing flag5B2 and a newly authored
+   NPC departure. Ten native checks verify original aftermath branches/visibility
+   on unchanged P002. A new512-byte bounded screen and compiler preview fit133/192
+   script bytes and224/320 text bytes. No P003 implementation approval, output ROM
+   or runtime acceptance exists yet. Apply the kickoff review requirement to this
+   concrete proposal, then test actual interactions, earned access, city aftermath,
+   Save/reload, upgrades and rollback before packaging. Do not restart broad scans.
 3. **Human playtest, hardware and broad progression.** P002 passes actual victory,
    loss, old-save upgrade, movement persistence, entry/return, new-map save/reload
    and safe P001 downgrade. These controlled fixtures do not certify difficulty,
