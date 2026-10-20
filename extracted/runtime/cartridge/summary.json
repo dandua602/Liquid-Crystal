@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "sources_unchanged": true,
+  "source_sha256": {
+    "roms/POKEMON Liquid Crystal.gba": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "saves/source/POKEMON Liquid Crystal DD 5 badge.sav": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6",
+    "builds/dev/Liquid Crystal P002.gba": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70"
+  },
+  "hardware_verified": false,
+  "prepare_artifact": "extracted/runtime/cartridge/prepare/prepare.json",
+  "cases": {
+    "personal": {
+      "image_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 3,
+      "all_expectations_passed": true,
+      "save_reload_verified": false,
+      "artifact": "extracted/runtime/cartridge/personal/personal.json"
+    },
+    "puzzle": {
+      "image_sha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+      "complete": true,
+      "expectations": 12,
+      "all_expectations_passed": true,
+      "save_reload_verified": true,
+      "artifact": "extracted/runtime/cartridge/puzzle/puzzle.json"
+    },
+    "office": {
+      "image_sha256": "e0cc30b70fb233d1e4736c5b12f992ac5307442aba0bacd75b33246a6d1dd3c5",
+      "complete": true,
+      "expectations": 4,
+      "all_expectations_passed": true,
+      "save_reload_verified": false,
+      "artifact": "extracted/runtime/cartridge/office/office.json"
+    }
+  },
+  "limits": "Software adapter checks native ROM-embedded boot with blank SRAM; observed AMD fallback only, no physical timing/flash-chip/controller certification."
+}

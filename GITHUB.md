@@ -7,6 +7,10 @@ Repository: https://github.com/dandua602/Liquid-Crystal
   the Route59 map, puzzle, battle, Office entry/return and saving.
 - **Download the current patch:** [P002-prototype.zip](patches/P002/P002-prototype.zip).
   Open that file and choose **Download raw file**, or use its download button.
+- **Real cartridge testing:** [HARDWARE_TEST.md](HARDWARE_TEST.md) and
+  [P002-cartridge-tools.zip](patches/P002/P002-cartridge-tools.zip). The helper kit
+  has patches/scripts/guides only; private ROM/save images are in the cloud
+  workspace at `builds/P002-cartridge-test.zip`.
 - **Patch instructions:** [P002-README.txt](patches/P002/P002-README.txt).
 - **Progress and next work:** [PROJECT_STATE.md](PROJECT_STATE.md) and
   [remaining work](research/remaining_work.md).

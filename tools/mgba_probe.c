@@ -123,9 +123,15 @@ int main(int argc, char **argv) {
         sram_file=fopen(argv[2],"r+b");
         if (!sram_file || fread(sram,1,sizeof(sram),sram_file)!=sizeof(sram)) return 9;
         mapper_core=core;
-        /* rawWrite uses mGBA's private copy-on-write ROM, never the input file. */
-        for (unsigned n=0;n<sizeof(sram);n+=2)
-            core->rawWrite16(core,SAVE_ROM_ADDRESS+n,-1,sram[n] | (sram[n+1]<<8));
+        if (getenv("LC_PROBE_ROM_SAVE_BOOT")) {
+            /* Hardware-package check: blank SRAM, retain the actual ROM's NOR
+             * bytes. Boot must recover the save through its own driver. */
+            memset(sram, 0xFF, sizeof(sram));
+        } else {
+            /* rawWrite uses mGBA's private copy-on-write ROM, never the input file. */
+            for (unsigned n=0;n<sizeof(sram);n+=2)
+                core->rawWrite16(core,SAVE_ROM_ADDRESS+n,-1,sram[n] | (sram[n+1]<<8));
+        }
         original_memory=((struct ARMCore*)core->cpu)->memory;
         install_mapper(core);
     }

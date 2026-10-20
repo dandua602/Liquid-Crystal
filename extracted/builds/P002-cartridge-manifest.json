@@ -1,0 +1,51 @@
+{
+  "id": "P002-cartridge-test",
+  "game_base_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "hardware_verified": false,
+  "images": {
+    "P002-personal-5badge.gba": {
+      "bytes": 16777216,
+      "sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "save_sha256": "ce2bace08fb36ed0e41b900f7af5e8033f1f76b4095c7f46f6754aeff65f5fb7",
+      "runtime_case": "personal",
+      "only_changed_range_from_P002": [],
+      "artificial_test_save": false
+    },
+    "P002-warehouse-test.gba": {
+      "bytes": 16777216,
+      "sha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+      "save_sha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+      "runtime_case": "puzzle",
+      "only_changed_range_from_P002": [
+        13107200,
+        13238272
+      ],
+      "artificial_test_save": true
+    },
+    "P002-office-test.gba": {
+      "bytes": 16777216,
+      "sha256": "e0cc30b70fb233d1e4736c5b12f992ac5307442aba0bacd75b33246a6d1dd3c5",
+      "save_sha256": "23b55231c7938e08c726e6b0cf14e6170aa8e1b5c361cf788f76f0e40d0eb53b",
+      "runtime_case": "office",
+      "only_changed_range_from_P002": [
+        13107200,
+        13238272
+      ],
+      "artificial_test_save": true
+    }
+  },
+  "project_tests": {
+    "run": 155,
+    "passed": 155,
+    "failed": 0,
+    "seconds": 7.773,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "log": "extracted/builds/Cartridge-unittest.log",
+    "log_sha256": "d8aad6edde8b86a8f8fc8ee5c9d3ca533f6239dff0638d134d5891dc81f0a2d6"
+  },
+  "emulator_expectations": 19,
+  "save_mode": "Existing embedded NOR save; original cartridge conversion retained",
+  "original_inputs_unchanged": true,
+  "private_bundle_contains_rom_and_save": true,
+  "public_helper_kit_contains_rom_or_save": false
+}

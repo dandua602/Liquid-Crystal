@@ -36,7 +36,7 @@ departure to avoid its original empty text branch. Read research/P003_review.md
 and walkthrough/P003-preview.md. Ten new native fixture expectations pass on
 unchanged P002; they are original branch/visibility evidence, not P003 runtime
 acceptance. The preview fits133/192 script bytes and224/320 text bytes, with a
-new512-byte bounded space screen. The current project suite passes152 tests.
+new512-byte bounded space screen. The current project suite passes155 tests.
 No P003 ROM/patch or implementation approval exists. The kickoff requires review before that next ROM change.
 
 Visual review caught a P001 flagless rock respawn after movement that immediate
@@ -55,6 +55,32 @@ checks are retained, not freshly rerun for this P002 milestone. New P002 journey
 has a boosted native-generated Mewtwo fixture and actual combat outcomes; it is
 not human balance proof. Unknown computed owners/map uses remain outside the
 bounded certificate; runtime still requires the supplied-image adapter.
+
+## Cartridge test package
+
+The user plays on real consoles by flashing carts and has original backups.
+No cart/flasher model has been confirmed yet. The original uploaded ROM uses
+banked SRAM plus embedded NOR save at C80000–CA0000, so the new private hardware
+package includes the selected save inside each image, with the driver unchanged.
+Read HARDWARE_TEST.md for exact image choices and the console checklist.
+
+`builds/P002-cartridge-test.zip` contains P002-personal-5badge.gba (exact standard
+P002), P002-warehouse-test.gba (new artificial pre-puzzle save, native-stat six
+level100 team with Iron Tail/Surf) and P002-office-test.gba (earlier boosted
+post-victory fixture), raw sidecar saves, manifest/checksums, guide/screenshots
+and readback helper. All ROM/save files remain ignored/private. GitHub has only
+`patches/P002/P002-cartridge-tools.zip`, scripts, docs, evidence and metadata.
+
+Three ROM-embedded-save boots passed with blank emulated SRAM and no sidecar
+injection. Nineteen expectations cover those cases, native NOR Save and a fresh
+process using updated NOR bytes. Native team preparation is separately recorded.
+The optional LC_PROBE_ROM_SAVE_BOOT frontend mode supports these checks; default
+P001/P002 behavior stays unchanged. Full current suite155 passes. Package CLI
+patch/embed/readback, overwrite refusal, ZIP integrity and member hashes pass.
+No physical flash timing, chip/profile compatibility or hardware success is
+claimed. Await user console power-off/save/reload and gameplay results. Reflashing
+an image resets its embedded starting save; a post-play dump may differ only in
+that window, checked with tools/verify_cartridge.py --after-play.
 
 ## Walkthrough requirement
 

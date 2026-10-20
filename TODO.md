@@ -46,3 +46,7 @@
 - [x] Commit/push tested P002 checkpoint, patch-only ZIP and walkthrough to GitHub main.
 - [x] Prepare concrete P003 aftermath design, original native evidence, storage preview and draft walkthrough.
 - [ ] Review P003 proposal, then implement/test/package its chapter and update the playable walkthrough.
+
+- [x] Prepare cartridge ROMs with embedded personal/pre-puzzle/Office saves and public helper kit.
+- [x] Blank-SRAM native embedded boots, NOR Save/fresh boot, readback helpers and155 project tests pass.
+- [ ] Record cart/flasher/profile/console and user hardware test results from HARDWARE_TEST.md.

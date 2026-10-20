@@ -1,0 +1,223 @@
+{
+  "complete": true,
+  "image_sha256": "e0cc30b70fb233d1e4736c5b12f992ac5307442aba0bacd75b33246a6d1dd3c5",
+  "embedded_save_sha256": "23b55231c7938e08c726e6b0cf14e6170aa8e1b5c361cf788f76f0e40d0eb53b",
+  "incoming_sram": "131072 FF bytes",
+  "boot_seed": "Actual embedded ROM bytes, no adapter sidecar injection",
+  "hardware_verified": false,
+  "save_reload_requested": false,
+  "checks": [
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 4,
+        "y": 7,
+        "group": 6,
+        "map": 32,
+        "warp": 255
+      },
+      "expected": {
+        "x": 4,
+        "y": 7,
+        "group": 6,
+        "map": 32,
+        "warp": 255
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "boot_used_native_cartridge_bank_copy",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "embedded_room_state",
+      "actual": 13059,
+      "expected": 13059,
+      "passed": true
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "040007000620ff0004000700"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "040007000620ff0004000700"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "p <temporary>/embedded_boot.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 1,
+        "bank_selects": 87,
+        "sram_writes": 131072,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0333"
+      }
+    }
+  ]
+}

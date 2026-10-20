@@ -1,5 +1,16 @@
 # Change ledger
 
+- Cartridge test milestone: prepared a private ROM/save ZIP for the user's real
+  consoles, with unchanged standard P002/personal save plus embedded pre-puzzle
+  and Office test-save variants. New puzzle fixture uses six native-stat level100
+  party members with Iron Tail/Surf; it is explicitly artificial progress. Added
+  optional frontend mode to boot actual NOR bytes with blank SRAM, three passing
+  cases/19 expectations, native Save and fresh-process NOR reload. Added strict
+  save-window image creator, initial/post-play readback verifier, hardware guide,
+  ZIP manifests/checksums and a separate public patch/helper kit with no ROM/save.
+  All155 project tests pass; packaged CLI/ZIP checks pass. Original inputs, driver
+  and standard P002 remain unchanged. Physical-console validation is pending.
+
 - GitHub synchronization fixed: created the repository's first commit and pushed
   main; verified remote HEAD/main. Published the tested P002 patch-only ZIP,
   walkthrough, project tools and research with no ROM/save files. Added GITHUB.md

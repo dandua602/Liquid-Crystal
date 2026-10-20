@@ -1,0 +1,84 @@
+{
+  "kind": "Artificial P002 cartridge test fixture, not personal progress",
+  "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "sha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+  "location": {
+    "x": 14,
+    "y": 9,
+    "group": 6,
+    "map": 31,
+    "warp": 0
+  },
+  "state": "puzzle pending, Mister R unbeaten",
+  "party": [
+    {
+      "name": "Swampert",
+      "species": 285,
+      "moves": [
+        57,
+        58,
+        89,
+        231
+      ],
+      "level": 100
+    },
+    {
+      "name": "Arcanine",
+      "species": 59,
+      "moves": [
+        53,
+        245,
+        242,
+        34
+      ],
+      "level": 100
+    },
+    {
+      "name": "Machamp",
+      "species": 68,
+      "moves": [
+        280,
+        157,
+        89,
+        339
+      ],
+      "level": 100
+    },
+    {
+      "name": "Ampharos",
+      "species": 181,
+      "moves": [
+        85,
+        7,
+        86,
+        113
+      ],
+      "level": 100
+    },
+    {
+      "name": "Lapras",
+      "species": 131,
+      "moves": [
+        58,
+        57,
+        85,
+        34
+      ],
+      "level": 100
+    },
+    {
+      "name": "Alakazam",
+      "species": 65,
+      "moves": [
+        94,
+        9,
+        105,
+        115
+      ],
+      "level": 100
+    }
+  ],
+  "stats": "Native-generated stats/PP, no cached 999 boosts; Lum Berries",
+  "prerequisites": "Old Key and door unlock earned in the retained controlled linked replay; earlier starting map anchors were forced",
+  "source_save_unchanged": true
+}

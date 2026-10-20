@@ -18,7 +18,13 @@ includes both the warehouse chapter and the new Office service room. See
    or runtime acceptance exists yet. Apply the kickoff review requirement to this
    concrete proposal, then test actual interactions, earned access, city aftermath,
    Save/reload, upgrades and rollback before packaging. Do not restart broad scans.
-3. **Human playtest, hardware and broad progression.** P002 passes actual victory,
+3. **Run the prepared console test.** [Hardware guide](../HARDWARE_TEST.md) and
+   private `builds/P002-cartridge-test.zip` provide embedded personal, pre-puzzle
+   and Office saves. The public helper kit is on GitHub. Three blank-SRAM
+   embedded-ROM boots and native NOR Save/fresh boot pass in software; current
+   suite155 passes. Await cart/flasher/profile/console and real power-off/save/
+   reload results. Reflashing resets the selected starting save.
+4. **Human playtest and broad progression.** P002 passes actual victory,
    loss, old-save upgrade, movement persistence, entry/return, new-map save/reload
    and safe P001 downgrade. These controlled fixtures do not certify difficulty,
    stock-emulator conversion, real hardware or ordinary full-game progression.

@@ -31,16 +31,19 @@
     "python3 tools/package_p002.py",
     "Packaged P002 CLI: all four patch directions and guide/image links",
     "python3 tools/mandarin_aftermath.py",
-    "python3 tools/p003_design.py"
+    "python3 tools/p003_design.py",
+    "python3 tools/cartridge_runtime.py",
+    "python3 tools/package_cartridge.py",
+    "Packaged cartridge helper CLI: patch/embed, initial/post-play readback and overwrite refusal; both ZIP member checksums"
   ],
   "project_tests": {
-    "run": 152,
-    "passed": 152,
+    "run": 155,
+    "passed": 155,
     "failed": 0,
-    "seconds": 8.768,
+    "seconds": 7.773,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/GitHub-P003-review-unittest.log",
-    "log_sha256": "305fa37d50c2602a85860c1dd2afca125ab5c011393d0a2e7a59a651e156a8c7"
+    "log": "extracted/builds/Cartridge-unittest.log",
+    "log_sha256": "d8aad6edde8b86a8f8fc8ee5c9d3ca533f6239dff0638d134d5891dc81f0a2d6"
   },
   "runtime": {
     "smoke": {
@@ -349,7 +352,7 @@
     "approval": "research/design/approval.json"
   },
   "p001_rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
-  "current_configuration_draft_id": "bb6ef383-a9e1-427a-b6a5-dbdc1c452660~cecfgdraft_6ad75fb26d24819b82b32bf97a5fda4d",
+  "current_configuration_draft_id": "bb6ef383-a9e1-427a-b6a5-dbdc1c452660~cecfgdraft_6ad7de8001c0819b8125068450be6d43",
   "p001_package": {
     "path": "builds/P001-prototype.zip",
     "sha256": "db9c5b59bbbfa9dcde884432ff663eaf29b5af9eb758b26ca1c477539ad71a32",
@@ -404,7 +407,7 @@
     "P003_implemented": false
   },
   "current_configuration_requires_publish": true,
-  "configuration_note": "Published P002 startup contents observed in current base; new startup-only GitHub/P003 review draft saved, not published. Install/network/repository settings preserved. Independent fresh-task restoration remains unverified.",
+  "configuration_note": "Current prior GitHub/P003 startup configuration observed published; new cartridge instructions drafted, not published. Install/network/repository settings preserved. Independent fresh-task restoration remains unverified.",
   "p002_design": {
     "id": "P002",
     "proposal": "research/P002_review.md",
@@ -412,5 +415,18 @@
     "status": "approved_implemented_and_tested",
     "rom_implementation_authorized": true,
     "approval": "research/design/p002_approval.json"
+  },
+  "cartridge_test": {
+    "artifact": "extracted/runtime/cartridge/summary.json",
+    "hardware_verified": false,
+    "blank_sram_actual_embedded_rom_boot_cases": 3,
+    "emulator_expectations": 19,
+    "native_save_and_fresh_nor_boot_verified": true,
+    "source_inputs_and_standard_P002_unchanged": true,
+    "private_package": "builds/P002-cartridge-test.zip",
+    "public_helper_kit": "patches/P002/P002-cartridge-tools.zip",
+    "private_zip_sha256": "c24cafc0372d51955887a89aaa3e283bd7db2f5064ddfd23b3b2063b4c30997b",
+    "public_zip_sha256": "cd8a3f9d9bd6ff91f00b3c9f706d1bae93703d6d138aee576a0e03a657ba9743",
+    "sources_reverified_against_original_baseline": true
   }
 }

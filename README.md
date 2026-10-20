@@ -10,6 +10,7 @@ after victory. Its normal door returns to the warehouse. It also fixes the
 cleared rock respawning after movement. Original inputs remain unchanged.
 Main Office floors, later islands and the ending remain future work.
 
+- [Real-console cartridge test instructions](HARDWARE_TEST.md) and [public patch/helper kit](patches/P002/P002-cartridge-tools.zip)
 - [Player walkthrough with directions, route map and screenshots](WALKTHROUGH.md)
 - [P002 implementation and exact test scope](research/P002_implementation.md)
 - [P002 build manifest](extracted/builds/P002-manifest.json) and [acceptance](extracted/builds/P002-validation.json)

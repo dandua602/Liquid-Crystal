@@ -1,0 +1,736 @@
+{
+  "complete": true,
+  "image_sha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+  "embedded_save_sha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+  "incoming_sram": "131072 FF bytes",
+  "boot_seed": "Actual embedded ROM bytes, no adapter sidecar injection",
+  "hardware_verified": false,
+  "save_reload_requested": true,
+  "save_reload_verified": true,
+  "checks": [
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 14,
+        "y": 9,
+        "group": 6,
+        "map": 31,
+        "warp": 0
+      },
+      "expected": {
+        "x": 14,
+        "y": 9,
+        "group": 6,
+        "map": 31,
+        "warp": 0
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "boot_used_native_cartridge_bank_copy",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "embedded_room_state",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "label": "copied_save_changed",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "save_mapper",
+      "state": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 132,
+        "sram_writes": 245760,
+        "nor_programs": 65536,
+        "nor_erases": 2
+      }
+    },
+    {
+      "label": "native_save_programmed_embedded_nor",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "native_save_erased_embedded_nor",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 14,
+        "y": 10,
+        "group": 6,
+        "map": 31,
+        "warp": 0
+      },
+      "expected": {
+        "x": 14,
+        "y": 10,
+        "group": 6,
+        "map": 31,
+        "warp": 0
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "saved_state_loaded_from_nor_in_new_process",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "label": "native_party_survives_nor_reload",
+      "actual": "3e7907921f9a3dad9f94833557dfbb7aa472c395e96735870de2132378a12198",
+      "expected": "3e7907921f9a3dad9f94833557dfbb7aa472c395e96735870de2132378a12198",
+      "passed": true
+    },
+    {
+      "label": "saved_rock_remains_present",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000900061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000900061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "p <temporary>/embedded_boot.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 87,
+        "sram_writes": 131072,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0100"
+      }
+    },
+    {
+      "command": "r 2024284 600",
+      "response": {
+        "address": 33702532,
+        "hex": "682cab93bd74f55bcdebd5e1e4d9e6e8ff730202bbffffffffffff00f9a90000d5585ec8d5585ec8d5585ec8d5aa3aead897b0ffd5585ec8c859d3c8c1744ec8d51e5ec8ec5864c88c58b9c8da5254c70000000064ff430143011101b7009a00cd00d400655734a0bd74f55bbbe6d7d5e2dde2d9ff730202bbffffffffffff00db950000d823c1fbd823c1fbd823c1fbe3234cfb0831d2fbd865c1fbd8d1a5d96848015ed823c1fbed2334fb2a23e3fbd726cef40000000064ff32013201e400d200c300e900b700a1f9fc71bd74f55bc7d5d7dcd5e1e4ff00000202bbffffffffffff00ff540000588d842a08a1192a1ccb092a048c942a458d5a2b1387033e1c7f6d08a5147a381c8d092a1c8d092a1c8d092a1c8d092a0000000064ff3b013b01fa00ab0086008e00b800cbf5de21bd74f55bbbe1e4dcd5e6e3e7ff730202bbffffffffffff0051e8000076734f584e74224776812b7ac381a67a62ad3b7a76c72b7a76812b7a76812b7a76812b7a23812c7a20815a7a798e3f640000000064ff3a013a01a400b8008600fb00d7005548db22bd74f55bc6d5e4e6d5e7ff0800730202bbffffffffffff00f6a100006b3ca379382e3d79e87a2e79e8ce4a5b6bb737f0e83c2e79e83c2e79e83c2e79e83c2e79d23c1779bd3c0c79e23321760000000064ff75017501b600a7009000c000da00184d6003bd74f55bbbe0d5dfd5eed5e1ff730202bbffffffffffff00e59b0000fb399c58cc39e658af36814ca5399558a5399558a5399558e4391858b1158558a57f9558a5cbf17a7a8eda60a53995580000000064fffb00fb0079006c0014013201cb00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000900061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000900061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff1f06331300150015001000150010002200003f010000000200010001100000015c0000031f063316001000160010001600100011000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000900061f0000ffffffff"
+      }
+    },
+    {
+      "command": "f 16 128",
+      "response": {
+        "frame": 1400
+      }
+    },
+    {
+      "command": "f 24 0",
+      "response": {
+        "frame": 1424
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 1425
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 1545
+      }
+    },
+    {
+      "command": "f 1 128",
+      "response": {
+        "frame": 1546
+      }
+    },
+    {
+      "command": "f 8 0",
+      "response": {
+        "frame": 1554
+      }
+    },
+    {
+      "command": "f 1 128",
+      "response": {
+        "frame": 1555
+      }
+    },
+    {
+      "command": "f 8 0",
+      "response": {
+        "frame": 1563
+      }
+    },
+    {
+      "command": "f 1 128",
+      "response": {
+        "frame": 1564
+      }
+    },
+    {
+      "command": "f 8 0",
+      "response": {
+        "frame": 1572
+      }
+    },
+    {
+      "command": "f 1 128",
+      "response": {
+        "frame": 1573
+      }
+    },
+    {
+      "command": "f 8 0",
+      "response": {
+        "frame": 1581
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1582
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 1702
+      }
+    },
+    {
+      "command": "p <temporary>/save_confirm.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1703
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 1883
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1884
+      }
+    },
+    {
+      "command": "f 1800 0",
+      "response": {
+        "frame": 3684
+      }
+    },
+    {
+      "command": "f 600 0",
+      "response": {
+        "frame": 4284
+      }
+    },
+    {
+      "command": "p <temporary>/save_complete.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 132,
+        "sram_writes": 245760,
+        "nor_programs": 65536,
+        "nor_erases": 2
+      }
+    },
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 132,
+        "sram_writes": 245760,
+        "nor_programs": 65536,
+        "nor_erases": 2
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0100"
+      }
+    },
+    {
+      "command": "r 2024284 600",
+      "response": {
+        "address": 33702532,
+        "hex": "682cab93bd74f55bcdebd5e1e4d9e6e8ff730202bbffffffffffff00f9a90000d5585ec8d5585ec8d5585ec8d5aa3aead897b0ffd5585ec8c859d3c8c1744ec8d51e5ec8ec5864c88c58b9c8da5254c70000000064ff430143011101b7009a00cd00d400655734a0bd74f55bbbe6d7d5e2dde2d9ff730202bbffffffffffff00db950000d823c1fbd823c1fbd823c1fbe3234cfb0831d2fbd865c1fbd8d1a5d96848015ed823c1fbed2334fb2a23e3fbd726cef40000000064ff32013201e400d200c300e900b700a1f9fc71bd74f55bc7d5d7dcd5e1e4ff00000202bbffffffffffff00ff540000588d842a08a1192a1ccb092a048c942a458d5a2b1387033e1c7f6d08a5147a381c8d092a1c8d092a1c8d092a1c8d092a0000000064ff3b013b01fa00ab0086008e00b800cbf5de21bd74f55bbbe1e4dcd5e6e3e7ff730202bbffffffffffff0051e8000076734f584e74224776812b7ac381a67a62ad3b7a76c72b7a76812b7a76812b7a76812b7a23812c7a20815a7a798e3f640000000064ff3a013a01a400b8008600fb00d7005548db22bd74f55bc6d5e4e6d5e7ff0800730202bbffffffffffff00f6a100006b3ca379382e3d79e87a2e79e8ce4a5b6bb737f0e83c2e79e83c2e79e83c2e79e83c2e79d23c1779bd3c0c79e23321760000000064ff75017501b600a7009000c000da00184d6003bd74f55bbbe0d5dfd5eed5e1ff730202bbffffffffffff00e59b0000fb399c58cc39e658af36814ca5399558a5399558a5399558e4391858b1158558a57f9558a5cbf17a7a8eda60a53995580000000064fffb00fb0079006c0014013201cb00"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff1f06331300150015001100150011001100003f000000000100010001100000015c0000031f063316001000160010001600100011000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "54550202"
+      }
+    },
+    {
+      "command": "r 2025554 12",
+      "response": {
+        "address": 33707348,
+        "hex": "0e000a00061f0000ffffffff"
+      }
+    },
+    {
+      "command": "p <temporary>/embedded_saved_reload.ppm",
+      "response": {
+        "screenshot": true
+      }
+    }
+  ]
+}
