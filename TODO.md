@@ -50,3 +50,5 @@
 - [x] Prepare cartridge ROMs with embedded personal/pre-puzzle/Office saves and public helper kit.
 - [x] Blank-SRAM native embedded boots, NOR Save/fresh boot, readback helpers and155 project tests pass.
 - [ ] Record cart/flasher/profile/console and user hardware test results from HARDWARE_TEST.md.
+
+- [x] Fix inaccessible workspace downloads with a GitHub offline browser patcher; exact-ROM download verified in Chromium.

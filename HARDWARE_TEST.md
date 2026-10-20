@@ -4,6 +4,24 @@ P002 adds the warehouse rock puzzle, Mister R battle and Office service room.
 The [walkthrough](WALKTHROUGH.md) covers the story steps. P003 is still a design
 proposal. **No physical-console results have been reported yet.**
 
+## Download a working test ROM on your computer
+
+Workspace ZIP links cannot be downloaded in this chat. Instead download the
+[small offline patcher ZIP from GitHub](patches/P002/P002-easy-cartridge-test.zip)
+using **Download raw file**, then:
+
+1. Extract it and open **Make-Test-ROM.html** in Chrome, Edge or Firefox.
+2. Select your exact original **POKEMON Liquid Crystal.gba** upload.
+3. Click **Create and download test ROM**. Your browser saves
+   **P002-warehouse-test.gba**, including the pre-puzzle test save.
+4. Use FlashGBX **Write ROM** with your existing working cart profile and verify.
+
+No Python or separate patcher installation is required. Your source ROM stays
+on your computer and the page makes no network requests. The output is byte for
+byte identical to the previously tested warehouse image described below.
+The ZIP also contains a direct BPS patch for people who prefer a BPS patcher.
+Apply it directly to the original upload, not an already patched ROM.
+
 ## Choose your image
 
 The private cloud package `builds/P002-cartridge-test.zip` contains these 16 MiB

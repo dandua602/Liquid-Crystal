@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "browser": "Chromium, intercepted secure document; no server or outbound connection",
+  "checks_passed": [
+    "button disabled until a ROM is selected",
+    "wrong-size input rejected with readable guidance",
+    "same-size FireRed ROM rejected by exact source hash",
+    "browser downloaded the exact previously tested warehouse ROM",
+    "no application HTTP/HTTPS requests after the intercepted initial document, or script errors",
+    "original input unchanged"
+  ],
+  "target_sha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+  "hardware_verified": false,
+  "limits": "Managed cloud browser blocks file URLs. Browser behavior was checked with the same shipped HTML served by a Playwright route; local-file navigation on the user computer is not independently verified here."
+}

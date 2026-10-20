@@ -1,5 +1,12 @@
 # Change ledger
 
+- Download delivery fix: workspace links were inaccessible to the user. Added
+  a GitHub-hosted patch-only ZIP with an offline HTML patcher and direct BPS.
+  Selecting the original upload creates the exact previously tested warehouse
+  ROM with artificial test progress embedded. Real Chromium checks cover wrong
+  inputs/FireRed rejection, actual downloaded bytes, offline behavior and source
+  preservation. No source ROM or raw save published; no new story/ROM behavior.
+
 - Cartridge test milestone: prepared a private ROM/save ZIP for the user's real
   consoles, with unchanged standard P002/personal save plus embedded pre-puzzle
   and Office test-save variants. New puzzle fixture uses six native-stat level100

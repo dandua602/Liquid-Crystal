@@ -70,6 +70,8 @@ def main():
     # This link refers to the public download, not a recursive ZIP inside itself.
     guide = common['HARDWARE_TEST.md'].decode().replace('](patches/P002/P002-cartridge-tools.zip)',
              '](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002/P002-cartridge-tools.zip)')
+    guide = guide.replace('](patches/P002/P002-easy-cartridge-test.zip)',
+             '](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002/P002-easy-cartridge-test.zip)')
     common['HARDWARE_TEST.md'] = guide.encode()
     private.update(common)
     private['SHA256SUMS.txt'] = ''.join(f'{sha(data)}  {name}\n' for name, data in sorted(private.items())).encode()

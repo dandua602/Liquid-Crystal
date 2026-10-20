@@ -1,5 +1,6 @@
 # Liquid Crystal completion project
 
+**[Make the cartridge test ROM—offline patcher](patches/P002/P002-easy-cartridge-test.zip)** ·
 **[Download P002](patches/P002/P002-prototype.zip)** ·
 **[Read the walkthrough](WALKTHROUGH.md)** ·
 **[Where everything is on GitHub](GITHUB.md)**

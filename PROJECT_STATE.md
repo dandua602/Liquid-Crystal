@@ -56,6 +56,23 @@ has a boosted native-generated Mewtwo fixture and actual combat outcomes; it is
 not human balance proof. Unknown computed owners/map uses remain outside the
 bounded certificate; runtime still requires the supplied-image adapter.
 
+## Download delivery correction
+
+The user cannot download workspace file links. Do not offer `/workspace/...`
+links as downloadable ROM/save artifacts again. GitHub now provides
+`patches/P002/P002-easy-cartridge-test.zip`: a small offline HTML patcher with an
+embedded BPS delta. The user extracts it, opens Make-Test-ROM.html, chooses their
+exact original Liquid Crystal ROM and downloads P002-warehouse-test.gba locally.
+No Python, server, source upload or network request is involved. Direct BPS is
+also included, applying original upload straight to the warehouse test image.
+No ROM or save file is committed. A real Chromium test rejects wrong input and
+FireRed, downloads the exact already-tested warehouse ROM, makes no application
+network requests and leaves source unchanged. Six browser checks pass. The managed
+cloud browser blocks file URLs; this test served the shipped HTML through an
+intercepted secure test URL without a server or outbound connection. Opening the
+local HTML on the user's computer remains to be confirmed.
+See tools/package_offline_patcher.py and tools/check_offline_patcher.py.
+
 ## Cartridge test package
 
 The user plays on real consoles by flashing carts and has original backups.

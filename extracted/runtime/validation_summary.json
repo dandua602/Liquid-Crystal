@@ -34,7 +34,9 @@
     "python3 tools/p003_design.py",
     "python3 tools/cartridge_runtime.py",
     "python3 tools/package_cartridge.py",
-    "Packaged cartridge helper CLI: patch/embed, initial/post-play readback and overwrite refusal; both ZIP member checksums"
+    "Packaged cartridge helper CLI: patch/embed, initial/post-play readback and overwrite refusal; both ZIP member checksums",
+    "python3 tools/package_offline_patcher.py",
+    "python3 tools/check_offline_patcher.py"
   ],
   "project_tests": {
     "run": 155,
@@ -425,10 +427,19 @@
     "source_inputs_and_standard_P002_unchanged": true,
     "private_package": "builds/P002-cartridge-test.zip",
     "public_helper_kit": "patches/P002/P002-cartridge-tools.zip",
-    "private_zip_sha256": "d73822ee6e531865ff94f31086aa6f4e8f7d0e5fa29ecdb683bbd57dec3e18a9",
-    "public_zip_sha256": "4b56234e9e9296635addf25be776eb7a0cc6c3d5232339ce35b5faf6fc3f8612",
+    "private_zip_sha256": "7005fe4995fe13adb4e8c70738c3e5fee999c789964c1caad36d92df20f44105",
+    "public_zip_sha256": "e1f8f3bc8b40563efc8a66b0f80b2626f16f7575b70ffb3f417107ec811474e6",
     "sources_reverified_against_original_baseline": true,
     "flashing_software": "FlashGBX",
     "physical_reader_cart_profile_confirmed": false
+  },
+  "offline_patcher": {
+    "public_zip": "patches/P002/P002-easy-cartridge-test.zip",
+    "zip_sha256": "9afa96951fcfac0d49d8fcb02ddbb67f0fa2afd8668ee7e816373c98b06aad2a",
+    "browser_checks": 6,
+    "browser_report": "extracted/builds/P002-offline-browser-validation.json",
+    "target_exactly_matches_previously_tested_warehouse_image": true,
+    "workspace_links_downloadable": false,
+    "hardware_verified": false
   }
 }

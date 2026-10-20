@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquid Crystal — make the cartridge test ROM</title>
+<style>
+  :root { color-scheme: light dark; font: 17px/1.55 system-ui, sans-serif; }
+  body { max-width: 650px; margin: 8vh auto; padding: 24px; }
+  h1 { line-height: 1.2; font-size: 1.8rem; }
+  label { display: block; font-weight: 650; margin: 28px 0 8px; }
+  input { max-width: 100%; }
+  button { display: block; margin-top: 24px; padding: 12px 20px; cursor: pointer; font: inherit; }
+  button:disabled { cursor: default; }
+  #status { min-height: 3em; padding: 14px; border: 1px solid #888; border-radius: 6px; }
+  .note { font-size: .9rem; }
+</style>
+<h1>Make your Liquid Crystal cartridge test ROM</h1>
+<p>Choose the original Liquid Crystal ROM you supplied for this project. This
+page creates <strong>P002-warehouse-test.gba</strong> on your computer.</p>
+<p>It starts beside the warehouse puzzle with a generated level-100 team,
+Iron Tail and Surf. The separate test progress is already embedded in the ROM.</p>
+<label for="rom">Your original POKEMON Liquid Crystal.gba</label>
+<input id="rom" type="file" accept=".gba">
+<button id="create" disabled>Create and download test ROM</button>
+<p id="status" role="status" aria-live="polite">Choose your original ROM to begin.</p>
+<p class="note">Your ROM stays on your computer. This page works offline and makes
+no network requests. It keeps your original file unchanged.</p>
+<p class="note">After downloading, use FlashGBX <strong>Write ROM</strong> with your
+existing working cart profile, verify the write, and select Continue on the console.
+No separate save restore is needed for this test. Hardware compatibility still
+needs your console test.</p>
+<script id="patch-data" type="application/json">__PATCH_DATA__</script>
+<script>
+'use strict';
+const config = JSON.parse(document.getElementById('patch-data').textContent);
+const picker = document.getElementById('rom');
+const createButton = document.getElementById('create');
+const status = document.getElementById('status');
+picker.addEventListener('change', () => {
+  createButton.disabled = !picker.files.length;
+  status.textContent = picker.files.length ? 'Ready. Click Create and download test ROM.' : 'Choose your original ROM to begin.';
+});
+const crcTable = Array.from({length: 256}, (_, n) => {
+  for (let bit = 0; bit < 8; ++bit) n = n & 1 ? 0xEDB88320 ^ (n >>> 1) : n >>> 1;
+  return n >>> 0;
+});
+function crc32(data) {
+  let crc = 0xFFFFFFFF;
+  for (const byte of data) crc = crcTable[(crc ^ byte) & 255] ^ (crc >>> 8);
+  return (crc ^ 0xFFFFFFFF) >>> 0;
+}
+async function sha256(data) {
+  if (!globalThis.crypto?.subtle) throw Error('Open this file in a current Chrome, Edge or Firefox browser.');
+  return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', data)), n => n.toString(16).padStart(2, '0')).join('');
+}
+function applyPatch(source, patch) {
+  if (patch.length < 16 || String.fromCharCode(...patch.subarray(0, 4)) !== 'BPS1') throw Error('The patch is damaged. Download the ZIP again.');
+  const view = new DataView(patch.buffer, patch.byteOffset, patch.byteLength);
+  const stop = patch.length - 12;
+  if (crc32(patch.subarray(0, -4)) !== view.getUint32(patch.length - 4, true)) throw Error('The patch checksum failed. Download the ZIP again.');
+  if (crc32(source) !== view.getUint32(stop, true)) throw Error('This ROM does not match your original upload.');
+  let cursor = 4;
+  function number() {
+    let value = 0, shift = 1;
+    for (let i = 0; i < 10; ++i) {
+      if (cursor >= stop) throw Error('Truncated patch.');
+      const byte = patch[cursor++]; value += (byte & 127) * shift;
+      if (!Number.isSafeInteger(value)) throw Error('Invalid patch number.');
+      if (byte & 128) return value;
+      shift *= 128; value += shift;
+    }
+    throw Error('Invalid patch number.');
+  }
+  const sourceSize = number(), targetSize = number(), metadata = number();
+  if (sourceSize !== source.length || targetSize !== config.targetBytes || cursor + metadata > stop) throw Error('Invalid patch sizes.');
+  cursor += metadata;
+  const output = new Uint8Array(targetSize);
+  let written = 0;
+  while (written < targetSize) {
+    const action = number(), mode = action % 4, length = Math.floor(action / 4) + 1;
+    if (written + length > targetSize) throw Error('Patch exceeds output size.');
+    if (mode === 0) {
+      if (written + length > source.length) throw Error('Patch exceeds source size.');
+      output.set(source.subarray(written, written + length), written);
+    } else if (mode === 1) {
+      if (cursor + length > stop) throw Error('Truncated patch data.');
+      output.set(patch.subarray(cursor, cursor + length), written); cursor += length;
+    } else throw Error('Unsupported patch action.');
+    written += length;
+  }
+  if (cursor !== stop || crc32(output) !== view.getUint32(stop + 4, true)) throw Error('Output checksum failed.');
+  return output;
+}
+createButton.addEventListener('click', async () => {
+  createButton.disabled = true;
+  try {
+    status.textContent = 'Checking your original ROM…';
+    const source = new Uint8Array(await picker.files[0].arrayBuffer());
+    if (source.length !== config.sourceBytes || await sha256(source) !== config.sourceSha256) {
+      throw Error('Choose the exact original Liquid Crystal ROM you uploaded. FireRed, an already patched ROM, or a later cart dump will not match.');
+    }
+    status.textContent = 'Creating and verifying the warehouse test ROM…';
+    const patch = Uint8Array.from(atob(config.patchBase64), c => c.charCodeAt(0));
+    if (await sha256(patch) !== config.patchSha256) throw Error('The embedded patch is damaged. Download the ZIP again.');
+    const output = applyPatch(source, patch);
+    if (await sha256(output) !== config.targetSha256) throw Error('The test ROM checksum failed.');
+    const url = URL.createObjectURL(new Blob([output], {type: 'application/octet-stream'}));
+    const link = document.createElement('a'); link.href = url; link.download = config.outputName;
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    status.textContent = 'Created ' + config.outputName + '. Check your browser Downloads. Flash this file with FlashGBX; its warehouse test save is included.';
+  } catch (error) {
+    status.textContent = error.message;
+  } finally {
+    createButton.disabled = !picker.files.length;
+  }
+});
+</script>
+</html>

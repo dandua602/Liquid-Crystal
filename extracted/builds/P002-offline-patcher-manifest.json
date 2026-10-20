@@ -1,0 +1,10 @@
+{
+  "sourceSha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "targetSha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+  "sourceBytes": 16777216,
+  "targetBytes": 16777216,
+  "outputName": "P002-warehouse-test.gba",
+  "patchSha256": "2af818bff2b5be72d60434d8a12df4814c4fe2605df19c9b115d0151a3235eda",
+  "contains_rom_or_save": false,
+  "hardware_verified": false
+}
