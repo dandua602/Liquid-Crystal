@@ -22,7 +22,7 @@ includes both the warehouse chapter and the new Office service room. See
    private `builds/P002-cartridge-test.zip` provide embedded personal, pre-puzzle
    and Office saves. The public helper kit is on GitHub. Three blank-SRAM
    embedded-ROM boots and native NOR Save/fresh boot pass in software; current
-   suite155 passes. Await cart/flasher/profile/console and real power-off/save/
+   suite155 passes. FlashGBX software confirmed; await reader/cart/profile/console and real power-off/save/
    reload results. Reflashing resets the selected starting save.
 4. **Human playtest and broad progression.** P002 passes actual victory,
    loss, old-save upgrade, movement persistence, entry/return, new-map save/reload

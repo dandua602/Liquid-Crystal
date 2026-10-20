@@ -425,8 +425,10 @@
     "source_inputs_and_standard_P002_unchanged": true,
     "private_package": "builds/P002-cartridge-test.zip",
     "public_helper_kit": "patches/P002/P002-cartridge-tools.zip",
-    "private_zip_sha256": "c24cafc0372d51955887a89aaa3e283bd7db2f5064ddfd23b3b2063b4c30997b",
-    "public_zip_sha256": "cd8a3f9d9bd6ff91f00b3c9f706d1bae93703d6d138aee576a0e03a657ba9743",
-    "sources_reverified_against_original_baseline": true
+    "private_zip_sha256": "d73822ee6e531865ff94f31086aa6f4e8f7d0e5fa29ecdb683bbd57dec3e18a9",
+    "public_zip_sha256": "4b56234e9e9296635addf25be776eb7a0cc6c3d5232339ce35b5faf6fc3f8612",
+    "sources_reverified_against_original_baseline": true,
+    "flashing_software": "FlashGBX",
+    "physical_reader_cart_profile_confirmed": false
   }
 }

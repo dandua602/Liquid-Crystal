@@ -4,8 +4,8 @@ P002 is built and emulator-tested. Physical cartridge/console validation is
 pending the user's test. The user flashes cartridges and has backups.
 
 Use [HARDWARE_TEST.md](../HARDWARE_TEST.md) for image selection, flashing/readback,
-puzzle/battle/Office instructions and the power-off/save/reload checks. No
-particular cart/flasher model has been confirmed yet. Preserve the supplied
+puzzle/battle/Office instructions and the power-off/save/reload checks. FlashGBX
+software is confirmed; physical reader, cart model and profile are unconfirmed. Preserve the supplied
 image's cartridge conversion; do not claim compatibility with another design.
 
 The new [software report](../extracted/runtime/cartridge/summary.json) verifies

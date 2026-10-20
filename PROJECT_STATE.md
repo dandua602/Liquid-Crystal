@@ -59,7 +59,8 @@ bounded certificate; runtime still requires the supplied-image adapter.
 ## Cartridge test package
 
 The user plays on real consoles by flashing carts and has original backups.
-No cart/flasher model has been confirmed yet. The original uploaded ROM uses
+FlashGBX software is confirmed; the physical reader, cart model and profile
+are still unconfirmed. The original uploaded ROM uses
 banked SRAM plus embedded NOR save at C80000–CA0000, so the new private hardware
 package includes the selected save inside each image, with the driver unchanged.
 Read HARDWARE_TEST.md for exact image choices and the console checklist.

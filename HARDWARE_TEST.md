@@ -31,18 +31,24 @@ that supports the uploaded conversion.
 
 ## Flash and verify
 
-Use the same compatible cartridge family and flashing profile that worked with
-your original dump. The precise cart/flasher model is still needed to give
-button-by-button instructions. This package preserves that dump's bank selector,
+The user confirmed **FlashGBX** as the flashing software. Use the same compatible
+cartridge and FlashGBX cart-type/profile that worked with the original dump. The
+physical reader, cartridge model and profile are still unconfirmed. This package
+preserves that dump's bank selector,
 NOR save driver, game size and header; it is not an EverDrive/EZ-Flash conversion.
 
 1. Keep your existing backup. If you have played since making it, make a fresh
    full-ROM/save backup too: this cart stores progress inside the ROM area.
 2. Extract the ZIP and choose **one** ROM from the table. Do not flash the ZIP,
    a `.bps` patch or the raw `.sav` as a ROM.
-3. Flash the complete 16 MiB `.gba` using your flasher's existing correct profile
-   for that cart. Use its verification/readback option before putting the cart
-   in the console. Do not select a different chip profile by guesswork.
+3. In FlashGBX, connect your reader and insert the GBA cart. Keep the known
+   working cart-type/profile. Use **Write ROM** and select
+   **P002-warehouse-test.gba** (or your other chosen image). Write the complete
+   16 MiB image and enable verification if your version offers it. Otherwise
+   use a full-ROM readback for the comparison below. Wait for completion.
+   The test progress is already inside the ROM: do not separately restore a
+   `.sav` for this first test. A later save restore could replace that starting
+   point. Do not select a different chip profile by guesswork.
 4. For a manual check, dump a full 16 MiB ROM immediately after flashing and run:
 
    ```sh
