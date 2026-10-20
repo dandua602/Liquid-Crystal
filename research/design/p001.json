@@ -1,0 +1,277 @@
+{
+  "id": "P001",
+  "status": "READY_FOR_DESIGN_REVIEW_NOT_IMPLEMENTED",
+  "authorization": "User explicitly chose Prepare a new design for review; implementation still requires completed design review.",
+  "classification": "NEWLY_AUTHORED warehouse mechanic, team and added dialogue; original intro, sign text and exits retained.",
+  "scope": "Complete the promised warehouse puzzle/battle only; no onward region, warp reroute, new badge/rank/item reward or other fixes.",
+  "input_rom_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "room": [
+    6,
+    31
+  ],
+  "rock": {
+    "local_id": 3,
+    "position": [
+      15,
+      9
+    ],
+    "graphics_id": 96,
+    "visibility_flag": 0,
+    "moves_preferred": [
+      231,
+      249
+    ],
+    "policy": "Prefer Iron Tail; Rock Smash is an explicit new fallback for saves without the consumable-TM move. Native non-egg move check; fainted members count; no PP/items consumed.",
+    "native_asset_evidence": {
+      "candidate_object_associations_using_graphics_96": 112,
+      "example_map": "1:1",
+      "example_script_root": 1826828,
+      "interpretation": "Existing LC rock objects corroborate the pinned rock graphics constant; duplicate candidate map associations are retained."
+    }
+  },
+  "npc": {
+    "existing_local_id": 1,
+    "visibility_flag": 1477,
+    "scene_position": [
+      20,
+      10
+    ],
+    "collision_fallback_position": [
+      12,
+      11
+    ],
+    "policy": "Shown only during the locked challenge scene; hidden again on decline, battle return or map initialization. If player occupies primary position, use fallback."
+  },
+  "retry_sign": {
+    "position": [
+      13,
+      9
+    ],
+    "original_text": 9920992,
+    "policy": "Preserve original damaged clue; after puzzle solve, offer the challenge without another move check. Completed state shows completion text without another battle."
+  },
+  "state": {
+    "variable": 21297,
+    "original_intro": 0,
+    "introduced": 1,
+    "solved_retry": 13058,
+    "completed": 13059,
+    "legacy_unowned_values": [
+      2,
+      3
+    ],
+    "policy": "Preserve 0/1. Tagged states stay below 0x4000 for literal map-table operands. Unknown/legacy 2/3 recover to 1 without replaying intro or granting completion. Completed requires tagged state plus trainer bit; inconsistent pair falls back to solved retry. A bare trainer bit never establishes completion.",
+    "pre_intro_policy": "For state 0 ensure original object 1 is visible at original (12,11), recovering a mismatched visibility flag if needed; original frame introduction then runs unchanged."
+  },
+  "battle": {
+    "trainer_id": 929,
+    "name": "Mister R",
+    "party_flags": 1,
+    "trainer_class": 56,
+    "portrait_id": 25,
+    "portrait_donor_trainer": 837,
+    "ai_flags": 7,
+    "battle_items": [
+      19,
+      19,
+      0,
+      0
+    ],
+    "iv_parameter": 200,
+    "double_battle": false,
+    "party": [
+      {
+        "name": "Crobat",
+        "species_id": 169,
+        "level": 94,
+        "move_names": [
+          "AERIAL_ACE",
+          "SLUDGE_BOMB",
+          "CONFUSE_RAY",
+          "BITE"
+        ],
+        "move_ids": [
+          332,
+          188,
+          109,
+          44
+        ],
+        "held_item": null
+      },
+      {
+        "name": "Houndoom",
+        "species_id": 229,
+        "level": 94,
+        "move_names": [
+          "FLAMETHROWER",
+          "CRUNCH",
+          "SUNNY_DAY",
+          "SOLAR_BEAM"
+        ],
+        "move_ids": [
+          53,
+          242,
+          241,
+          76
+        ],
+        "held_item": null
+      },
+      {
+        "name": "Umbreon",
+        "species_id": 197,
+        "level": 95,
+        "move_names": [
+          "TOXIC",
+          "CONFUSE_RAY",
+          "MOONLIGHT",
+          "FAINT_ATTACK"
+        ],
+        "move_ids": [
+          92,
+          109,
+          236,
+          185
+        ],
+        "held_item": null
+      },
+      {
+        "name": "Scizor",
+        "species_id": 212,
+        "level": 95,
+        "move_names": [
+          "SWORDS_DANCE",
+          "METAL_CLAW",
+          "SLASH",
+          "QUICK_ATTACK"
+        ],
+        "move_ids": [
+          14,
+          232,
+          163,
+          98
+        ],
+        "held_item": null
+      },
+      {
+        "name": "Gengar",
+        "species_id": 94,
+        "level": 95,
+        "move_names": [
+          "THUNDERBOLT",
+          "PSYCHIC",
+          "GIGA_DRAIN",
+          "HYPNOSIS"
+        ],
+        "move_ids": [
+          85,
+          94,
+          202,
+          95
+        ],
+        "held_item": null
+      },
+      {
+        "name": "Tyranitar",
+        "species_id": 248,
+        "level": 96,
+        "move_names": [
+          "ROCK_SLIDE",
+          "EARTHQUAKE",
+          "CRUNCH",
+          "IRON_TAIL"
+        ],
+        "move_ids": [
+          157,
+          89,
+          242,
+          231
+        ],
+        "held_item": null
+      }
+    ],
+    "completion": "Clear owned candidate trainer bit before each attempt. After return, special B4 must equal exactly 1 before setting tagged completion. Non-win does not complete; clear stale defeated bit when control returns. Loss/whiteout leaves solved retry for reentry. Normal trainer prize money only; no extra reward.",
+    "mode": 0,
+    "object_local_id": 1
+  },
+  "hooks": {
+    "events_pointer_site": 12782116,
+    "map_scripts_pointer_site": 12782120,
+    "events_target": 12186496,
+    "map_scripts_target": 12186648,
+    "objects_target": 12186516,
+    "background_events_target": 12186588,
+    "warp_init_condition_target": 12186664,
+    "map_tags": [
+      2,
+      4,
+      7
+    ],
+    "warp_init_condition_operands": [
+      1,
+      1
+    ],
+    "init_policy": "Preserve original tag-2 intro row. Add tag-4 one-shot conditional initialization after object spawn (operands 1==1; 0 is table terminator). Tag 7 reuses immediate visibility cleanup on field return. Initialization has no waits, prompts or battles.",
+    "copied_original_changes": [
+      "object 1 script field points to guarded challenge handler",
+      "BG sign 1 script field points to clue/retry dispatcher"
+    ],
+    "preserve": "Original warp records, map blocks/tilesets/layout pointers, original introduction and its conditional table, other event records and object 2."
+  },
+  "budget": {
+    "envelope": [
+      12185344,
+      12187392
+    ],
+    "script_bytes": 640,
+    "text_bytes": 512,
+    "event_table_bytes": 256,
+    "party_bytes": 96,
+    "reserve_bytes": 544,
+    "table_storage_bytes": 178,
+    "trainer_row": [
+      11308716,
+      40
+    ],
+    "party_target": 12186752
+  },
+  "messages": {
+    "missing_move": "Cracked rock. Try IRON TAIL\nor ROCK SMASH.",
+    "iron_tail_prompt": "Use IRON TAIL on the rock?",
+    "rock_smash_prompt": "Use ROCK SMASH on the rock?",
+    "rock_broken": "The rock breaks apart!",
+    "challenge": "Mister R: You solved it.\nReady for your battle?",
+    "retry": "Challenge MISTER R again?",
+    "battle_intro": "Mister R: Show me\nwhat you've got!",
+    "victory": "Mister R: You beat me...\nI'll keep my word.",
+    "completed": "The puzzle is solved.\nMISTER R has been defeated.",
+    "retry_hint": "Read the sign to challenge\nMISTER R again.",
+    "recovery": "The puzzle can be\nattempted again."
+  },
+  "builder_contract": [
+    "Exact input hash and expected bytes at every write",
+    "Bounded nonoverlapping allocations; fail on overflow",
+    "Only explicit hook/event/table/trainer ranges may change",
+    "New output under builds/dev; never edit source ROM/save",
+    "Deterministic output and reversible BPS patch with source/output hashes",
+    "No 32 MiB expansion, engine hook or cartridge driver change"
+  ],
+  "acceptance": [
+    "Original intro once and preserved original movement",
+    "Missing move and declined prompt leave state/items/PP unchanged",
+    "Iron Tail and Rock Smash each solve once; eggs excluded and fainted policy respected",
+    "Battle win/loss/escape/interruption and repeat guards",
+    "Legacy 0/1, legacy unowned 2/3, tagged states, unknown values and inconsistent bit/tag pair",
+    "In-game save and fresh-process reload, including saved inside room",
+    "Rock/NPC visibility before fade and after menus/battle; no actor on player",
+    "Both original reachable exits and all unchanged warp records",
+    "Deterministic BPS roundtrip, headers, changed-range allowlist and source preservation",
+    "Affected Orange linked regressions plus bounded Johto/Kanto checks",
+    "Hardware/cartridge behavior before a hardware-ready release"
+  ],
+  "review_risks": [
+    "Original team/mechanic unavailable; this is a new proposal, not recovered intent",
+    "Ownership certificate is bounded to inspected native/data/reference model; unknown computed owners remain outside it",
+    "Battle balance and patched load/whiteout behavior await implementation QA",
+    "This first playable slice does not complete Orange Islands or open a new onward area"
+  ]
+}

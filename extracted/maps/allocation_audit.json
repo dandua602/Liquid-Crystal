@@ -1,0 +1,139 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "native_trainer_state": {
+    "evidence": [
+      {
+        "start": 443148,
+        "end_exclusive": 443182,
+        "raw_hex": "10b5041cfdf7f2fa00000000000000000000000014f080f8a070002010bc02bc0847"
+      },
+      {
+        "start": 443184,
+        "end_exclusive": 443200,
+        "raw_hex": "00b5fdf7e1fa014908470000252d2408"
+      },
+      {
+        "start": 443212,
+        "end_exclusive": 443228,
+        "raw_hex": "00b5fdf7d3fa0149084700003d2d2408"
+      },
+      {
+        "start": 525284,
+        "end_exclusive": 525300,
+        "raw_hex": "00b5fff767fe0149084700000d2d2408"
+      },
+      {
+        "start": 525308,
+        "end_exclusive": 525324,
+        "raw_hex": "00b5fff75bfe014908470000252d2408"
+      },
+      {
+        "start": 525348,
+        "end_exclusive": 525360,
+        "raw_hex": "00b50149084700000d2d2408"
+      },
+      {
+        "start": 2370728,
+        "end_exclusive": 2370828,
+        "raw_hex": "10b50004040c201c251c261c002c24d02304dc0c1b0c07200340802040049840060e002904d001290cd0022910d014e00b48001900783040002801d101200ce000200ae0064909190a7832430a7004e0034909190a78b2430a7010bc02bc084700d00302"
+      },
+      {
+        "start": 2370828,
+        "end_exclusive": 2370852,
+        "raw_hex": "0021fcb400f003f8fcbc02bc0847014d2847c046a92c2408"
+      },
+      {
+        "start": 2370852,
+        "end_exclusive": 2370876,
+        "raw_hex": "0221fcb400f003f8fcbc01bc0047014d2847c046a92c2408"
+      },
+      {
+        "start": 2370876,
+        "end_exclusive": 2370900,
+        "raw_hex": "0121fcb400f003f8fcbc01bc0047014d2847c046a92c2408"
+      }
+    ],
+    "base": 33804288,
+    "byte_offset": "trainer_id >> 3",
+    "mask": "1 << (trainer_id & 7)",
+    "modes": {
+      "0": "get: zero bit means defeated",
+      "1": "clear: OR mask means unbeaten",
+      "2": "set: BIC mask means defeated"
+    },
+    "battle_get_hook": 525284,
+    "battle_set_hook": 525308,
+    "limits": "Shared native hooks, not a new encounter test. No maximum safe trainer ID inferred; native clear function 80450 is not the hooked script command 62."
+  },
+  "trainer_candidate": {
+    "id": 929,
+    "row": 11308716,
+    "raw_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "row_all_zero": true,
+    "zero_span": [
+      11308716,
+      11312512
+    ],
+    "next_bytes_hex": "bfc9cead0f00ccc9ac0809026c02ffff",
+    "direct_battle_command_hits": [],
+    "battle_catalogue_size": 1247,
+    "bit_address": 33804404,
+    "mask": 2,
+    "status": "CANDIDATE_ONLY: computed/native IDs and row ownership not certified; no trainer allocated"
+  },
+  "rom_screen": {
+    "scope": "All byte offsets; raw 08\u20130D words normalized to this 16 MiB image, including Thumb low bits conservatively. Not decoded references.",
+    "raw_word_shapes": 475830,
+    "distinct_target_shapes": 201752,
+    "protected_ranges": [
+      [
+        13050112,
+        13053608
+      ],
+      [
+        13107200,
+        13238272
+      ]
+    ],
+    "minimum_bytes": 4096,
+    "guard_bytes": 256,
+    "windows": [
+      {
+        "start": 13260980,
+        "end_exclusive": 13265922,
+        "bytes": 4942,
+        "ff_span": [
+          13221888,
+          13369344
+        ],
+        "guard_bytes": 256,
+        "allocated_bytes": 0
+      }
+    ],
+    "best_window_boundary_shapes": [
+      {
+        "target": 13260723,
+        "references": [
+          {
+            "site": 5339039,
+            "word": 181032883
+          }
+        ]
+      },
+      {
+        "target": 13266178,
+        "references": [
+          {
+            "site": 707067,
+            "word": 181038338
+          },
+          {
+            "site": 707175,
+            "word": 181038338
+          }
+        ]
+      }
+    ]
+  },
+  "status": "No allocation or free-space certificate. Runtime state fixture is separate from address ownership; computed pointers and asset extents remain review gates."
+}

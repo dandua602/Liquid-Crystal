@@ -1,0 +1,115 @@
+{
+  "id": "P002",
+  "classification": "NEWLY_AUTHORED approved Office Block service room; includes approved P001",
+  "input_p001_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "original_source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "output_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "design_file_sha256": "a3243c3f43434781d5e8804a97996d996974d1b4e513175906590c3e5abb788c",
+  "writes_relative_to_p001": [
+    {
+      "start": 3483328,
+      "end_exclusive": 3483332,
+      "role": "relocated group6 bank; original32 words preserved",
+      "before_sha256": "565afa016c4d8c6e274cb521e9b25274c4f7ce9c4fca2f90ca5d91fc5008819f",
+      "after_sha256": "cb29314f506fe678b83ec104f0485b7202bc47b56210489eb1144c29a6c01739"
+    },
+    {
+      "start": 12185344,
+      "end_exclusive": 12185349,
+      "role": "keep rock template hidden after reload/movement",
+      "before_sha256": "8e781f37698be2a4d74197f859d13e17b1685338297875683be35c03a873f2c5",
+      "after_sha256": "614f478980b9ba4b61e508df97219ac25d5c0d3739a3c545de76d8d44aacab4b"
+    },
+    {
+      "start": 12185603,
+      "end_exclusive": 12185608,
+      "role": "preserve solved-state write and prevent immediate rock respawn",
+      "before_sha256": "41f6373723a25789f6ba6635dc0262d3241e73ed4cdbf2092dc177f855c49042",
+      "after_sha256": "8052f613ce6cead5dbce2c5a89a2d4c0235237ea5a36204cee2dd6d9468fd934"
+    },
+    {
+      "start": 12186608,
+      "end_exclusive": 12186612,
+      "role": "completed warehouse sign dispatcher",
+      "before_sha256": "cd69bd5b411479cb2213ff51e2b2a520e3bf473691dd0863de4c8b3c019a9167",
+      "after_sha256": "c05d4094ef18152f3c106062b7f5712e6cc665cfc61d0f26cfa210027b708fcf"
+    },
+    {
+      "start": 12186848,
+      "end_exclusive": 12186999,
+      "role": "P002 scripts",
+      "before_sha256": "c92d9a9e12b9cfb6d4b7e6660daeb6e21ea3e22f3084eaa136b19b0fb0fd48c5",
+      "after_sha256": "e38af76f9bcc80379957dea1649d05004272279d6cda83520502c6260d64f068"
+    },
+    {
+      "start": 12187008,
+      "end_exclusive": 12187117,
+      "role": "P002 text",
+      "before_sha256": "b3572853729655ad46e74e8b3ce15f5fb3311027e48fe081959b9e4177f4609c",
+      "after_sha256": "d1ecd5578300c6618d44b6d136155b22cdadd57f17ebbf5505bffb0d02eab3f2"
+    },
+    {
+      "start": 12187136,
+      "end_exclusive": 12187348,
+      "role": "P002 tables",
+      "before_sha256": "d31782695685974e55d7377b5d11638fecaa83c69d22daa0a95b13d2d8d85a55",
+      "after_sha256": "c4e32039a8d76524cb9261dfd353ebe7d107764190c78397be93a3d3254a69e4"
+    }
+  ],
+  "prior_manifest": "extracted/builds/P001-manifest.json",
+  "capacities_used": {
+    "scripts": 151,
+    "text": 109,
+    "tables": 212
+  },
+  "script_labels": {
+    "sign": 12186848,
+    "finish": 12186917,
+    "original": 12186919,
+    "npc": 12186924,
+    "visibility_init": 12186943,
+    "visibility_pending": 12186978,
+    "visibility_solved": 12186986
+  },
+  "text_addresses": {
+    "entry": 12187008,
+    "npc": 12187063
+  },
+  "new_map": [
+    6,
+    32
+  ],
+  "map_bank_words_preserved": 32,
+  "runtime_acceptance": "See separately generated P002-validation.json; building alone does not establish acceptance.",
+  "implementation_adjustment": "Two same-size P001 call hooks plus56-byte helper prevent native movement from respawning the flagless cleared rock. Existing0/1 restores its template15,9; solved/completed moves template63,63 outside room before removal. No new flag/variable or engine/save-format change.",
+  "hardware_tested": false,
+  "rollback": "Exit new map6:32 back to original warehouse6:31 and save before removing P002.",
+  "patches": {
+    "P002.bps": {
+      "sha256": "98456ae3453ea0060432d3136ee67d45bc108504790d9f20c630c88b636ccd55",
+      "bytes": 1908,
+      "input_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+      "output_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70"
+    },
+    "P002-reverse.bps": {
+      "sha256": "efee88e1c346c09658b19c39423862ada4a69122c29383865dbbd45c5da15707",
+      "bytes": 1916,
+      "input_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "output_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf"
+    },
+    "P001-to-P002.bps": {
+      "sha256": "957540e0c7d0426af26fc43e908490bd0bccb57a55d208967011e207f08b8bf8",
+      "bytes": 573,
+      "input_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "output_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70"
+    },
+    "P002-to-P001.bps": {
+      "sha256": "32899a9dba9fdf284934968e0cea0402f5b19723856236e59a05053edf8534d5",
+      "bytes": 573,
+      "input_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "output_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92"
+    }
+  },
+  "deterministic_build_verified": true,
+  "bps_roundtrips_verified": true
+}

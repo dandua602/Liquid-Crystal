@@ -1,0 +1,97 @@
+{
+  "id": "P002",
+  "classification": "NEWLY_AUTHORED approved Office Block service room; includes approved P001",
+  "input_p001_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "original_source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "output_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376",
+  "design_file_sha256": "a3243c3f43434781d5e8804a97996d996974d1b4e513175906590c3e5abb788c",
+  "writes_relative_to_p001": [
+    {
+      "start": 3483328,
+      "end_exclusive": 3483332,
+      "role": "relocated group6 bank; original32 words preserved",
+      "before_sha256": "565afa016c4d8c6e274cb521e9b25274c4f7ce9c4fca2f90ca5d91fc5008819f",
+      "after_sha256": "cb29314f506fe678b83ec104f0485b7202bc47b56210489eb1144c29a6c01739"
+    },
+    {
+      "start": 12186608,
+      "end_exclusive": 12186612,
+      "role": "completed warehouse sign dispatcher",
+      "before_sha256": "cd69bd5b411479cb2213ff51e2b2a520e3bf473691dd0863de4c8b3c019a9167",
+      "after_sha256": "c05d4094ef18152f3c106062b7f5712e6cc665cfc61d0f26cfa210027b708fcf"
+    },
+    {
+      "start": 12186848,
+      "end_exclusive": 12186943,
+      "role": "P002 scripts",
+      "before_sha256": "6753689b227809d96cc2bc477e48ddf6b408ddd46fc71e94258200cb12ffc121",
+      "after_sha256": "4aeff1f958acd6c1d0fc33898d6daeb32adccd98a00cd1f9e03ab31da5d09ec2"
+    },
+    {
+      "start": 12187008,
+      "end_exclusive": 12187117,
+      "role": "P002 text",
+      "before_sha256": "b3572853729655ad46e74e8b3ce15f5fb3311027e48fe081959b9e4177f4609c",
+      "after_sha256": "d1ecd5578300c6618d44b6d136155b22cdadd57f17ebbf5505bffb0d02eab3f2"
+    },
+    {
+      "start": 12187136,
+      "end_exclusive": 12187348,
+      "role": "P002 tables",
+      "before_sha256": "d31782695685974e55d7377b5d11638fecaa83c69d22daa0a95b13d2d8d85a55",
+      "after_sha256": "c4e32039a8d76524cb9261dfd353ebe7d107764190c78397be93a3d3254a69e4"
+    }
+  ],
+  "prior_manifest": "extracted/builds/P001-manifest.json",
+  "capacities_used": {
+    "scripts": 95,
+    "text": 109,
+    "tables": 212
+  },
+  "script_labels": {
+    "sign": 12186848,
+    "finish": 12186917,
+    "original": 12186919,
+    "npc": 12186924
+  },
+  "text_addresses": {
+    "entry": 12187008,
+    "npc": 12187063
+  },
+  "new_map": [
+    6,
+    32
+  ],
+  "map_bank_words_preserved": 32,
+  "runtime_acceptance": "See separately generated P002-validation.json; building alone does not establish acceptance.",
+  "hardware_tested": false,
+  "rollback": "Exit new map6:32 back to original warehouse6:31 and save before removing P002.",
+  "patches": {
+    "P002.bps": {
+      "sha256": "63a7cbb326843bc0deb01e22c7becc57aa3722e22a407fc1cca403e2bffc29ad",
+      "bytes": 1852,
+      "input_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+      "output_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376"
+    },
+    "P002-reverse.bps": {
+      "sha256": "1c120983091c5ea771a1d6564dd92a3a6e86e9fddc422c169e3c2a7a085ce5fa",
+      "bytes": 1860,
+      "input_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376",
+      "output_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf"
+    },
+    "P001-to-P002.bps": {
+      "sha256": "9404c31fdca0855e28f18b8aa56616090f86d81857112d8d86310fd5711ff53b",
+      "bytes": 504,
+      "input_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "output_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376"
+    },
+    "P002-to-P001.bps": {
+      "sha256": "cddb4e9a615136d5b19963ea54df746b8a1692e8695209dbdc0683b3c3ac0b9e",
+      "bytes": 504,
+      "input_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376",
+      "output_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92"
+    }
+  },
+  "deterministic_build_verified": true,
+  "bps_roundtrips_verified": true
+}

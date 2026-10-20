@@ -1,0 +1,20 @@
+[
+  {
+    "id": "official",
+    "requested_url": "https://pokemonliquidcrystal.com/",
+    "at_utc": "2026-10-19T03:53:37.533821+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "community_search",
+    "requested_url": "https://html.duckduckgo.com/html/?q=Pokemon+Liquid+Crystal+Mister+R+warehouse+Iron+Tail+puzzle",
+    "at_utc": "2026-10-19T03:53:37.534524+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "archive",
+    "requested_url": "https://web.archive.org/cdx/search/cdx?url=pokemonliquidcrystal.com%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&limit=30",
+    "at_utc": "2026-10-19T03:53:37.534938+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

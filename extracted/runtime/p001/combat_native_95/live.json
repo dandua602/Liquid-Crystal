@@ -1,0 +1,15 @@
+{
+  "label": "native_stat_battle",
+  "iteration": 600,
+  "script_pc": 135942107,
+  "callback": 134287617,
+  "enemy_species": 197,
+  "enemy_hp": 238,
+  "seen": [
+    94,
+    169,
+    197,
+    229,
+    248
+  ]
+}

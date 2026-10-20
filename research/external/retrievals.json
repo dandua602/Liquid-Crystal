@@ -1,0 +1,26 @@
+[
+  {
+    "id": "official",
+    "requested_url": "https://pokemonliquidcrystal.com/",
+    "fetched_at_utc": "2026-10-19T03:34:29Z",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "pokecommunity",
+    "requested_url": "https://www.pokecommunity.com/threads/pok%C3%A9mon-liquid-crystal.269075/",
+    "fetched_at_utc": "2026-10-19T03:34:29Z",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "search",
+    "requested_url": "https://html.duckduckgo.com/html/?q=Pokemon+Liquid+Crystal+Mister+R+warehouse+Iron+Tail",
+    "fetched_at_utc": "2026-10-19T03:34:29Z",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "archive",
+    "requested_url": "https://web.archive.org/cdx/search/cdx?url=pokemonliquidcrystal.com%2F%2A&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&collapse=urlkey&limit=25",
+    "fetched_at_utc": "2026-10-19T03:34:29Z",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

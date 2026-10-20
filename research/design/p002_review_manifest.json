@@ -1,0 +1,12 @@
+{
+  "id": "P002",
+  "status": "DESIGN_FOR_REVIEW_NOT_IMPLEMENTED",
+  "authorization": "P001 is approved; new Office service-room map remains a review proposal. No P002 approval inferred from generic continuation messages.",
+  "artifacts": {
+    "research/P002_review.md": "dbb585badc9925dac36b038fedd3c7012650e29b247557ce818f77ef0e2e5330",
+    "research/design/p002.json": "a3243c3f43434781d5e8804a97996d996974d1b4e513175906590c3e5abb788c",
+    "extracted/maps/p002_design_preflight.json": "3db01c864de2be85b9423a8ab70c3c98b6b0c5e43285037045688bc1fead7785",
+    "extracted/runtime/office_access/office_access.json": "0f20a817d073dc308de5d820ca66761ad52eb2416f2408b5d23b09cef60a13b7",
+    "walkthrough/P002-preview.md": "d01c9f9dfdc8ef9e588bc2e142a3957c65f63f903caed39da02f8f87efb5baa3"
+  }
+}

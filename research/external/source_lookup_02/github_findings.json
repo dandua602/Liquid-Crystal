@@ -1,0 +1,65 @@
+{
+  "queries": [
+    {
+      "artifact": "github_search.json",
+      "type": "repositories",
+      "result_count": 1,
+      "results": [
+        {
+          "repository": {
+            "id": 979073053,
+            "name": "Liquid-Crystal",
+            "owner_id": 210622223,
+            "owner_login": "gideon9918",
+            "updated_at": "2025-05-07T00:50:28.193Z",
+            "has_issues": true
+          },
+          "title": null,
+          "name": "gideon9918/<em>Liquid</em>-<em>Crystal</em>"
+        }
+      ]
+    },
+    {
+      "artifact": "github_repo_search2.json",
+      "type": "repositories",
+      "result_count": 0,
+      "results": []
+    },
+    {
+      "artifact": "github_issue_search.json",
+      "type": "issues",
+      "result_count": 1,
+      "results": [
+        {
+          "repository": {
+            "id": 110276409,
+            "name": "hjhbb",
+            "owner_id": 2356936,
+            "owner_login": "yufree",
+            "updated_at": "2026-07-01T13:14:47.751Z",
+            "has_issues": true
+          },
+          "title": "Weekly Article Matching - 2025-11-30",
+          "name": null
+        }
+      ]
+    },
+    {
+      "artifact": "github_developer_search.json",
+      "type": "repositories",
+      "result_count": 0,
+      "results": []
+    }
+  ],
+  "candidate": {
+    "repository": "gideon9918/Liquid-Crystal",
+    "commit": "cce7137b7ed81374fd8a6dd11590dd5ea70eaf79",
+    "files": [
+      "index.html",
+      "liquid-crystal-b3.3.00512.gba"
+    ],
+    "index_url": "https://raw.githubusercontent.com/gideon9918/Liquid-Crystal/cce7137b7ed81374fd8a6dd11590dd5ea70eaf79/index.html",
+    "index_sha256": "885786e4fa756e98782cdbaf9efb64bcbf97b3c0ce7bd8a3f68f7378a9380f08",
+    "rom_downloaded": false
+  }
+}

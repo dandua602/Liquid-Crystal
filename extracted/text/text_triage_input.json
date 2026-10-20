@@ -1,0 +1,1968 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "original_corpus_sha256": "ae60a10bdac300a2f6394d3ede31f0fbb3123a333ce5e66507a10c490c2bd31c",
+  "original_summary": {
+    "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "search_window_bytes": 4096,
+    "requested_terms": [
+      "Orange",
+      "Mandarin",
+      "Valencia",
+      "Sandway",
+      "Safari",
+      "Route 59",
+      "Route 60",
+      "Science Complex",
+      "Warehouse",
+      "Rudy",
+      "Danny",
+      "Zane",
+      "Mister Z",
+      "Nexus",
+      "Commanding Rank",
+      "Champion",
+      "League",
+      "badge",
+      "island",
+      "ferry",
+      "gym",
+      "leader"
+    ],
+    "support_terms": [
+      "Mister G",
+      "Ivy",
+      "GS Ball",
+      "Sea Ruby",
+      "toboggan"
+    ],
+    "raw_seed_counts": {
+      "Orange": 52,
+      "Mandarin": 19,
+      "Valencia": 46,
+      "Sandway": 12,
+      "Safari": 97,
+      "Route 59": 6,
+      "Route 60": 1,
+      "Science Complex": 12,
+      "Warehouse": 26,
+      "Rudy": 3,
+      "Danny": 15,
+      "Zane": 108,
+      "Mister Z": 10,
+      "Nexus": 53,
+      "Commanding Rank": 6,
+      "Champion": 97,
+      "League": 203,
+      "badge": 292,
+      "island": 297,
+      "ferry": 14,
+      "gym": 529,
+      "leader": 357,
+      "Mister G": 36,
+      "Ivy": 53,
+      "GS Ball": 19,
+      "Sea Ruby": 2,
+      "toboggan": 7
+    },
+    "raw_keyword_hits": 2372,
+    "accepted_keyword_hits": 2319,
+    "unresolved_keyword_hits": 53,
+    "text_blocks": 1384,
+    "specific_blocks": 318,
+    "reference_status_counts": {
+      "SCRIPT_OPERAND_SHAPE": 1074,
+      "NO_ABSOLUTE_POINTER_FOUND": 127,
+      "RAW_POINTER_ONLY": 183
+    },
+    "normalized_duplicate_groups": 94,
+    "scope": "Uncompressed Gen III English byte strings; not all possible LC dialogue or scripts."
+  },
+  "purpose": "Frozen supplemental-audit input before F7 decoder support; not a different ROM snapshot. No full corpus/tokens duplicated.",
+  "unresolved_hits": [
+    {
+      "term": "Champion",
+      "offset": "0x41a304",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x41af17",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "leader",
+      "offset": "0x41af1b",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "leader",
+      "offset": "0x41b3ff",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x4acaf1",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x4cbf61",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x4d0874",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Zane",
+      "offset": "0x4d720b",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x4fc4f2",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x51eaef",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x61b982",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x73d9d9",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "badge",
+      "offset": "0x73d9dd",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7aa02f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7aa247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7ad02f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7ad247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b002f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b0247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b302f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b3247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b602f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b6247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b902f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7b9247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7bc02f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7bc247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7bf02f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7bf247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c202f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c2247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c502f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c5247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c802f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x7c8247",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Champion",
+      "offset": "0x86ab9a",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x86abf2",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x86ac0d",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Champion",
+      "offset": "0x86ac49",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "League",
+      "offset": "0x86cfdb",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "badge",
+      "offset": "0x8abfe8",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Champion",
+      "offset": "0x8d851b",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "gym",
+      "offset": "0x905c1f",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0x9698c9",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Valencia",
+      "offset": "0x9698de",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "island",
+      "offset": "0x9698e7",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Orange",
+      "offset": "0x969903",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "island",
+      "offset": "0x96990a",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "island",
+      "offset": "0xaaa9f3",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Commanding Rank",
+      "offset": "0xaaaf45",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Mister G",
+      "offset": "0xaaaf65",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Nexus",
+      "offset": "0xaaaf92",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    },
+    {
+      "term": "Ivy",
+      "offset": "0xd4f544",
+      "reason": "No complete strict-English candidate containing keyword as glyphs; may be binary, unsupported encoding/control, or outside window."
+    }
+  ],
+  "reference_candidates": [
+    {
+      "offset": "0x23e830",
+      "end_offset_exclusive": "0x23e836",
+      "text": "Nexus",
+      "plain_text": "Nexus",
+      "keyword_hits": [
+        {
+          "term": "Nexus",
+          "offset": "0x23e830",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x3d648d",
+      "end_offset_exclusive": "0x3d64e2",
+      "text": "A peculiar stone that makes certain\nspecies of POKéMON evolve.\nIt is colored orange.",
+      "plain_text": "A peculiar stone that makes certain\nspecies of POKéMON evolve.\nIt is colored orange.",
+      "keyword_hits": [
+        {
+          "term": "Orange",
+          "offset": "0x3d64da",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x3dc090",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "ff 00 00 00 5f 00 34 08 00 00 8d 64 3d 08 00 00 01 01 51 17 0a 08",
+          "target": "0x3d648d",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99a114",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "ff 00 00 00 5f 00 34 08 00 00 8d 64 3d 08 00 00 01 01 51 17 0a 08",
+          "target": "0x3d648d",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x3d8f7f",
+      "end_offset_exclusive": "0x3d8fd4",
+      "text": "A mysterious POKé BALL given to\nyou by PROF. IVY. It’s rumored to\ncontain a POKéMON!",
+      "plain_text": "A mysterious POKé BALL given to\nyou by PROF. IVY. It’s rumored to\ncontain a POKéMON!",
+      "keyword_hits": [
+        {
+          "term": "Ivy",
+          "offset": "0x3d8fac",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x3ddfd8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 15 01 00 00 00 00 7f 8f 3d 08 02 00 02 04 39 22 0a 08",
+          "target": "0x3d8f7f",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99c05c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 15 01 00 00 00 00 7f 8f 3d 08 02 00 02 04 39 22 0a 08",
+          "target": "0x3d8f7f",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x4487c0",
+      "end_offset_exclusive": "0x448830",
+      "text": "One of the legendary bird POKéMON.\nThose seeing it are overwhelmed by its\norange wings that seem to be on fire.",
+      "plain_text": "One of the legendary bird POKéMON.\nThose seeing it are overwhelmed by its\norange wings that seem to be on fire.",
+      "keyword_hits": [
+        {
+          "term": "Orange",
+          "offset": "0x44880a",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x44fce8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 00 00 14 00 58 02 c0 87 44 08 30 88 44 08 00 00 0e 01",
+          "target": "0x4487c0",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x71dd90",
+      "end_offset_exclusive": "0x71dd9d",
+      "text": "SANDWAY TOWN",
+      "plain_text": "SANDWAY TOWN",
+      "keyword_hits": [
+        {
+          "term": "Sandway",
+          "offset": "0x71dd90",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8bc0",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 0c b6 71 08 88 d3 71 08 90 dd 71 08 a0 dd 71 08 b0 dd 71 08",
+          "target": "0x71dd90",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x723ab0",
+      "end_offset_exclusive": "0x723ac1",
+      "text": "NEXUS LABORATORY",
+      "plain_text": "NEXUS LABORATORY",
+      "keyword_hits": [
+        {
+          "term": "Nexus",
+          "offset": "0x723ab0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8bd0",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 b0 dd 71 08 04 1d 72 08 b0 3a 72 08 e8 03 c0 08 f4 03 c0 08",
+          "target": "0x723ab0",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x731b10",
+      "end_offset_exclusive": "0x731b20",
+      "text": "VALENCIA ISLAND",
+      "plain_text": "VALENCIA ISLAND",
+      "keyword_hits": [
+        {
+          "term": "Valencia",
+          "offset": "0x731b10",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x731b19",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8b24",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 e8 f1 3e 08 f8 f1 3e 08 10 1b 73 08 3c bf 71 08 e0 e6 72 08",
+          "target": "0x731b10",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x7720d9",
+      "end_offset_exclusive": "0x7721ac",
+      "text": "This game is a remake of POKéMON\nCrystal which has Johto, Kanto and\nValencia Island completed. \nReport bugs at http://romhack.me/\npokemonliquidcrystal\n\nEnjoy the game and I’ll leave the \nrest to PROF. OAK!.....",
+      "plain_text": "This game is a remake of POKéMON\nCrystal which has Johto, Kanto and\nValencia Island completed. \nReport bugs at http://romhack.me/\npokemonliquidcrystal\n\nEnjoy the game and I’ll leave the \nrest to PROF. OAK!.....",
+      "keyword_hits": [
+        {
+          "term": "Valencia",
+          "offset": "0x77211d",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x772126",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x462ef8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "03 00 04 5a 1c 08 11 a7 74 08 d9 20 77 08 74 2b 46 08 00 04 01 10",
+          "target": "0x7720d9",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [
+        {
+          "offset": "0x915ea6",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "30 09 c7 77 77 64 66 77 5f 77 03 21 77 08 ea 09 0f 12 1f 19 07 4c",
+          "target": "0x772103",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x8c4ef1",
+      "end_offset_exclusive": "0x8c4fcb",
+      "text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON<SCROLL>\nBATTLE.<PARAGRAPH>\n\n......................\n.....................<PARAGRAPH>\n\nZANE: .......................\n............<PARAGRAPH>\n\n<PARAGRAPH>\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "plain_text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON\nBATTLE.\n......................\n.....................\nZANE: .......................\n............\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0x8c4f69",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x8c52ae",
+      "end_offset_exclusive": "0x8c5388",
+      "text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON<SCROLL>\nBATTLE.<PARAGRAPH>\n\n......................\n.....................<PARAGRAPH>\n\nZANE: .......................\n............<PARAGRAPH>\n\n<PARAGRAPH>\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "plain_text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON\nBATTLE.\n......................\n.....................\nZANE: .......................\n............\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0x8c5326",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x8e5fbc",
+      "end_offset_exclusive": "0x8e6007",
+      "text": " CELADON POKéMON GYM\nLEADER: ERIKA<PARAGRAPH>\n\nWINNING TRAINERS:\n{RIVAL}, ZANE, AXEL and {PLAYER}",
+      "plain_text": " CELADON POKéMON GYM\nLEADER: ERIKA\nWINNING TRAINERS:\n{RIVAL}, ZANE, AXEL and {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "gym",
+          "offset": "0x8e5fcd",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "leader",
+          "offset": "0x8e5fd1",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x8e5ff5",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9031ae",
+      "end_offset_exclusive": "0x9031e6",
+      "text": "LEADER: BUGSY<PARAGRAPH>\n\nWINNING TRAINERS: \nrival , AXEL, ZANE, {PLAYER}",
+      "plain_text": "LEADER: BUGSY\nWINNING TRAINERS: \nrival , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x9031ae",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x9031dd",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90321d",
+      "end_offset_exclusive": "0x903255",
+      "text": " LEADER: MORTY\nWINNING TRAINERS: rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS: rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90321e",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90324c",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x903255",
+      "end_offset_exclusive": "0x90328f",
+      "text": " LEADER: JASMINE<PARAGRAPH>\n\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: JASMINE\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x903256",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x903286",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90328f",
+      "end_offset_exclusive": "0x9032c7",
+      "text": " LEADER: MORTY<PARAGRAPH>\n\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x903290",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x9032be",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9032c7",
+      "end_offset_exclusive": "0x9032ff",
+      "text": " LEADER: MORTY<PARAGRAPH>\n\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x9032c8",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x9032f6",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9032ff",
+      "end_offset_exclusive": "0x903334",
+      "text": " LEADER: PRYCE<PARAGRAPH>\n\nWINNING TRAINERS:\n{RIVAL} , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: PRYCE\nWINNING TRAINERS:\n{RIVAL} , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x903300",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90332b",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b2da",
+      "end_offset_exclusive": "0x90b30e",
+      "text": " LEADER: BUGSY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: BUGSY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b2db",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b305",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b30e",
+      "end_offset_exclusive": "0x90b345",
+      "text": " LEADER: WHITNEY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER} ",
+      "plain_text": " LEADER: WHITNEY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER} ",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b30f",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b33b",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b345",
+      "end_offset_exclusive": "0x90b37e",
+      "text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b346",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b375",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b37e",
+      "end_offset_exclusive": "0x90b3b9",
+      "text": " LEADER: JASMINE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: JASMINE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b37f",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b3b0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b3b9",
+      "end_offset_exclusive": "0x90b3f2",
+      "text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b3ba",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b3e9",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b3f2",
+      "end_offset_exclusive": "0x90b42b",
+      "text": " LEADER: PRYCE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: PRYCE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b3f3",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b422",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x90b42b",
+      "end_offset_exclusive": "0x90b464",
+      "text": " LEADER: CLAIR\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "plain_text": " LEADER: CLAIR\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x90b42c",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x90b45b",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x918e17",
+      "end_offset_exclusive": "0x918eb8",
+      "text": "\nMISTER G: Erm... Aha we got you...\nOh you’re er not him.<PARAGRAPH>\n\nPity. W-well, d-don’t interrupt\nwe’re dealing with an important<SCROLL>\nmatter, not for little kids got<SCROLL>\nthat?!",
+      "plain_text": "\nMISTER G: Erm... Aha we got you...\nOh you’re er not him.\nPity. W-well, d-don’t interrupt\nwe’re dealing with an important\nmatter, not for little kids got\nthat?!",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0x918e18",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x92ed6e",
+      "end_offset_exclusive": "0x92ee0e",
+      "text": " MISTER R: You know we could have\namounted to more than this me and<SCROLL>\nmy comrades.<PARAGRAPH>\n\nYou probably met them in the other\nareas of MT. SILVER. MISTER G and<SCROLL>\nMISTER H?",
+      "plain_text": " MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER. MISTER G and\nMISTER H?",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0x92edf7",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x93030b",
+      "end_offset_exclusive": "0x93055f",
+      "text": "<COLOR 08>Scientist: Hey, thanks for\ngetting rid of those guys.<PARAGRAPH>\n\nI’m from the Science Complex just\nnorth of here.<PARAGRAPH>\n\nI don’t think I’ve seen your face\nbefore, are you new?<SCROLL>\nAs a thanks I can tell you about<SCROLL>\nthe situation here.<PARAGRAPH>\n\nThese guys calling themself Team\nNexus just suddenly arrived here<SCROLL>\nand took over the city.<PARAGRAPH>\n\nThe Police Station was completly\noverun and had to be cleared out,<SCROLL>\nso there’s nobody to take back<SCROLL>\ncontrol of the city.<PARAGRAPH>\n\nI watched you battle and I can\ntell, you’re good.<PARAGRAPH>\n\nWhy not drive these guys out?<PARAGRAPH>\n\nEither way, thanks for helping us\nout, we should be getting back to<SCROLL>\nthe Science Complex now.",
+      "plain_text": "Scientist: Hey, thanks for\ngetting rid of those guys.\nI’m from the Science Complex just\nnorth of here.\nI don’t think I’ve seen your face\nbefore, are you new?\nAs a thanks I can tell you about\nthe situation here.\nThese guys calling themself Team\nNexus just suddenly arrived here\nand took over the city.\nThe Police Station was completly\noverun and had to be cleared out,\nso there’s nobody to take back\ncontrol of the city.\nI watched you battle and I can\ntell, you’re good.\nWhy not drive these guys out?\nEither way, thanks for helping us\nout, we should be getting back to\nthe Science Complex now.",
+      "keyword_hits": [
+        {
+          "term": "Science Complex",
+          "offset": "0x930351",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0x930402",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Science Complex",
+          "offset": "0x93054a",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [],
+      "interior_references": [
+        {
+          "offset": "0xe5bd5",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "d1 07 9a 40 c2 07 92 05 9b 01 33 05 93 08 9e 04 2e cd dd 05 9f 00",
+          "target": "0x930533",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9363e6",
+      "end_offset_exclusive": "0x936449",
+      "text": "Watering flowers all day is fun.\nI love it!<PARAGRAPH>\n\nEspecially becuase this is PROF. IVY’s private garden!",
+      "plain_text": "Watering flowers all day is fun.\nI love it!\nEspecially becuase this is PROF. IVY’s private garden!",
+      "keyword_hits": [
+        {
+          "term": "Ivy",
+          "offset": "0x936433",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9393ff",
+      "end_offset_exclusive": "0x939420",
+      "text": "WINNING TRAINERS:\nAXEL, ZANE, {RIVAL}",
+      "plain_text": "WINNING TRAINERS:\nAXEL, ZANE, {RIVAL}",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0x939417",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x95252c",
+      "end_offset_exclusive": "0x95258f",
+      "text": "<COLOR 08>JIN: (sigh) You did good\ntoday, {PLAYER}.<PARAGRAPH>\n\nHopfully i’ll see you around\nVALENCIA ISLAND at some point.",
+      "plain_text": "JIN: (sigh) You did good\ntoday, {PLAYER}.\nHopfully i’ll see you around\nVALENCIA ISLAND at some point.",
+      "keyword_hits": [
+        {
+          "term": "Valencia",
+          "offset": "0x952570",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x952579",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x96823a",
+      "end_offset_exclusive": "0x9682d9",
+      "text": "MISTER R: You know we could have\namounted to more than this me and<SCROLL>\nmy comrades.<PARAGRAPH>\n\nYou probably met them in the other\nareas of MT. SILVER.<SCROLL>\nMISTER G and MISTER H?",
+      "plain_text": "MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER.\nMISTER G and MISTER H?",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0x9682c2",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x96999a",
+      "end_offset_exclusive": "0x969bba",
+      "text": "t it’s to<SCROLL>\nvaluable to ship over here and I<SCROLL>\ncan’t leave this LAB to get it...<PARAGRAPH>\n\nThat’s why I need your help.<PARAGRAPH>\n\nYou’ve traveled far with your\nPOKéMON {PLAYER}!<PARAGRAPH>\n\nI would like you to go and fetch the\nBALL for me.<PARAGRAPH>\n\nIt shouldn’t be a problem for you and\nyour POKéMON.<PARAGRAPH>\n\nYou will need to get your SS.TICKET\nstamped to be able to travel to the<SCROLL>\nORANGE ISLANDS.<PARAGRAPH>\n\nHere you go.<PARAGRAPH>\n\n<COLOR 02>PROF.OAK stamps the back of\n{PLAYER}’s SS.TICKET!<PARAGRAPH>\n\n<COLOR 08>The boat leaves from VERMILION CITY\nonly.<PARAGRAPH>\n\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you<SCROLL>\nbetter watch your step!<PARAGRAPH>\n\nGood luck!",
+      "plain_text": "t it’s to\nvaluable to ship over here and I\ncan’t leave this LAB to get it...\nThat’s why I need your help.\nYou’ve traveled far with your\nPOKéMON {PLAYER}!\nI would like you to go and fetch the\nBALL for me.\nIt shouldn’t be a problem for you and\nyour POKéMON.\nYou will need to get your SS.TICKET\nstamped to be able to travel to the\nORANGE ISLANDS.\nHere you go.\nPROF.OAK stamps the back of\n{PLAYER}’s SS.TICKET!\nThe boat leaves from VERMILION CITY\nonly.\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you\nbetter watch your step!\nGood luck!",
+      "keyword_hits": [
+        {
+          "term": "Orange",
+          "offset": "0x969adc",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x969ae3",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Orange",
+          "offset": "0x969b6e",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x969b75",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x442d5c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "aa 38 aa 96 00 03 00 ee 40 03 9a 99 96 08 aa cc cc 56 00 03 66 a5",
+          "target": "0x96999a",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x974464",
+      "end_offset_exclusive": "0x9744a4",
+      "text": "<COLOR 08>MISTER R: Alright then.<PARAGRAPH>\n\nZANE: Excellent you won’t regret it.",
+      "plain_text": "MISTER R: Alright then.\nZANE: Excellent you won’t regret it.",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0x97447f",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x997e34",
+      "end_offset_exclusive": "0x997e83",
+      "text": "   <COLOR 08>Welcome to FAST SHIP S.S.AQUA.<PARAGRAPH>\n\nWould you like travel to VALENCIA ISLAND?",
+      "plain_text": "   Welcome to FAST SHIP S.S.AQUA.\nWould you like travel to VALENCIA ISLAND?",
+      "keyword_hits": [
+        {
+          "term": "Valencia",
+          "offset": "0x997e72",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x997e7b",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x99c03c",
+      "end_offset_exclusive": "0x99c050",
+      "text": "            GS BALL",
+      "plain_text": "            GS BALL",
+      "keyword_hits": [
+        {
+          "term": "GS Ball",
+          "offset": "0x99c048",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9ad8f9",
+      "end_offset_exclusive": "0x9ad934",
+      "text": " ROUTE 48<PARAGRAPH>\n\n← ESSENCE TOWN\n↑ ORIENTAL CITY<SCROLL>\n→ PROF. IVY’S LAB",
+      "plain_text": " ROUTE 48\n← ESSENCE TOWN\n↑ ORIENTAL CITY\n→ PROF. IVY’S LAB",
+      "keyword_hits": [
+        {
+          "term": "Ivy",
+          "offset": "0x9ad92a",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9b33f0",
+      "end_offset_exclusive": "0x9b34e4",
+      "text": "<COLOR 08>OFFICER: Thank you for getting rid of those gang members. What?!? They took some CORSOLA and are planning to experiment on them? Thats awful. The leader of this group must be found! You say his name is ZANE? Thank you for your co-operation.",
+      "plain_text": "OFFICER: Thank you for getting rid of those gang members. What?!? They took some CORSOLA and are planning to experiment on them? Thats awful. The leader of this group must be found! You say his name is ZANE? Thank you for your co-operation.",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0x9b3485",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0x9b34bd",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9ba36f",
+      "end_offset_exclusive": "0x9ba4b0",
+      "text": "  MISTER R: You know we could have\namounted to more than this me and<SCROLL>\nmy comrades.<PARAGRAPH>\n\nYou probably met them in the other\nareas of MT. SILVER.<PARAGRAPH>\n\nMISTER G and MISTER H?<PARAGRAPH>\n\nWhy don’t you run along now, RED\ncould show up any minute, and we<SCROLL>\nneed to be ready.<PARAGRAPH>\n\nHeh, since you fought the ELITE FOUR\nonce, why not go and fight them again?",
+      "plain_text": "  MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER.\nMISTER G and MISTER H?\nWhy don’t you run along now, RED\ncould show up any minute, and we\nneed to be ready.\nHeh, since you fought the ELITE FOUR\nonce, why not go and fight them again?",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0x9ba3f9",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9c294b",
+      "end_offset_exclusive": "0x9c2972",
+      "text": "\n\nLinkandzelda\nZeikku\nMister Glitch\n\n\n",
+      "plain_text": "\n\nLinkandzelda\nZeikku\nMister Glitch\n\n\n",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0x9c2961",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x414644",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "41 08 00 00 00 00 f0 d4 41 08 4b 29 9c 08 01 00 00 00 43 2c 9c 08",
+          "target": "0x9c294b",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9c3e12",
+      "end_offset_exclusive": "0x9c3e8a",
+      "text": "  ZANE: Thanks for finding that\nkid’s DOLL.<PARAGRAPH>\n\nI wouldn’t of been able to get\nto the GYM otherwise!<PARAGRAPH>\n\nI’ll see you later {PLAYER}!",
+      "plain_text": "  ZANE: Thanks for finding that\nkid’s DOLL.\nI wouldn’t of been able to get\nto the GYM otherwise!\nI’ll see you later {PLAYER}!",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0x9c3e14",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "gym",
+          "offset": "0x9c3e64",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9d6aa1",
+      "end_offset_exclusive": "0x9d6b0e",
+      "text": " TRAINER TIPS<PARAGRAPH>\n\nHave you come to meet PROF. IVY?\nHer lab is located down from here,<SCROLL>\nand up the mountain path. ",
+      "plain_text": " TRAINER TIPS\nHave you come to meet PROF. IVY?\nHer lab is located down from here,\nand up the mountain path. ",
+      "keyword_hits": [
+        {
+          "term": "Ivy",
+          "offset": "0x9d6acb",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0x9d6b53",
+      "end_offset_exclusive": "0x9d6be2",
+      "text": " TRAINER TIPS<PARAGRAPH>\n\nWhile in the ORANGE ISLANDS you\nmay experience some strong\ncurrents.<PARAGRAPH>\n\nTherfore you will need a strong\nPOKéMON to be able to SURF.",
+      "plain_text": " TRAINER TIPS\nWhile in the ORANGE ISLANDS you\nmay experience some strong\ncurrents.\nTherfore you will need a strong\nPOKéMON to be able to SURF.",
+      "keyword_hits": [
+        {
+          "term": "Orange",
+          "offset": "0x9d6b6e",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0x9d6b75",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xa142bd",
+      "end_offset_exclusive": "0xa143b2",
+      "text": " <COLOR 08>OFFICER: Thank you for\ngetting rid of those gang<SCROLL>\nmembers. What?!? They took some<SCROLL>\nCORSOLA and are planning to<SCROLL>\nexperiment on them? Thats awful.<SCROLL>\nThe leader of this group must be<SCROLL>\nfound! You say his name is ZANE?<SCROLL>\nThank you for your co-operation.",
+      "plain_text": " OFFICER: Thank you for\ngetting rid of those gang\nmembers. What?!? They took some\nCORSOLA and are planning to\nexperiment on them? Thats awful.\nThe leader of this group must be\nfound! You say his name is ZANE?\nThank you for your co-operation.",
+      "keyword_hits": [
+        {
+          "term": "leader",
+          "offset": "0xa14353",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Zane",
+          "offset": "0xa1438b",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xa175e4",
+      "end_offset_exclusive": "0xa175f2",
+      "text": "VALENCIA PORT",
+      "plain_text": "VALENCIA PORT",
+      "keyword_hits": [
+        {
+          "term": "Valencia",
+          "offset": "0xa175e4",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8b7c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "a1 08 a6 75 a1 08 70 de 71 08 e4 75 a1 08 f4 75 a1 08 83 77 a1 08",
+          "target": "0xa175e4",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xa9b695",
+      "end_offset_exclusive": "0xa9b6f7",
+      "text": "A rusty, old looking key for the\nOld Warehouse on Mandarin Island.\nLooks untouched for centuries.",
+      "plain_text": "A rusty, old looking key for the\nOld Warehouse on Mandarin Island.\nLooks untouched for centuries.",
+      "keyword_hits": [
+        {
+          "term": "Warehouse",
+          "offset": "0xa9b6ba",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Mandarin",
+          "offset": "0xa9b6c7",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "island",
+          "offset": "0xa9b6d0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x3de004",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 16 01 00 00 00 00 95 b6 a9 08 01 00 02 04 39 22 0a 08",
+          "target": "0xa9b695",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99c088",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 16 01 00 00 00 00 95 b6 a9 08 01 00 02 04 39 22 0a 08",
+          "target": "0xa9b695",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xaaaa35",
+      "end_offset_exclusive": "0xaaaa7b",
+      "text": "ute 55,\nSandway Town.<PARAGRAPH>\n\nA large circle is placed around West\nVale Port.",
+      "plain_text": "ute 55,\nSandway Town.\nA large circle is placed around West\nVale Port.",
+      "keyword_hits": [
+        {
+          "term": "Sandway",
+          "offset": "0xaaaa3d",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0xe1c95f",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "25 22 ff ff 00 ff 33 a5 aa f5 35 aa aa 08 f9 3f aa ff 30 03 95 99",
+          "target": "0xaaaa35",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xabb58a",
+      "end_offset_exclusive": "0xabb851",
+      "text": "<COLOR 08>Mister G: ...<PARAGRAPH>\n\nYou, kid, what’s your name?<PARAGRAPH>\n\n{PLAYER}?<PARAGRAPH>\n\nHmm, so my suspicions are confirmed.<PARAGRAPH>\n\nYou’re the rascal that took out Team\nRocket and Team Saturn, correct?<PARAGRAPH>\n\nI have failed here today, though I\ndo not regret my actions.<PARAGRAPH>\n\nBecoming a member of Team Nexus and\nthe Nexus 4, I was able to fulfill<SCROLL>\nmy duty as originally agreed.<PARAGRAPH>\n\nOne of my other orders from Mister Z\nwas, upon beating me I must step<SCROLL>\ndown and award my Commanding Rank<SCROLL>\nto you.<PARAGRAPH>\n\nA Commanding Rank is a unique item\ngiven to all of the Nexus 4 to show<SCROLL>\nthey are fit to hold the position.<PARAGRAPH>\n\nThis item was designed to work as a\nkey, to turn off the Nexus One.<PARAGRAPH>\n\nOnly a member of the Nexus 4 is able\nto disable it.<PARAGRAPH>\n\nWith the Commanding Rank keys anyone\ncan disable them.",
+      "plain_text": "Mister G: ...\nYou, kid, what’s your name?\n{PLAYER}?\nHmm, so my suspicions are confirmed.\nYou’re the rascal that took out Team\nRocket and Team Saturn, correct?\nI have failed here today, though I\ndo not regret my actions.\nBecoming a member of Team Nexus and\nthe Nexus 4, I was able to fulfill\nmy duty as originally agreed.\nOne of my other orders from Mister Z\nwas, upon beating me I must step\ndown and award my Commanding Rank\nto you.\nA Commanding Rank is a unique item\ngiven to all of the Nexus 4 to show\nthey are fit to hold the position.\nThis item was designed to work as a\nkey, to turn off the Nexus One.\nOnly a member of the Nexus 4 is able\nto disable it.\nWith the Commanding Rank keys anyone\ncan disable them.",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0xabb58d",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0xabb67d",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0xabb68b",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Mister Z",
+          "offset": "0xabb6e4",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Commanding Rank",
+          "offset": "0xabb720",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Commanding Rank",
+          "offset": "0xabb73a",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0xabb76f",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0xabb7db",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Nexus",
+          "offset": "0xabb7fb",
+          "search": "case-insensitive Gen III letter bytes"
+        },
+        {
+          "term": "Commanding Rank",
+          "offset": "0xabb823",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [],
+      "interior_references": [
+        {
+          "offset": "0xe578ed",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "0f 76 02 cf 00 76 ff bf bb ab ff b7 ab 08 aa ff bb aa 20 03 7f 66",
+          "target": "0xabb7ff",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac03a0",
+      "end_offset_exclusive": "0xac03a6",
+      "text": "Danny",
+      "plain_text": "Danny",
+      "keyword_hits": [
+        {
+          "term": "Danny",
+          "offset": "0xac03a0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac3320",
+      "end_offset_exclusive": "0xac3325",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac3320",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac3370",
+      "end_offset_exclusive": "0xac3375",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac3370",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac3398",
+      "end_offset_exclusive": "0xac339d",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac3398",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac3410",
+      "end_offset_exclusive": "0xac3415",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac3410",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac53a0",
+      "end_offset_exclusive": "0xac53a5",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac53a0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac5940",
+      "end_offset_exclusive": "0xac5946",
+      "text": "Danny",
+      "plain_text": "Danny",
+      "keyword_hits": [
+        {
+          "term": "Danny",
+          "offset": "0xac5940",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac5dc8",
+      "end_offset_exclusive": "0xac5dcd",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac5dc8",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac5df0",
+      "end_offset_exclusive": "0xac5df5",
+      "text": "Zane",
+      "plain_text": "Zane",
+      "keyword_hits": [
+        {
+          "term": "Zane",
+          "offset": "0xac5df0",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac8050",
+      "end_offset_exclusive": "0xac805b",
+      "text": "4 Mister G",
+      "plain_text": "4 Mister G",
+      "keyword_hits": [
+        {
+          "term": "Mister G",
+          "offset": "0xac8052",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xac8525",
+      "end_offset_exclusive": "0xac852e",
+      "text": "<MN> éDanny",
+      "plain_text": "<MN> éDanny",
+      "keyword_hits": [
+        {
+          "term": "Danny",
+          "offset": "0xac8528",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xad3d04",
+      "end_offset_exclusive": "0xad3d3b",
+      "text": "Nexus One Status: Activated.\nGlobal power level: {STR_VAR_1}0%.",
+      "plain_text": "Nexus One Status: Activated.\nGlobal power level: {STR_VAR_1}0%.",
+      "keyword_hits": [
+        {
+          "term": "Nexus",
+          "offset": "0xad3d04",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xafc29e",
+      "end_offset_exclusive": "0xafc309",
+      "text": " Inserting G Rank into Nexus One.<PARAGRAPH>\n\nInsufficient in G Rank to activate\nSystem Console.<PARAGRAPH>\n\nPlease charge G Rank.",
+      "plain_text": " Inserting G Rank into Nexus One.\nInsufficient in G Rank to activate\nSystem Console.\nPlease charge G Rank.",
+      "keyword_hits": [
+        {
+          "term": "Nexus",
+          "offset": "0xafc2b5",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xb01bb0",
+      "end_offset_exclusive": "0xb01c4f",
+      "text": "’aDanny: Hey, {PLAYER}, you’re back\nfor another race?<PARAGRAPH>\n\nI hope you listened to what I said\nand have improved the bond between<SCROLL>\nyou and your Pokémon.<PARAGRAPH>\n\nSo, are you ready?",
+      "plain_text": "’aDanny: Hey, {PLAYER}, you’re back\nfor another race?\nI hope you listened to what I said\nand have improved the bond between\nyou and your Pokémon.\nSo, are you ready?",
+      "keyword_hits": [
+        {
+          "term": "Danny",
+          "offset": "0xb01bb2",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "INFERRED_SUFFIX",
+      "boundary_confidence": "PROVISIONAL_SUFFIX",
+      "reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "references": [],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xc04ea4",
+      "end_offset_exclusive": "0xc04eb2",
+      "text": "MANDARIN CITY",
+      "plain_text": "MANDARIN CITY",
+      "keyword_hits": [
+        {
+          "term": "Mandarin",
+          "offset": "0xc04ea4",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8be4",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 ac 15 c0 08 a8 41 c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08",
+          "target": "0xc04ea4",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xc05294",
+      "end_offset_exclusive": "0xc0529d",
+      "text": "ROUTE 59",
+      "plain_text": "ROUTE 59",
+      "keyword_hits": [
+        {
+          "term": "Route 59",
+          "offset": "0xc05294",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8be8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 a8 41 c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08 60 f5 71 08",
+          "target": "0xc05294",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    },
+    {
+      "offset": "0xc05304",
+      "end_offset_exclusive": "0xc05314",
+      "text": "SCIENCE COMPLEX",
+      "plain_text": "SCIENCE COMPLEX",
+      "keyword_hits": [
+        {
+          "term": "Science Complex",
+          "offset": "0xc05304",
+          "search": "case-insensitive Gen III letter bytes"
+        }
+      ],
+      "boundary_method": "POINTER_TARGET",
+      "boundary_confidence": "REFERENCED_PARSEABLE_START",
+      "reference_status": "RAW_POINTER_ONLY",
+      "references": [
+        {
+          "offset": "0x2c8bec",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08 60 f5 71 08 60 f5 71 08",
+          "target": "0xc05304",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "interior_references": [],
+      "relevance": "ORANGE_SPECIFIC_SEED"
+    }
+  ]
+}

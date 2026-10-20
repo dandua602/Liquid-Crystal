@@ -1,0 +1,725 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "evidence_class": "CONFIRMED_IN_ROM byte/layout links; source dialogue does not specify exact passage geometry",
+  "office_door": {
+    "id": "3:109:background:8",
+    "map_id": "3:109",
+    "kind": "background",
+    "index": 8,
+    "offset": 12724216,
+    "x": 54,
+    "y": 16,
+    "coordinates_in_default_layout": true,
+    "raw_hex": "36 00 10 00 00 00 00 00 2a 45 90 08",
+    "reachability": "UNKNOWN",
+    "elevation": 0,
+    "background_kind": 0,
+    "union_word": 143672618,
+    "pointer_site": 12724224,
+    "raw_script_word": 143672618,
+    "script_target": 9454890,
+    "script_status": "ROM_script_candidate"
+  },
+  "office_sign": {
+    "id": "3:109:background:3",
+    "map_id": "3:109",
+    "kind": "background",
+    "index": 3,
+    "offset": 12724156,
+    "x": 56,
+    "y": 17,
+    "coordinates_in_default_layout": true,
+    "raw_hex": "38 00 11 00 00 00 00 00 2c 0d 93 08",
+    "reachability": "UNKNOWN",
+    "elevation": 0,
+    "background_kind": 0,
+    "union_word": 143854892,
+    "pointer_site": 12724164,
+    "raw_script_word": 143854892,
+    "script_target": 9637164,
+    "script_status": "ROM_script_candidate"
+  },
+  "office_warp": {
+    "index": 8,
+    "offset": 12724040,
+    "x": 54,
+    "y": 16,
+    "elevation": 0,
+    "destination_group": 0,
+    "destination_map": 0,
+    "destination_warp": 0,
+    "raw_hex": "36 00 10 00 00 00 00 00"
+  },
+  "group6": {
+    "pointer_site": 3483328,
+    "bank": 12664504,
+    "physical_prefix_entries": 32,
+    "next_word_hex": "f7f7f7f7",
+    "retained_legacy_header_failures": [
+      {
+        "map": 4,
+        "reason": "Invalid layout dimensions"
+      },
+      {
+        "map": 6,
+        "reason": "Header and indexed layout differ; active geometry needs separate inspection"
+      }
+    ],
+    "preservation_contract": "Copy every original bank word, including unresolved legacy pointers; do not normalize or remove them."
+  },
+  "clone_room": {
+    "source_map": "5:123",
+    "header": 12630296,
+    "layout": 12630592,
+    "size": [
+      13,
+      10
+    ],
+    "section_label": "MANDARIN CITY",
+    "events": [
+      {
+        "id": "5:123:object:0",
+        "map_id": "5:123",
+        "kind": "object",
+        "index": 0,
+        "offset": 12630620,
+        "x": 4,
+        "y": 4,
+        "coordinates_in_default_layout": true,
+        "raw_hex": "01 21 00 00 04 00 04 00 00 02 11 00 00 00 00 00 a4 a5 ae 08 00 00 00 00",
+        "reachability": "UNKNOWN",
+        "local_id": 1,
+        "graphics_id": 33,
+        "object_kind": 0,
+        "raw_script_word": 145663396,
+        "visibility_flag": 0,
+        "pointer_site": 12630636,
+        "script_target": 11445668,
+        "script_status": "ROM_script_candidate",
+        "elevation": 0,
+        "movement_type": 2,
+        "trainer_type": 0,
+        "trainer_range": 0
+      }
+    ],
+    "warps": [
+      {
+        "index": 0,
+        "offset": 12630644,
+        "x": 4,
+        "y": 8,
+        "elevation": 3,
+        "destination_group": 3,
+        "destination_map": 109,
+        "destination_warp": 9,
+        "raw_hex": "04 00 08 00 03 09 6d 03"
+      }
+    ]
+  },
+  "source_warehouse_warps": [
+    {
+      "index": 0,
+      "offset": 12783440,
+      "x": 12,
+      "y": 14,
+      "elevation": 3,
+      "destination_group": 3,
+      "destination_map": 110,
+      "destination_warp": 0,
+      "raw_hex": "0c 00 0e 00 03 00 6e 03"
+    },
+    {
+      "index": 1,
+      "offset": 12783448,
+      "x": 26,
+      "y": 2,
+      "elevation": 3,
+      "destination_group": 2,
+      "destination_map": 40,
+      "destination_warp": 0,
+      "raw_hex": "1a 00 02 00 03 00 28 02"
+    },
+    {
+      "index": 2,
+      "offset": 12783456,
+      "x": 20,
+      "y": 7,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "14 00 07 00 00 00 00 00"
+    }
+  ],
+  "director_hint": {
+    "root": 9455342,
+    "text": 9455974,
+    "source": "extracted/scripts/orange_progression_audit.json"
+  },
+  "route59_sign": {
+    "text": 11125890,
+    "source": "extracted/scripts/orange_progression_audit.json"
+  },
+  "limits": "Map32 is a proposed new bank entry beyond the physical pointer prefix, not a certified globally unused ID. Unknown computed accesses remain outside the bounded ownership model. No route60 map or intended Office interior is recovered.",
+  "complete": false,
+  "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "error": "RuntimeError: Message 904535 was not reached",
+  "checks": [
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "expected": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "explicit_room_fixture",
+      "state": 1,
+      "trainer_defeated": false,
+      "entry": [
+        14,
+        10
+      ],
+      "normal_story_entry": false
+    },
+    {
+      "label": "room_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "pending_office_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "pending_city_header",
+      "location": {
+        "x": 54,
+        "y": 17,
+        "group": 3,
+        "map": 109,
+        "warp": 255
+      },
+      "live_header_hex": "8c98c3080428c208a852c00858b0c0084e016003f100000301060000",
+      "default_header": 12778508,
+      "default_layout": 12818572,
+      "live_layout": 147036300,
+      "live_matches_default_header": true
+    },
+    {
+      "label": "pending_city_header_unchanged",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "l <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "f 1 0",
+      "response": {
+        "frame": 1385
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e000362a1030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1389
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e0003163153010029c5053d061fff0e000a0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1629
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "f 60 0",
+      "response": {
+        "frame": 1689
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00033d036dff36001100020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1929
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "2c550202"
+      }
+    },
+    {
+      "command": "r 202552c 12",
+      "response": {
+        "address": 33707308,
+        "hex": "36001100036dff0036001100"
+      }
+    },
+    {
+      "command": "r 2036dfc 28",
+      "response": {
+        "address": 33779196,
+        "hex": "8c98c3080428c208a852c00858b0c0084e016003f100000301060000"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00035bff000202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1933
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1934
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 2054
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "cc5b7808"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2064
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2094
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "cc5b7808"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2104
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2134
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "cc5b7808"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2144
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2174
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "cc5b7808"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2184
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2214
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "cc5b7808"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "p <temporary>/failure_state.ppm",
+      "response": {
+        "screenshot": true
+      }
+    }
+  ],
+  "source_unchanged": true
+}

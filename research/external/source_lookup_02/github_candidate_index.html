@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>liquid crystal emulator</title>
+  <script src="https://cdn.jsdelivr.net/npm/gbajs@1.0.1/gbajs.js"></script>
+</head>
+<body>
+  <h1>pokémon liquid crystal</h1>
+  <canvas id="gba-canvas"></canvas>
+  <script>
+    const canvas = document.getElementById('gba-canvas');
+    const emulator = new GBAJS.Emulator(canvas, {
+      debug: true
+    });
+    emulator.loadRom('Pokemon Liquid Crystal (Beta 3.3.00512).gba'); // Name of your ROM file
+    emulator.start();
+  </script>
+</body>
+</html>

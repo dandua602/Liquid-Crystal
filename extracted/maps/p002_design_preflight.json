@@ -1,0 +1,84 @@
+{
+  "id": "P002",
+  "status": "DESIGN_PREVIEW_ONLY_NOT_IMPLEMENTED",
+  "input_rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "used": {
+    "scripts": 95,
+    "text": 109,
+    "tables": 212
+  },
+  "capacities": {
+    "scripts": 160,
+    "text": 128,
+    "tables": 256
+  },
+  "script_labels": {
+    "sign": 12186848,
+    "finish": 12186917,
+    "original": 12186919,
+    "npc": 12186924
+  },
+  "scripts_hex": "692131530333060527f5b90860a103060027f5b9080f00e06197086700000000666d0f0080f5b9086700000000666e1408210d800000060125f5b9083d0620ff04000700276b02051df0b908690f00b7f5b9086700000000666d0525f5b908",
+  "text_addresses": {
+    "entry": 12187008,
+    "npc": 12187063
+  },
+  "text_hex": "cedcd900ebd5ed00dde700d7e0d9d5e6ad00bfe2e8d9e600e8dcd9fec9c0c0c3bdbf00bcc6c9bdc500e7d9e6eaddd7d900e6e3e3e1acffcedcd900e1d5dde200e3dadaddd7d900dde700d7e0e3e7d9d8adfecfe7d900e8dcd900e4d5e7e7d5dbd900e8e300e6d9e8e9e6e2adff",
+  "tables_hex": "680e3508840e3508a00e3508bc0e3508d80e3508f40e3508100f35082c0f350898329e089c349e084c439e088cb29e0810b59e0894b79e0818ba9e08a8289f0838c887086c6976080400800880a1c20888a6c208c8aac2085cd5c208e48ac1083c2fc208c831c108a8dfc208781cc208fc67c108706fc108cc98c308200ac30884f6b90840bac008a0f6b90800000000000000004e016303f10000080000000001010000b4f6b908ccf6b9080000000000000000012100000400040000080000000000002cf5b908000000000400080003001f06",
+  "external_pointer_sites": {
+    "group6_bank": 3483328,
+    "warehouse_sign": 12186608
+  },
+  "preserved_bank_words": [
+    3477096,
+    3477124,
+    3477152,
+    3477180,
+    3477208,
+    3477236,
+    3477264,
+    3477292,
+    10367640,
+    10368156,
+    10371916,
+    10400396,
+    10401040,
+    10401684,
+    10402328,
+    10430632,
+    8898616,
+    7760236,
+    8388612,
+    12755328,
+    12756616,
+    12757704,
+    12768604,
+    12684004,
+    12726076,
+    12661192,
+    12771240,
+    12721272,
+    12675068,
+    12676976,
+    12818636,
+    12782112
+  ],
+  "legacy_unresolved_headers": [
+    {
+      "map": 4,
+      "reason": "Invalid layout dimensions"
+    },
+    {
+      "map": 6,
+      "reason": "Header and indexed layout differ; active geometry needs separate inspection"
+    }
+  ],
+  "new_header": 12187268,
+  "shared_donor_layout": 12630592,
+  "new_room": [
+    6,
+    32
+  ],
+  "no_ROM_output_created": true,
+  "limits": "Sizing/data preview, not runtime acceptance or proof of unknown computed owners. New map save rollback requires leaving map6:32 first."
+}

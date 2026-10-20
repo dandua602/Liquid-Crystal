@@ -1,0 +1,8 @@
+{
+  "filename": "linked-orange-fixture.sav",
+  "sha256": "48fed8c44557aae6c42544574f72a8a6fa7c9110fde13796c10dbfd5f68df9b3",
+  "bytes": 131072,
+  "kind": "Generated emulator fixture, 128 KiB cartridge save payload only; original FlashGBX footer remains in source save",
+  "warning": "Forced Orange starting positions and boosted first-party level/stats/moves; not a normal player save",
+  "source_save_sha256": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6"
+}

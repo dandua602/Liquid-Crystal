@@ -1,0 +1,53 @@
+{
+  "text_bytes": 402,
+  "text_capacity": 512,
+  "text_sizes": {
+    "missing_move": 43,
+    "iron_tail_prompt": 27,
+    "rock_smash_prompt": 28,
+    "rock_broken": 23,
+    "challenge": 48,
+    "retry": 26,
+    "battle_intro": 35,
+    "victory": 44,
+    "completed": 50,
+    "retry_hint": 43,
+    "recovery": 35
+  },
+  "party_bytes": 96,
+  "event_table_bytes": 178,
+  "geometry_routes": [
+    {
+      "npc": [
+        20,
+        10
+      ],
+      "rock": [
+        15,
+        9
+      ],
+      "reachable_cells": 72,
+      "stair_and_sign_accessible": true
+    },
+    {
+      "npc": [
+        12,
+        11
+      ],
+      "rock": [
+        15,
+        9
+      ],
+      "reachable_cells": 72,
+      "stair_and_sign_accessible": true
+    }
+  ],
+  "new_object_local_id_available": true,
+  "move_ids_match_pinned_reference": true,
+  "tagged_states_below_var_threshold": true,
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "design_sha256": "2dba1c04e0414898f6c516cf6beba61ba57d453f67906aa17d64940419b56c87",
+  "original_intro_path_preserved": true,
+  "status": "STATIC_REVIEW_CHECKS_PASS; no implementation",
+  "limits": "Native map-hook behavior, battle balance and complete patched acceptance remain future tests, not established by this document validator."
+}

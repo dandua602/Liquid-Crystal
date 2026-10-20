@@ -1,0 +1,17 @@
+{
+  "status": "AWAITING_USER_DESIGN_REVIEW",
+  "source_rom_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "authorization": "Preparing the new proposal only; no ROM implementation approval yet.",
+  "artifacts": {
+    "research/design/p001.json": "2dba1c04e0414898f6c516cf6beba61ba57d453f67906aa17d64940419b56c87",
+    "research/design_review.md": "ea2a91d20d00a46b05cc40b75300d171389332db1be15ede501ee3e76417a043",
+    "research/patch_spec.md": "700acbc2cb05c1f22c9c517842f38d238e38ba459750ea60c341ea92929d5f9f",
+    "research/free_space_report.md": "a7abeebcb8175940a2444e9cc390451dc1fea297373c4325e7911a2662c8cf75",
+    "research/address_ledger.md": "cca60cc140803cc7619c376fb605e33d1321bcfef78c369b2fde748ae07c9558",
+    "research/flag_var_ledger.md": "923f8781a7a24600420d39df3ed30c566ecc7a9b81467a39b61a2489c921ae77",
+    "research/space_ownership.md": "35269a68aec9d190b770fe7559bce6be825bfe57fe0bf7ee51a139797132d915",
+    "extracted/maps/design_review.json": "0dc2aacf33cf19fd33cc210ff3cdd122b757fb5f1ddd49961c38c08575eb7b90",
+    "extracted/maps/space_ownership.json": "9670ac96fdf1735608a77a41778b9124e78192bd4251ab88485fa64c6986b172",
+    "extracted/runtime/design_state/design_state.json": "5856ac478a97ad848d0196cb8cca318019d4a89274088716dde4fb435cc89c2c"
+  }
+}

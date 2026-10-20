@@ -1,0 +1,16 @@
+[
+  {
+    "term": "Current Build Number",
+    "encoding": "gen3",
+    "offset": "0x1c5ae5",
+    "block_start": "0x1c5a04",
+    "text": "Welcome to POK<1B>MON Liquid Crystal\nby linkandzelda and Synyster Zeikku. \nI hope people enjoy this game as much\nas we did making it! This game is a beta \nwhich is a 99<5B> complete remake of \nPOK<1B>MON Crystal Version for the GBA.\n\nCurrent Build Number: 3.3.00512"
+  },
+  {
+    "term": "3.3.00512",
+    "encoding": "gen3",
+    "offset": "0x1c5afb",
+    "block_start": "0x1c5a04",
+    "text": "Welcome to POK<1B>MON Liquid Crystal\nby linkandzelda and Synyster Zeikku. \nI hope people enjoy this game as much\nas we did making it! This game is a beta \nwhich is a 99<5B> complete remake of \nPOK<1B>MON Crystal Version for the GBA.\n\nCurrent Build Number: 3.3.00512"
+  }
+]

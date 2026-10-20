@@ -1,0 +1,74 @@
+{
+  "id": "P002",
+  "output_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "runtime_acceptance": "passed",
+  "cases": {
+    "access": {
+      "artifact": "extracted/runtime/p002/access/access.json",
+      "sha256": "cede32d7af4afe51b5d65495df5ef86a01cf98bb032d42afbe7592d4ffd407b7",
+      "expectations": 41,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.261192+00:00"
+    },
+    "journey": {
+      "artifact": "extracted/runtime/p002/journey/journey.json",
+      "sha256": "c1972abfcec4a199b37de8f0e0d754b78d33b203ad2870b902b985341a8a6b1b",
+      "expectations": 49,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.189813+00:00"
+    },
+    "matrix": {
+      "artifact": "extracted/runtime/p002/matrix/matrix.json",
+      "sha256": "5b3ce55957a5a9dbe0d579e7326e06fd8039197b3899c72c6b989602da77f17a",
+      "expectations": 29,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.250335+00:00"
+    },
+    "puzzle": {
+      "artifact": "extracted/runtime/p002/puzzle/puzzle.json",
+      "sha256": "2f8c4993964ada68881031147a562cf8861c92ea97615ed04d840537a7e88aba",
+      "expectations": 20,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.171612+00:00"
+    },
+    "loss": {
+      "artifact": "extracted/runtime/p002/loss/loss.json",
+      "sha256": "f015cb9ad8ab1c5833b2cd20f1e18d1d227ee0d49c7ca7f9ac0f564670836962",
+      "expectations": 7,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.171605+00:00"
+    },
+    "exits": {
+      "artifact": "extracted/runtime/p002/exits/exits.json",
+      "sha256": "b051cb0072da0b80dae112de3e2f2516901c303f851070ec35a86eb901fe5e67",
+      "expectations": 5,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:05:21.157289+00:00"
+    },
+    "rollback": {
+      "artifact": "extracted/runtime/p002/rollback/rollback.json",
+      "sha256": "13f7c6fd053321099ed5f8f208898d86bf9d31eae073abbdaedc47f157b5ede7",
+      "expectations": 15,
+      "passed": true,
+      "started_at_utc": "2026-10-20T03:07:52.471963+00:00"
+    }
+  },
+  "expectations": 166,
+  "project_tests": {
+    "run": 150,
+    "passed": 150,
+    "failed": 0,
+    "seconds": 7.964,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "log_sha256": "1b1258403846aab003211a4f0722ba1a83011a95cbc8e3c972361acf781d5117"
+  },
+  "walkthrough_sha256": "538a222d4cb858efd8ea22a4c9d5f07c39c7706c85932974dc0ed382b7dc14c4",
+  "scope": "Approved Office service-room slice and affected warehouse behavior; includes P001.",
+  "limits": [
+    "Forced research anchors/state/party; actual native victory, entry/return, game Save, fresh-process load and safe P001 downgrade tested.",
+    "Battle fixture is boosted generated Mewtwo, not human balance or ordinary continuous full-game playthrough.",
+    "No new Office quest, upper floors, city-front-door unlock, Route60, battle, badge/rank/item reward.",
+    "Unknown computed map/space users and hardware remain outside bounded certification; tested runtime uses the supplied-image mGBA adapter.",
+    "Exit map6:32 and save in original warehouse before downgrade/removal."
+  ]
+}

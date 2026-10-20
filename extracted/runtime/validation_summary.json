@@ -1,0 +1,386 @@
+{
+  "commands_verified": [
+    "python3 tools/setup_runtime.py",
+    "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "python3 tools/verify_sources.py",
+    "python3 tools/runtime_smoke.py --frontend /workspace/.cache/liquid-crystal-runtime/mgba-probe --room-interactions",
+    "python3 tools/progression_runtime.py",
+    "python3 tools/linked_progression.py",
+    "python3 tools/entry_audit.py",
+    "python3 tools/trainer_audit.py",
+    "python3 tools/mister_r_state_review.py",
+    "python3 tools/entry_runtime.py",
+    "python3 tools/allocation_audit.py",
+    "python3 tools/allocation_runtime.py",
+    "python3 tools/p001_preflight.py",
+    "python3 tools/warehouse_primitives.py",
+    "python3 tools/space_ownership.py",
+    "python3 tools/design_review_audit.py",
+    "python3 tools/design_state_runtime.py",
+    "python3 tools/build_p001.py",
+    "python3 tools/p001_runtime.py --case NAME (all nine cases)",
+    "python3 tools/package_p001.py",
+    "Packaged CLI: forward/reverse patch roundtrip and existing-output refusal",
+    "python3 tools/p001_combat_probe.py --level 95",
+    "python3 tools/p001_combat_probe.py --level 100",
+    "python3 tools/office_access_audit.py",
+    "python3 tools/p002_design.py",
+    "python3 tools/walkthrough_route_map.py",
+    "python3 tools/build_p002.py",
+    "python3 tools/p002_runtime.py --case NAME (all seven cases)",
+    "python3 tools/package_p002.py",
+    "Packaged P002 CLI: all four patch directions and guide/image links"
+  ],
+  "project_tests": {
+    "run": 150,
+    "passed": 150,
+    "failed": 0,
+    "seconds": 7.964,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "log_sha256": "1b1258403846aab003211a4f0722ba1a83011a95cbc8e3c972361acf781d5117"
+  },
+  "runtime": {
+    "smoke": {
+      "artifact": "extracted/runtime/smoke.json",
+      "sha256": "cc24ed7a6e8db9d53f6431b7df566ed4977ee042cce5d4f46fdc4cf9db89fcab",
+      "complete": true,
+      "expectations": 0,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "progression": {
+      "artifact": "extracted/runtime/progression/progression.json",
+      "sha256": "1e3b6fddc80891c0ad27a177fe4d6e09181ce39a0c0598a8fdac5b2f918d07aa",
+      "complete": true,
+      "expectations": 31,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "linked": {
+      "artifact": "extracted/runtime/linked/linked.json",
+      "sha256": "62fb771a147880324833fb74ee7dfa23aa9aca011d91146a059e6524f07a4e67",
+      "complete": true,
+      "expectations": 21,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "entry": {
+      "artifact": "extracted/runtime/entry/entry.json",
+      "sha256": "7a4bb83997773785f7018c1fa159579dac5f0a5bbea7e7a5af446d469f25bedf",
+      "complete": true,
+      "expectations": 18,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "allocation": {
+      "artifact": "extracted/runtime/allocation/allocation.json",
+      "sha256": "8c84e1952f3b802babd7156d563cda55e83e211301b1d45c06ac1984cc95c6d1",
+      "complete": true,
+      "expectations": 14,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "warehouse_primitives": {
+      "artifact": "extracted/runtime/warehouse_primitives/primitives.json",
+      "sha256": "338b081c42ef67c9fb3fc52511c52e4ad11cb8b0d8515185a4a631ff9df3a3ec",
+      "complete": true,
+      "expectations": 16,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "design_state": {
+      "artifact": "extracted/runtime/design_state/design_state.json",
+      "sha256": "5856ac478a97ad848d0196cb8cca318019d4a89274088716dde4fb435cc89c2c",
+      "complete": true,
+      "expectations": 10,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_matrix": {
+      "artifact": "extracted/runtime/p001/matrix/matrix.json",
+      "sha256": "dbcd3c8a2e549063312429bb13d6efc21034fa83cc6461518f4b478fadda724a",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 29,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_puzzle": {
+      "artifact": "extracted/runtime/p001/puzzle/puzzle.json",
+      "sha256": "afc5b78c3902666e8558376cd4876cd187ccad8bd00f05e5e4e3e470e542d249",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 16,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_win": {
+      "artifact": "extracted/runtime/p001/win/win.json",
+      "sha256": "06ddf558ac42089134c5db6d7a1905627cfbda7a25fc2caa9283ca0245df4182",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 9,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_loss": {
+      "artifact": "extracted/runtime/p001/loss/loss.json",
+      "sha256": "3af764fcab0b399b3d43e8fb4421f94abd6e1e475cd7536c409713f064587495",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 7,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_persistence": {
+      "artifact": "extracted/runtime/p001/persistence/persistence.json",
+      "sha256": "e5a0713f15006457769ff823b8c0e1fcee5f7d1d3ed965e22c606ecab8b599c4",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 22,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_exits": {
+      "artifact": "extracted/runtime/p001/exits/exits.json",
+      "sha256": "f620c2aad5a846196cb42f89037579c9e39faf74b85797054af85ef39cc15489",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 5,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_edge": {
+      "artifact": "extracted/runtime/p001/edge/edge.json",
+      "sha256": "00f373a3def5cd35426f8e93bc27d36d29615864c4b42ce1ed8ceb512e734546",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 14,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_regression": {
+      "artifact": "extracted/runtime/p001/regression/regression.json",
+      "sha256": "364fd702affb7469e5bb327bba7776742ce9ea104452feb8e49cad7c9585e63a",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 16,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_regions": {
+      "artifact": "extracted/runtime/p001/regions/regions.json",
+      "sha256": "74fec0915548fdf8562adda8167126da66b6a4c138788cfc2f7d968257895f55",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 6,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_native_95": {
+      "artifact": "extracted/runtime/p001/combat_native_95/combat.json",
+      "sha256": "81a54591a2763a15bd13789924bd528ebc5c71a04e9dd44fda5ecbd830c3578e",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 24,
+      "outcome": 2,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "p001_native_100": {
+      "artifact": "extracted/runtime/p001/combat_native_100/combat.json",
+      "sha256": "2bc20cd66f27169126a9d9b52913904b3cd419fe6385eefc8554808fd0d0d62e",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 24,
+      "outcome": 1,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false
+    },
+    "office_access": {
+      "artifact": "extracted/runtime/office_access/office_access.json",
+      "sha256": "0f20a817d073dc308de5d820ca66761ad52eb2416f2408b5d23b09cef60a13b7",
+      "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "complete": true,
+      "expectations": 6,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": false,
+      "scope": "Existing city door and donor-room asset only, explicit visibility fixture; no P002 implementation."
+    },
+    "p002_access": {
+      "artifact": "extracted/runtime/p002/access/access.json",
+      "sha256": "cede32d7af4afe51b5d65495df5ef86a01cf98bb032d42afbe7592d4ffd407b7",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 41,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_journey": {
+      "artifact": "extracted/runtime/p002/journey/journey.json",
+      "sha256": "c1972abfcec4a199b37de8f0e0d754b78d33b203ad2870b902b985341a8a6b1b",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 49,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_matrix": {
+      "artifact": "extracted/runtime/p002/matrix/matrix.json",
+      "sha256": "5b3ce55957a5a9dbe0d579e7326e06fd8039197b3899c72c6b989602da77f17a",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 29,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_puzzle": {
+      "artifact": "extracted/runtime/p002/puzzle/puzzle.json",
+      "sha256": "2f8c4993964ada68881031147a562cf8861c92ea97615ed04d840537a7e88aba",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 20,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_loss": {
+      "artifact": "extracted/runtime/p002/loss/loss.json",
+      "sha256": "f015cb9ad8ab1c5833b2cd20f1e18d1d227ee0d49c7ca7f9ac0f564670836962",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 7,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_exits": {
+      "artifact": "extracted/runtime/p002/exits/exits.json",
+      "sha256": "b051cb0072da0b80dae112de3e2f2516901c303f851070ec35a86eb901fe5e67",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 5,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    },
+    "p002_rollback": {
+      "artifact": "extracted/runtime/p002/rollback/rollback.json",
+      "sha256": "13f7c6fd053321099ed5f8f208898d86bf9d31eae073abbdaedc47f157b5ede7",
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "expectations": 15,
+      "all_expectations_passed": true,
+      "newly_executed_this_checkpoint": true
+    }
+  },
+  "frontend_build": {
+    "recipe": 1,
+    "mgba": "0.10.5",
+    "archive_url": "https://codeload.github.com/mgba-emu/mgba/tar.gz/refs/tags/0.10.5",
+    "archive_sha256": "91d6fbd32abcbdf030d58d3f562de25ebbc9d56040d513ff8e5c19bee9dacf14",
+    "frontend_sha256": "5156c3338ba1bd3bb5f91e4594c611dc7491ba3efa0d7f691d11e4c3e01a6642",
+    "binary_sha256": "4f2c5aa5afb9e97ed6440d050aa5697713858c41a94ce8805fd5b358104f5178"
+  },
+  "pinned_references_verified": 49,
+  "all_three_uploaded_binaries_match_working_sources": true,
+  "publication_verified": false,
+  "fresh_task_restoration_verified": false,
+  "source_roms_or_save_modified": false,
+  "previous_published_configuration_observed": true,
+  "configuration_draft_saved": true,
+  "configuration_requires_publish": true,
+  "runtime_scope": "Newly executed: seven exact-P002 cases,166 checks. Access41/journey49/matrix29/puzzle20/loss7/exits5/rollback15. Actual six-opponent win, P001 saved-game upgrade, native new-map Save/fresh reload and safe P001 downgrade. Initial immediate-removal checks missed movement rock respawn; final call-hook/template fix passes movement/reentry checks and visual review. Older P001/native-stat/Office audit artifacts retained.",
+  "audits": {
+    "extracted/scripts/entry_audit.json": {
+      "sha256": "97c078cac7fec6b12026f91b7d8de30b995ae35ff72d511404cb705d6154607a"
+    },
+    "extracted/trainers/trainer_audit.json": {
+      "sha256": "de9e27cfa259b4711131431386aa71bc7f319ad99f1f4ea098db77c429801765"
+    },
+    "extracted/scripts/mister_r_state_review.json": {
+      "sha256": "7bdbc5b142613bf4b3df05092cf96cfda8412fd3885a6ab606ba2ce3c39e0ec2"
+    },
+    "extracted/maps/allocation_audit.json": {
+      "sha256": "76708c49478c9d294d0c0ae048eea5b8dad04be737a9effb8242a3ae4b944d4f"
+    },
+    "extracted/maps/p001_preflight.json": {
+      "sha256": "4100d3f657c5ae531b3a43dac24593d39b9ca3208e15af93094c50fcf0ea8bb7"
+    },
+    "extracted/maps/space_ownership.json": {
+      "sha256": "9670ac96fdf1735608a77a41778b9124e78192bd4251ab88485fa64c6986b172"
+    },
+    "extracted/maps/design_review.json": {
+      "sha256": "0dc2aacf33cf19fd33cc210ff3cdd122b757fb5f1ddd49961c38c08575eb7b90"
+    }
+  },
+  "verified_at_utc": "2026-10-20T03:12:01.475499+00:00",
+  "external_source_retrieval": {
+    "latest_record": "research/external/source_lookup_02/retrievals.json",
+    "direct_requests_after_publication": 3,
+    "direct_pages_recovered": 0,
+    "blocked": "proxy tunnel 403 despite published custom domains",
+    "reachable_alternative": "GitHub repository/issue research and pinned candidate index",
+    "relevant_specification_recovered": false,
+    "no_new_rom_downloaded": true,
+    "network_activation_for_custom_domains_verified": false,
+    "last_retry": {
+      "url": "https://www.pokemonliquidcrystal.com/",
+      "at_utc": "2026-10-20T01:26:29.200211+00:00",
+      "reason": "New published base observed on resume; check affected prerequisite once.",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "blocks_user_authorized_new_design": false
+  },
+  "allocations_certified": "P001 scoped bounded certificate only; unknown computed owners/hardware excluded",
+  "playable_continuation_built": true,
+  "previous_checkpoint_configuration_publication_observed": true,
+  "research_fixture_failure": {
+    "artifact": "extracted/runtime/design_state/fixture_error_first_attempt.json",
+    "diagnosis": "19/copyvar dereferences a variable; literal probe corrected to1A/setorcopyvar. Not a ROM defect.",
+    "corrected_run_complete": true
+  },
+  "design": {
+    "artifact": "research/design/p001.json",
+    "status": "implemented_and_runtime_tested",
+    "newly_authored_design_preparation_authorized": true,
+    "rom_implementation_authorized": true,
+    "bounded_ownership_certificate": "research/space_ownership.md",
+    "approval": "research/design/approval.json"
+  },
+  "p001_rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "current_configuration_draft_id": "bb6ef383-a9e1-427a-b6a5-dbdc1c452660~cecfgdraft_6ad6dc36bfb0819b808db70749f7eef9",
+  "p001_package": {
+    "path": "builds/P001-prototype.zip",
+    "sha256": "db9c5b59bbbfa9dcde884432ff663eaf29b5af9eb758b26ca1c477539ad71a32",
+    "contains_rom_or_save": false,
+    "guide_and_images_packaged": true,
+    "guide_relative_links_verified": true,
+    "ROM_unchanged": true
+  },
+  "prior_P001_configuration_publication_observed": true,
+  "current_P002_or_guide_publication_verified": false,
+  "walkthrough": {
+    "artifact": "WALKTHROUGH.md",
+    "playable_version": "P002 including P001",
+    "future_preview": "walkthrough/P002-preview.md (historical frozen review)",
+    "requirement": "Update clear player directions, prerequisites, puzzles, battle/retry/save instructions, rewards/endpoints and screenshots with every newly released story slice.",
+    "sha256": "538a222d4cb858efd8ea22a4c9d5f07c39c7706c85932974dc0ed382b7dc14c4",
+    "packaged_relative_links_verified": true,
+    "archived_p001": "walkthrough/P001.md"
+  },
+  "next_design": {
+    "id": "P002",
+    "proposal": "research/P002_review.md",
+    "spec": "research/design/p002.json",
+    "status": "approved_implemented_and_tested",
+    "rom_implementation_authorized": true,
+    "approval": "research/design/p002_approval.json"
+  },
+  "p002_rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "prior_P001_guide_configuration_publication_observed": true,
+  "p002_package": {
+    "path": "builds/P002-prototype.zip",
+    "sha256": "5abbb5029ca3bdd3723024fcfbaed1276e5c727d158bd89c5825a7d3c5d2c0a7",
+    "all_four_packaged_cli_directions_verified": true,
+    "guide_relative_links_verified": true,
+    "contains_rom_or_save": false
+  }
+}

@@ -1,0 +1,755 @@
+{
+  "case": "regions",
+  "complete": true,
+  "started_at_utc": "2026-10-20T02:09:42.784137+00:00",
+  "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "source_sha256": {
+    "roms/POKEMON Liquid Crystal.gba": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "saves/source/POKEMON Liquid Crystal DD 5 badge.sav": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6"
+  },
+  "limits": "P001 acceptance on disposable ROM/save copies; explicit controlled fixtures.\n\nTests actual patched interactions and native battles. Forced room/state/party\nfixtures are recorded; enemy HP and battle outcomes are never injected.\n",
+  "checks": [
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "expected": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "bounded_region_control_fixture",
+      "region": "johto_goldenrod",
+      "entry": [
+        38,
+        27
+      ],
+      "normal_travel": false
+    },
+    {
+      "label": "johto_goldenrod_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "johto_goldenrod_button_movement",
+      "actual": [
+        39,
+        27
+      ],
+      "expected": [
+        39,
+        27
+      ],
+      "passed": true
+    },
+    {
+      "label": "johto_goldenrod",
+      "location": {
+        "x": 39,
+        "y": 27,
+        "group": 3,
+        "map": 15,
+        "warp": 255
+      },
+      "live_header_hex": "204aa40810827808f8987308787874084e01e9009200000201060000",
+      "default_header": 3475388,
+      "default_layout": 10766880,
+      "live_layout": 144984608,
+      "live_matches_default_header": true
+    },
+    {
+      "label": "johto_goldenrod_unchanged_header",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "bounded_region_control_fixture",
+      "region": "kanto_saffron",
+      "entry": [
+        26,
+        27
+      ],
+      "normal_travel": false
+    },
+    {
+      "label": "kanto_saffron_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "kanto_saffron_button_movement",
+      "actual": [
+        27,
+        27
+      ],
+      "expected": [
+        27,
+        27
+      ],
+      "passed": true
+    },
+    {
+      "label": "kanto_saffron",
+      "location": {
+        "x": 27,
+        "y": 27,
+        "group": 3,
+        "map": 10,
+        "warp": 255
+      },
+      "live_header_hex": "a02a8b085c9f9c08ac827208000000004f01cf006200020101060000",
+      "default_header": 3475248,
+      "default_layout": 9120416,
+      "live_layout": 143338144,
+      "live_matches_default_header": true
+    },
+    {
+      "label": "kanto_saffron_unchanged_header",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "l <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "f 1 0",
+      "response": {
+        "frame": 1385
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00033d030fff26001b00020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1625
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "26001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "26001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff0f03002d0022002d0022002d0022002200003d01000000020001000100000001130200020f033334002100340022003400220011110000ff000000010000000100000002120200030f033324002200240022002400220011110000ff000000010000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "26001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "f 16 16",
+      "response": {
+        "frame": 1641
+      }
+    },
+    {
+      "command": "f 24 0",
+      "response": {
+        "frame": 1665
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "27001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "27001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "27001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "27001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "27001b00030fff0026001b00"
+      }
+    },
+    {
+      "command": "r 2036dfc 28",
+      "response": {
+        "address": 33779196,
+        "hex": "204aa40810827808f8987308787874084e01e9009200000201060000"
+      }
+    },
+    {
+      "command": "p <temporary>/johto_goldenrod.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "l <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "f 1 0",
+      "response": {
+        "frame": 1385
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00033d030aff1a001b00020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1625
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1a001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1a001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff0a03002100220021002200210022002200003d010000000200010001000000010e0100010a033325002700250027002500270011110000ff0000000100000001000000020e0000040a033329002600290026002900260011110000ff0000000000000001000000030e0000100a03331e001d001e001d001e001d0011000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1a001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "f 16 16",
+      "response": {
+        "frame": 1641
+      }
+    },
+    {
+      "command": "f 24 0",
+      "response": {
+        "frame": 1665
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1b001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1b001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1b001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1b001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "64550202"
+      }
+    },
+    {
+      "command": "r 2025564 12",
+      "response": {
+        "address": 33707364,
+        "hex": "1b001b00030aff001a001b00"
+      }
+    },
+    {
+      "command": "r 2036dfc 28",
+      "response": {
+        "address": 33779196,
+        "hex": "a02a8b085c9f9c08ac827208000000004f01cf006200020101060000"
+      }
+    },
+    {
+      "command": "p <temporary>/kanto_saffron.ppm",
+      "response": {
+        "screenshot": true
+      }
+    }
+  ],
+  "steps": [
+    {
+      "map": [
+        3,
+        15
+      ],
+      "from": [
+        38,
+        27
+      ],
+      "requested": [
+        39,
+        27
+      ],
+      "after": {
+        "x": 39,
+        "y": 27,
+        "group": 3,
+        "map": 15,
+        "warp": 255
+      }
+    },
+    {
+      "map": [
+        3,
+        10
+      ],
+      "from": [
+        26,
+        27
+      ],
+      "requested": [
+        27,
+        27
+      ],
+      "after": {
+        "x": 27,
+        "y": 27,
+        "group": 3,
+        "map": 10,
+        "warp": 255
+      }
+    }
+  ],
+  "source_unchanged": true
+}

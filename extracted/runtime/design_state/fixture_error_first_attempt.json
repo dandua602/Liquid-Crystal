@@ -1,0 +1,325 @@
+{
+  "complete": false,
+  "started_at_utc": "2026-10-20T01:34:17.293110+00:00",
+  "source_sha256": {
+    "rom": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "save": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6"
+  },
+  "native_evidence": [
+    {
+      "start": 443148,
+      "end_exclusive": 443182,
+      "raw_hex": "10b5041cfdf7f2fa00000000000000000000000014f080f8a070002010bc02bc0847"
+    },
+    {
+      "start": 443184,
+      "end_exclusive": 443200,
+      "raw_hex": "00b5fdf7e1fa014908470000252d2408"
+    },
+    {
+      "start": 443212,
+      "end_exclusive": 443228,
+      "raw_hex": "00b5fdf7d3fa0149084700003d2d2408"
+    },
+    {
+      "start": 525284,
+      "end_exclusive": 525300,
+      "raw_hex": "00b5fff767fe0149084700000d2d2408"
+    },
+    {
+      "start": 525308,
+      "end_exclusive": 525324,
+      "raw_hex": "00b5fff75bfe014908470000252d2408"
+    },
+    {
+      "start": 525348,
+      "end_exclusive": 525360,
+      "raw_hex": "00b50149084700000d2d2408"
+    },
+    {
+      "start": 2370728,
+      "end_exclusive": 2370828,
+      "raw_hex": "10b50004040c201c251c261c002c24d02304dc0c1b0c07200340802040049840060e002904d001290cd0022910d014e00b48001900783040002801d101200ce000200ae0064909190a7832430a7004e0034909190a78b2430a7010bc02bc084700d00302"
+    },
+    {
+      "start": 2370828,
+      "end_exclusive": 2370852,
+      "raw_hex": "0021fcb400f003f8fcbc02bc0847014d2847c046a92c2408"
+    },
+    {
+      "start": 2370852,
+      "end_exclusive": 2370876,
+      "raw_hex": "0221fcb400f003f8fcbc01bc0047014d2847c046a92c2408"
+    },
+    {
+      "start": 2370876,
+      "end_exclusive": 2370900,
+      "raw_hex": "0121fcb400f003f8fcbc01bc0047014d2847c046a92c2408"
+    }
+  ],
+  "limits": "Storage-only fixture for proposed version-tagged room states; not a patch.\n\nExplicit native RAM state/trainer fixtures are not earned puzzle or battle wins.\nOnly disposable files are saved; original ROM/save bytes stay unchanged.\n",
+  "error": "AssertionError: frame_table_operand_3302_is_literal: expected 13058, got 49154",
+  "checks": [
+    {
+      "label": "source_save_location",
+      "actual": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "expected": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "passed": true
+    },
+    {
+      "label": "source_field_callback2",
+      "address": 50344180,
+      "value": 134571445
+    },
+    {
+      "label": "explicit_versioned_state_storage_fixture",
+      "variable": "0x5331",
+      "values": [
+        13058,
+        13059
+      ],
+      "trainer_bit": 929,
+      "warning": "Native RAM fixtures only; not earned progression or an allocation"
+    },
+    {
+      "label": "full_width_state_3302",
+      "actual": 13058,
+      "expected": 13058,
+      "passed": true
+    },
+    {
+      "label": "frame_table_operand_3302_is_literal",
+      "actual": 49154,
+      "expected": 13058,
+      "passed": false
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1385
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 1505
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1506
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1746
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00031631530233020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1750
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0233"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e0003190d800233020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1754
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 20370d0 2",
+      "response": {
+        "address": 33779920,
+        "hex": "02c0"
+      }
+    },
+    {
+      "command": "p <temporary>/failure_state.ppm",
+      "response": {
+        "screenshot": true
+      }
+    }
+  ],
+  "source_unchanged": true
+}

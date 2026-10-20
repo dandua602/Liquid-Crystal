@@ -1,0 +1,5179 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "summary": {
+    "clusters": 5,
+    "unique_messages": 32,
+    "messages_absent_from_prior_keyword_corpus": 11,
+    "instruction_overlap_count": 0,
+    "frontier_reasons": {}
+  },
+  "limits": {
+    "max_instructions_per_root": 512,
+    "max_states_per_root": 2048,
+    "max_call_depth": 8,
+    "reverse_rounds": 2,
+    "entry_lookback": 512
+  },
+  "evidence": "CONFIRMED_IN_ROM byte ranges; FireRed-format interpretations STRONGLY_INFERRED; gameplay reachability UNKNOWN",
+  "method": "Reverse raw pointer hits that match explicit branch/call or trainer continuation operands; seek incoming pointer targets within 512 bytes with a gapless static path to the source command. Follow direct conditional branches and stack-aware calls/returns. Callstd, native/special calls, waits, and trainer engine transfers are opaque/assumed paths. Unsupported instructions stop a path; physical proximity alone adds no messages.",
+  "clusters": [
+    {
+      "anchor_text": "0x930c7d",
+      "roots": [
+        {
+          "offset": 9634539,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            12724152
+          ],
+          "witnesses_to_anchor_commands": {
+            "0x9302eb": []
+          },
+          "state_count": 4
+        }
+      ],
+      "reverse_transfer_candidates": [],
+      "instructions": [
+        {
+          "pc": 9634539,
+          "end": 9634545,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            143854717
+          ],
+          "operand_offsets": [
+            9634540,
+            9634541
+          ],
+          "raw_hex": "0f 00 7d 0c 93 08",
+          "texts": [
+            {
+              "pointer_offset": 9634541,
+              "target": 9636989,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9634545,
+          "end": 9634547,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9634546
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9634547,
+          "end": 9634548,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9634548,
+          "end": 9634549,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        }
+      ],
+      "edges": [
+        {
+          "source": 9634539,
+          "target": 9634545,
+          "kind": "next"
+        },
+        {
+          "source": 9634545,
+          "target": 9634547,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9634547,
+          "target": 9634548,
+          "kind": "next"
+        }
+      ],
+      "frontiers": [],
+      "instruction_overlaps": [],
+      "messages": [
+        {
+          "offset": 9636989,
+          "end": 9637051,
+          "text": "Mandarin City Pokémon Gym<PARAGRAPH>\n\nLeader: Rudy<PARAGRAPH>\n\nThe Mysterious Playboy",
+          "plain_text": "Mandarin City Pokémon Gym\nLeader: Rudy\nThe Mysterious Playboy",
+          "empty_string": false,
+          "sha256": "1311093e1e93a1f835136ea5d5f326b2b6ec913b15776995ec3f4d72ecb8190f",
+          "references": [
+            {
+              "command": 9634539,
+              "pointer_offset": 9634541,
+              "target": 9636989,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        }
+      ],
+      "rejected_text_targets": [],
+      "reachability": "UNKNOWN; all paths are static format candidates, not execution proofs"
+    },
+    {
+      "anchor_text": "0xb11c47",
+      "roots": [
+        {
+          "offset": 11535413,
+          "method": {
+            "method": "incoming_target_with_format_path_to_transfer",
+            "entry_path": [
+              {
+                "source": 11535413,
+                "target": 11535416,
+                "kind": "next"
+              }
+            ],
+            "links_to": 11599761,
+            "source_command": 11535416
+          },
+          "incoming_pointer_sites": [
+            12626852
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xb0ffe2": [
+              {
+                "source": 11535413,
+                "target": 11535416,
+                "kind": "next"
+              },
+              {
+                "source": 11535416,
+                "target": 11599761,
+                "kind": "condition_true"
+              },
+              {
+                "source": 11599761,
+                "target": 11599842,
+                "kind": "engine_beaten_script_candidate"
+              }
+            ]
+          },
+          "state_count": 27
+        },
+        {
+          "offset": 11599761,
+          "method": {
+            "method": "incoming_target_with_format_path_to_transfer",
+            "entry_path": [],
+            "links_to": 11599842,
+            "source_command": 11599761
+          },
+          "incoming_pointer_sites": [
+            11535418
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xb0ffe2": [
+              {
+                "source": 11599761,
+                "target": 11599842,
+                "kind": "engine_beaten_script_candidate"
+              }
+            ]
+          },
+          "state_count": 10
+        },
+        {
+          "offset": 11599842,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            11599775
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xb0ffe2": []
+          },
+          "state_count": 5
+        }
+      ],
+      "reverse_transfer_candidates": [
+        {
+          "source_command": 11599761,
+          "pointer_site": 11599775,
+          "target": 11599842,
+          "kind": "trainer_continuation_pointer"
+        },
+        {
+          "source_command": 11535416,
+          "pointer_site": 11535418,
+          "target": 11599761,
+          "kind": "explicit_script_transfer"
+        }
+      ],
+      "instructions": [
+        {
+          "pc": 11535413,
+          "end": 11535416,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1393
+          ],
+          "operand_offsets": [
+            11535414
+          ],
+          "raw_hex": "2b 71 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11535416,
+          "end": 11535422,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145817489
+          ],
+          "operand_offsets": [
+            11535417,
+            11535418
+          ],
+          "raw_hex": "06 01 91 ff b0 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11535422,
+          "end": 11535428,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145760148
+          ],
+          "operand_offsets": [
+            11535423,
+            11535424
+          ],
+          "raw_hex": "0f 00 94 1f b0 08",
+          "texts": [
+            {
+              "pointer_offset": 11535424,
+              "target": 11542420,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599761,
+          "end": 11599779,
+          "opcode": 92,
+          "name": "trainerbattle",
+          "values": [
+            1,
+            868,
+            0,
+            145824422,
+            145824633,
+            145817570
+          ],
+          "operand_offsets": [
+            11599762,
+            11599763,
+            11599765,
+            11599767,
+            11599771,
+            11599775
+          ],
+          "raw_hex": "5c 01 64 03 00 00 a6 1a b1 08 79 1b b1 08 e2 ff b0 08",
+          "texts": [
+            {
+              "pointer_offset": 11599767,
+              "target": 11606694,
+              "role": "trainer_intro"
+            },
+            {
+              "pointer_offset": 11599771,
+              "target": 11606905,
+              "role": "trainer_defeat"
+            }
+          ],
+          "trainer_continuation": 11599842
+        },
+        {
+          "pc": 11535428,
+          "end": 11535430,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11535429
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599779,
+          "end": 11599785,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145824725
+          ],
+          "operand_offsets": [
+            11599780,
+            11599781
+          ],
+          "raw_hex": "0f 00 d5 1b b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11599781,
+              "target": 11606997,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599842,
+          "end": 11599848,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145824839
+          ],
+          "operand_offsets": [
+            11599843,
+            11599844
+          ],
+          "raw_hex": "0f 00 47 1c b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11599844,
+              "target": 11607111,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11535430,
+          "end": 11535435,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            145784474
+          ],
+          "operand_offsets": [
+            11535431
+          ],
+          "raw_hex": "05 9a 7e b0 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599785,
+          "end": 11599787,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11599786
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599848,
+          "end": 11599850,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11599849
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566746,
+          "end": 11566749,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            1392
+          ],
+          "operand_offsets": [
+            11566747
+          ],
+          "raw_hex": "29 70 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599787,
+          "end": 11599788,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599850,
+          "end": 11599853,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            1397
+          ],
+          "operand_offsets": [
+            11599851
+          ],
+          "raw_hex": "29 75 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566749,
+          "end": 11566751,
+          "opcode": 151,
+          "name": "fadescreen",
+          "values": [
+            1
+          ],
+          "operand_offsets": [
+            11566750
+          ],
+          "raw_hex": "97 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599788,
+          "end": 11599789,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599853,
+          "end": 11599854,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566751,
+          "end": 11566754,
+          "opcode": 83,
+          "name": "removeobject",
+          "values": [
+            3
+          ],
+          "operand_offsets": [
+            11566752
+          ],
+          "raw_hex": "53 03 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11599854,
+          "end": 11599855,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566754,
+          "end": 11566756,
+          "opcode": 151,
+          "name": "fadescreen",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            11566755
+          ],
+          "raw_hex": "97 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566756,
+          "end": 11566759,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1386
+          ],
+          "operand_offsets": [
+            11566757
+          ],
+          "raw_hex": "2a 6a 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566759,
+          "end": 11566762,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1387
+          ],
+          "operand_offsets": [
+            11566760
+          ],
+          "raw_hex": "2a 6b 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566762,
+          "end": 11566765,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1385
+          ],
+          "operand_offsets": [
+            11566763
+          ],
+          "raw_hex": "2a 69 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566765,
+          "end": 11566768,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1388
+          ],
+          "operand_offsets": [
+            11566766
+          ],
+          "raw_hex": "2a 6c 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566768,
+          "end": 11566771,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1389
+          ],
+          "operand_offsets": [
+            11566769
+          ],
+          "raw_hex": "2a 6d 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566771,
+          "end": 11566774,
+          "opcode": 42,
+          "name": "clearflag",
+          "values": [
+            1390
+          ],
+          "operand_offsets": [
+            11566772
+          ],
+          "raw_hex": "2a 6e 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566774,
+          "end": 11566775,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11566775,
+          "end": 11566776,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        }
+      ],
+      "edges": [
+        {
+          "source": 11535413,
+          "target": 11535416,
+          "kind": "next"
+        },
+        {
+          "source": 11535416,
+          "target": 11535422,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11535416,
+          "target": 11599761,
+          "kind": "condition_true"
+        },
+        {
+          "source": 11535422,
+          "target": 11535428,
+          "kind": "next"
+        },
+        {
+          "source": 11599761,
+          "target": 11599779,
+          "kind": "engine_postbattle_candidate"
+        },
+        {
+          "source": 11599761,
+          "target": 11599842,
+          "kind": "engine_beaten_script_candidate"
+        },
+        {
+          "source": 11535428,
+          "target": 11535430,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11599779,
+          "target": 11599785,
+          "kind": "next"
+        },
+        {
+          "source": 11599842,
+          "target": 11599848,
+          "kind": "next"
+        },
+        {
+          "source": 11535430,
+          "target": 11566746,
+          "kind": "goto"
+        },
+        {
+          "source": 11599785,
+          "target": 11599787,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11599848,
+          "target": 11599850,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11566746,
+          "target": 11566749,
+          "kind": "next"
+        },
+        {
+          "source": 11599787,
+          "target": 11599788,
+          "kind": "next"
+        },
+        {
+          "source": 11599850,
+          "target": 11599853,
+          "kind": "next"
+        },
+        {
+          "source": 11566749,
+          "target": 11566751,
+          "kind": "next"
+        },
+        {
+          "source": 11599853,
+          "target": 11599854,
+          "kind": "next"
+        },
+        {
+          "source": 11566751,
+          "target": 11566754,
+          "kind": "next"
+        },
+        {
+          "source": 11566754,
+          "target": 11566756,
+          "kind": "next"
+        },
+        {
+          "source": 11566756,
+          "target": 11566759,
+          "kind": "next"
+        },
+        {
+          "source": 11566759,
+          "target": 11566762,
+          "kind": "next"
+        },
+        {
+          "source": 11566762,
+          "target": 11566765,
+          "kind": "next"
+        },
+        {
+          "source": 11566765,
+          "target": 11566768,
+          "kind": "next"
+        },
+        {
+          "source": 11566768,
+          "target": 11566771,
+          "kind": "next"
+        },
+        {
+          "source": 11566771,
+          "target": 11566774,
+          "kind": "next"
+        },
+        {
+          "source": 11566774,
+          "target": 11566775,
+          "kind": "next"
+        }
+      ],
+      "frontiers": [],
+      "instruction_overlaps": [],
+      "messages": [
+        {
+          "offset": 11542420,
+          "end": 11543136,
+          "text": "Hi there kid, I’m Danny, the Gym\nLeader of Sandway Town.<PARAGRAPH>\n\nWhat are you doing in a place like\nthis?<PARAGRAPH>\n\n...<PARAGRAPH>\n\nI see, so you think you have what\nit takes to challenge me to a Gym<SCROLL>\nBattle?<PARAGRAPH>\n\nSorry, but I don’t think you have.<PARAGRAPH>\n\nYou won’t give up until you have my\nbadge?<PARAGRAPH>\n\nI like that dedication.\nWhat’s your name?<PARAGRAPH>\n\n{PLAYER}?<PARAGRAPH>\n\nOk, then.<PARAGRAPH>\n\nYou can challenge me to a Gym\nBattle on one condition.<PARAGRAPH>\n\nYou have to complete a series of\ntests set by me.<PARAGRAPH>\n\nThe first test, you have to qualify\nto be a challenger by meeting me at<SCROLL>\nthe top of the Safari Town Mountain<SCROLL>\nZone.<PARAGRAPH>\n\nIf you can make it through the Zone\nwithout battling your Pokémon,<SCROLL>\nyou’ll go on to the next challenge.<PARAGRAPH>\n\nSo, then, let the challenges begin.<PARAGRAPH>\n\nI’ll see you at the Mountain Safari\nZone, {PLAYER}.",
+          "plain_text": "Hi there kid, I’m Danny, the Gym\nLeader of Sandway Town.\nWhat are you doing in a place like\nthis?\n...\nI see, so you think you have what\nit takes to challenge me to a Gym\nBattle?\nSorry, but I don’t think you have.\nYou won’t give up until you have my\nbadge?\nI like that dedication.\nWhat’s your name?\n{PLAYER}?\nOk, then.\nYou can challenge me to a Gym\nBattle on one condition.\nYou have to complete a series of\ntests set by me.\nThe first test, you have to qualify\nto be a challenger by meeting me at\nthe top of the Safari Town Mountain\nZone.\nIf you can make it through the Zone\nwithout battling your Pokémon,\nyou’ll go on to the next challenge.\nSo, then, let the challenges begin.\nI’ll see you at the Mountain Safari\nZone, {PLAYER}.",
+          "empty_string": false,
+          "sha256": "0b6b81fb177bc5e8de54c75d7cd080d4c515ca20d175d3b5fad03ecbb859d4ad",
+          "references": [
+            {
+              "command": 11535422,
+              "pointer_offset": 11535424,
+              "target": 11542420,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11606694,
+          "end": 11606903,
+          "text": "Welcome back, {PLAYER}.<PARAGRAPH>\n\nAfter our victory I got thinking\nabout my own bonds with my Pokémon.<PARAGRAPH>\n\nI came to the conclusion that,\nbeating you will give me the<SCROLL>\ninformation I need.<PARAGRAPH>\n\nPrepare yourself, I won’t go easy on\nyou!",
+          "plain_text": "Welcome back, {PLAYER}.\nAfter our victory I got thinking\nabout my own bonds with my Pokémon.\nI came to the conclusion that,\nbeating you will give me the\ninformation I need.\nPrepare yourself, I won’t go easy on\nyou!",
+          "empty_string": false,
+          "sha256": "03c56659855f8d60d07f6ab453bed6584bb0ee955bdb53685532bca09644b633",
+          "references": [
+            {
+              "command": 11599761,
+              "pointer_offset": 11599767,
+              "target": 11606694,
+              "role": "trainer_intro"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11606905,
+          "end": 11606995,
+          "text": "Outstanding!\nSimply amazing.<PARAGRAPH>\n\nAfter battling you It’s become clear\nto me what I’m lacking.",
+          "plain_text": "Outstanding!\nSimply amazing.\nAfter battling you It’s become clear\nto me what I’m lacking.",
+          "empty_string": false,
+          "sha256": "9a47c434fa942ffffa7aa0e8f4e72f423a9a7d0c0465bc6f1fe67fd817dfdda0",
+          "references": [
+            {
+              "command": 11599761,
+              "pointer_offset": 11599771,
+              "target": 11606905,
+              "role": "trainer_defeat"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11606997,
+          "end": 11607109,
+          "text": "Thank you for showing me what I\nneeded.<PARAGRAPH>\n\nI’m going to train harder and\nstrengthen the bonds with my own<SCROLL>\nPokémon.",
+          "plain_text": "Thank you for showing me what I\nneeded.\nI’m going to train harder and\nstrengthen the bonds with my own\nPokémon.",
+          "empty_string": false,
+          "sha256": "e0f3bacb3c100d5d6a113f3d51d72556b09482749046fa34b04f6bdf7e8d026b",
+          "references": [
+            {
+              "command": 11599779,
+              "pointer_offset": 11599781,
+              "target": 11606997,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11607111,
+          "end": 11607491,
+          "text": "<FONT 02>{PLAYER} received the\nSea Ruby Badge!<PAUSE_MUSIC><PLAY_BGM 04 01><PAUSE FE><PAUSE 56><RESUME_MUSIC><PARAGRAPH>\n\nThis battle has shown me, instead of\nworrying about other Trainer’s<SCROLL>\nbonds, I need to strengthen and<SCROLL>\ndeepen my own bonds with my Pokémon.<PARAGRAPH>\n\nThe Sea Ruby Badge is the second of\nthe Official Orange League Gym<SCROLL>\nBadges.<PARAGRAPH>\n\nYou did exceptionally well to earn\nthis.<PARAGRAPH>\n\nI expect you’ll do fine with the\nremaining Orange Gym Leaders.<PARAGRAPH>\n\nGood luck, {PLAYER}.",
+          "plain_text": "{PLAYER} received the\nSea Ruby Badge!\nThis battle has shown me, instead of\nworrying about other Trainer’s\nbonds, I need to strengthen and\ndeepen my own bonds with my Pokémon.\nThe Sea Ruby Badge is the second of\nthe Official Orange League Gym\nBadges.\nYou did exceptionally well to earn\nthis.\nI expect you’ll do fine with the\nremaining Orange Gym Leaders.\nGood luck, {PLAYER}.",
+          "empty_string": false,
+          "sha256": "bd77051d09ccbc65fb5fbf1b69041a4e933827a0bf9b19e34290a3d641cd8271",
+          "references": [
+            {
+              "command": 11599842,
+              "pointer_offset": 11599844,
+              "target": 11607111,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        }
+      ],
+      "rejected_text_targets": [],
+      "reachability": "UNKNOWN; all paths are static format candidates, not execution proofs"
+    },
+    {
+      "anchor_text": "0xb1d4e0",
+      "roots": [
+        {
+          "offset": 11186074,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            12584322
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xaaafba": [
+              {
+                "source": 11186074,
+                "target": 11186081,
+                "kind": "next"
+              },
+              {
+                "source": 11186081,
+                "target": 11186084,
+                "kind": "next"
+              },
+              {
+                "source": 11186084,
+                "target": 11186090,
+                "kind": "next"
+              },
+              {
+                "source": 11186090,
+                "target": 11186092,
+                "kind": "assumed_return_after_callstd"
+              },
+              {
+                "source": 11186092,
+                "target": 11186106,
+                "kind": "engine_postbattle_candidate"
+              }
+            ]
+          },
+          "state_count": 35
+        },
+        {
+          "offset": 11186106,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            4237038
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xaaafba": []
+          },
+          "state_count": 30
+        }
+      ],
+      "reverse_transfer_candidates": [],
+      "instructions": [
+        {
+          "pc": 11186074,
+          "end": 11186081,
+          "opcode": 79,
+          "name": "applymovement",
+          "values": [
+            255,
+            145477364
+          ],
+          "operand_offsets": [
+            11186075,
+            11186077
+          ],
+          "raw_hex": "4f ff 00 f4 ce ab 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186081,
+          "end": 11186084,
+          "opcode": 81,
+          "name": "waitmovement",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            11186082
+          ],
+          "raw_hex": "51 00 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186084,
+          "end": 11186090,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145476840
+          ],
+          "operand_offsets": [
+            11186085,
+            11186086
+          ],
+          "raw_hex": "0f 00 e8 cc ab 08",
+          "texts": [
+            {
+              "pointer_offset": 11186086,
+              "target": 11259112,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186090,
+          "end": 11186092,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11186091
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186092,
+          "end": 11186106,
+          "opcode": 92,
+          "name": "trainerbattle",
+          "values": [
+            9,
+            837,
+            0,
+            145471602,
+            145471571
+          ],
+          "operand_offsets": [
+            11186093,
+            11186094,
+            11186096,
+            11186098,
+            11186102
+          ],
+          "raw_hex": "5c 09 45 03 00 00 72 b8 ab 08 53 b8 ab 08",
+          "texts": [
+            {
+              "pointer_offset": 11186098,
+              "target": 11253874,
+              "role": "trainer_defeat"
+            },
+            {
+              "pointer_offset": 11186102,
+              "target": 11253843,
+              "role": "trainer_victory"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186106,
+          "end": 11186112,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145872096
+          ],
+          "operand_offsets": [
+            11186107,
+            11186108
+          ],
+          "raw_hex": "0f 00 e0 d4 b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11186108,
+              "target": 11654368,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186112,
+          "end": 11186114,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11186113
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186114,
+          "end": 11186119,
+          "opcode": 26,
+          "name": "setorcopyvar",
+          "values": [
+            32768,
+            276
+          ],
+          "operand_offsets": [
+            11186115,
+            11186117
+          ],
+          "raw_hex": "1a 00 80 14 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186119,
+          "end": 11186124,
+          "opcode": 26,
+          "name": "setorcopyvar",
+          "values": [
+            32769,
+            1
+          ],
+          "operand_offsets": [
+            11186120,
+            11186122
+          ],
+          "raw_hex": "1a 01 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186124,
+          "end": 11186126,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            11186125
+          ],
+          "raw_hex": "09 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186126,
+          "end": 11186132,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145456875
+          ],
+          "operand_offsets": [
+            11186127,
+            11186128
+          ],
+          "raw_hex": "0f 00 eb 7e ab 08",
+          "texts": [
+            {
+              "pointer_offset": 11186128,
+              "target": 11239147,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186132,
+          "end": 11186134,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11186133
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186134,
+          "end": 11186137,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            1299
+          ],
+          "operand_offsets": [
+            11186135
+          ],
+          "raw_hex": "29 13 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186137,
+          "end": 11186139,
+          "opcode": 151,
+          "name": "fadescreen",
+          "values": [
+            1
+          ],
+          "operand_offsets": [
+            11186138
+          ],
+          "raw_hex": "97 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186139,
+          "end": 11186142,
+          "opcode": 83,
+          "name": "removeobject",
+          "values": [
+            1
+          ],
+          "operand_offsets": [
+            11186140
+          ],
+          "raw_hex": "53 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186142,
+          "end": 11186144,
+          "opcode": 151,
+          "name": "fadescreen",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            11186143
+          ],
+          "raw_hex": "97 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186144,
+          "end": 11186149,
+          "opcode": 22,
+          "name": "setvar",
+          "values": [
+            21269,
+            1
+          ],
+          "operand_offsets": [
+            11186145,
+            11186147
+          ],
+          "raw_hex": "16 15 53 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186149,
+          "end": 11186154,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            145403883
+          ],
+          "operand_offsets": [
+            11186150
+          ],
+          "raw_hex": "05 eb af aa 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186155,
+          "end": 11186158,
+          "opcode": 40,
+          "name": "delay",
+          "values": [
+            26
+          ],
+          "operand_offsets": [
+            11186156
+          ],
+          "raw_hex": "28 1a 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186158,
+          "end": 11186161,
+          "opcode": 49,
+          "name": "playfanfare",
+          "values": [
+            319
+          ],
+          "operand_offsets": [
+            11186159
+          ],
+          "raw_hex": "31 3f 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186161,
+          "end": 11186162,
+          "opcode": 50,
+          "name": "waitfanfare",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "32",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186162,
+          "end": 11186168,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145456376
+          ],
+          "operand_offsets": [
+            11186163,
+            11186164
+          ],
+          "raw_hex": "0f 00 f8 7c ab 08",
+          "texts": [
+            {
+              "pointer_offset": 11186164,
+              "target": 11238648,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186168,
+          "end": 11186170,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            5
+          ],
+          "operand_offsets": [
+            11186169
+          ],
+          "raw_hex": "09 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186170,
+          "end": 11186175,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            1
+          ],
+          "operand_offsets": [
+            11186171,
+            11186173
+          ],
+          "raw_hex": "21 0d 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186175,
+          "end": 11186181,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145412032
+          ],
+          "operand_offsets": [
+            11186176,
+            11186177
+          ],
+          "raw_hex": "06 01 c0 cf aa 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186181,
+          "end": 11186186,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            145404421
+          ],
+          "operand_offsets": [
+            11186182
+          ],
+          "raw_hex": "05 05 b2 aa 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11194304,
+          "end": 11194310,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145413994
+          ],
+          "operand_offsets": [
+            11194305,
+            11194306
+          ],
+          "raw_hex": "0f 00 6a d7 aa 08",
+          "texts": [
+            {
+              "pointer_offset": 11194306,
+              "target": 11196266,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186693,
+          "end": 11186699,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145411916
+          ],
+          "operand_offsets": [
+            11186694,
+            11186695
+          ],
+          "raw_hex": "0f 00 4c cf aa 08",
+          "texts": [
+            {
+              "pointer_offset": 11186695,
+              "target": 11194188,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11194310,
+          "end": 11194312,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11194311
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186699,
+          "end": 11186701,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            5
+          ],
+          "operand_offsets": [
+            11186700
+          ],
+          "raw_hex": "09 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11194312,
+          "end": 11194313,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186701,
+          "end": 11186706,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            1
+          ],
+          "operand_offsets": [
+            11186702,
+            11186704
+          ],
+          "raw_hex": "21 0d 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11194313,
+          "end": 11194314,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186706,
+          "end": 11186712,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145412032
+          ],
+          "operand_offsets": [
+            11186707,
+            11186708
+          ],
+          "raw_hex": "06 01 c0 cf aa 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11186712,
+          "end": 11186717,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            145404421
+          ],
+          "operand_offsets": [
+            11186713
+          ],
+          "raw_hex": "05 05 b2 aa 08",
+          "texts": [],
+          "trainer_continuation": null
+        }
+      ],
+      "edges": [
+        {
+          "source": 11186074,
+          "target": 11186081,
+          "kind": "next"
+        },
+        {
+          "source": 11186081,
+          "target": 11186084,
+          "kind": "next"
+        },
+        {
+          "source": 11186084,
+          "target": 11186090,
+          "kind": "next"
+        },
+        {
+          "source": 11186090,
+          "target": 11186092,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186092,
+          "target": 11186106,
+          "kind": "engine_postbattle_candidate"
+        },
+        {
+          "source": 11186106,
+          "target": 11186112,
+          "kind": "next"
+        },
+        {
+          "source": 11186112,
+          "target": 11186114,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186114,
+          "target": 11186119,
+          "kind": "next"
+        },
+        {
+          "source": 11186119,
+          "target": 11186124,
+          "kind": "next"
+        },
+        {
+          "source": 11186124,
+          "target": 11186126,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186126,
+          "target": 11186132,
+          "kind": "next"
+        },
+        {
+          "source": 11186132,
+          "target": 11186134,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186134,
+          "target": 11186137,
+          "kind": "next"
+        },
+        {
+          "source": 11186137,
+          "target": 11186139,
+          "kind": "next"
+        },
+        {
+          "source": 11186139,
+          "target": 11186142,
+          "kind": "next"
+        },
+        {
+          "source": 11186142,
+          "target": 11186144,
+          "kind": "next"
+        },
+        {
+          "source": 11186144,
+          "target": 11186149,
+          "kind": "next"
+        },
+        {
+          "source": 11186149,
+          "target": 11186155,
+          "kind": "goto"
+        },
+        {
+          "source": 11186155,
+          "target": 11186158,
+          "kind": "next"
+        },
+        {
+          "source": 11186158,
+          "target": 11186161,
+          "kind": "next"
+        },
+        {
+          "source": 11186161,
+          "target": 11186162,
+          "kind": "next"
+        },
+        {
+          "source": 11186162,
+          "target": 11186168,
+          "kind": "next"
+        },
+        {
+          "source": 11186168,
+          "target": 11186170,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186170,
+          "target": 11186175,
+          "kind": "next"
+        },
+        {
+          "source": 11186175,
+          "target": 11186181,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11186175,
+          "target": 11194304,
+          "kind": "condition_true"
+        },
+        {
+          "source": 11186181,
+          "target": 11186693,
+          "kind": "goto"
+        },
+        {
+          "source": 11194304,
+          "target": 11194310,
+          "kind": "next"
+        },
+        {
+          "source": 11186693,
+          "target": 11186699,
+          "kind": "next"
+        },
+        {
+          "source": 11194310,
+          "target": 11194312,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11186699,
+          "target": 11186701,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11194312,
+          "target": 11194313,
+          "kind": "next"
+        },
+        {
+          "source": 11186701,
+          "target": 11186706,
+          "kind": "next"
+        },
+        {
+          "source": 11186706,
+          "target": 11186712,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11186706,
+          "target": 11194304,
+          "kind": "condition_true"
+        },
+        {
+          "source": 11186712,
+          "target": 11186693,
+          "kind": "goto"
+        }
+      ],
+      "frontiers": [],
+      "instruction_overlaps": [],
+      "messages": [
+        {
+          "offset": 11259112,
+          "end": 11259634,
+          "text": "<COLOR 08>Mister G: You came, to finish this?<PARAGRAPH>\n\nYou look shocked.<PARAGRAPH>\n\nDid you expect to find Zane, Mister Z\nhere too?<PARAGRAPH>\n\nHe’s not on the island, in fact his\ncurrent whereabouts are unknown to<SCROLL>\nthe majority of Team Nexus and<SCROLL>\nmyself.<PARAGRAPH>\n\nZane is using facilities like this\none to conduct projects for a grand<SCROLL>\nplan of his.<PARAGRAPH>\n\nWe have our orders, and we followed\nthem.<PARAGRAPH>\n\nI was instructed to terminate you on\nfirst contact.<PARAGRAPH>\n\nInstead I decided to lead you here,\ninto my own Office, to do the deed.<PARAGRAPH>\n\nPrepare yourself, child, for this\nwill only happen once.",
+          "plain_text": "Mister G: You came, to finish this?\nYou look shocked.\nDid you expect to find Zane, Mister Z\nhere too?\nHe’s not on the island, in fact his\ncurrent whereabouts are unknown to\nthe majority of Team Nexus and\nmyself.\nZane is using facilities like this\none to conduct projects for a grand\nplan of his.\nWe have our orders, and we followed\nthem.\nI was instructed to terminate you on\nfirst contact.\nInstead I decided to lead you here,\ninto my own Office, to do the deed.\nPrepare yourself, child, for this\nwill only happen once.",
+          "empty_string": false,
+          "sha256": "c1e0a38707cae98afcbe9671d1b1b4e7c77c9861a00391788461a2d7e643ac35",
+          "references": [
+            {
+              "command": 11186084,
+              "pointer_offset": 11186086,
+              "target": 11259112,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11253874,
+          "end": 11253911,
+          "text": "You put up a mighty good fight, son.",
+          "plain_text": "You put up a mighty good fight, son.",
+          "empty_string": false,
+          "sha256": "97271ab590a1302e17af1187de27c93fc963cb5946926786a4001ad159427a7d",
+          "references": [
+            {
+              "command": 11186092,
+              "pointer_offset": 11186098,
+              "target": 11253874,
+              "role": "trainer_defeat"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11253843,
+          "end": 11253872,
+          "text": "Meddlers have no place here.",
+          "plain_text": "Meddlers have no place here.",
+          "empty_string": false,
+          "sha256": "a37e64b82b5df2af0d952baa501e4b63f32ac7feda5cfe7d22a558dfc9eb9d03",
+          "references": [
+            {
+              "command": 11186092,
+              "pointer_offset": 11186102,
+              "target": 11253843,
+              "role": "trainer_victory"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11654368,
+          "end": 11655133,
+          "text": "<COLOR 08>Mister G: ...<PARAGRAPH>\n\nYou, kid, what’s your name?<PARAGRAPH>\n\n{PLAYER}?<PARAGRAPH>\n\nHmm, so my suspicions are confirmed.<PARAGRAPH>\n\nYou’re the rascal that took out Team\nRocket and Team Saturn, correct?<PARAGRAPH>\n\nI have failed here today, though I\ndo not regret my actions.<PARAGRAPH>\n\nBecoming a member of Team Nexus and\nthe Nexus 4, I was able to fulfill<SCROLL>\nmy duty as originally agreed.<PARAGRAPH>\n\nOne of my other orders from Mister Z\nwas, upon beating me I must step<SCROLL>\ndown and award my Commanding Rank<SCROLL>\nto you.<PARAGRAPH>\n\nA Commanding Rank is a unique item\ngiven to all of the Nexus 4 to show<SCROLL>\nthey are fit to hold the position.<PARAGRAPH>\n\nThis item was designed to work as a\nkey, to turn off the Nexus One.<PARAGRAPH>\n\nOnly a member of the Nexus 4 is able\nto disable it.<PARAGRAPH>\n\nJust a warning, but they need to be\npowered up to be used.<PARAGRAPH>\n\nYou can use the machine on the desk\nto charge it.",
+          "plain_text": "Mister G: ...\nYou, kid, what’s your name?\n{PLAYER}?\nHmm, so my suspicions are confirmed.\nYou’re the rascal that took out Team\nRocket and Team Saturn, correct?\nI have failed here today, though I\ndo not regret my actions.\nBecoming a member of Team Nexus and\nthe Nexus 4, I was able to fulfill\nmy duty as originally agreed.\nOne of my other orders from Mister Z\nwas, upon beating me I must step\ndown and award my Commanding Rank\nto you.\nA Commanding Rank is a unique item\ngiven to all of the Nexus 4 to show\nthey are fit to hold the position.\nThis item was designed to work as a\nkey, to turn off the Nexus One.\nOnly a member of the Nexus 4 is able\nto disable it.\nJust a warning, but they need to be\npowered up to be used.\nYou can use the machine on the desk\nto charge it.",
+          "empty_string": false,
+          "sha256": "0c34c325430234535f37cf4f2cde873708700d55fd4b5fc3992954806fae3c0c",
+          "references": [
+            {
+              "command": 11186106,
+              "pointer_offset": 11186108,
+              "target": 11654368,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11239147,
+          "end": 11239248,
+          "text": "<COLOR 08>Mister G: I will now take my leave,\nbut before that I will tell you,<SCROLL>\nMister Z is waiting for you.",
+          "plain_text": "Mister G: I will now take my leave,\nbut before that I will tell you,\nMister Z is waiting for you.",
+          "empty_string": false,
+          "sha256": "543bd670fc7d13bb2ec31b0146832b58708fdec34d304d6274b1726f7b7022b7",
+          "references": [
+            {
+              "command": 11186126,
+              "pointer_offset": 11186128,
+              "target": 11239147,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11238648,
+          "end": 11239145,
+          "text": "Axel: Hello, {PLAYER}, are you there?<PARAGRAPH>\n\nIt’s Axel.<PARAGRAPH>\n\nI heard you were visiting the Orange\nIslands to challenge the Orange<SCROLL>\nLeague.<PARAGRAPH>\n\nWell, I was wondering if you could\nhelp me out again with a problem.<PARAGRAPH>\n\nI’ve got reports of Team Nexus\nmovements all across the Orange<SCROLL>\nIslands.<PARAGRAPH>\n\nTeam Nexus is apparently led by Zane\nhimself!<PARAGRAPH>\n\nThis is an issue of utmost\nimportance, but I’m not allowed to<SCROLL>\ndeal with it since it’s out of my<SCROLL>\njurisdiction.<PARAGRAPH>\n\nSince you’re there, are you able to\ninvestigate and stop Zane once and<SCROLL>\nfor all?",
+          "plain_text": "Axel: Hello, {PLAYER}, are you there?\nIt’s Axel.\nI heard you were visiting the Orange\nIslands to challenge the Orange\nLeague.\nWell, I was wondering if you could\nhelp me out again with a problem.\nI’ve got reports of Team Nexus\nmovements all across the Orange\nIslands.\nTeam Nexus is apparently led by Zane\nhimself!\nThis is an issue of utmost\nimportance, but I’m not allowed to\ndeal with it since it’s out of my\njurisdiction.\nSince you’re there, are you able to\ninvestigate and stop Zane once and\nfor all?",
+          "empty_string": false,
+          "sha256": "8bf862443eb3bc53092bc1afa680d36383aef7d9097ce255453642eb98a0802a",
+          "references": [
+            {
+              "command": 11186162,
+              "pointer_offset": 11186164,
+              "target": 11238648,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11194188,
+          "end": 11194302,
+          "text": "S-sorry, the connection is going, I\ndidn’t hear your answer.<PARAGRAPH>\n\nSo, can you help out by beating Team\nNexus and Zane?",
+          "plain_text": "S-sorry, the connection is going, I\ndidn’t hear your answer.\nSo, can you help out by beating Team\nNexus and Zane?",
+          "empty_string": false,
+          "sha256": "5ac74364a0c8a677ed9d2ccbda7732bec1e5ad2e3ad11e860b08c054da138ceb",
+          "references": [
+            {
+              "command": 11186693,
+              "pointer_offset": 11186695,
+              "target": 11194188,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11196266,
+          "end": 11196446,
+          "text": "Oh?<PARAGRAPH>\n\nYou already are taking them down,\nand you got rid of one of their<SCROLL>\nlab leaders?<PARAGRAPH>\n\nThat’s great, just what I expected\nfrom you, {PLAYER}!<PARAGRAPH>\n\nThanks again, I owe you one!<PARAGRAPH>\n\nTalk to you later.",
+          "plain_text": "Oh?\nYou already are taking them down,\nand you got rid of one of their\nlab leaders?\nThat’s great, just what I expected\nfrom you, {PLAYER}!\nThanks again, I owe you one!\nTalk to you later.",
+          "empty_string": false,
+          "sha256": "dfdfa87fa7ec2e332227bc7c209601ff63a06ca6384289eef43981e816e840d1",
+          "references": [
+            {
+              "command": 11194304,
+              "pointer_offset": 11194306,
+              "target": 11196266,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        }
+      ],
+      "rejected_text_targets": [],
+      "reachability": "UNKNOWN; all paths are static format candidates, not execution proofs"
+    },
+    {
+      "anchor_text": "0x9e2b2d",
+      "roots": [
+        {
+          "offset": 10313885,
+          "method": {
+            "method": "incoming_target_with_format_path_to_transfer",
+            "entry_path": [
+              {
+                "source": 10313885,
+                "target": 10313888,
+                "kind": "next"
+              },
+              {
+                "source": 10313888,
+                "target": 10313894,
+                "kind": "condition_false"
+              },
+              {
+                "source": 10313894,
+                "target": 10313897,
+                "kind": "next"
+              }
+            ],
+            "links_to": 10313953,
+            "source_command": 10313897
+          },
+          "incoming_pointer_sites": [
+            7829596
+          ],
+          "witnesses_to_anchor_commands": {
+            "0x9d60e1": [
+              {
+                "source": 10313885,
+                "target": 10313888,
+                "kind": "next"
+              },
+              {
+                "source": 10313888,
+                "target": 10313894,
+                "kind": "condition_false"
+              },
+              {
+                "source": 10313894,
+                "target": 10313897,
+                "kind": "next"
+              },
+              {
+                "source": 10313897,
+                "target": 10313953,
+                "kind": "condition_true"
+              }
+            ]
+          },
+          "state_count": 129
+        },
+        {
+          "offset": 10313953,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            10313899
+          ],
+          "witnesses_to_anchor_commands": {
+            "0x9d60e1": []
+          },
+          "state_count": 6
+        }
+      ],
+      "reverse_transfer_candidates": [
+        {
+          "source_command": 10313897,
+          "pointer_site": 10313899,
+          "target": 10313953,
+          "kind": "explicit_script_transfer"
+        }
+      ],
+      "instructions": [
+        {
+          "pc": 10313885,
+          "end": 10313888,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5922
+          ],
+          "operand_offsets": [
+            10313886
+          ],
+          "raw_hex": "2b 22 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313888,
+          "end": 10313894,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145245412
+          ],
+          "operand_offsets": [
+            10313889,
+            10313890
+          ],
+          "raw_hex": "06 01 e4 44 a8 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313894,
+          "end": 10313897,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5921
+          ],
+          "operand_offsets": [
+            10313895
+          ],
+          "raw_hex": "2b 21 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11027684,
+          "end": 11027689,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            145826765
+          ],
+          "operand_offsets": [
+            11027685
+          ],
+          "raw_hex": "05 cd 23 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313897,
+          "end": 10313903,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            144531681
+          ],
+          "operand_offsets": [
+            10313898,
+            10313899
+          ],
+          "raw_hex": "06 01 e1 60 9d 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609037,
+          "end": 11609040,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1398
+          ],
+          "operand_offsets": [
+            11609038
+          ],
+          "raw_hex": "2b 76 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313903,
+          "end": 10313906,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5890
+          ],
+          "operand_offsets": [
+            10313904
+          ],
+          "raw_hex": "2b 02 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313953,
+          "end": 10313959,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144583469
+          ],
+          "operand_offsets": [
+            10313954,
+            10313955
+          ],
+          "raw_hex": "0f 00 2d 2b 9e 08",
+          "texts": [
+            {
+              "pointer_offset": 10313955,
+              "target": 10365741,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609040,
+          "end": 11609046,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145827110
+          ],
+          "operand_offsets": [
+            11609041,
+            11609042
+          ],
+          "raw_hex": "06 01 26 25 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313906,
+          "end": 10313912,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659163
+          ],
+          "operand_offsets": [
+            10313907,
+            10313908
+          ],
+          "raw_hex": "06 01 9b 10 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313959,
+          "end": 10313961,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            10313960
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609046,
+          "end": 11609052,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144533944
+          ],
+          "operand_offsets": [
+            11609047,
+            11609048
+          ],
+          "raw_hex": "0f 00 b8 69 9d 08",
+          "texts": [
+            {
+              "pointer_offset": 11609048,
+              "target": 10316216,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609382,
+          "end": 11609385,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1399
+          ],
+          "operand_offsets": [
+            11609383
+          ],
+          "raw_hex": "2b 77 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313912,
+          "end": 10313915,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5889
+          ],
+          "operand_offsets": [
+            10313913
+          ],
+          "raw_hex": "2b 01 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441435,
+          "end": 9441441,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            143659970
+          ],
+          "operand_offsets": [
+            9441436,
+            9441437
+          ],
+          "raw_hex": "0f 00 c2 13 90 08",
+          "texts": [
+            {
+              "pointer_offset": 9441437,
+              "target": 9442242,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313961,
+          "end": 10313966,
+          "opcode": 69,
+          "name": "removeitem",
+          "values": [
+            277,
+            1
+          ],
+          "operand_offsets": [
+            10313962,
+            10313964
+          ],
+          "raw_hex": "45 15 01 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609052,
+          "end": 11609054,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11609053
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609385,
+          "end": 11609391,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145858769
+          ],
+          "operand_offsets": [
+            11609386,
+            11609387
+          ],
+          "raw_hex": "06 01 d1 a0 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313915,
+          "end": 10313921,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659336
+          ],
+          "operand_offsets": [
+            10313916,
+            10313917
+          ],
+          "raw_hex": "06 01 48 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441441,
+          "end": 9441443,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441442
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313966,
+          "end": 10313969,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            5922
+          ],
+          "operand_offsets": [
+            10313967
+          ],
+          "raw_hex": "29 22 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609054,
+          "end": 11609059,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11609055
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609391,
+          "end": 11609397,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145338532
+          ],
+          "operand_offsets": [
+            11609392,
+            11609393
+          ],
+          "raw_hex": "0f 00 a4 b0 a9 08",
+          "texts": [
+            {
+              "pointer_offset": 11609393,
+              "target": 11120804,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641041,
+          "end": 11641044,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1400
+          ],
+          "operand_offsets": [
+            11641042
+          ],
+          "raw_hex": "2b 78 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313921,
+          "end": 10313924,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5767
+          ],
+          "operand_offsets": [
+            10313922
+          ],
+          "raw_hex": "2b 87 16",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441608,
+          "end": 9441614,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145872862
+          ],
+          "operand_offsets": [
+            9441609,
+            9441610
+          ],
+          "raw_hex": "0f 00 de d7 b1 08",
+          "texts": [
+            {
+              "pointer_offset": 9441610,
+              "target": 11655134,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441443,
+          "end": 9441448,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            9441444
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313969,
+          "end": 10313970,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441645,
+          "end": 9441650,
+          "opcode": 22,
+          "name": "setvar",
+          "values": [
+            32772,
+            31
+          ],
+          "operand_offsets": [
+            9441646,
+            9441648
+          ],
+          "raw_hex": "16 04 80 1f 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609397,
+          "end": 11609399,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11609398
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641044,
+          "end": 11641050,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145859216
+          ],
+          "operand_offsets": [
+            11641045,
+            11641046
+          ],
+          "raw_hex": "06 01 90 a2 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313924,
+          "end": 10313930,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659350
+          ],
+          "operand_offsets": [
+            10313925,
+            10313926
+          ],
+          "raw_hex": "06 01 56 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441614,
+          "end": 9441616,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441615
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313970,
+          "end": 10313971,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441650,
+          "end": 9441653,
+          "opcode": 37,
+          "name": "special",
+          "values": [
+            382
+          ],
+          "operand_offsets": [
+            9441651
+          ],
+          "raw_hex": "25 7e 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609399,
+          "end": 11609404,
+          "opcode": 26,
+          "name": "setorcopyvar",
+          "values": [
+            32768,
+            277
+          ],
+          "operand_offsets": [
+            11609400,
+            11609402
+          ],
+          "raw_hex": "1a 00 80 15 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641050,
+          "end": 11641056,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145920559
+          ],
+          "operand_offsets": [
+            11641051,
+            11641052
+          ],
+          "raw_hex": "0f 00 2f 92 b2 08",
+          "texts": [
+            {
+              "pointer_offset": 11641052,
+              "target": 11702831,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641488,
+          "end": 11641491,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1401
+          ],
+          "operand_offsets": [
+            11641489
+          ],
+          "raw_hex": "2b 79 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313930,
+          "end": 10313933,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            5766
+          ],
+          "operand_offsets": [
+            10313931
+          ],
+          "raw_hex": "2b 86 16",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441622,
+          "end": 9441627,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            9441623
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441616,
+          "end": 9441619,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            5890
+          ],
+          "operand_offsets": [
+            9441617
+          ],
+          "raw_hex": "29 02 17",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441653,
+          "end": 9441656,
+          "opcode": 37,
+          "name": "special",
+          "values": [
+            381
+          ],
+          "operand_offsets": [
+            9441654
+          ],
+          "raw_hex": "25 7d 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609404,
+          "end": 11609409,
+          "opcode": 26,
+          "name": "setorcopyvar",
+          "values": [
+            32769,
+            1
+          ],
+          "operand_offsets": [
+            11609405,
+            11609407
+          ],
+          "raw_hex": "1a 01 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641056,
+          "end": 11641058,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11641057
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641491,
+          "end": 11641497,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145859239
+          ],
+          "operand_offsets": [
+            11641492,
+            11641493
+          ],
+          "raw_hex": "06 01 a7 a2 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313933,
+          "end": 10313939,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659356
+          ],
+          "operand_offsets": [
+            10313934,
+            10313935
+          ],
+          "raw_hex": "06 01 5c 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441619,
+          "end": 9441620,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441656,
+          "end": 9441661,
+          "opcode": 22,
+          "name": "setvar",
+          "values": [
+            32772,
+            0
+          ],
+          "operand_offsets": [
+            9441657,
+            9441659
+          ],
+          "raw_hex": "16 04 80 00 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609409,
+          "end": 11609411,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            11609410
+          ],
+          "raw_hex": "09 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641058,
+          "end": 11641063,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11641059
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641497,
+          "end": 11641503,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145859549
+          ],
+          "operand_offsets": [
+            11641498,
+            11641499
+          ],
+          "raw_hex": "0f 00 dd a3 b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11641499,
+              "target": 11641821,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641511,
+          "end": 11641514,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            1402
+          ],
+          "operand_offsets": [
+            11641512
+          ],
+          "raw_hex": "2b 7a 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313939,
+          "end": 10313945,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            143659609
+          ],
+          "operand_offsets": [
+            10313940,
+            10313941
+          ],
+          "raw_hex": "0f 00 59 12 90 08",
+          "texts": [
+            {
+              "pointer_offset": 10313941,
+              "target": 9441881,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441628,
+          "end": 9441634,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144188764
+          ],
+          "operand_offsets": [
+            9441629,
+            9441630
+          ],
+          "raw_hex": "0f 00 5c 25 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441630,
+              "target": 9971036,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441620,
+          "end": 9441621,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441661,
+          "end": 9441666,
+          "opcode": 38,
+          "name": "specialvar",
+          "values": [
+            32781,
+            212
+          ],
+          "operand_offsets": [
+            9441662,
+            9441664
+          ],
+          "raw_hex": "26 0d 80 d4 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609411,
+          "end": 11609417,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145857457
+          ],
+          "operand_offsets": [
+            11609412,
+            11609413
+          ],
+          "raw_hex": "0f 00 b1 9b b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11609413,
+              "target": 11639729,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641503,
+          "end": 11641505,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11641504
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641514,
+          "end": 11641520,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            145859265
+          ],
+          "operand_offsets": [
+            11641515,
+            11641516
+          ],
+          "raw_hex": "06 01 c1 a2 b1 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313945,
+          "end": 10313947,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            10313946
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441634,
+          "end": 9441636,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441635
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441666,
+          "end": 9441671,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32776,
+            32773
+          ],
+          "operand_offsets": [
+            9441667,
+            9441669
+          ],
+          "raw_hex": "19 08 80 05 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609417,
+          "end": 11609419,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11609418
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641505,
+          "end": 11641510,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11641506
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641520,
+          "end": 11641523,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            1402
+          ],
+          "operand_offsets": [
+            11641521
+          ],
+          "raw_hex": "29 7a 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641537,
+          "end": 11641543,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145859279
+          ],
+          "operand_offsets": [
+            11641538,
+            11641539
+          ],
+          "raw_hex": "0f 00 cf a2 b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11641539,
+              "target": 11641551,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 10313947,
+          "end": 10313952,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            10313948
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441636,
+          "end": 9441639,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            5767
+          ],
+          "operand_offsets": [
+            9441637
+          ],
+          "raw_hex": "29 87 16",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441671,
+          "end": 9441676,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32777,
+            32774
+          ],
+          "operand_offsets": [
+            9441672,
+            9441674
+          ],
+          "raw_hex": "19 09 80 06 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609419,
+          "end": 11609422,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            1399
+          ],
+          "operand_offsets": [
+            11609420
+          ],
+          "raw_hex": "29 77 05",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641523,
+          "end": 11641529,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145859399
+          ],
+          "operand_offsets": [
+            11641524,
+            11641525
+          ],
+          "raw_hex": "0f 00 47 a3 b1 08",
+          "texts": [
+            {
+              "pointer_offset": 11641525,
+              "target": 11641671,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641543,
+          "end": 11641545,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11641544
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441639,
+          "end": 9441644,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            9441640
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441676,
+          "end": 9441681,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32778,
+            32781
+          ],
+          "operand_offsets": [
+            9441677,
+            9441679
+          ],
+          "raw_hex": "19 0a 80 0d 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11609422,
+          "end": 11609427,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11609423
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641529,
+          "end": 11641531,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11641530
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641545,
+          "end": 11641550,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11641546
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441681,
+          "end": 9441685,
+          "opcode": 131,
+          "name": "buffernumberstring",
+          "values": [
+            0,
+            32776
+          ],
+          "operand_offsets": [
+            9441682,
+            9441683
+          ],
+          "raw_hex": "83 00 08 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11641531,
+          "end": 11641536,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659373
+          ],
+          "operand_offsets": [
+            11641532
+          ],
+          "raw_hex": "05 6d 11 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441685,
+          "end": 9441689,
+          "opcode": 131,
+          "name": "buffernumberstring",
+          "values": [
+            1,
+            32777
+          ],
+          "operand_offsets": [
+            9441686,
+            9441687
+          ],
+          "raw_hex": "83 01 09 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441689,
+          "end": 9441695,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144189196
+          ],
+          "operand_offsets": [
+            9441690,
+            9441691
+          ],
+          "raw_hex": "0f 00 0c 27 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441691,
+              "target": 9971468,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441695,
+          "end": 9441697,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            4
+          ],
+          "operand_offsets": [
+            9441696
+          ],
+          "raw_hex": "09 04",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441697,
+          "end": 9441700,
+          "opcode": 43,
+          "name": "checkflag",
+          "values": [
+            767
+          ],
+          "operand_offsets": [
+            9441698
+          ],
+          "raw_hex": "2b ff 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441700,
+          "end": 9441706,
+          "opcode": 7,
+          "name": "call_if",
+          "values": [
+            0,
+            143659524
+          ],
+          "operand_offsets": [
+            9441701,
+            9441702
+          ],
+          "raw_hex": "07 00 04 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441706,
+          "end": 9441711,
+          "opcode": 4,
+          "name": "call",
+          "values": [
+            143659528
+          ],
+          "operand_offsets": [
+            9441707
+          ],
+          "raw_hex": "04 08 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441796,
+          "end": 9441798,
+          "opcode": 199,
+          "name": "textcolor",
+          "values": [
+            0
+          ],
+          "operand_offsets": [
+            9441797
+          ],
+          "raw_hex": "c7 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441800,
+          "end": 9441805,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32772,
+            32777
+          ],
+          "operand_offsets": [
+            9441801,
+            9441803
+          ],
+          "raw_hex": "19 04 80 09 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441798,
+          "end": 9441799,
+          "opcode": 3,
+          "name": "return",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "03",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441805,
+          "end": 9441808,
+          "opcode": 37,
+          "name": "special",
+          "values": [
+            213
+          ],
+          "operand_offsets": [
+            9441806
+          ],
+          "raw_hex": "25 d5 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441808,
+          "end": 9441809,
+          "opcode": 102,
+          "name": "waitmessage",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "66",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441809,
+          "end": 9441814,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            0
+          ],
+          "operand_offsets": [
+            9441810,
+            9441812
+          ],
+          "raw_hex": "21 0d 80 00 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441814,
+          "end": 9441820,
+          "opcode": 7,
+          "name": "call_if",
+          "values": [
+            1,
+            143659599
+          ],
+          "operand_offsets": [
+            9441815,
+            9441816
+          ],
+          "raw_hex": "07 01 4f 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441820,
+          "end": 9441825,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            1
+          ],
+          "operand_offsets": [
+            9441821,
+            9441823
+          ],
+          "raw_hex": "21 0d 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441871,
+          "end": 9441874,
+          "opcode": 49,
+          "name": "playfanfare",
+          "values": [
+            317
+          ],
+          "operand_offsets": [
+            9441872
+          ],
+          "raw_hex": "31 3d 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441825,
+          "end": 9441831,
+          "opcode": 7,
+          "name": "call_if",
+          "values": [
+            1,
+            143659604
+          ],
+          "operand_offsets": [
+            9441826,
+            9441827
+          ],
+          "raw_hex": "07 01 54 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441874,
+          "end": 9441875,
+          "opcode": 3,
+          "name": "return",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "03",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441831,
+          "end": 9441832,
+          "opcode": 50,
+          "name": "waitfanfare",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "32",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441876,
+          "end": 9441879,
+          "opcode": 49,
+          "name": "playfanfare",
+          "values": [
+            259
+          ],
+          "operand_offsets": [
+            9441877
+          ],
+          "raw_hex": "31 03 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441832,
+          "end": 9441833,
+          "opcode": 109,
+          "name": "waitbuttonpress",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6d",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441879,
+          "end": 9441880,
+          "opcode": 3,
+          "name": "return",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "03",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441833,
+          "end": 9441834,
+          "opcode": 3,
+          "name": "return",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "03",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441711,
+          "end": 9441716,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32778,
+            0
+          ],
+          "operand_offsets": [
+            9441712,
+            9441714
+          ],
+          "raw_hex": "21 0a 80 00 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441716,
+          "end": 9441722,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659563
+          ],
+          "operand_offsets": [
+            9441717,
+            9441718
+          ],
+          "raw_hex": "06 01 2b 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441722,
+          "end": 9441727,
+          "opcode": 22,
+          "name": "setvar",
+          "values": [
+            32772,
+            1
+          ],
+          "operand_offsets": [
+            9441723,
+            9441725
+          ],
+          "raw_hex": "16 04 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441835,
+          "end": 9441838,
+          "opcode": 37,
+          "name": "special",
+          "values": [
+            383
+          ],
+          "operand_offsets": [
+            9441836
+          ],
+          "raw_hex": "25 7f 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441727,
+          "end": 9441732,
+          "opcode": 38,
+          "name": "specialvar",
+          "values": [
+            32781,
+            212
+          ],
+          "operand_offsets": [
+            9441728,
+            9441730
+          ],
+          "raw_hex": "26 0d 80 d4 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441838,
+          "end": 9441839,
+          "opcode": 3,
+          "name": "return",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "03",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441732,
+          "end": 9441737,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32776,
+            32773
+          ],
+          "operand_offsets": [
+            9441733,
+            9441735
+          ],
+          "raw_hex": "19 08 80 05 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441737,
+          "end": 9441742,
+          "opcode": 25,
+          "name": "copyvar",
+          "values": [
+            32777,
+            32774
+          ],
+          "operand_offsets": [
+            9441738,
+            9441740
+          ],
+          "raw_hex": "19 09 80 06 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441742,
+          "end": 9441746,
+          "opcode": 131,
+          "name": "buffernumberstring",
+          "values": [
+            0,
+            32776
+          ],
+          "operand_offsets": [
+            9441743,
+            9441744
+          ],
+          "raw_hex": "83 00 08 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441746,
+          "end": 9441750,
+          "opcode": 131,
+          "name": "buffernumberstring",
+          "values": [
+            1,
+            32777
+          ],
+          "operand_offsets": [
+            9441747,
+            9441748
+          ],
+          "raw_hex": "83 01 09 80",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441750,
+          "end": 9441756,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144189314
+          ],
+          "operand_offsets": [
+            9441751,
+            9441752
+          ],
+          "raw_hex": "0f 00 82 27 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441752,
+              "target": 9971586,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441756,
+          "end": 9441758,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441757
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441758,
+          "end": 9441763,
+          "opcode": 38,
+          "name": "specialvar",
+          "values": [
+            32781,
+            432
+          ],
+          "operand_offsets": [
+            9441759,
+            9441761
+          ],
+          "raw_hex": "26 0d 80 b0 01",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441763,
+          "end": 9441768,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            0
+          ],
+          "operand_offsets": [
+            9441764,
+            9441766
+          ],
+          "raw_hex": "21 0d 80 00 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441768,
+          "end": 9441774,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659568
+          ],
+          "operand_offsets": [
+            9441769,
+            9441770
+          ],
+          "raw_hex": "06 01 30 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441774,
+          "end": 9441779,
+          "opcode": 33,
+          "name": "compare_var_to_value",
+          "values": [
+            32781,
+            1
+          ],
+          "operand_offsets": [
+            9441775,
+            9441777
+          ],
+          "raw_hex": "21 0d 80 01 00",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441840,
+          "end": 9441846,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144189438
+          ],
+          "operand_offsets": [
+            9441841,
+            9441842
+          ],
+          "raw_hex": "0f 00 fe 27 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441842,
+              "target": 9971710,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441779,
+          "end": 9441785,
+          "opcode": 6,
+          "name": "goto_if",
+          "values": [
+            1,
+            143659582
+          ],
+          "operand_offsets": [
+            9441780,
+            9441781
+          ],
+          "raw_hex": "06 01 3e 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441846,
+          "end": 9441848,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441847
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441785,
+          "end": 9441791,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144189384
+          ],
+          "operand_offsets": [
+            9441786,
+            9441787
+          ],
+          "raw_hex": "0f 00 c8 27 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441787,
+              "target": 9971656,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441854,
+          "end": 9441857,
+          "opcode": 41,
+          "name": "setflag",
+          "values": [
+            756
+          ],
+          "operand_offsets": [
+            9441855
+          ],
+          "raw_hex": "29 f4 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441848,
+          "end": 9441853,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659563
+          ],
+          "operand_offsets": [
+            9441849
+          ],
+          "raw_hex": "05 2b 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441791,
+          "end": 9441793,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441792
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441857,
+          "end": 9441863,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            144189505
+          ],
+          "operand_offsets": [
+            9441858,
+            9441859
+          ],
+          "raw_hex": "0f 00 41 28 98 08",
+          "texts": [
+            {
+              "pointer_offset": 9441859,
+              "target": 9971777,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441793,
+          "end": 9441794,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441863,
+          "end": 9441865,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            9441864
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441794,
+          "end": 9441795,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 9441865,
+          "end": 9441870,
+          "opcode": 5,
+          "name": "goto",
+          "values": [
+            143659563
+          ],
+          "operand_offsets": [
+            9441866
+          ],
+          "raw_hex": "05 2b 12 90 08",
+          "texts": [],
+          "trainer_continuation": null
+        }
+      ],
+      "edges": [
+        {
+          "source": 10313885,
+          "target": 10313888,
+          "kind": "next"
+        },
+        {
+          "source": 10313888,
+          "target": 10313894,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313888,
+          "target": 11027684,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313894,
+          "target": 10313897,
+          "kind": "next"
+        },
+        {
+          "source": 11027684,
+          "target": 11609037,
+          "kind": "goto"
+        },
+        {
+          "source": 10313897,
+          "target": 10313903,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313897,
+          "target": 10313953,
+          "kind": "condition_true"
+        },
+        {
+          "source": 11609037,
+          "target": 11609040,
+          "kind": "next"
+        },
+        {
+          "source": 10313903,
+          "target": 10313906,
+          "kind": "next"
+        },
+        {
+          "source": 10313953,
+          "target": 10313959,
+          "kind": "next"
+        },
+        {
+          "source": 11609040,
+          "target": 11609046,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11609040,
+          "target": 11609382,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313906,
+          "target": 10313912,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313906,
+          "target": 9441435,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313959,
+          "target": 10313961,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11609046,
+          "target": 11609052,
+          "kind": "next"
+        },
+        {
+          "source": 11609382,
+          "target": 11609385,
+          "kind": "next"
+        },
+        {
+          "source": 10313912,
+          "target": 10313915,
+          "kind": "next"
+        },
+        {
+          "source": 9441435,
+          "target": 9441441,
+          "kind": "next"
+        },
+        {
+          "source": 10313961,
+          "target": 10313966,
+          "kind": "next"
+        },
+        {
+          "source": 11609052,
+          "target": 11609054,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11609385,
+          "target": 11609391,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11609385,
+          "target": 11641041,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313915,
+          "target": 10313921,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313915,
+          "target": 9441608,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441441,
+          "target": 9441443,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 10313966,
+          "target": 10313969,
+          "kind": "next"
+        },
+        {
+          "source": 11609054,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 11609391,
+          "target": 11609397,
+          "kind": "next"
+        },
+        {
+          "source": 11641041,
+          "target": 11641044,
+          "kind": "next"
+        },
+        {
+          "source": 10313921,
+          "target": 10313924,
+          "kind": "next"
+        },
+        {
+          "source": 9441608,
+          "target": 9441614,
+          "kind": "next"
+        },
+        {
+          "source": 9441443,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 10313969,
+          "target": 10313970,
+          "kind": "next"
+        },
+        {
+          "source": 9441645,
+          "target": 9441650,
+          "kind": "next"
+        },
+        {
+          "source": 11609397,
+          "target": 11609399,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641044,
+          "target": 11641050,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11641044,
+          "target": 11641488,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313924,
+          "target": 10313930,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313924,
+          "target": 9441622,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441614,
+          "target": 9441616,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441650,
+          "target": 9441653,
+          "kind": "assumed_return_after_special"
+        },
+        {
+          "source": 11609399,
+          "target": 11609404,
+          "kind": "next"
+        },
+        {
+          "source": 11641050,
+          "target": 11641056,
+          "kind": "next"
+        },
+        {
+          "source": 11641488,
+          "target": 11641491,
+          "kind": "next"
+        },
+        {
+          "source": 10313930,
+          "target": 10313933,
+          "kind": "next"
+        },
+        {
+          "source": 9441622,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 9441616,
+          "target": 9441619,
+          "kind": "next"
+        },
+        {
+          "source": 9441653,
+          "target": 9441656,
+          "kind": "assumed_return_after_special"
+        },
+        {
+          "source": 11609404,
+          "target": 11609409,
+          "kind": "next"
+        },
+        {
+          "source": 11641056,
+          "target": 11641058,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641491,
+          "target": 11641497,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11641491,
+          "target": 11641511,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313933,
+          "target": 10313939,
+          "kind": "condition_false"
+        },
+        {
+          "source": 10313933,
+          "target": 9441628,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441619,
+          "target": 9441620,
+          "kind": "next"
+        },
+        {
+          "source": 9441656,
+          "target": 9441661,
+          "kind": "next"
+        },
+        {
+          "source": 11609409,
+          "target": 11609411,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641058,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 11641497,
+          "target": 11641503,
+          "kind": "next"
+        },
+        {
+          "source": 11641511,
+          "target": 11641514,
+          "kind": "next"
+        },
+        {
+          "source": 10313939,
+          "target": 10313945,
+          "kind": "next"
+        },
+        {
+          "source": 9441628,
+          "target": 9441634,
+          "kind": "next"
+        },
+        {
+          "source": 9441661,
+          "target": 9441666,
+          "kind": "assumed_return_after_specialvar"
+        },
+        {
+          "source": 11609411,
+          "target": 11609417,
+          "kind": "next"
+        },
+        {
+          "source": 11641503,
+          "target": 11641505,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641514,
+          "target": 11641520,
+          "kind": "condition_false"
+        },
+        {
+          "source": 11641514,
+          "target": 11641537,
+          "kind": "condition_true"
+        },
+        {
+          "source": 10313945,
+          "target": 10313947,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441634,
+          "target": 9441636,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441666,
+          "target": 9441671,
+          "kind": "next"
+        },
+        {
+          "source": 11609417,
+          "target": 11609419,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641505,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 11641520,
+          "target": 11641523,
+          "kind": "next"
+        },
+        {
+          "source": 11641537,
+          "target": 11641543,
+          "kind": "next"
+        },
+        {
+          "source": 10313947,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 9441636,
+          "target": 9441639,
+          "kind": "next"
+        },
+        {
+          "source": 9441671,
+          "target": 9441676,
+          "kind": "next"
+        },
+        {
+          "source": 11609419,
+          "target": 11609422,
+          "kind": "next"
+        },
+        {
+          "source": 11641523,
+          "target": 11641529,
+          "kind": "next"
+        },
+        {
+          "source": 11641543,
+          "target": 11641545,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441639,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 9441676,
+          "target": 9441681,
+          "kind": "next"
+        },
+        {
+          "source": 11609422,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 11641529,
+          "target": 11641531,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11641545,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 9441681,
+          "target": 9441685,
+          "kind": "next"
+        },
+        {
+          "source": 11641531,
+          "target": 9441645,
+          "kind": "goto"
+        },
+        {
+          "source": 9441685,
+          "target": 9441689,
+          "kind": "next"
+        },
+        {
+          "source": 9441689,
+          "target": 9441695,
+          "kind": "next"
+        },
+        {
+          "source": 9441695,
+          "target": 9441697,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441697,
+          "target": 9441700,
+          "kind": "next"
+        },
+        {
+          "source": 9441700,
+          "target": 9441706,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441700,
+          "target": 9441796,
+          "kind": "condition_true_call"
+        },
+        {
+          "source": 9441706,
+          "target": 9441800,
+          "kind": "call"
+        },
+        {
+          "source": 9441796,
+          "target": 9441798,
+          "kind": "next"
+        },
+        {
+          "source": 9441800,
+          "target": 9441805,
+          "kind": "next"
+        },
+        {
+          "source": 9441798,
+          "target": 9441706,
+          "kind": "return"
+        },
+        {
+          "source": 9441805,
+          "target": 9441808,
+          "kind": "assumed_return_after_special"
+        },
+        {
+          "source": 9441808,
+          "target": 9441809,
+          "kind": "next"
+        },
+        {
+          "source": 9441809,
+          "target": 9441814,
+          "kind": "next"
+        },
+        {
+          "source": 9441814,
+          "target": 9441820,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441814,
+          "target": 9441871,
+          "kind": "condition_true_call"
+        },
+        {
+          "source": 9441820,
+          "target": 9441825,
+          "kind": "next"
+        },
+        {
+          "source": 9441871,
+          "target": 9441874,
+          "kind": "next"
+        },
+        {
+          "source": 9441825,
+          "target": 9441831,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441825,
+          "target": 9441876,
+          "kind": "condition_true_call"
+        },
+        {
+          "source": 9441874,
+          "target": 9441820,
+          "kind": "return"
+        },
+        {
+          "source": 9441831,
+          "target": 9441832,
+          "kind": "next"
+        },
+        {
+          "source": 9441876,
+          "target": 9441879,
+          "kind": "next"
+        },
+        {
+          "source": 9441832,
+          "target": 9441833,
+          "kind": "next"
+        },
+        {
+          "source": 9441879,
+          "target": 9441831,
+          "kind": "return"
+        },
+        {
+          "source": 9441833,
+          "target": 9441711,
+          "kind": "return"
+        },
+        {
+          "source": 9441711,
+          "target": 9441716,
+          "kind": "next"
+        },
+        {
+          "source": 9441716,
+          "target": 9441722,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441716,
+          "target": 9441835,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441722,
+          "target": 9441727,
+          "kind": "next"
+        },
+        {
+          "source": 9441835,
+          "target": 9441838,
+          "kind": "assumed_return_after_special"
+        },
+        {
+          "source": 9441727,
+          "target": 9441732,
+          "kind": "assumed_return_after_specialvar"
+        },
+        {
+          "source": 9441732,
+          "target": 9441737,
+          "kind": "next"
+        },
+        {
+          "source": 9441737,
+          "target": 9441742,
+          "kind": "next"
+        },
+        {
+          "source": 9441742,
+          "target": 9441746,
+          "kind": "next"
+        },
+        {
+          "source": 9441746,
+          "target": 9441750,
+          "kind": "next"
+        },
+        {
+          "source": 9441750,
+          "target": 9441756,
+          "kind": "next"
+        },
+        {
+          "source": 9441756,
+          "target": 9441758,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441758,
+          "target": 9441763,
+          "kind": "assumed_return_after_specialvar"
+        },
+        {
+          "source": 9441763,
+          "target": 9441768,
+          "kind": "next"
+        },
+        {
+          "source": 9441768,
+          "target": 9441774,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441768,
+          "target": 9441840,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441774,
+          "target": 9441779,
+          "kind": "next"
+        },
+        {
+          "source": 9441840,
+          "target": 9441846,
+          "kind": "next"
+        },
+        {
+          "source": 9441779,
+          "target": 9441785,
+          "kind": "condition_false"
+        },
+        {
+          "source": 9441779,
+          "target": 9441854,
+          "kind": "condition_true"
+        },
+        {
+          "source": 9441846,
+          "target": 9441848,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441785,
+          "target": 9441791,
+          "kind": "next"
+        },
+        {
+          "source": 9441854,
+          "target": 9441857,
+          "kind": "next"
+        },
+        {
+          "source": 9441848,
+          "target": 9441835,
+          "kind": "goto"
+        },
+        {
+          "source": 9441791,
+          "target": 9441793,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441857,
+          "target": 9441863,
+          "kind": "next"
+        },
+        {
+          "source": 9441793,
+          "target": 9441794,
+          "kind": "next"
+        },
+        {
+          "source": 9441863,
+          "target": 9441865,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 9441865,
+          "target": 9441835,
+          "kind": "goto"
+        }
+      ],
+      "frontiers": [],
+      "instruction_overlaps": [],
+      "messages": [
+        {
+          "offset": 9442242,
+          "end": 9442381,
+          "text": "OAK: Hello there {PLAYER}!\nGood of you to stop by.<PARAGRAPH>\n\nHave you got that BALL for me yet?\nI’m still waiting for it.<PARAGRAPH>\n\nLet me check out your POKéDEX...",
+          "plain_text": "OAK: Hello there {PLAYER}!\nGood of you to stop by.\nHave you got that BALL for me yet?\nI’m still waiting for it.\nLet me check out your POKéDEX...",
+          "empty_string": false,
+          "sha256": "ca750d8af6fdb3d818b627d55258dbcaaf5886a631bae32cca0049427c857428",
+          "references": [
+            {
+              "command": 9441435,
+              "pointer_offset": 9441437,
+              "target": 9442242,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 11655134,
+          "end": 11656092,
+          "text": "OAK: Ah! There you are {PLAYER}!\nIt’s good that you could make it.<PARAGRAPH>\n\nI need you to help me out.<PARAGRAPH>\n\nI have a friend called PROF. IVY\nwho lives out on VALENCIA ISLAND<SCROLL>\nwhich is part of the ORANGE ISLANDS.<PARAGRAPH>\n\nShe recently obtained a mysterious\nPOKé BALL and can’t make head or<SCROLL>\ntail of it.<PARAGRAPH>\n\nI agreed to take a look at the BALL\nwith my scanners but it’s to<SCROLL>\nvaluable to ship over here and I<SCROLL>\ncan’t leave this LAB to get it...<PARAGRAPH>\n\nThat’s why I need your help.<PARAGRAPH>\n\nYou’ve traveled far with your\nPOKéMON {PLAYER}!<PARAGRAPH>\n\nI would like you to go and fetch the\nBALL for me.<PARAGRAPH>\n\nIt shouldn’t be a problem for you and\nyour POKéMON.<PARAGRAPH>\n\nYou will need to get your SS.TICKET\nstamped to be able to travel to the<SCROLL>\nORANGE ISLANDS.<PARAGRAPH>\n\nHere you go.<PARAGRAPH>\n\nI’ve spoken to the S.S.Office in\nVermillion City, they will stamp<SCROLL>\nyour S.S.Ticket for you to be able<SCROLL>\nto travel to the Orange Islands via<SCROLL>\nthe Undersea Express service on<SCROLL>\nRoute 100.<PARAGRAPH>\n\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you<SCROLL>\nbetter watch your step!<PARAGRAPH>\n\nGood luck!",
+          "plain_text": "OAK: Ah! There you are {PLAYER}!\nIt’s good that you could make it.\nI need you to help me out.\nI have a friend called PROF. IVY\nwho lives out on VALENCIA ISLAND\nwhich is part of the ORANGE ISLANDS.\nShe recently obtained a mysterious\nPOKé BALL and can’t make head or\ntail of it.\nI agreed to take a look at the BALL\nwith my scanners but it’s to\nvaluable to ship over here and I\ncan’t leave this LAB to get it...\nThat’s why I need your help.\nYou’ve traveled far with your\nPOKéMON {PLAYER}!\nI would like you to go and fetch the\nBALL for me.\nIt shouldn’t be a problem for you and\nyour POKéMON.\nYou will need to get your SS.TICKET\nstamped to be able to travel to the\nORANGE ISLANDS.\nHere you go.\nI’ve spoken to the S.S.Office in\nVermillion City, they will stamp\nyour S.S.Ticket for you to be able\nto travel to the Orange Islands via\nthe Undersea Express service on\nRoute 100.\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you\nbetter watch your step!\nGood luck!",
+          "empty_string": false,
+          "sha256": "4be7948a36c9e63b66378cb197f61e969c69bc808e6328188e4687920fe58c4e",
+          "references": [
+            {
+              "command": 9441608,
+              "pointer_offset": 9441610,
+              "target": 11655134,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 9971036,
+          "end": 9971466,
+          "text": "OAK: Wow!\nThat’s excellent!<PARAGRAPH>\n\nYou collected the BADGES of GYMS in<SCROLL>\nKANTO.<PARAGRAPH>\n\nWell done!\nI was right in my assessment of you.<PARAGRAPH>\n\nTell you what, {PLAYER}.\nI’ll make arrangements so that you<SCROLL>\ncan go to MT.SILVER.<PARAGRAPH>\n\nMT.SILVER is a big mountain that is\nhome to many wild POKéMON.<PARAGRAPH>\n\nIt’s too dangerous for your average\nTRAINER, so it’s off limits.<PARAGRAPH>\n\nBut we can make an exception in your\ncase, {PLAYER}.<PARAGRAPH>\n\nGo up to INDIGO PLATEAU.\nYou can reach MT.SILVER from there.",
+          "plain_text": "OAK: Wow!\nThat’s excellent!\nYou collected the BADGES of GYMS in\nKANTO.\nWell done!\nI was right in my assessment of you.\nTell you what, {PLAYER}.\nI’ll make arrangements so that you\ncan go to MT.SILVER.\nMT.SILVER is a big mountain that is\nhome to many wild POKéMON.\nIt’s too dangerous for your average\nTRAINER, so it’s off limits.\nBut we can make an exception in your\ncase, {PLAYER}.\nGo up to INDIGO PLATEAU.\nYou can reach MT.SILVER from there.",
+          "empty_string": false,
+          "sha256": "a139bfdd6d16c973be133841ea4ea49e531b2d0b62261000a9f04a95c823bb27",
+          "references": [
+            {
+              "command": 9441628,
+              "pointer_offset": 9441630,
+              "target": 9971036,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 9971468,
+          "end": 9971584,
+          "text": "The amount of progress you’ve made\non your POKéDEX is:<PARAGRAPH>\n\n{STR_VAR_1} POKéMON seen and\n{STR_VAR_2} POKéMON owned.<PARAGRAPH>\n\n<FONT 02>PROF. OAK’s rating:",
+          "plain_text": "The amount of progress you’ve made\non your POKéDEX is:\n{STR_VAR_1} POKéMON seen and\n{STR_VAR_2} POKéMON owned.\nPROF. OAK’s rating:",
+          "empty_string": false,
+          "sha256": "442107bb108c770697f410879238139e298d0e1562be803987eac2cc4b6ae9d5",
+          "references": [
+            {
+              "command": 9441689,
+              "pointer_offset": 9441691,
+              "target": 9971468,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 9971586,
+          "end": 9971654,
+          "text": "And your NATIONAL POKéDEX is:<PARAGRAPH>\n\n{STR_VAR_1} POKéMON seen and\n{STR_VAR_2} POKéMON owned.",
+          "plain_text": "And your NATIONAL POKéDEX is:\n{STR_VAR_1} POKéMON seen and\n{STR_VAR_2} POKéMON owned.",
+          "empty_string": false,
+          "sha256": "7f1340f09d85f2a7b901f6b97e4f828755c622bb8d034c31b7a9f5742c1764e9",
+          "references": [
+            {
+              "command": 9441750,
+              "pointer_offset": 9441752,
+              "target": 9971586,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 9971656,
+          "end": 9971708,
+          "text": "If you’re in the area,\nI hope you come visit again.",
+          "plain_text": "If you’re in the area,\nI hope you come visit again.",
+          "empty_string": false,
+          "sha256": "2455df2d23aad5a9d331379973fa2da260d63e14d2d08c7a670f536632790052",
+          "references": [
+            {
+              "command": 9441785,
+              "pointer_offset": 9441787,
+              "target": 9971656,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 9971710,
+          "end": 9971775,
+          "text": "I’ll be looking forward to seeing\nyou fill the NATIONAL POKéDEX!",
+          "plain_text": "I’ll be looking forward to seeing\nyou fill the NATIONAL POKéDEX!",
+          "empty_string": false,
+          "sha256": "b8c490fb3a1f1d0610163394b49737467397a10ddd9d6be143851b6cf00072e1",
+          "references": [
+            {
+              "command": 9441840,
+              "pointer_offset": 9441842,
+              "target": 9971710,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 9971777,
+          "end": 9971875,
+          "text": "Finally…<PARAGRAPH>\n\nYou’ve finally completed the\nPOKéDEX!<PARAGRAPH>\n\nIt’s magnificent!\nTruly, this is a fantastic feat!",
+          "plain_text": "Finally…\nYou’ve finally completed the\nPOKéDEX!\nIt’s magnificent!\nTruly, this is a fantastic feat!",
+          "empty_string": false,
+          "sha256": "4d5dddd02754685999d001c9aea633e361f640e60aa4c66bf86a5a26728cee8e",
+          "references": [
+            {
+              "command": 9441857,
+              "pointer_offset": 9441859,
+              "target": 9971777,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": false
+        },
+        {
+          "offset": 9441881,
+          "end": 9442240,
+          "text": "OAK: Ah, {PLAYER}!<PARAGRAPH>\n\nIt’s good of you to come all this way\nto KANTO.<PARAGRAPH>\n\nWhat do you think of the TRAINERS\nout here?<PARAGRAPH>\n\nPretty tough, huh?<PARAGRAPH>\n\nOAK: Ah, you’re collecting KANTO GYM\nBADGES.<PARAGRAPH>\n\nI imagine that it’s hard, but the\nexperience is sure to help you.<PARAGRAPH>\n\nCome see me when you get them all.\nI’ll have a gift for you.<PARAGRAPH>\n\nKeep trying hard, {PLAYER}!\nHow is your POKéDEX coming?<PARAGRAPH>\n\nLet’s see...",
+          "plain_text": "OAK: Ah, {PLAYER}!\nIt’s good of you to come all this way\nto KANTO.\nWhat do you think of the TRAINERS\nout here?\nPretty tough, huh?\nOAK: Ah, you’re collecting KANTO GYM\nBADGES.\nI imagine that it’s hard, but the\nexperience is sure to help you.\nCome see me when you get them all.\nI’ll have a gift for you.\nKeep trying hard, {PLAYER}!\nHow is your POKéDEX coming?\nLet’s see...",
+          "empty_string": false,
+          "sha256": "0253a24e105cd35a9999d89e42cfeec6ff8586382cdf533b4f62df0b7c31b8df",
+          "references": [
+            {
+              "command": 10313939,
+              "pointer_offset": 10313941,
+              "target": 9441881,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 10365741,
+          "end": 10366462,
+          "text": "OAK: Ah you have returned!<PARAGRAPH>\n\nI see you brought the GS BALL with\nyou.<PARAGRAPH>\n\nWell done {PLAYER}!\nI knew you could do it.<PARAGRAPH>\n\nLet me take it from you...<PARAGRAPH>\n\n<COLOR 02>{PLAYER} handed the GS BALL to\nPROF. OAK.<PARAGRAPH>\n\n<COLOR 08>This is most intresting!<PARAGRAPH>\n\nI have seen one of these before.<PARAGRAPH>\n\nIt was about three years ago now...<PARAGRAPH>\n\nI wasn’t able to figure anything out!<PARAGRAPH>\n\nBut as soon as I got word that\nPROF. IVY had obtained yet another<SCROLL>\nGS BALL I thought I would have<SCROLL>\nanother crack at it.<PARAGRAPH>\n\nThanks again for bringing me this.\nI’ll need some time to work...<PARAGRAPH>\n\nHey! I know!<PARAGRAPH>\n\nWhile I’m working on this why don’t\nyou enter into the ORANGE LEAGUE!<PARAGRAPH>\n\nIt’s similar to the JOHTO and KANTO\nLEAGUE but consists of only four<SCROLL>\nGYMS and a CHAMPION!<PARAGRAPH>\n\nI think you would do really well in\nthe ORANGE LEAGUE {PLAYER}!",
+          "plain_text": "OAK: Ah you have returned!\nI see you brought the GS BALL with\nyou.\nWell done {PLAYER}!\nI knew you could do it.\nLet me take it from you...\n{PLAYER} handed the GS BALL to\nPROF. OAK.\nThis is most intresting!\nI have seen one of these before.\nIt was about three years ago now...\nI wasn’t able to figure anything out!\nBut as soon as I got word that\nPROF. IVY had obtained yet another\nGS BALL I thought I would have\nanother crack at it.\nThanks again for bringing me this.\nI’ll need some time to work...\nHey! I know!\nWhile I’m working on this why don’t\nyou enter into the ORANGE LEAGUE!\nIt’s similar to the JOHTO and KANTO\nLEAGUE but consists of only four\nGYMS and a CHAMPION!\nI think you would do really well in\nthe ORANGE LEAGUE {PLAYER}!",
+          "empty_string": false,
+          "sha256": "1fc0a4be0b13fede85d09ac00aab5eba70e7b561d8139378296291c87ed0e615",
+          "references": [
+            {
+              "command": 10313953,
+              "pointer_offset": 10313955,
+              "target": 10365741,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 10316216,
+          "end": 10316374,
+          "text": "OAK: Hello {PLAYER}.\nGood of you to stop by.<PARAGRAPH>\n\nThe research on the GS BALL is going\nto take a while.<PARAGRAPH>\n\nIn the mean time why don’t you take\nthe ORANGE LEAGUE challenge?",
+          "plain_text": "OAK: Hello {PLAYER}.\nGood of you to stop by.\nThe research on the GS BALL is going\nto take a while.\nIn the mean time why don’t you take\nthe ORANGE LEAGUE challenge?",
+          "empty_string": false,
+          "sha256": "7f45002f10b58db895572f9540803dde798f788834b7e3650d5ac641a3bf2803",
+          "references": [
+            {
+              "command": 11609046,
+              "pointer_offset": 11609048,
+              "target": 10316216,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11120804,
+          "end": 11121209,
+          "text": "Ah, {PLAYER}, good of you to stop by.<PARAGRAPH>\n\nLet’s get right to it, shall we?<PARAGRAPH>\n\nThe GS Ball you gave to me from\nProf. Ivy, I’ve been unable to<SCROLL>\nuncover any new data about the ball.<PARAGRAPH>\n\nIt just seems to not want to do\nanything special...<PARAGRAPH>\n\nI’d like to return the Ball to you,\nand ask that you deliver it to Kurt<SCROLL>\nin Azalea Town in Johto.<PARAGRAPH>\n\nHe’s an expert on Poké Balls, so if\nanyone would know about the GS Ball,<SCROLL>\nit would be Kurt.",
+          "plain_text": "Ah, {PLAYER}, good of you to stop by.\nLet’s get right to it, shall we?\nThe GS Ball you gave to me from\nProf. Ivy, I’ve been unable to\nuncover any new data about the ball.\nIt just seems to not want to do\nanything special...\nI’d like to return the Ball to you,\nand ask that you deliver it to Kurt\nin Azalea Town in Johto.\nHe’s an expert on Poké Balls, so if\nanyone would know about the GS Ball,\nit would be Kurt.",
+          "empty_string": false,
+          "sha256": "fb15cb79a2c166d52d1447893a4f3a4b5503e340fe05ddd98cacbd9f9eaaf3d5",
+          "references": [
+            {
+              "command": 11609391,
+              "pointer_offset": 11609393,
+              "target": 11120804,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11639729,
+          "end": 11639862,
+          "text": "Thanks {PLAYER}, I trust that you\nwill be able to handle this task.<PARAGRAPH>\n\nSo the Orange League is going well\nI hear?<PARAGRAPH>\n\nDo stop by some other time.",
+          "plain_text": "Thanks {PLAYER}, I trust that you\nwill be able to handle this task.\nSo the Orange League is going well\nI hear?\nDo stop by some other time.",
+          "empty_string": false,
+          "sha256": "0b14e7810eeb0d42fbac788490989851aaaa3f81f26263a08da4a481efb1d51c",
+          "references": [
+            {
+              "command": 11609411,
+              "pointer_offset": 11609413,
+              "target": 11639729,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11702831,
+          "end": 11702924,
+          "text": "Hi {PLAYER}, how’s it going?<PARAGRAPH>\n\nHave you delivered that GS Ball yet?<PARAGRAPH>\n\nSay hi to Kurt for me would you?",
+          "plain_text": "Hi {PLAYER}, how’s it going?\nHave you delivered that GS Ball yet?\nSay hi to Kurt for me would you?",
+          "empty_string": false,
+          "sha256": "37c3b4d0d707f681ec2c59fe4fecc35763e8bc21b895dcdfc1530bf4e10a53f1",
+          "references": [
+            {
+              "command": 11641050,
+              "pointer_offset": 11641052,
+              "target": 11702831,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11641821,
+          "end": 11642028,
+          "text": "Hi {PLAYER}.\nI see you delivered the GS Ball to<SCROLL>\nKurt.<PARAGRAPH>\n\nDoes he know what it is yet?<PARAGRAPH>\n\nI see, so he is researching it.<PARAGRAPH>\n\nLet’s give him a day or so to see\nwhat he can do.<PARAGRAPH>\n\nI have faith that Kurt can unlock\nit’s secrets.",
+          "plain_text": "Hi {PLAYER}.\nI see you delivered the GS Ball to\nKurt.\nDoes he know what it is yet?\nI see, so he is researching it.\nLet’s give him a day or so to see\nwhat he can do.\nI have faith that Kurt can unlock\nit’s secrets.",
+          "empty_string": false,
+          "sha256": "01b0d64016802c56d8cf0cdcb84560b564e843e810864b12c7dd2fb737e550c6",
+          "references": [
+            {
+              "command": 11641497,
+              "pointer_offset": 11641499,
+              "target": 11641821,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11641671,
+          "end": 11641819,
+          "text": "{PLAYER}! Isn’t it amazing?<PARAGRAPH>\n\nThe GS Ball turned out to be related\nto Ilex Forest and the legendary<SCROLL>\nCelebi.<PARAGRAPH>\n\nI knew Kurt had it in him to solve\nthe mystery!",
+          "plain_text": "{PLAYER}! Isn’t it amazing?\nThe GS Ball turned out to be related\nto Ilex Forest and the legendary\nCelebi.\nI knew Kurt had it in him to solve\nthe mystery!",
+          "empty_string": false,
+          "sha256": "af8989e2931a40fc83f6d03d1cc4a37c73f3af41d07d0a9c4d8ebe08834b5f73",
+          "references": [
+            {
+              "command": 11641523,
+              "pointer_offset": 11641525,
+              "target": 11641671,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        },
+        {
+          "offset": 11641551,
+          "end": 11641669,
+          "text": "Hello {PLAYER}, good to see you.<PARAGRAPH>\n\nHow is the Orange League going?<PARAGRAPH>\n\nI hope you’re winning your way\nthrough and keeping strong.",
+          "plain_text": "Hello {PLAYER}, good to see you.\nHow is the Orange League going?\nI hope you’re winning your way\nthrough and keeping strong.",
+          "empty_string": false,
+          "sha256": "d8d257292ac36790f7e0a37c4ea6d8fd9fc210b7231c4990b5399448e364bafb",
+          "references": [
+            {
+              "command": 11641537,
+              "pointer_offset": 11641539,
+              "target": 11641551,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        }
+      ],
+      "rejected_text_targets": [],
+      "reachability": "UNKNOWN; all paths are static format candidates, not execution proofs"
+    },
+    {
+      "anchor_text": "0xa9c482",
+      "roots": [
+        {
+          "offset": 11125879,
+          "method": {
+            "method": "prior_incoming_target_trace",
+            "entry_path": []
+          },
+          "incoming_pointer_sites": [
+            12770504
+          ],
+          "witnesses_to_anchor_commands": {
+            "0xa9c477": []
+          },
+          "state_count": 4
+        }
+      ],
+      "reverse_transfer_candidates": [],
+      "instructions": [
+        {
+          "pc": 11125879,
+          "end": 11125885,
+          "opcode": 15,
+          "name": "loadword",
+          "values": [
+            0,
+            145343618
+          ],
+          "operand_offsets": [
+            11125880,
+            11125881
+          ],
+          "raw_hex": "0f 00 82 c4 a9 08",
+          "texts": [
+            {
+              "pointer_offset": 11125881,
+              "target": 11125890,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11125885,
+          "end": 11125887,
+          "opcode": 9,
+          "name": "callstd",
+          "values": [
+            2
+          ],
+          "operand_offsets": [
+            11125886
+          ],
+          "raw_hex": "09 02",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11125887,
+          "end": 11125888,
+          "opcode": 108,
+          "name": "release",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "6c",
+          "texts": [],
+          "trainer_continuation": null
+        },
+        {
+          "pc": 11125888,
+          "end": 11125889,
+          "opcode": 2,
+          "name": "end",
+          "values": [],
+          "operand_offsets": [],
+          "raw_hex": "02",
+          "texts": [],
+          "trainer_continuation": null
+        }
+      ],
+      "edges": [
+        {
+          "source": 11125879,
+          "target": 11125885,
+          "kind": "next"
+        },
+        {
+          "source": 11125885,
+          "target": 11125887,
+          "kind": "assumed_return_after_callstd"
+        },
+        {
+          "source": 11125887,
+          "target": 11125888,
+          "kind": "next"
+        }
+      ],
+      "frontiers": [],
+      "instruction_overlaps": [],
+      "messages": [
+        {
+          "offset": 11125890,
+          "end": 11125960,
+          "text": "Route 59<PARAGRAPH>\n\n↓ Mandarin City\n→ Science Complex<PARAGRAPH>\n\n↑ Route 60 & Old Warehouse",
+          "plain_text": "Route 59\n↓ Mandarin City\n→ Science Complex\n↑ Route 60 & Old Warehouse",
+          "empty_string": false,
+          "sha256": "bcc73ffb5b805e6beaa32281efe7547adea004dde9a1caf17f0bc6e764b0d10d",
+          "references": [
+            {
+              "command": 11125879,
+              "pointer_offset": 11125881,
+              "target": 11125890,
+              "role": "loadword_then_callstd"
+            }
+          ],
+          "in_prior_keyword_corpus": true
+        }
+      ],
+      "rejected_text_targets": [],
+      "reachability": "UNKNOWN; all paths are static format candidates, not execution proofs"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "P002",
+  "decision": "approved for implementation",
+  "user_message": "approve, keep going.",
+  "design_sha256": "a3243c3f43434781d5e8804a97996d996974d1b4e513175906590c3e5abb788c",
+  "review_manifest_sha256": "ab47bf31edf73fd2fc72bb8b066d53f73d5a046a63a8f89863d98d2003d6107f",
+  "scope": "Approved Office Block service-room map, completed-sign access and normal return; gameplay tests, walkthrough and reversible package. Original city door/story flags remain unchanged."
+}

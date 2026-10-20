@@ -1,0 +1,129 @@
+{
+  "id": "P002",
+  "status": "DESIGN_FOR_REVIEW_NOT_IMPLEMENTED",
+  "classification": "NEWLY_AUTHORED service-room placement and links; surviving police dialogue supports an outside-city secret entrance but does not establish this exact room or geometry.",
+  "input_rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "scope": "Enter a new Office Block service room from the completed warehouse sign; its normal exit returns to the warehouse. No new battle/reward/rank, later floors, Route60, city-front-door unlock or global story-flag changes.",
+  "entry": {
+    "existing_map": [
+      6,
+      31
+    ],
+    "source_sign_pointer_site": 12186608,
+    "gate": {
+      "variable": 21297,
+      "value": 13059,
+      "trainer_id": 929,
+      "trainer_bit_required": true
+    },
+    "preserve_pending_dispatcher": 12185629,
+    "original_clue": 9920992,
+    "prompt": "The way is clear. Enter the\nOFFICE BLOCK service room?",
+    "destination": [
+      6,
+      32,
+      4,
+      7
+    ]
+  },
+  "new_room": {
+    "map": [
+      6,
+      32
+    ],
+    "name": "Office Block service room",
+    "layout_asset_map": [
+      5,
+      123
+    ],
+    "layout_policy": "Share the original 13x10 interior layout, tilesets and indexed layout ID without modifying its original map; keep section MANDARIN CITY. No claim that this is a recovered Office interior.",
+    "header": 12187268,
+    "events": 12187296,
+    "objects": 12187316,
+    "warps": 12187340,
+    "npc": {
+      "donor_map": [
+        5,
+        123
+      ],
+      "local_id": 1,
+      "graphics_id": 33,
+      "position": [
+        4,
+        4
+      ],
+      "movement_type": 8,
+      "visibility_flag": 0,
+      "message": "The main office is closed.\nUse the passage to return."
+    },
+    "entry_position": [
+      4,
+      7
+    ],
+    "exit": {
+      "position": [
+        4,
+        8
+      ],
+      "destination": [
+        6,
+        31,
+        0
+      ]
+    },
+    "map_scripts": null,
+    "connections": null
+  },
+  "group_bank": {
+    "group": 6,
+    "pointer_site": 3483328,
+    "old_bank": 12664504,
+    "preserve_original_words": 32,
+    "new_bank": 12187136,
+    "new_header_slot": 32,
+    "policy": "Copy all 32 original pointer words unchanged, including unresolved legacy entries4/6. Append the new header at slot32. Preserve the original bank bytes and all other group pointers."
+  },
+  "budget": {
+    "start": 12186848,
+    "end_exclusive": 12187392,
+    "scripts_start": 12186848,
+    "scripts_capacity": 160,
+    "text_start": 12187008,
+    "text_capacity": 128,
+    "tables_start": 12187136,
+    "tables_capacity": 256
+  },
+  "preserve": [
+    "All original ROM inputs and save/footer bytes",
+    "P001 puzzle/team/battle states and tagged outcome rules",
+    "Original city doorway NPCs17/26 and flags5B6/270; locked door and warp remain unchanged",
+    "Original warehouse introduction, source clue and all existing warp records",
+    "No new variable/flag or save-layout change",
+    "Cartridge driver, embedded save, engine code and ROM size"
+  ],
+  "acceptance": [
+    "Exact P001 input hash; source review artifact hashes; bounded nonoverlapping expected-byte writes",
+    "New map lookup resolves6:32 to its new header while all32 old bank words remain identical",
+    "Pending/legacy/inconsistent-tag states fall through to original P001 sign; only completed tag plus bit929 permits entry",
+    "Original clue still displays; declined entry stays in warehouse; repeat entry remains possible",
+    "Normal Office room exit returns to warehouse through its existing warp0; both original warehouse exits remain unchanged",
+    "Save in new room, fresh-process load, exit/return and repeated interaction preserve progress without duplicate rewards",
+    "City doorway blockers/scripts and unrelated global flags remain byte-identical",
+    "Deterministic BPS from original baseline and P001-relative forward/reverse patches; guards/headers/cartridge bank preservation",
+    "Affected P001 puzzle/state/win/loss/persistence/exit acceptance; no repeat of unrelated old journeys unless changed"
+  ],
+  "rollback_policy": "Exit the new map back to original room6:31 and save before removing P002. A save positioned in new map6:32 is not compatible with P001-only/original ROMs. Keep original save backups.",
+  "limits": [
+    "Not an implemented ROM or full Office quest",
+    "Map32 is beyond the original physical pointer prefix; unknown computed uses are outside the bounded model, not proven absent",
+    "The chosen art, room placement, prompt and NPC message are new design choices",
+    "No recovered Route60 layout or exact intended next Office battle/reward exists in this evidence",
+    "Hardware and stock-emulator compatibility remain unverified for the supplied cartridge conversion"
+  ],
+  "evidence": [
+    "extracted/runtime/office_access/office_access.json",
+    "extracted/scripts/orange_progression_audit.json",
+    "research/P001_implementation.md",
+    "research/space_ownership.md"
+  ]
+}

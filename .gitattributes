@@ -1,0 +1,3 @@
+# Frozen review/reference manifests hash exact bytes, including CSV CRLF.
+# Keep those bytes identical across platforms and cloud restores.
+* -text

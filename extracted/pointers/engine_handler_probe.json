@@ -1,0 +1,1263 @@
+{
+  "method": "Independent adjacent-NOP code search and little-endian handler-prefix references. Contained candidates are treated as interior positions, not separate tables. Compared code intervals stop at next known handler or 256 bytes. This does not verify dispatcher use, complete function boundaries, helper/native callees, or runtime state.",
+  "discovery": {
+    "firered": [
+      {
+        "table": 1440180,
+        "nop_code": 433872,
+        "contained_in_other_candidate": false
+      },
+      {
+        "table": 1440356,
+        "nop_code": 436692,
+        "contained_in_other_candidate": true
+      }
+    ],
+    "liquid_crystal": [
+      {
+        "table": 1440180,
+        "nop_code": 433872,
+        "contained_in_other_candidate": false
+      },
+      {
+        "table": 1440356,
+        "nop_code": 436692,
+        "contained_in_other_candidate": true
+      }
+    ]
+  },
+  "selected_tables": {
+    "firered": "0x15f9b4",
+    "liquid_crystal": "0x15f9b4"
+  },
+  "source_sha256": {
+    "firered": "3d0c79f1627022e18765766f6cb5ea067f6b5bf7dca115552189ad65a5c3a8ac",
+    "liquid_crystal": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf"
+  },
+  "handler_comparisons": [
+    {
+      "opcode": 0,
+      "firered": {
+        "pointer": "0x8069ed1",
+        "file_offset": "0x69ed0",
+        "end_exclusive": "0x69ed4",
+        "sha256": "a7ddd513d149ea16fdd4db3f82267f83087aeaddd06b5dde5468adb704205fc4",
+        "length_bytes": 4
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069ed1",
+        "file_offset": "0x69ed0",
+        "end_exclusive": "0x69ed4",
+        "sha256": "a7ddd513d149ea16fdd4db3f82267f83087aeaddd06b5dde5468adb704205fc4",
+        "length_bytes": 4
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 1,
+      "firered": {
+        "pointer": "0x8069ed5",
+        "file_offset": "0x69ed4",
+        "end_exclusive": "0x69ed8",
+        "sha256": "a7ddd513d149ea16fdd4db3f82267f83087aeaddd06b5dde5468adb704205fc4",
+        "length_bytes": 4
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069ed5",
+        "file_offset": "0x69ed4",
+        "end_exclusive": "0x69ed8",
+        "sha256": "a7ddd513d149ea16fdd4db3f82267f83087aeaddd06b5dde5468adb704205fc4",
+        "length_bytes": 4
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 2,
+      "firered": {
+        "pointer": "0x8069ed9",
+        "file_offset": "0x69ed8",
+        "end_exclusive": "0x69ee4",
+        "sha256": "9a47103abf0365186c3b4c23e5190a921fc2033044242427672b25163af3f10f",
+        "length_bytes": 12
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069ed9",
+        "file_offset": "0x69ed8",
+        "end_exclusive": "0x69ee4",
+        "sha256": "9a47103abf0365186c3b4c23e5190a921fc2033044242427672b25163af3f10f",
+        "length_bytes": 12
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 3,
+      "firered": {
+        "pointer": "0x8069fc9",
+        "file_offset": "0x69fc8",
+        "end_exclusive": "0x69fd4",
+        "sha256": "a4c7e59ae583466f83dc3a7b6daf913b26bb3096e77f19138290db0f0e725059",
+        "length_bytes": 12
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069fc9",
+        "file_offset": "0x69fc8",
+        "end_exclusive": "0x69fd4",
+        "sha256": "a4c7e59ae583466f83dc3a7b6daf913b26bb3096e77f19138290db0f0e725059",
+        "length_bytes": 12
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 4,
+      "firered": {
+        "pointer": "0x8069fd5",
+        "file_offset": "0x69fd4",
+        "end_exclusive": "0x69fec",
+        "sha256": "2d61af3efa14816be4f07732eeac3c0910664859d26f3fd8db58ba8eaafdd395",
+        "length_bytes": 24
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069fd5",
+        "file_offset": "0x69fd4",
+        "end_exclusive": "0x69fec",
+        "sha256": "2d61af3efa14816be4f07732eeac3c0910664859d26f3fd8db58ba8eaafdd395",
+        "length_bytes": 24
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 5,
+      "firered": {
+        "pointer": "0x8069fb1",
+        "file_offset": "0x69fb0",
+        "end_exclusive": "0x69fc8",
+        "sha256": "272436ec149fef9a4973160c2db8ae3aca39037ff06bcaffadf2ac6574c500fe",
+        "length_bytes": 24
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069fb1",
+        "file_offset": "0x69fb0",
+        "end_exclusive": "0x69fc8",
+        "sha256": "272436ec149fef9a4973160c2db8ae3aca39037ff06bcaffadf2ac6574c500fe",
+        "length_bytes": 24
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 6,
+      "firered": {
+        "pointer": "0x8069fed",
+        "file_offset": "0x69fec",
+        "end_exclusive": "0x6a028",
+        "sha256": "f26005b8fcae3f3b22aeed4daafbad74c030f474d6fedda57bc4b9005fd01438",
+        "length_bytes": 60
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069fed",
+        "file_offset": "0x69fec",
+        "end_exclusive": "0x6a028",
+        "sha256": "f26005b8fcae3f3b22aeed4daafbad74c030f474d6fedda57bc4b9005fd01438",
+        "length_bytes": 60
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 7,
+      "firered": {
+        "pointer": "0x806a029",
+        "file_offset": "0x6a028",
+        "end_exclusive": "0x6a064",
+        "sha256": "67b97f3270d51791b48bba5a82c19cba3f5682e09cf8df0f065ec9cd4ff5f2ad",
+        "length_bytes": 60
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a029",
+        "file_offset": "0x6a028",
+        "end_exclusive": "0x6a064",
+        "sha256": "67b97f3270d51791b48bba5a82c19cba3f5682e09cf8df0f065ec9cd4ff5f2ad",
+        "length_bytes": 60
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 8,
+      "firered": {
+        "pointer": "0x806a151",
+        "file_offset": "0x6a150",
+        "end_exclusive": "0x6a180",
+        "sha256": "092942510d1f6c39d8d3fd66b09652d2f476684f4a26608c1058741b309ba734",
+        "length_bytes": 48
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a151",
+        "file_offset": "0x6a150",
+        "end_exclusive": "0x6a180",
+        "sha256": "092942510d1f6c39d8d3fd66b09652d2f476684f4a26608c1058741b309ba734",
+        "length_bytes": 48
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 9,
+      "firered": {
+        "pointer": "0x806a181",
+        "file_offset": "0x6a180",
+        "end_exclusive": "0x6a1b0",
+        "sha256": "8fa89b964ce16732b4f82a64f9bbebdaa555c1ef5c7094ee5489db8554bfb3be",
+        "length_bytes": 48
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a181",
+        "file_offset": "0x6a180",
+        "end_exclusive": "0x6a1b0",
+        "sha256": "8fa89b964ce16732b4f82a64f9bbebdaa555c1ef5c7094ee5489db8554bfb3be",
+        "length_bytes": 48
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 15,
+      "firered": {
+        "pointer": "0x806a2b5",
+        "file_offset": "0x6a2b4",
+        "end_exclusive": "0x6a2d8",
+        "sha256": "dbfec13db8a40f633bf983ab4ab5923ec4041034338fa2917ac524638c965ffe",
+        "length_bytes": 36
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a2b5",
+        "file_offset": "0x6a2b4",
+        "end_exclusive": "0x6a2d8",
+        "sha256": "dbfec13db8a40f633bf983ab4ab5923ec4041034338fa2917ac524638c965ffe",
+        "length_bytes": 36
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 16,
+      "firered": {
+        "pointer": "0x806a315",
+        "file_offset": "0x6a314",
+        "end_exclusive": "0x6a330",
+        "sha256": "5b4a5a506a6646c7a901bf697bed968769f4ceb538c9a88a08e66e759b6c8355",
+        "length_bytes": 28
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a315",
+        "file_offset": "0x6a314",
+        "end_exclusive": "0x6a330",
+        "sha256": "5b4a5a506a6646c7a901bf697bed968769f4ceb538c9a88a08e66e759b6c8355",
+        "length_bytes": 28
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 22,
+      "firered": {
+        "pointer": "0x806a391",
+        "file_offset": "0x6a390",
+        "end_exclusive": "0x6a3b4",
+        "sha256": "096c7472d09971c839bbe58d5c86db0ecfca3c91025a802ed58f934aa6c29530",
+        "length_bytes": 36
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a391",
+        "file_offset": "0x6a390",
+        "end_exclusive": "0x6a3b4",
+        "sha256": "096c7472d09971c839bbe58d5c86db0ecfca3c91025a802ed58f934aa6c29530",
+        "length_bytes": 36
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 23,
+      "firered": {
+        "pointer": "0x806a585",
+        "file_offset": "0x6a584",
+        "end_exclusive": "0x6a5ac",
+        "sha256": "35f6997a38f5f92463bcf06c927c175ffab2ce7b1da11ed28aa2ff0565990581",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a585",
+        "file_offset": "0x6a584",
+        "end_exclusive": "0x6a5ac",
+        "sha256": "35f6997a38f5f92463bcf06c927c175ffab2ce7b1da11ed28aa2ff0565990581",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 24,
+      "firered": {
+        "pointer": "0x806a5ad",
+        "file_offset": "0x6a5ac",
+        "end_exclusive": "0x6a5dc",
+        "sha256": "172de5d752247d56b7c44551a2b9bd310acc6138ac268c04aa234ac6d9e02c55",
+        "length_bytes": 48
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a5ad",
+        "file_offset": "0x6a5ac",
+        "end_exclusive": "0x6a5dc",
+        "sha256": "172de5d752247d56b7c44551a2b9bd310acc6138ac268c04aa234ac6d9e02c55",
+        "length_bytes": 48
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 25,
+      "firered": {
+        "pointer": "0x806a3b5",
+        "file_offset": "0x6a3b4",
+        "end_exclusive": "0x6a3e0",
+        "sha256": "5b970ac40725e83632627f0eae950c0a52fdef78162bdc826e03c4f4a04fa7e7",
+        "length_bytes": 44
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a3b5",
+        "file_offset": "0x6a3b4",
+        "end_exclusive": "0x6a3e0",
+        "sha256": "5b970ac40725e83632627f0eae950c0a52fdef78162bdc826e03c4f4a04fa7e7",
+        "length_bytes": 44
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 26,
+      "firered": {
+        "pointer": "0x806a3e1",
+        "file_offset": "0x6a3e0",
+        "end_exclusive": "0x6a42c",
+        "sha256": "6bcf80425598ab31eaf4bbedcab3377328c302438a26603401ad6b7a6a100907",
+        "length_bytes": 76
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a3e1",
+        "file_offset": "0x6a3e0",
+        "end_exclusive": "0x6a42c",
+        "sha256": "6bcf80425598ab31eaf4bbedcab3377328c302438a26603401ad6b7a6a100907",
+        "length_bytes": 76
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 33,
+      "firered": {
+        "pointer": "0x806a521",
+        "file_offset": "0x6a520",
+        "end_exclusive": "0x6a550",
+        "sha256": "7e2b4d8e2cfa16a0f3db4ce69c65c6ac0dc118902bb424f6d71c02ad9e1cab4f",
+        "length_bytes": 48
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a521",
+        "file_offset": "0x6a520",
+        "end_exclusive": "0x6a550",
+        "sha256": "7e2b4d8e2cfa16a0f3db4ce69c65c6ac0dc118902bb424f6d71c02ad9e1cab4f",
+        "length_bytes": 48
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 34,
+      "firered": {
+        "pointer": "0x806a551",
+        "file_offset": "0x6a550",
+        "end_exclusive": "0x6a584",
+        "sha256": "66d265343e908adf471075a3ce53df7c18147e779938fdf290bd8345f61405c6",
+        "length_bytes": 52
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a551",
+        "file_offset": "0x6a550",
+        "end_exclusive": "0x6a584",
+        "sha256": "66d265343e908adf471075a3ce53df7c18147e779938fdf290bd8345f61405c6",
+        "length_bytes": 52
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 35,
+      "firered": {
+        "pointer": "0x8069f95",
+        "file_offset": "0x69f94",
+        "end_exclusive": "0x69fa4",
+        "sha256": "ed19eecf48296ada4d79d19cbbb89cf534d4d2cfb3bcadc200e1f5c9011f1633",
+        "length_bytes": 16
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069f95",
+        "file_offset": "0x69f94",
+        "end_exclusive": "0x69fa4",
+        "sha256": "ed19eecf48296ada4d79d19cbbb89cf534d4d2cfb3bcadc200e1f5c9011f1633",
+        "length_bytes": 16
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 36,
+      "firered": {
+        "pointer": "0x8069ee5",
+        "file_offset": "0x69ee4",
+        "end_exclusive": "0x69efc",
+        "sha256": "9ce13cfc47fd678a9cc7e5e6228da27c87a1fc51ec7f69e38711d4992d55f8fe",
+        "length_bytes": 24
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069ee5",
+        "file_offset": "0x69ee4",
+        "end_exclusive": "0x69efc",
+        "sha256": "9ce13cfc47fd678a9cc7e5e6228da27c87a1fc51ec7f69e38711d4992d55f8fe",
+        "length_bytes": 24
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 37,
+      "firered": {
+        "pointer": "0x8069efd",
+        "file_offset": "0x69efc",
+        "end_exclusive": "0x69f3c",
+        "sha256": "2b7baa406a2e3436a4c16c657dca6a34f28fd2617475a190fc826cad04d3e439",
+        "length_bytes": 64
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069efd",
+        "file_offset": "0x69efc",
+        "end_exclusive": "0x69f3c",
+        "sha256": "2b7baa406a2e3436a4c16c657dca6a34f28fd2617475a190fc826cad04d3e439",
+        "length_bytes": 64
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 38,
+      "firered": {
+        "pointer": "0x8069f3d",
+        "file_offset": "0x69f3c",
+        "end_exclusive": "0x69f94",
+        "sha256": "649c0615b19f579c7b63797f5bce7fa01d74c4d2b4ba7ede2b570221db7792d6",
+        "length_bytes": 88
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069f3d",
+        "file_offset": "0x69f3c",
+        "end_exclusive": "0x69f94",
+        "sha256": "649c0615b19f579c7b63797f5bce7fa01d74c4d2b4ba7ede2b570221db7792d6",
+        "length_bytes": 88
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 39,
+      "firered": {
+        "pointer": "0x8069fa5",
+        "file_offset": "0x69fa4",
+        "end_exclusive": "0x69fb0",
+        "sha256": "f704934641482f42df971307db03f7e1d48aee98d6a7b093f9d6b547b7517b08",
+        "length_bytes": 12
+      },
+      "liquid_crystal": {
+        "pointer": "0x8069fa5",
+        "file_offset": "0x69fa4",
+        "end_exclusive": "0x69fb0",
+        "sha256": "f704934641482f42df971307db03f7e1d48aee98d6a7b093f9d6b547b7517b08",
+        "length_bytes": 12
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 40,
+      "firered": {
+        "pointer": "0x806a9b1",
+        "file_offset": "0x6a9b0",
+        "end_exclusive": "0x6a9d4",
+        "sha256": "caa88b675f38d3bc8f656a318abaf52728844f3029040f80d5f8ee7380539989",
+        "length_bytes": 36
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a9b1",
+        "file_offset": "0x6a9b0",
+        "end_exclusive": "0x6a9d4",
+        "sha256": "caa88b675f38d3bc8f656a318abaf52728844f3029040f80d5f8ee7380539989",
+        "length_bytes": 36
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 41,
+      "firered": {
+        "pointer": "0x806a82d",
+        "file_offset": "0x6a82c",
+        "end_exclusive": "0x6a840",
+        "sha256": "d9b6f66d0451e7557d6ceacddada8e8eaded49518c3b6bfa3fe58a075bb24715",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a82d",
+        "file_offset": "0x6a82c",
+        "end_exclusive": "0x6a840",
+        "sha256": "d9b6f66d0451e7557d6ceacddada8e8eaded49518c3b6bfa3fe58a075bb24715",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 42,
+      "firered": {
+        "pointer": "0x806a841",
+        "file_offset": "0x6a840",
+        "end_exclusive": "0x6a854",
+        "sha256": "c6dbb2d71cd5fb1d72138ac791219d6ca0d674d939735187166e714e481776fc",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a841",
+        "file_offset": "0x6a840",
+        "end_exclusive": "0x6a854",
+        "sha256": "c6dbb2d71cd5fb1d72138ac791219d6ca0d674d939735187166e714e481776fc",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 43,
+      "firered": {
+        "pointer": "0x806a855",
+        "file_offset": "0x6a854",
+        "end_exclusive": "0x6a870",
+        "sha256": "4d275b214df23189dcff801bcb482650d333ae8cb4d115d24d6c5aa7c708d632",
+        "length_bytes": 28
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a855",
+        "file_offset": "0x6a854",
+        "end_exclusive": "0x6a870",
+        "sha256": "4d275b214df23189dcff801bcb482650d333ae8cb4d115d24d6c5aa7c708d632",
+        "length_bytes": 28
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 47,
+      "firered": {
+        "pointer": "0x806b069",
+        "file_offset": "0x6b068",
+        "end_exclusive": "0x6b094",
+        "sha256": "2316511a0ef681226f6c8dff2eea509055f2e17242b7e0cbb47ac6730949c33e",
+        "length_bytes": 44
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b069",
+        "file_offset": "0x6b068",
+        "end_exclusive": "0x6b094",
+        "sha256": "2316511a0ef681226f6c8dff2eea509055f2e17242b7e0cbb47ac6730949c33e",
+        "length_bytes": 44
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 48,
+      "firered": {
+        "pointer": "0x806b095",
+        "file_offset": "0x6b094",
+        "end_exclusive": "0x6b0a8",
+        "sha256": "ed3823af40b10790539c5f5dae5cb885a25ff85281372cd9884c60be051a49ca",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b095",
+        "file_offset": "0x6b094",
+        "end_exclusive": "0x6b0a8",
+        "sha256": "ed3823af40b10790539c5f5dae5cb885a25ff85281372cd9884c60be051a49ca",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 49,
+      "firered": {
+        "pointer": "0x806b0a9",
+        "file_offset": "0x6b0a8",
+        "end_exclusive": "0x6b0cc",
+        "sha256": "8a0d340a2a1db5b70c016e71053b8e8739e1a743ecfb89e95e7591f86c2731fb",
+        "length_bytes": 36
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b0a9",
+        "file_offset": "0x6b0a8",
+        "end_exclusive": "0x6b0cc",
+        "sha256": "8a0d340a2a1db5b70c016e71053b8e8739e1a743ecfb89e95e7591f86c2731fb",
+        "length_bytes": 36
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 50,
+      "firered": {
+        "pointer": "0x806b0cd",
+        "file_offset": "0x6b0cc",
+        "end_exclusive": "0x6b0e0",
+        "sha256": "1ae040910768bf91130eb219d27e8762218ea4d16e8ac065dbfe48c4329733e8",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b0cd",
+        "file_offset": "0x6b0cc",
+        "end_exclusive": "0x6b0e0",
+        "sha256": "1ae040910768bf91130eb219d27e8762218ea4d16e8ac065dbfe48c4329733e8",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 51,
+      "firered": {
+        "pointer": "0x806b0e1",
+        "file_offset": "0x6b0e0",
+        "end_exclusive": "0x6b120",
+        "sha256": "44eb61356d816545fb484acc75b0b8d65517b1db23a3c43203c4555b44a1fa95",
+        "length_bytes": 64
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b0e1",
+        "file_offset": "0x6b0e0",
+        "end_exclusive": "0x6b120",
+        "sha256": "44eb61356d816545fb484acc75b0b8d65517b1db23a3c43203c4555b44a1fa95",
+        "length_bytes": 64
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 52,
+      "firered": {
+        "pointer": "0x806b121",
+        "file_offset": "0x6b120",
+        "end_exclusive": "0x6b134",
+        "sha256": "e209d3e745813d7369671cf57577bafc77449e9f91a58911828ad2d21963f07e",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b121",
+        "file_offset": "0x6b120",
+        "end_exclusive": "0x6b134",
+        "sha256": "e209d3e745813d7369671cf57577bafc77449e9f91a58911828ad2d21963f07e",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 53,
+      "firered": {
+        "pointer": "0x806b135",
+        "file_offset": "0x6b134",
+        "end_exclusive": "0x6b154",
+        "sha256": "417a7171431c4fbb8971b3d35101c80e7375f57f23b7e45f81dd64ea09d9f5cb",
+        "length_bytes": 32
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b135",
+        "file_offset": "0x6b134",
+        "end_exclusive": "0x6b154",
+        "sha256": "417a7171431c4fbb8971b3d35101c80e7375f57f23b7e45f81dd64ea09d9f5cb",
+        "length_bytes": 32
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 54,
+      "firered": {
+        "pointer": "0x806b155",
+        "file_offset": "0x6b154",
+        "end_exclusive": "0x6b17c",
+        "sha256": "9ff012fb8ebafd71b094a45b366188887a890073e155c2478f135b762e587fd6",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b155",
+        "file_offset": "0x6b154",
+        "end_exclusive": "0x6b17c",
+        "sha256": "9ff012fb8ebafd71b094a45b366188887a890073e155c2478f135b762e587fd6",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 55,
+      "firered": {
+        "pointer": "0x806b17d",
+        "file_offset": "0x6b17c",
+        "end_exclusive": "0x6b1c8",
+        "sha256": "e2dcf4763e4181418b648790f0036472d4128ff6073f714b0b9702d2626432cc",
+        "length_bytes": 76
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b17d",
+        "file_offset": "0x6b17c",
+        "end_exclusive": "0x6b1c8",
+        "sha256": "e2dcf4763e4181418b648790f0036472d4128ff6073f714b0b9702d2626432cc",
+        "length_bytes": 76
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 56,
+      "firered": {
+        "pointer": "0x806b1c9",
+        "file_offset": "0x6b1c8",
+        "end_exclusive": "0x6b200",
+        "sha256": "4e05f5d844805b905a4930ce5c855b28ba0f4e6b0d26b83a5bd764edb3fc64b3",
+        "length_bytes": 56
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b1c9",
+        "file_offset": "0x6b1c8",
+        "end_exclusive": "0x6b200",
+        "sha256": "4e05f5d844805b905a4930ce5c855b28ba0f4e6b0d26b83a5bd764edb3fc64b3",
+        "length_bytes": 56
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 68,
+      "firered": {
+        "pointer": "0x806a611",
+        "file_offset": "0x6a610",
+        "end_exclusive": "0x6a65c",
+        "sha256": "5b2d692cf856bb08e04c8ae6b62662181b99b561e857cf9c3bae30aacc78123c",
+        "length_bytes": 76
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a611",
+        "file_offset": "0x6a610",
+        "end_exclusive": "0x6a65c",
+        "sha256": "5b2d692cf856bb08e04c8ae6b62662181b99b561e857cf9c3bae30aacc78123c",
+        "length_bytes": 76
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 69,
+      "firered": {
+        "pointer": "0x806a65d",
+        "file_offset": "0x6a65c",
+        "end_exclusive": "0x6a6a0",
+        "sha256": "e476c87b09ab56b658b3ac3b278cb7f01f86f9873f97f91046bf5d75e9986ac4",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a65d",
+        "file_offset": "0x6a65c",
+        "end_exclusive": "0x6a6a0",
+        "sha256": "e476c87b09ab56b658b3ac3b278cb7f01f86f9873f97f91046bf5d75e9986ac4",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 70,
+      "firered": {
+        "pointer": "0x806a6a1",
+        "file_offset": "0x6a6a0",
+        "end_exclusive": "0x6a6e4",
+        "sha256": "6eb841fb158cab75c3c68efdc823e285486d9c17343dac2d7df0a1885f646d3c",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a6a1",
+        "file_offset": "0x6a6a0",
+        "end_exclusive": "0x6a6e4",
+        "sha256": "6eb841fb158cab75c3c68efdc823e285486d9c17343dac2d7df0a1885f646d3c",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 71,
+      "firered": {
+        "pointer": "0x806a6e5",
+        "file_offset": "0x6a6e4",
+        "end_exclusive": "0x6a728",
+        "sha256": "f63e1df79c1de2a8e0ef31d7ef7fd618b5fd485b11815034d2a24bae26e21654",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a6e5",
+        "file_offset": "0x6a6e4",
+        "end_exclusive": "0x6a728",
+        "sha256": "f63e1df79c1de2a8e0ef31d7ef7fd618b5fd485b11815034d2a24bae26e21654",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 79,
+      "firered": {
+        "pointer": "0x806b201",
+        "file_offset": "0x6b200",
+        "end_exclusive": "0x6b244",
+        "sha256": "e4020651779bfb484fbbce46c73cb5c699f51119db96778f9d41151c1e898ea3",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b201",
+        "file_offset": "0x6b200",
+        "end_exclusive": "0x6b244",
+        "sha256": "e4020651779bfb484fbbce46c73cb5c699f51119db96778f9d41151c1e898ea3",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 81,
+      "firered": {
+        "pointer": "0x806b2b1",
+        "file_offset": "0x6b2b0",
+        "end_exclusive": "0x6b304",
+        "sha256": "bec12d4e778de455200b8b4916178183356769c7f08562a224d0fdd4bb5fc42d",
+        "length_bytes": 84
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b2b1",
+        "file_offset": "0x6b2b0",
+        "end_exclusive": "0x6b304",
+        "sha256": "bec12d4e778de455200b8b4916178183356769c7f08562a224d0fdd4bb5fc42d",
+        "length_bytes": 84
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 83,
+      "firered": {
+        "pointer": "0x806b359",
+        "file_offset": "0x6b358",
+        "end_exclusive": "0x6b380",
+        "sha256": "5ec6f00bd4ab4ffb62cb3200377b74f27749287f453a3d0df248c73acadc548c",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b359",
+        "file_offset": "0x6b358",
+        "end_exclusive": "0x6b380",
+        "sha256": "5ec6f00bd4ab4ffb62cb3200377b74f27749287f453a3d0df248c73acadc548c",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 85,
+      "firered": {
+        "pointer": "0x806b3b1",
+        "file_offset": "0x6b3b0",
+        "end_exclusive": "0x6b3d8",
+        "sha256": "e3cf6f5a19f8789d491330ae0be0305d7aedcff6037aecf711d4a4d267c7aec5",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b3b1",
+        "file_offset": "0x6b3b0",
+        "end_exclusive": "0x6b3d8",
+        "sha256": "e3cf6f5a19f8789d491330ae0be0305d7aedcff6037aecf711d4a4d267c7aec5",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 90,
+      "firered": {
+        "pointer": "0x806b5bd",
+        "file_offset": "0x6b5bc",
+        "end_exclusive": "0x6b5f4",
+        "sha256": "14bf57e1ff6a17e3179ab3bd51119c3e8a5776d681c600a3e5ba07f9a63d3ef3",
+        "length_bytes": 56
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b5bd",
+        "file_offset": "0x6b5bc",
+        "end_exclusive": "0x6b5f4",
+        "sha256": "14bf57e1ff6a17e3179ab3bd51119c3e8a5776d681c600a3e5ba07f9a63d3ef3",
+        "length_bytes": 56
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 92,
+      "firered": {
+        "pointer": "0x806c2c5",
+        "file_offset": "0x6c2c4",
+        "end_exclusive": "0x6c2d8",
+        "sha256": "aa42a63a419789b142a122d829e6208e9243cf96873768b56be46f996723043f",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c2c5",
+        "file_offset": "0x6c2c4",
+        "end_exclusive": "0x6c2d8",
+        "sha256": "aa42a63a419789b142a122d829e6208e9243cf96873768b56be46f996723043f",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 96,
+      "firered": {
+        "pointer": "0x806c30d",
+        "file_offset": "0x6c30c",
+        "end_exclusive": "0x6c330",
+        "sha256": "4f6ba74315b1afd34d976c3f67c717186b81b7c7a40e803f1a104480154b8fec",
+        "length_bytes": 36
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c30d",
+        "file_offset": "0x6c30c",
+        "end_exclusive": "0x6c330",
+        "sha256": "b11a7b6aa8e9f6bc1b8a30e2955d4e939291cc72f06daa218da9918e893f5a13",
+        "length_bytes": 36
+      },
+      "compared_bytes_equal": false
+    },
+    {
+      "opcode": 97,
+      "firered": {
+        "pointer": "0x806c331",
+        "file_offset": "0x6c330",
+        "end_exclusive": "0x6c34c",
+        "sha256": "0737cbe77a116e3a3567ccd4622a79e293e9b0ea18b94e5b35aebbf5005a4df6",
+        "length_bytes": 28
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c331",
+        "file_offset": "0x6c330",
+        "end_exclusive": "0x6c34c",
+        "sha256": "30d4ee2ab62ea87a16dc0718fb0b3b905424db7317974b968118dd5feb16a240",
+        "length_bytes": 28
+      },
+      "compared_bytes_equal": false
+    },
+    {
+      "opcode": 98,
+      "firered": {
+        "pointer": "0x806c34d",
+        "file_offset": "0x6c34c",
+        "end_exclusive": "0x6c368",
+        "sha256": "6c31dde3604807cd76b95e495d54e037d5af342eff1322bbc6ea5d0c71a48731",
+        "length_bytes": 28
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c34d",
+        "file_offset": "0x6c34c",
+        "end_exclusive": "0x6c368",
+        "sha256": "3e499f266dd6b5d7b8ce4a70d244dd425309317a21cb31fbdb147d3b6dad8c20",
+        "length_bytes": 28
+      },
+      "compared_bytes_equal": false
+    },
+    {
+      "opcode": 102,
+      "firered": {
+        "pointer": "0x806b879",
+        "file_offset": "0x6b878",
+        "end_exclusive": "0x6b88c",
+        "sha256": "5d9edc494b16da314398d27945ab53e80df6fcd2d29d986006baf4daeb97ac73",
+        "length_bytes": 20
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b879",
+        "file_offset": "0x6b878",
+        "end_exclusive": "0x6b88c",
+        "sha256": "5d9edc494b16da314398d27945ab53e80df6fcd2d29d986006baf4daeb97ac73",
+        "length_bytes": 20
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 103,
+      "firered": {
+        "pointer": "0x806b80d",
+        "file_offset": "0x6b80c",
+        "end_exclusive": "0x6b828",
+        "sha256": "7119e03c15b08a2f9d4b47d1a0ec26c45979005de64096c816b254b40b78a6af",
+        "length_bytes": 28
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b80d",
+        "file_offset": "0x6b80c",
+        "end_exclusive": "0x6b828",
+        "sha256": "7119e03c15b08a2f9d4b47d1a0ec26c45979005de64096c816b254b40b78a6af",
+        "length_bytes": 28
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 104,
+      "firered": {
+        "pointer": "0x806b88d",
+        "file_offset": "0x6b88c",
+        "end_exclusive": "0x6b98c",
+        "sha256": "8e031ac6d767404ee036c0d619e6b51893ca747727dd66a42af0fa24b5df2880",
+        "length_bytes": 256
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b88d",
+        "file_offset": "0x6b88c",
+        "end_exclusive": "0x6b98c",
+        "sha256": "8e031ac6d767404ee036c0d619e6b51893ca747727dd66a42af0fa24b5df2880",
+        "length_bytes": 256
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 105,
+      "firered": {
+        "pointer": "0x806b6dd",
+        "file_offset": "0x6b6dc",
+        "end_exclusive": "0x6b704",
+        "sha256": "5786a397b1bf333ce5ed5d19c5d895a38a2a9255234290cccf306dcb698370fc",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b6dd",
+        "file_offset": "0x6b6dc",
+        "end_exclusive": "0x6b704",
+        "sha256": "5786a397b1bf333ce5ed5d19c5d895a38a2a9255234290cccf306dcb698370fc",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 106,
+      "firered": {
+        "pointer": "0x806b705",
+        "file_offset": "0x6b704",
+        "end_exclusive": "0x6b75c",
+        "sha256": "63a06a21d4779a0602929a2f5e268e6231b8f2c0382c80c9f2907bd9a7cdf873",
+        "length_bytes": 88
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b705",
+        "file_offset": "0x6b704",
+        "end_exclusive": "0x6b75c",
+        "sha256": "63a06a21d4779a0602929a2f5e268e6231b8f2c0382c80c9f2907bd9a7cdf873",
+        "length_bytes": 88
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 107,
+      "firered": {
+        "pointer": "0x806b75d",
+        "file_offset": "0x6b75c",
+        "end_exclusive": "0x6b794",
+        "sha256": "3d5ddaa3042ff37e8d7e04fd3275e8374ce51bde8cc1d2d4efbc158c211825a4",
+        "length_bytes": 56
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b75d",
+        "file_offset": "0x6b75c",
+        "end_exclusive": "0x6b794",
+        "sha256": "3d5ddaa3042ff37e8d7e04fd3275e8374ce51bde8cc1d2d4efbc158c211825a4",
+        "length_bytes": 56
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 108,
+      "firered": {
+        "pointer": "0x806b795",
+        "file_offset": "0x6b794",
+        "end_exclusive": "0x6b7ec",
+        "sha256": "da844407c9d34d2f20a4efae35cbffc0185c4a124571a48732a8e6756aa584ad",
+        "length_bytes": 88
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b795",
+        "file_offset": "0x6b794",
+        "end_exclusive": "0x6b7ec",
+        "sha256": "da844407c9d34d2f20a4efae35cbffc0185c4a124571a48732a8e6756aa584ad",
+        "length_bytes": 88
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 109,
+      "firered": {
+        "pointer": "0x806ba3d",
+        "file_offset": "0x6ba3c",
+        "end_exclusive": "0x6ba80",
+        "sha256": "bceb294f0cae1299f43378fd79f2d5bf24b2f52c1ea4e5716b414c69d8cb7bc6",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806ba3d",
+        "file_offset": "0x6ba3c",
+        "end_exclusive": "0x6ba80",
+        "sha256": "bceb294f0cae1299f43378fd79f2d5bf24b2f52c1ea4e5716b414c69d8cb7bc6",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 131,
+      "firered": {
+        "pointer": "0x806be91",
+        "file_offset": "0x6be90",
+        "end_exclusive": "0x6bed4",
+        "sha256": "56498a584f31ab18e44d66989c339efd00f68f902ca1890be025c53bb136a8bc",
+        "length_bytes": 68
+      },
+      "liquid_crystal": {
+        "pointer": "0x806be91",
+        "file_offset": "0x6be90",
+        "end_exclusive": "0x6bed4",
+        "sha256": "56498a584f31ab18e44d66989c339efd00f68f902ca1890be025c53bb136a8bc",
+        "length_bytes": 68
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 133,
+      "firered": {
+        "pointer": "0x806bf15",
+        "file_offset": "0x6bf14",
+        "end_exclusive": "0x6bf3c",
+        "sha256": "f362b55a583a334d869445b3290d07e667d255c9b068382fe3f5a6e5405a48a2",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806bf15",
+        "file_offset": "0x6bf14",
+        "end_exclusive": "0x6bf3c",
+        "sha256": "f362b55a583a334d869445b3290d07e667d255c9b068382fe3f5a6e5405a48a2",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 151,
+      "firered": {
+        "pointer": "0x806a939",
+        "file_offset": "0x6a938",
+        "end_exclusive": "0x6a960",
+        "sha256": "bd56f7fa05b4a6e9b46da0eb6df7d2d3f250f2dc9ce5cb83f90ffba8d6cac5b7",
+        "length_bytes": 40
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a939",
+        "file_offset": "0x6a938",
+        "end_exclusive": "0x6a960",
+        "sha256": "bd56f7fa05b4a6e9b46da0eb6df7d2d3f250f2dc9ce5cb83f90ffba8d6cac5b7",
+        "length_bytes": 40
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 152,
+      "firered": {
+        "pointer": "0x806a961",
+        "file_offset": "0x6a960",
+        "end_exclusive": "0x6a9b0",
+        "sha256": "76dc30fbf54ed26820f983d3a62416fa327880136577e1f1ca97985b68cf44ef",
+        "length_bytes": 80
+      },
+      "liquid_crystal": {
+        "pointer": "0x806a961",
+        "file_offset": "0x6a960",
+        "end_exclusive": "0x6a9b0",
+        "sha256": "76dc30fbf54ed26820f983d3a62416fa327880136577e1f1ca97985b68cf44ef",
+        "length_bytes": 80
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 161,
+      "firered": {
+        "pointer": "0x806c509",
+        "file_offset": "0x6c508",
+        "end_exclusive": "0x6c540",
+        "sha256": "0574dc439b5e6b320437661472350192f50526b46204fda2501e5aa231d730a3",
+        "length_bytes": 56
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c509",
+        "file_offset": "0x6c508",
+        "end_exclusive": "0x6c540",
+        "sha256": "0574dc439b5e6b320437661472350192f50526b46204fda2501e5aa231d730a3",
+        "length_bytes": 56
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 162,
+      "firered": {
+        "pointer": "0x806c555",
+        "file_offset": "0x6c554",
+        "end_exclusive": "0x6c5d4",
+        "sha256": "1538ab86e0d5b224255f470be295b9d16f622a7cb792c33930f2ea52b1edbbff",
+        "length_bytes": 128
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c555",
+        "file_offset": "0x6c554",
+        "end_exclusive": "0x6c5d4",
+        "sha256": "1538ab86e0d5b224255f470be295b9d16f622a7cb792c33930f2ea52b1edbbff",
+        "length_bytes": 128
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 182,
+      "firered": {
+        "pointer": "0x806c369",
+        "file_offset": "0x6c368",
+        "end_exclusive": "0x6c39c",
+        "sha256": "f0531de30be16a4e61d203b471c7982e0008e08255e4ff4447bdd43cbf4a78a8",
+        "length_bytes": 52
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c369",
+        "file_offset": "0x6c368",
+        "end_exclusive": "0x6c39c",
+        "sha256": "c91c6c8f2268edd4701e83a1c9b3e2d38ea21de64c3a40c7868c6ceffefa9f42",
+        "length_bytes": 52
+      },
+      "compared_bytes_equal": false
+    },
+    {
+      "opcode": 183,
+      "firered": {
+        "pointer": "0x806c39d",
+        "file_offset": "0x6c39c",
+        "end_exclusive": "0x6c3ac",
+        "sha256": "1ef416a12f74edbec1bc12f35874419b423b437f2282adaa830455c7f2f8f4df",
+        "length_bytes": 16
+      },
+      "liquid_crystal": {
+        "pointer": "0x806c39d",
+        "file_offset": "0x6c39c",
+        "end_exclusive": "0x6c3ac",
+        "sha256": "1ef416a12f74edbec1bc12f35874419b423b437f2282adaa830455c7f2f8f4df",
+        "length_bytes": 16
+      },
+      "compared_bytes_equal": true
+    },
+    {
+      "opcode": 199,
+      "firered": {
+        "pointer": "0x806b7ed",
+        "file_offset": "0x6b7ec",
+        "end_exclusive": "0x6b80c",
+        "sha256": "b27a40fb2c9c461c4a422bf6913ae9b2d553768aadd9dfccd38db45a5886b5c3",
+        "length_bytes": 32
+      },
+      "liquid_crystal": {
+        "pointer": "0x806b7ed",
+        "file_offset": "0x6b7ec",
+        "end_exclusive": "0x6b80c",
+        "sha256": "b27a40fb2c9c461c4a422bf6913ae9b2d553768aadd9dfccd38db45a5886b5c3",
+        "length_bytes": 32
+      },
+      "compared_bytes_equal": true
+    }
+  ]
+}

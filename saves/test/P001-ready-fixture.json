@@ -1,0 +1,14 @@
+{
+  "kind": "Artificial P001 research fixture",
+  "rom_sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+  "location": {
+    "x": 14,
+    "y": 9,
+    "group": 6,
+    "map": 31,
+    "warp": 255
+  },
+  "state": "0x3302",
+  "party": "One native-generated level-100 Mewtwo, Surf, Lum Berry, cached HP/stats 999; forced Orange room; not a normal playthrough or balanced team",
+  "source_save_unchanged": true
+}

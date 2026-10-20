@@ -1,0 +1,213 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "reclassified_shapes": [
+    {
+      "instruction": {
+        "pc": 5418996,
+        "end": 5419001,
+        "opcode": 34,
+        "name": "compare_var_to_var",
+        "values": [
+          21297,
+          65535
+        ],
+        "operand_offsets": [
+          5418997,
+          5418999
+        ],
+        "raw_hex": "22 31 53 ff ff",
+        "texts": [],
+        "trainer_continuation": null
+      },
+      "prior_classification": "unresolved_raw_shape",
+      "classification": "INHERITED_POINTER_BACKED_AUDIO_FORMAT",
+      "asset": {
+        "start": 5415872,
+        "end_exclusive": 5419353,
+        "type": 1,
+        "sample_count": 6702,
+        "frequency_word": 10764288,
+        "header_hex": "010000000040a400000000002e1a0000",
+        "tone_references": [
+          {
+            "pointer_site": 4770396,
+            "tone_start": 4770392,
+            "tone_hex": "203c0000c0a35208ff00ff00"
+          },
+          {
+            "pointer_site": 4775052,
+            "tone_start": 4775048,
+            "tone_hex": "303c0000c0a35208ff00ff00"
+          }
+        ]
+      },
+      "matches_reference": true
+    },
+    {
+      "instruction": {
+        "pc": 5586633,
+        "end": 5586638,
+        "opcode": 33,
+        "name": "compare_var_to_value",
+        "values": [
+          45614,
+          21297
+        ],
+        "operand_offsets": [
+          5586634,
+          5586636
+        ],
+        "raw_hex": "21 2e b2 31 53",
+        "texts": [],
+        "trainer_continuation": null
+      },
+      "prior_classification": "unresolved_raw_shape",
+      "classification": "INHERITED_POINTER_BACKED_AUDIO_FORMAT",
+      "asset": {
+        "start": 5583112,
+        "end_exclusive": 5587352,
+        "type": 1,
+        "sample_count": 8173,
+        "frequency_word": 10764288,
+        "header_hex": "010000000040a40000000000ed1f0000",
+        "tone_references": [
+          {
+            "pointer_site": 4770876,
+            "tone_start": 4770872,
+            "tone_hex": "203c000008315508ff00ff00"
+          },
+          {
+            "pointer_site": 4775532,
+            "tone_start": 4775528,
+            "tone_hex": "303c000008315508ff00ff00"
+          }
+        ]
+      },
+      "matches_reference": true
+    },
+    {
+      "instruction": {
+        "pc": 6362245,
+        "end": 6362250,
+        "opcode": 34,
+        "name": "compare_var_to_var",
+        "values": [
+          21297,
+          54474
+        ],
+        "operand_offsets": [
+          6362246,
+          6362248
+        ],
+        "raw_hex": "22 31 53 ca d4",
+        "texts": [],
+        "trainer_continuation": null
+      },
+      "prior_classification": "unresolved_raw_shape",
+      "classification": "INHERITED_POINTER_BACKED_AUDIO_FORMAT",
+      "asset": {
+        "start": 6356656,
+        "end_exclusive": 6366407,
+        "type": 1,
+        "sample_count": 18817,
+        "frequency_word": 10764288,
+        "header_hex": "010000000040a4000000000081490000",
+        "tone_references": [
+          {
+            "pointer_site": 4773048,
+            "tone_start": 4773044,
+            "tone_hex": "203c0000b0fe6008ff00ff00"
+          },
+          {
+            "pointer_site": 4777704,
+            "tone_start": 4777700,
+            "tone_hex": "303c0000b0fe6008ff00ff00"
+          }
+        ]
+      },
+      "matches_reference": true
+    },
+    {
+      "instruction": {
+        "pc": 7401379,
+        "end": 7401384,
+        "opcode": 23,
+        "name": "addvar",
+        "values": [
+          21297,
+          52994
+        ],
+        "operand_offsets": [
+          7401380,
+          7401382
+        ],
+        "raw_hex": "17 31 53 02 cf",
+        "texts": [],
+        "trainer_continuation": null
+      },
+      "prior_classification": "unresolved_raw_shape",
+      "classification": "INHERITED_VALIDATED_LZ77",
+      "asset": {
+        "start": 7355456,
+        "end": 7446580,
+        "declared_output_size": 133684,
+        "sha256": "c66e4e0b5a735ab50163158b2a831a17552e692619a144324f138b02fcc849c8"
+      },
+      "matches_reference": true,
+      "note": "No absolute pointer to the header was found; discovered by aligned LZ77 validation. Byte-identical reference context corroborates non-story payload. Do not invent a map/script owner."
+    }
+  ],
+  "supported_extended_operand_sites": [
+    {
+      "pc": 11439482,
+      "name": "setvar",
+      "operand_index": 0,
+      "site": 11439483
+    }
+  ],
+  "existing_condition_owners": [
+    {
+      "map_id": "6:31",
+      "tag": 2,
+      "index": 0,
+      "offset": 12622322,
+      "operand_1": 21297,
+      "operand_2": 0,
+      "condition": "VarGet(operand_1) == VarGet(operand_2); first matching row selected",
+      "raw_hex": "31 53 00 00 7a 8d ae 08",
+      "pointer_site": 12622326,
+      "raw_script_word": 145657210,
+      "script_target": 11439482,
+      "script_status": "ROM_script_candidate"
+    }
+  ],
+  "existing_visibility_owners": [
+    {
+      "id": "6:31:object:0",
+      "map_id": "6:31",
+      "kind": "object",
+      "index": 0,
+      "offset": 12783392,
+      "x": 12,
+      "y": 11,
+      "coordinates_in_default_layout": true,
+      "raw_hex": "01 3d 00 00 0c 00 0b 00 00 07 00 00 00 00 00 00 00 00 00 08 c5 05 00 00",
+      "reachability": "UNKNOWN",
+      "local_id": 1,
+      "graphics_id": 61,
+      "object_kind": 0,
+      "raw_script_word": 134217728,
+      "visibility_flag": 1477,
+      "pointer_site": 12783408,
+      "script_target": 0,
+      "script_status": "ROM_script_candidate",
+      "elevation": 0,
+      "movement_type": 7,
+      "trainer_type": 0,
+      "trainer_range": 0
+    }
+  ],
+  "decision": "Prefer a reviewed extension of room-owned variable 0x5331 for P001, preserving original 0/1 semantics, rather than treating unrelated flags as free. Values 2/3 are design proposals only, not allocated.",
+  "allocations": [],
+  "limits": "All four unresolved raw instruction shapes are inside inherited asset-format spans. No additional supported state handler is established. Computed IDs/native paths and out-of-scope scripts remain unknown; this is not global absence or a hardware/save-ABI certificate."
+}

@@ -1,0 +1,2220 @@
+{
+  "case": "loss",
+  "complete": true,
+  "rom_sha256": "b8ee846f96e1a53eb72e5c23411514b2c16fc182db93abcf943aa0c00839b376",
+  "source_sha256": {
+    "roms/POKEMON Liquid Crystal.gba": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "builds/dev/Liquid Crystal P001.gba": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+    "saves/source/POKEMON Liquid Crystal DD 5 badge.sav": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6"
+  },
+  "started_at_utc": "2026-10-20T03:00:10.549910+00:00",
+  "limits": "P002 interactions and affected P001 regression on disposable files.\n\nForced starting anchors/state and boosted combat fixture are explicit. Office\nentry/return, battle outcomes and actual Save/reload are earned in native play.\n",
+  "boot_save": "saves/source/POKEMON Liquid Crystal DD 5 badge.sav",
+  "boot_save_sha256": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6",
+  "checks": [
+    {
+      "label": "boot_saved_location",
+      "actual": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "expected": {
+        "x": 32,
+        "y": 29,
+        "group": 3,
+        "map": 62,
+        "warp": 4
+      },
+      "passed": true
+    },
+    {
+      "label": "boot_field_callback",
+      "actual": 134571445,
+      "expected": 134571445,
+      "passed": true
+    },
+    {
+      "label": "explicit_room_fixture",
+      "state": 13058,
+      "trainer_defeated": false,
+      "entry": [
+        14,
+        10
+      ],
+      "normal_story_entry": false
+    },
+    {
+      "label": "room_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "explicit_loss_party_fixture",
+      "hp": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_cached_stats": 1,
+      "move": 150,
+      "enemy_or_outcome_writes": false
+    },
+    {
+      "label": "actual_native_enemy_Crobat",
+      "species": 169,
+      "level": 94,
+      "moves": [
+        332,
+        188,
+        109,
+        44
+      ],
+      "battlemon_address": 33700924
+    },
+    {
+      "label": "mister_r_real_loss_observed_message_pointers",
+      "pointers": [
+        146403881
+      ]
+    },
+    {
+      "label": "loss_preserves_retry_tag",
+      "actual": 13058,
+      "expected": 13058,
+      "passed": true
+    },
+    {
+      "label": "loss_does_not_set_defeated_bit",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "label": "whiteout_leaves_warehouse",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "label": "explicit_room_fixture",
+      "state": 13058,
+      "trainer_defeated": false,
+      "entry": [
+        14,
+        10
+      ],
+      "normal_story_entry": false
+    },
+    {
+      "label": "room_entry_observed_message_pointers",
+      "pointers": []
+    },
+    {
+      "label": "return_after_loss_has_retry",
+      "actual": 13058,
+      "expected": 13058,
+      "passed": true
+    },
+    {
+      "label": "return_after_loss_rock_stays_removed",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    }
+  ],
+  "transcript": [
+    {
+      "command": "m",
+      "response": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 0,
+        "sram_writes": 0,
+        "nor_programs": 0,
+        "nor_erases": 0
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 300
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "d5c90e08"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 301
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 481
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 482
+      }
+    },
+    {
+      "command": "f 180 0",
+      "response": {
+        "frame": 662
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d8b0708"
+      }
+    },
+    {
+      "command": "f 1 8",
+      "response": {
+        "frame": 663
+      }
+    },
+    {
+      "command": "f 420 0",
+      "response": {
+        "frame": 1083
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "9d00a208"
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1084
+      }
+    },
+    {
+      "command": "f 300 0",
+      "response": {
+        "frame": 1384
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "38550202"
+      }
+    },
+    {
+      "command": "r 2025538 12",
+      "response": {
+        "address": 33707320,
+        "hex": "20001d00033e0400ffffffff"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "s <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "l <temporary>/baseline.state",
+      "response": {
+        "state": true
+      }
+    },
+    {
+      "command": "f 1 0",
+      "response": {
+        "frame": 1385
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e000362a1030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1389
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e0003163153023329c5053d061fff0e000a0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 1629
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "f 60 0",
+      "response": {
+        "frame": 1689
+      }
+    },
+    {
+      "command": "w 20242da 0100",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 202433e 0000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 20243a2 0000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 2024406 0000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 202446a 0000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 20244ce 0000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 20242d8 01000100010001000100010001000100",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e00037b00009600020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 1693
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "88550202"
+      }
+    },
+    {
+      "command": "r 2025588 12",
+      "response": {
+        "address": 33707400,
+        "hex": "0e000a00061fff000e000a00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "88550202"
+      }
+    },
+    {
+      "command": "r 2025588 12",
+      "response": {
+        "address": 33707400,
+        "hex": "0e000a00061fff000e000a00"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff1f06001500110015001100150011002200003d01000000020001000410000001600800031f060016001000160010001600100011000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "88550202"
+      }
+    },
+    {
+      "command": "r 2025588 12",
+      "response": {
+        "address": 33707400,
+        "hex": "0e000a00061fff000e000a00"
+      }
+    },
+    {
+      "command": "f 16 64",
+      "response": {
+        "frame": 1709
+      }
+    },
+    {
+      "command": "f 24 0",
+      "response": {
+        "frame": 1733
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "88550202"
+      }
+    },
+    {
+      "command": "r 2025588 12",
+      "response": {
+        "address": 33707400,
+        "hex": "0e000900061fff000e000a00"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "88550202"
+      }
+    },
+    {
+      "command": "r 2025588 12",
+      "response": {
+        "address": 33707400,
+        "hex": "0e000900061fff000e000a00"
+      }
+    },
+    {
+      "command": "f 1 32",
+      "response": {
+        "frame": 1734
+      }
+    },
+    {
+      "command": "f 16 0",
+      "response": {
+        "frame": 1750
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 1751
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 1871
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "e0619708"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 1881
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 1911
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "e0619708"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 1921
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 1951
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "e0619708"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 1961
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 1991
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "e0619708"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2001
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2031
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 2151
+      }
+    },
+    {
+      "command": "p <temporary>/retry.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "f 1 1",
+      "response": {
+        "frame": 2152
+      }
+    },
+    {
+      "command": "f 120 0",
+      "response": {
+        "frame": 2272
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "command": "r 3000eb8 4",
+      "response": {
+        "address": 50335416,
+        "hex": "cc4f1a08"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "p <temporary>/mister_r_real_loss_text_08B9F229.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "r 2023be4 88",
+      "response": {
+        "address": 33700836,
+        "hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2282
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2312
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2322
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2352
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2362
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2392
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2402
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2432
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2442
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2472
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2482
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2512
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2522
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2552
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2562
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2592
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c31060606060606060627030204140a0a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2602
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2632
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2642
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2672
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2682
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2712
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2722
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2752
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c31060606060606060627030204140a0a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2762
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2792
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2802
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2832
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2842
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2872
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2882
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2912
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c31060606060606060627030204140a0a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "r 2023be4 88",
+      "response": {
+        "address": 33700836,
+        "hex": "410001000100010001000100960032003c005e00673b050e06060606060606061c0e0e042814060d010001e901000000bbe0d5dfd5eed5e1ff0000c3bbffffffffffffff892d0200f01b6aca0000000000000000bd74f55b"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2922
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2952
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 2962
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 2992
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3002
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3032
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3042
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3072
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c31060606060606060627030204140a0a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3082
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3112
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3122
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3152
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3162
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3192
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3202
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3232
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c3106060606060606062703020414090a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3242
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3272
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3282
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3312
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3322
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3352
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3362
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3392
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c3106060606060606062703020414090a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3402
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3432
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3442
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3472
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3482
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3512
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3522
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3552
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c3106060606060606062703020414090a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "r 2023be4 88",
+      "response": {
+        "address": 33700836,
+        "hex": "410001000100010001000100960032003c005e00673b050e0606060606060606000e0e042814060d000001e901000000bbe0d5dfd5eed5e1ff0000c3bbffffffffffffff892d0200f01b6aca0000000000000000bd74f55b"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3562
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3592
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3602
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3632
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3642
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3672
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3682
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3712
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c3106060606060606062703020414090a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3722
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3752
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3762
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3792
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3802
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3832
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3842
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3872
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 2023c3c 88",
+      "response": {
+        "address": 33700924,
+        "hex": "a900b000b1000f019f00c2004c01bc006d002c0018638c3106060606060606062703020414090a191e015e461e010000bde6e3d6d5e8ffe1ff000000bbffffffffffffff78ac0c0088170b000000000000000000f2eea5d7"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3882
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3912
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3922
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3952
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "01"
+      }
+    },
+    {
+      "command": "r 3000f14 4",
+      "response": {
+        "address": 50335508,
+        "hex": "29f2b908"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 3962
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 3992
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0233"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e000360a1030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 3996
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "f 10 1",
+      "response": {
+        "frame": 4006
+      }
+    },
+    {
+      "command": "f 30 0",
+      "response": {
+        "frame": 4036
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3000eb2 1",
+      "response": {
+        "address": 50335410,
+        "hex": "00"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "8c550202"
+      }
+    },
+    {
+      "command": "r 202558c 12",
+      "response": {
+        "address": 33707404,
+        "hex": "050004002000ff0005000400"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "8c550202"
+      }
+    },
+    {
+      "command": "r 202558c 12",
+      "response": {
+        "address": 33707404,
+        "hex": "050004002000ff0005000400"
+      }
+    },
+    {
+      "command": "p <temporary>/whiteout_location.ppm",
+      "response": {
+        "screenshot": true
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e000362a1030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 4 0",
+      "response": {
+        "frame": 4040
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "w 3000eb0 0001000000000000bc0e0003163153023329c5053d061fff0e000a0002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4f9150808fd150800000000000000000000000000000000",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000ea8 00",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "w 3000eac 01",
+      "response": {
+        "ram_write": true
+      }
+    },
+    {
+      "command": "f 240 0",
+      "response": {
+        "frame": 4280
+      }
+    },
+    {
+      "command": "r 3000ea8 1",
+      "response": {
+        "address": 50335400,
+        "hex": "02"
+      }
+    },
+    {
+      "command": "r 30030f4 4",
+      "response": {
+        "address": 50344180,
+        "hex": "b5650508"
+      }
+    },
+    {
+      "command": "f 60 0",
+      "response": {
+        "frame": 4340
+      }
+    },
+    {
+      "command": "r 203da62 2",
+      "response": {
+        "address": 33806946,
+        "hex": "0233"
+      }
+    },
+    {
+      "command": "r 2036e38 576",
+      "response": {
+        "address": 33779256,
+        "hex": "c180010000000b00ff1f06001500110015001100150011002200003d01000000020001000410000001600800031f060016001000160010001600100011000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff000000000000000000000000000000ffffff0000000000000000000000000000000000ff00000000000000"
+      }
+    },
+    {
+      "command": "r 3005008 4",
+      "response": {
+        "address": 50352136,
+        "hex": "a4550202"
+      }
+    },
+    {
+      "command": "r 20255a4 12",
+      "response": {
+        "address": 33707428,
+        "hex": "0e000a00061fff000e000a00"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "map": [
+        6,
+        31
+      ],
+      "from": [
+        14,
+        10
+      ],
+      "requested": [
+        14,
+        9
+      ],
+      "after": {
+        "x": 14,
+        "y": 9,
+        "group": 6,
+        "map": 31,
+        "warp": 255
+      }
+    }
+  ],
+  "source_unchanged": true
+}

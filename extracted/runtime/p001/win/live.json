@@ -1,0 +1,16 @@
+{
+  "label": "completed_repeat",
+  "iteration": 0,
+  "script_pc": 146403603,
+  "callback": 134571445,
+  "enemy_species": 94,
+  "enemy_hp": 0,
+  "seen": [
+    94,
+    169,
+    197,
+    212,
+    229,
+    248
+  ]
+}

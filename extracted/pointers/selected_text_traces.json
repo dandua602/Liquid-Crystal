@@ -1,0 +1,476 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "method": "Pinned FireRed opcode formats; only uninterrupted linear paths counted. Stops at unsupported opcodes or branch boundaries. Incoming pointers are raw references, not certified map/script roots. Callstd/native effects and trainer battle continuation are not simulated.",
+  "results": [
+    {
+      "text_offset": "0x930c7d",
+      "command_candidates": [
+        "0x9302eb"
+      ],
+      "trace_status": "BOUNDED_FORMAT_PATH_FOUND",
+      "reachability": "UNKNOWN",
+      "traces": [
+        {
+          "entry": "0x9302eb",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "control-flow boundary",
+          "instructions": [
+            {
+              "offset": "0x9302eb",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8930c7d"
+              ],
+              "raw_hex": "0f 00 7d 0c 93 08"
+            },
+            {
+              "offset": "0x9302f1",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0x9302f3",
+              "opcode": "0x6c",
+              "name": "release",
+              "operands": [],
+              "raw_hex": "6c"
+            },
+            {
+              "offset": "0x9302f4",
+              "opcode": "0x2",
+              "name": "end",
+              "operands": [],
+              "raw_hex": "02"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0xc227b8"
+          ]
+        }
+      ]
+    },
+    {
+      "text_offset": "0xb11c47",
+      "command_candidates": [
+        "0xb0ffe2"
+      ],
+      "trace_status": "BOUNDED_FORMAT_PATH_FOUND",
+      "reachability": "UNKNOWN",
+      "traces": [
+        {
+          "entry": "0xb0ffe2",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "control-flow boundary",
+          "instructions": [
+            {
+              "offset": "0xb0ffe2",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8b11c47"
+              ],
+              "raw_hex": "0f 00 47 1c b1 08"
+            },
+            {
+              "offset": "0xb0ffe8",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xb0ffea",
+              "opcode": "0x29",
+              "name": "setflag",
+              "operands": [
+                "0x575"
+              ],
+              "raw_hex": "29 75 05"
+            },
+            {
+              "offset": "0xb0ffed",
+              "opcode": "0x6c",
+              "name": "release",
+              "operands": [],
+              "raw_hex": "6c"
+            },
+            {
+              "offset": "0xb0ffee",
+              "opcode": "0x2",
+              "name": "end",
+              "operands": [],
+              "raw_hex": "02"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0xb0ff9f"
+          ]
+        }
+      ]
+    },
+    {
+      "text_offset": "0xb1d4e0",
+      "command_candidates": [
+        "0xaaafba"
+      ],
+      "trace_status": "BOUNDED_FORMAT_PATH_FOUND",
+      "reachability": "UNKNOWN",
+      "traces": [
+        {
+          "entry": "0xaaaf9a",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "unsupported opcode 97 at 0xaaafd9",
+          "instructions": [
+            {
+              "offset": "0xaaaf9a",
+              "opcode": "0x4f",
+              "name": "applymovement",
+              "operands": [
+                "0xff",
+                "0x8abcef4"
+              ],
+              "raw_hex": "4f ff 00 f4 ce ab 08"
+            },
+            {
+              "offset": "0xaaafa1",
+              "opcode": "0x51",
+              "name": "waitmovement",
+              "operands": [
+                "0x0"
+              ],
+              "raw_hex": "51 00 00"
+            },
+            {
+              "offset": "0xaaafa4",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8abcce8"
+              ],
+              "raw_hex": "0f 00 e8 cc ab 08"
+            },
+            {
+              "offset": "0xaaafaa",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xaaafac",
+              "opcode": "0x5c",
+              "name": "trainerbattle",
+              "operands": [
+                "0x9",
+                "0x345"
+              ],
+              "raw_hex": "5c 09 45 03 00 00 72 b8 ab 08 53 b8 ab 08"
+            },
+            {
+              "offset": "0xaaafba",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8b1d4e0"
+              ],
+              "raw_hex": "0f 00 e0 d4 b1 08"
+            },
+            {
+              "offset": "0xaaafc0",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xaaafc2",
+              "opcode": "0x1a",
+              "name": "setorcopyvar",
+              "operands": [
+                "0x8000",
+                "0x114"
+              ],
+              "raw_hex": "1a 00 80 14 01"
+            },
+            {
+              "offset": "0xaaafc7",
+              "opcode": "0x1a",
+              "name": "setorcopyvar",
+              "operands": [
+                "0x8001",
+                "0x1"
+              ],
+              "raw_hex": "1a 01 80 01 00"
+            },
+            {
+              "offset": "0xaaafcc",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x0"
+              ],
+              "raw_hex": "09 00"
+            },
+            {
+              "offset": "0xaaafce",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8ab7eeb"
+              ],
+              "raw_hex": "0f 00 eb 7e ab 08"
+            },
+            {
+              "offset": "0xaaafd4",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xaaafd6",
+              "opcode": "0x29",
+              "name": "setflag",
+              "operands": [
+                "0x513"
+              ],
+              "raw_hex": "29 13 05"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0xc00582"
+          ]
+        },
+        {
+          "entry": "0xaaafba",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "unsupported opcode 97 at 0xaaafd9",
+          "instructions": [
+            {
+              "offset": "0xaaafba",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8b1d4e0"
+              ],
+              "raw_hex": "0f 00 e0 d4 b1 08"
+            },
+            {
+              "offset": "0xaaafc0",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xaaafc2",
+              "opcode": "0x1a",
+              "name": "setorcopyvar",
+              "operands": [
+                "0x8000",
+                "0x114"
+              ],
+              "raw_hex": "1a 00 80 14 01"
+            },
+            {
+              "offset": "0xaaafc7",
+              "opcode": "0x1a",
+              "name": "setorcopyvar",
+              "operands": [
+                "0x8001",
+                "0x1"
+              ],
+              "raw_hex": "1a 01 80 01 00"
+            },
+            {
+              "offset": "0xaaafcc",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x0"
+              ],
+              "raw_hex": "09 00"
+            },
+            {
+              "offset": "0xaaafce",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8ab7eeb"
+              ],
+              "raw_hex": "0f 00 eb 7e ab 08"
+            },
+            {
+              "offset": "0xaaafd4",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xaaafd6",
+              "opcode": "0x29",
+              "name": "setflag",
+              "operands": [
+                "0x513"
+              ],
+              "raw_hex": "29 13 05"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0x40a6ee"
+          ]
+        }
+      ]
+    },
+    {
+      "text_offset": "0x9e2b2d",
+      "command_candidates": [
+        "0x9d60e1"
+      ],
+      "trace_status": "BOUNDED_FORMAT_PATH_FOUND",
+      "reachability": "UNKNOWN",
+      "traces": [
+        {
+          "entry": "0x9d60e1",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "control-flow boundary",
+          "instructions": [
+            {
+              "offset": "0x9d60e1",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x89e2b2d"
+              ],
+              "raw_hex": "0f 00 2d 2b 9e 08"
+            },
+            {
+              "offset": "0x9d60e7",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0x9d60e9",
+              "opcode": "0x45",
+              "name": "removeitem",
+              "operands": [
+                "0x115",
+                "0x1"
+              ],
+              "raw_hex": "45 15 01 01 00"
+            },
+            {
+              "offset": "0x9d60ee",
+              "opcode": "0x29",
+              "name": "setflag",
+              "operands": [
+                "0x1722"
+              ],
+              "raw_hex": "29 22 17"
+            },
+            {
+              "offset": "0x9d60f1",
+              "opcode": "0x6c",
+              "name": "release",
+              "operands": [],
+              "raw_hex": "6c"
+            },
+            {
+              "offset": "0x9d60f2",
+              "opcode": "0x2",
+              "name": "end",
+              "operands": [],
+              "raw_hex": "02"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0x9d60ab"
+          ]
+        }
+      ]
+    },
+    {
+      "text_offset": "0xa9c482",
+      "command_candidates": [
+        "0xa9c477"
+      ],
+      "trace_status": "BOUNDED_FORMAT_PATH_FOUND",
+      "reachability": "UNKNOWN",
+      "traces": [
+        {
+          "entry": "0xa9c477",
+          "contains_required_command_at_instruction_boundary": true,
+          "stop_reason": "control-flow boundary",
+          "instructions": [
+            {
+              "offset": "0xa9c477",
+              "opcode": "0xf",
+              "name": "loadword",
+              "operands": [
+                "0x0",
+                "0x8a9c482"
+              ],
+              "raw_hex": "0f 00 82 c4 a9 08"
+            },
+            {
+              "offset": "0xa9c47d",
+              "opcode": "0x9",
+              "name": "callstd",
+              "operands": [
+                "0x2"
+              ],
+              "raw_hex": "09 02"
+            },
+            {
+              "offset": "0xa9c47f",
+              "opcode": "0x6c",
+              "name": "release",
+              "operands": [],
+              "raw_hex": "6c"
+            },
+            {
+              "offset": "0xa9c480",
+              "opcode": "0x2",
+              "name": "end",
+              "operands": [],
+              "raw_hex": "02"
+            }
+          ],
+          "incoming_pointer_sites": [
+            "0xc2dcc8"
+          ]
+        }
+      ]
+    }
+  ]
+}

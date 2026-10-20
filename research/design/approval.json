@@ -1,0 +1,7 @@
+{
+  "decision": "approved for implementation",
+  "user_message": "approved, next steps.",
+  "review_manifest_sha256": "e91e111f2fc7237f7fde95af89e08e58fa3c56581c41f47982bd490e6f575d1e",
+  "design_sha256": "2dba1c04e0414898f6c516cf6beba61ba57d453f67906aa17d64940419b56c87",
+  "scope": "P001 prototype and its acceptance tests; original binaries preserved"
+}

@@ -1,0 +1,345 @@
+[
+  {
+    "path": "charmap.txt",
+    "local_file": "charmap.txt",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/charmap.txt",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "4da662317b3b5109a52064f9012d85b644d1dbf0f3f24243374aeef4cf25f061"
+  },
+  {
+    "path": "asm/macros/event.inc",
+    "local_file": "asm__macros__event.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/asm/macros/event.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "848e5e791adeddbe7ae7fe2717729af666a8d8aa163ab7781c74bfd49ce58671"
+  },
+  {
+    "path": "src/text.c",
+    "local_file": "src__text.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/text.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "5696f49443eeaaac74b530421ac7f0cbfc71996c557399583788111c322dd80c"
+  },
+  {
+    "path": "src/scrcmd.c",
+    "local_file": "src__scrcmd.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/scrcmd.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "898dad5a07ce0a125731b998654d86808885a8d48163d607478a5e70c1cac553"
+  },
+  {
+    "path": "data/script_cmd_table.inc",
+    "local_file": "data__script_cmd_table.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/data/script_cmd_table.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "6b59babf9b8a33bdc37a322a1a4b6e2261426126097330f305823e53415b1389"
+  },
+  {
+    "path": "include/characters.h",
+    "local_file": "include__characters.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/characters.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "6787db76f83c4f8426c5adbfa7aa061c46585db9522f1fef00ad888616199b98"
+  },
+  {
+    "path": "include/constants/battle.h",
+    "local_file": "include__constants__battle.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/battle.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "b9d0493af4629d450050637e9aace63b684b282f841bed2a0d97b1d71e9d55e3"
+  },
+  {
+    "path": "include/constants/trainers.h",
+    "local_file": "include__constants__trainers.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/trainers.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "5f6e6585ba511fcf11f970f60132f45db35caf6cec9f6ae56b6bc57b979366c9"
+  },
+  {
+    "path": "include/battle_setup.h",
+    "local_file": "include__battle_setup.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/battle_setup.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "b4626d2bd339c410bd3b253b8d370bcf931be4bf3c67879f247744169d40136e"
+  },
+  {
+    "path": "include/constants/battle_setup.h",
+    "local_file": "include__constants__battle_setup.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/battle_setup.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "0b6b1ca9cc25f88a467790ad1f5af3ea0dcef51852e4c025df63b688414762d1"
+  },
+  {
+    "path": "src/battle_setup.c",
+    "local_file": "src__battle_setup.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/battle_setup.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "f33e6cdd3ff22ab9fe0f43219dfc795a9abfcc5f01c04e96809b98ddf5b952fd"
+  },
+  {
+    "path": "include/item.h",
+    "local_file": "include__item.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/item.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "a2cf9f23cfcd63067550c722f4cacf72491b9a614cf1587f7898b347b6a412a4"
+  },
+  {
+    "path": "src/item.c",
+    "local_file": "src__item.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/item.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "117c3d29617bd779db7c32332ab75fe5859f02ee6165a047508558977a88d01a"
+  },
+  {
+    "path": "src/item_menu.c",
+    "local_file": "src__item_menu.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/item_menu.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "155bd6b0943e8df179cbc9892e573cee52fd8f67a1d0dd39b962bdbec2e3546a"
+  },
+  {
+    "path": "include/global.fieldmap.h",
+    "local_file": "include__global.fieldmap.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/global.fieldmap.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "34a8c91e10803ba48b97a2df8a721ca37fad7572b2ff951a4ab7ec15a5f050eb"
+  },
+  {
+    "path": "include/global.h",
+    "local_file": "include__global.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/global.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "044325b90e7c79146cc0cf73d31b6be3e4840059e2e778b63d9b5448fe538429"
+  },
+  {
+    "path": "include/fieldmap.h",
+    "local_file": "include__fieldmap.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/fieldmap.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "e7d93120d2695043c7d75067f3c768344622c198503b0671d47292d6aa708a43"
+  },
+  {
+    "path": "src/overworld.c",
+    "local_file": "src__overworld.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/overworld.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "df352e738b56856765aec65adc6fdea0a4b25fe567bc760d4ce2d34afc6ff7e2"
+  },
+  {
+    "path": "src/region_map.c",
+    "local_file": "src__region_map.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/region_map.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "b761f02803a1c5aada4465b9a93bf2b02c5ef1118432e677a30a5a4a4b78e0cb"
+  },
+  {
+    "path": "src/field_control_avatar.c",
+    "local_file": "src__field_control_avatar.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/field_control_avatar.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "305daa295f88ce682b2b1868700d2f76012c659cb0df2905e6177a51ee4e9b8d"
+  },
+  {
+    "path": "src/fieldmap.c",
+    "local_file": "src__fieldmap.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/fieldmap.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "bbe15c7af1059a9f796dddaca28bdaaf206b715895029e189fa6ae012272ce68"
+  },
+  {
+    "path": "include/constants/maps.h",
+    "local_file": "include__constants__maps.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/maps.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "fd72a95bb4bd8c589630826d745814beaafe7a8518ffa3fb7927bf16d670a7dd"
+  },
+  {
+    "path": "include/constants/global.h",
+    "local_file": "include__constants__global.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/global.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "7ecf4a63c7be65328135a75f8620786e40343bbe7688e7017e6d780526fd6a0c"
+  },
+  {
+    "path": "include/constants/map_types.h",
+    "local_file": "include__constants__map_types.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/map_types.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "21b9dc465effd752f859c25d22fee121da8f56e245b1f65ad022af0f9a8008fa"
+  },
+  {
+    "path": "src/script.c",
+    "local_file": "src__script.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/script.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "1cc4aade1f821e5f218ba7c191b1217e5a3cf942d0bfd0f32f775ce1f808437c"
+  },
+  {
+    "path": "include/constants/map_scripts.h",
+    "local_file": "include__constants__map_scripts.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/map_scripts.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "02f8c3a4dd660d5b11f7d4af1f5a6d4530a994df33ba8304024e2a5ba004afc8"
+  },
+  {
+    "path": "asm/macros/map.inc",
+    "local_file": "asm__macros__map.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/asm/macros/map.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "571fa86a3ef5da94e84b935046871b77859b0d45233ed64a400c05b61812e611"
+  },
+  {
+    "path": "src/event_object_movement.c",
+    "local_file": "src__event_object_movement.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/event_object_movement.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "920f96b45569e702dd00997e7984effb3a7677ba2b68512b939eda69c2294254"
+  },
+  {
+    "path": "include/constants/event_objects.h",
+    "local_file": "include__constants__event_objects.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/event_objects.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "5f552a754182788f21ee00fe9460d5dbc73303239cc06743fbed96c93b6e6947"
+  },
+  {
+    "path": "asm/macros/movement.inc",
+    "local_file": "asm__macros__movement.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/asm/macros/movement.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "31ca0f9417c2450e7ce07619ba617d1d2e70b98132eda048b8e5e391f910654b"
+  },
+  {
+    "path": "include/constants/event_object_movement.h",
+    "local_file": "include__constants__event_object_movement.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/event_object_movement.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "3d12e9868383a42afef346e968031a12504dc8fc4dda12a17623af3f9df6ecba"
+  },
+  {
+    "path": "src/metatile_behavior.c",
+    "local_file": "src__metatile_behavior.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/metatile_behavior.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "a1491016f9b6ee56c38fd66bf890dfcb5d37c7dc0dfda9fe7c0a5282376b9042"
+  },
+  {
+    "path": "include/constants/metatile_behaviors.h",
+    "local_file": "include__constants__metatile_behaviors.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/metatile_behaviors.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "88955bf5c4b8d702d01d28161017362a2617ee37dce7ef77c0e288bda379da75"
+  },
+  {
+    "path": "src/field_player_avatar.c",
+    "local_file": "src__field_player_avatar.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/field_player_avatar.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "d36588c4d02385393a5e8dc74d78f907944ca556700b5c67b39f8304f4dde08e"
+  },
+  {
+    "path": "src/party_menu.c",
+    "local_file": "src__party_menu.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/party_menu.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "8290dfd5b6444e743029ab76543ed5e4b5b32c1c2f475c686946545f934d5f9b"
+  },
+  {
+    "path": "src/field_specials.c",
+    "local_file": "src__field_specials.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/field_specials.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "9c49d3702f0f4dcba61ae26bccefce1c26fbd1247475289dd821780bc537d1d9"
+  },
+  {
+    "path": "include/party_menu.h",
+    "local_file": "include__party_menu.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/party_menu.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "092ddbb884929cbaa0ef80ba367fbde335126c176c586b24a277d22dda098454"
+  },
+  {
+    "path": "src/data/party_menu.h",
+    "local_file": "src__data__party_menu.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/data/party_menu.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "cfd30a7b5fdc0026da999a62d3ff72159cad88d9a921730c179d804ee026a9f7"
+  },
+  {
+    "path": "include/pokemon.h",
+    "local_file": "include__pokemon.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/pokemon.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "a6881fee07ae10f57ebf3ec7af1cabd2e900d8ba8d3da644313c087d16e1617e"
+  },
+  {
+    "path": "src/save.c",
+    "local_file": "src__save.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/save.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "24f0b70d72cc83c50f7b2d6d73cb211c9b1272ab5fa40dc1d553ad48d1f4511c"
+  },
+  {
+    "path": "src/start_menu.c",
+    "local_file": "src__start_menu.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/start_menu.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "68dd2fc725c7e2685f539fe40b00d5350eecfbfd33bbbda7d6d6ff9b6e400f56"
+  },
+  {
+    "path": "include/save.h",
+    "local_file": "include__save.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/save.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "26d7606adc982eb3e27b642bc5817b4f4f6bd3485e5f90dd07379c28e959854b"
+  },
+  {
+    "path": "include/battle.h",
+    "local_file": "include__battle.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/battle.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "bf64a16fb4e660f8a326eb352a511bb9e8fd54a74ebb03e328c08d5a23e5d8fa"
+  },
+  {
+    "path": "include/gba/m4a_internal.h",
+    "local_file": "include__gba__m4a_internal.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/gba/m4a_internal.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "9e841d8fe72d6af9f2d5a8135f686618e20975132a6d2fc95e6c7604213505e6"
+  },
+  {
+    "path": "data/specials.inc",
+    "local_file": "data__specials.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/data/specials.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "2dcf5aae5ded1a99026a9b944e31679c2eda389fbca36089c0f8c5d2f4015788"
+  },
+  {
+    "path": "src/heal_location.c",
+    "local_file": "src__heal_location.c",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/src/heal_location.c",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "e5853e7d0170a5d66798850efca11181c7b979bd8086ecba9f64e6a104579822"
+  },
+  {
+    "path": "include/constants/moves.h",
+    "local_file": "include__constants__moves.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/moves.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "79d5b93423006c25e6ee47355b15f403b2534616fd6b638e1755e5886d378194"
+  },
+  {
+    "path": "include/constants/battle_ai.h",
+    "local_file": "include__constants__battle_ai.h",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/include/constants/battle_ai.h",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "b9493a13b76892fea0c5beb43ae4c5da3a02ef0575bbffd02e17fa93f25f5ce5"
+  },
+  {
+    "path": "data/scripts/trainer_battle.inc",
+    "local_file": "data__scripts__trainer_battle.inc",
+    "url": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/data/scripts/trainer_battle.inc",
+    "commit": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+    "sha256": "409fdc28f13423f602cb2428208693a4c467a1f5785bc487bafb5ab0fce8c96c"
+  }
+]

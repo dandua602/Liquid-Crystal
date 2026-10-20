@@ -1,0 +1,7 @@
+*.gba
+*.sav
+roms/*
+!roms/README.md
+saves/source/
+builds/
+__pycache__/

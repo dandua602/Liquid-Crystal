@@ -1,0 +1,17 @@
+{
+  "liquid_crystal": {
+    "filename": "POKEMON Liquid Crystal.gba",
+    "size_bytes": 16777216,
+    "sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf"
+  },
+  "firered": {
+    "filename": "1636 - Pokemon Fire Red (U)(Squirrels).gba",
+    "size_bytes": 16777216,
+    "sha256": "3d0c79f1627022e18765766f6cb5ea067f6b5bf7dca115552189ad65a5c3a8ac"
+  },
+  "save": {
+    "filename": "POKEMON Liquid Crystal DD 5 badge.sav",
+    "size_bytes": 131088,
+    "sha256": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6"
+  }
+}

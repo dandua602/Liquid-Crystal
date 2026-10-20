@@ -1,0 +1,26 @@
+[
+  {
+    "id": "github_repo",
+    "url": "https://github.com/gideon9918/Liquid-Crystal",
+    "status": 200,
+    "sha256": "a0e25b27aa7bd160e7a71b9b94de7fa923e20ee5f15345794e50892b422562cb"
+  },
+  {
+    "id": "github_repo_search2",
+    "url": "https://github.com/search?q=liquidcrystal+pokemon&type=repositories",
+    "status": 200,
+    "sha256": "e8686d471b583a43bd94f0c73787213071ec0fbbe2a9303e60541b11cdcc2f82"
+  },
+  {
+    "id": "github_issue_search",
+    "url": "https://github.com/search?q=%22Liquid+Crystal%22+%22Iron+Tail%22&type=issues",
+    "status": 200,
+    "sha256": "b1bc202982df3daf09cfbfbd9859819ad3fa9d3f19599ae1493ce540ca9c0f2e"
+  },
+  {
+    "id": "github_developer_search",
+    "url": "https://github.com/search?q=pokemon+liquid+crystal+linkandzelda&type=repositories",
+    "status": 200,
+    "sha256": "38ad9366390dabe5e88102245281a49aa73a872699a6c7f3b171a08219efd53c"
+  }
+]

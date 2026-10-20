@@ -1,0 +1,22 @@
+{
+  "liquid_crystal": {
+    "title": "POKEMON FIRE",
+    "game_code": "BPRE",
+    "maker_code": "01",
+    "revision": 0,
+    "fixed_value": 150,
+    "header_checksum": 104,
+    "computed_header_checksum": 104,
+    "header_checksum_valid": true
+  },
+  "firered": {
+    "title": "POKEMON FIRE",
+    "game_code": "BPRE",
+    "maker_code": "01",
+    "revision": 0,
+    "fixed_value": 150,
+    "header_checksum": 104,
+    "computed_header_checksum": 104,
+    "header_checksum_valid": true
+  }
+}

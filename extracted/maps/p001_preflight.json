@@ -1,0 +1,90 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "status": "BOUNDED_STATIC_SCREEN_PASS; proposed budget only, no allocation or implementation",
+  "rom_proposal": {
+    "start": 12185344,
+    "end_exclusive": 12187392,
+    "bytes": 2048,
+    "guard": 256,
+    "incoming_shape_hits": [],
+    "expected_bytes": "FF repeated 2048 times",
+    "expected_sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8"
+  },
+  "enclosing_screened_window": {
+    "start": 12185208,
+    "end_exclusive": 12189152,
+    "bytes": 3944,
+    "ff_span": [
+      12181792,
+      12189408
+    ],
+    "guard_bytes": 256,
+    "allocated_bytes": 0
+  },
+  "budget": [
+    {
+      "purpose": "scripts",
+      "start": 12185344,
+      "end_exclusive": 12185984,
+      "capacity_bytes": 640
+    },
+    {
+      "purpose": "text",
+      "start": 12185984,
+      "end_exclusive": 12186496,
+      "capacity_bytes": 512
+    },
+    {
+      "purpose": "room_event_tables",
+      "start": 12186496,
+      "end_exclusive": 12186752,
+      "capacity_bytes": 256
+    },
+    {
+      "purpose": "trainer_party",
+      "start": 12186752,
+      "end_exclusive": 12186848,
+      "capacity_bytes": 96
+    },
+    {
+      "purpose": "reserve",
+      "start": 12186848,
+      "end_exclusive": 12187392,
+      "capacity_bytes": 544
+    }
+  ],
+  "trainer_row_proposal": {
+    "id": 929,
+    "start": 11308716,
+    "bytes": 40,
+    "expected_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "largest_bounded_script_id": 928,
+    "direct_hits": [],
+    "ownership": "No native/computed-ID absence certificate; not reserved"
+  },
+  "existing_hook_fields": [
+    {
+      "site": 12782116,
+      "expected_hex": "a40fc308",
+      "purpose": "room event-table pointer",
+      "replacement": null
+    },
+    {
+      "site": 12782120,
+      "expected_hex": "14aac008",
+      "purpose": "room map-script-table pointer",
+      "replacement": null
+    }
+  ],
+  "excluded_bank": [
+    12582912,
+    13631488
+  ],
+  "limits": [
+    "All ROM wait-state aliases and byte alignments screened, with 256-byte guards.",
+    "No native/computed-address or enclosing-asset-extent absence certificate.",
+    "No hardware or broader cartridge reservation certificate.",
+    "No trainer team, puzzle interaction or NPC migration policy is frozen.",
+    "No expected pointer replacement or output ROM exists before design review."
+  ]
+}

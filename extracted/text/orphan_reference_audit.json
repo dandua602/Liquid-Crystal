@@ -1,0 +1,2281 @@
+{
+  "summary": {
+    "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+    "input_cohort": "frozen original Orange-specific weak-reference candidates",
+    "candidate_count": 64,
+    "original_reference_status_counts": {
+      "NO_ABSOLUTE_POINTER_FOUND": 47,
+      "RAW_POINTER_ONLY": 17
+    },
+    "classification_counts": {
+      "INLINE_NAME_FIELD": 13,
+      "TABLE_POINTER_TEXT": 11,
+      "OTHER_RAW_POINTER_TEXT": 2,
+      "PRECEDING_MSGBOX_TARGET_WITH_PREFIX_ANOMALY": 2,
+      "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE": 30,
+      "ADJACENT_BINARY_PREFIX_CANDIDATE": 2,
+      "UNCLASSIFIED_INTERIOR_POINTER_TEXT": 2,
+      "INTERIOR_POINTER_SELECTED_TRUNCATED_TEXT": 2
+    },
+    "candidates_with_normalized_referenced_copy_witnesses": 9,
+    "certified_unused": 0,
+    "certified_reachable": 0,
+    "scope": "Static text/reference triage; no map owner, native consumer or runtime validation."
+  },
+  "records": [
+    {
+      "offset": "0x23e830",
+      "end_offset_exclusive": "0x23e836",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Nexus",
+      "extent_sha256": "5087c05a58a0d8c1a737164fa53308ff617bdffca2ad09fc13c70e64ac107256",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Nexus occupies a 13-byte class-name slot; the table base has native-sized raw references.",
+      "facts": {
+        "kind": "trainer_class_name",
+        "table_base": "0x23e558",
+        "record_stride_bytes": 13,
+        "record_index": 56,
+        "name_start": "0x23e830",
+        "name": "Nexus",
+        "table_base_pointer_sites": [
+          "0xd80a0",
+          "0x11b4b4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0x23e830"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x3d648d",
+      "end_offset_exclusive": "0x3d64e2",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "A peculiar stone that makes certain\nspecies of POKéMON evolve.\nIt is colored orange.",
+      "extent_sha256": "60f0fc64180aca6252dfe6f01cb07b138fc6a7258949474b619edf9dfe6ba2db",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x3dc090",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "ff 00 00 00 5f 00 34 08 00 00 8d 64 3d 08 00 00 01 01 51 17 0a 08",
+          "target": "0x3d648d",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99a114",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "ff 00 00 00 5f 00 34 08 00 00 8d 64 3d 08 00 00 01 01 51 17 0a 08",
+          "target": "0x3d648d",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Item-description pointers are data fields, so message-opcode recognition is not expected. The orange seed is a stone-color description, without Orange story evidence.",
+      "facts": {
+        "kind": "item_description",
+        "record_stride_bytes": 44,
+        "description_field_offset": 20,
+        "records": [
+          {
+            "table_base": "0x3db028",
+            "record_index": "0x5f",
+            "record_start": "0x3dc07c",
+            "description_pointer_site": "0x3dc090",
+            "name": "FIRE STONE",
+            "stored_item_id": "0x5f"
+          },
+          {
+            "table_base": "0x9990ac",
+            "record_index": "0x5f",
+            "record_start": "0x99a100",
+            "description_pointer_site": "0x99a114",
+            "name": "FIRE STONE",
+            "stored_item_id": "0x5f"
+          }
+        ]
+      },
+      "exact_raw_copies_including_self": [
+        "0x3d648d"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x3d8f7f",
+      "end_offset_exclusive": "0x3d8fd4",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "A mysterious POKé BALL given to\nyou by PROF. IVY. It’s rumored to\ncontain a POKéMON!",
+      "extent_sha256": "1a3458a35e936176f88ed744892b583ef648d23514e154839475c36ef1755e30",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x3ddfd8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 15 01 00 00 00 00 7f 8f 3d 08 02 00 02 04 39 22 0a 08",
+          "target": "0x3d8f7f",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99c05c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 15 01 00 00 00 00 7f 8f 3d 08 02 00 02 04 39 22 0a 08",
+          "target": "0x3d8f7f",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Item-description pointers are data fields, so message-opcode recognition is not expected.",
+      "facts": {
+        "kind": "item_description",
+        "record_stride_bytes": 44,
+        "description_field_offset": 20,
+        "records": [
+          {
+            "table_base": "0x3db028",
+            "record_index": "0x115",
+            "record_start": "0x3ddfc4",
+            "description_pointer_site": "0x3ddfd8",
+            "name": "BLUE ORB",
+            "stored_item_id": "0x115"
+          },
+          {
+            "table_base": "0x9990ac",
+            "record_index": "0x115",
+            "record_start": "0x99c048",
+            "description_pointer_site": "0x99c05c",
+            "name": "GS BALL",
+            "stored_item_id": "0x115"
+          }
+        ]
+      },
+      "exact_raw_copies_including_self": [
+        "0x3d8f7f"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x4487c0",
+      "end_offset_exclusive": "0x448830",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "One of the legendary bird POKéMON.\nThose seeing it are overwhelmed by its\norange wings that seem to be on fire.",
+      "extent_sha256": "663e0611326dbd456cb3395c3a98cc7df8884db8f79aebdbb9c85f5f4f4146f7",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x44fce8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 00 00 14 00 58 02 c0 87 44 08 30 88 44 08 00 00 0e 01",
+          "target": "0x4487c0",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Legendary bird description uses orange for wing color; no Orange story claim is supported.",
+      "facts": {
+        "kind": "encyclopedia_description_candidate",
+        "pointer_site": "0x44fce8"
+      },
+      "exact_raw_copies_including_self": [
+        "0x4487c0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x71dd90",
+      "end_offset_exclusive": "0x71dd9d",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "SANDWAY TOWN",
+      "extent_sha256": "96070404d02176aeba5b15f56e4ef8952331ec484984b05c842c81fb25e60645",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8bc0",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 0c b6 71 08 88 d3 71 08 90 dd 71 08 a0 dd 71 08 b0 dd 71 08",
+          "target": "0x71dd90",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0x71dd90"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x723ab0",
+      "end_offset_exclusive": "0x723ac1",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "NEXUS LABORATORY",
+      "extent_sha256": "112f6103f969f2cc091745fbb3b5e883eddd0125655f69fcdf77ef8fd0c81837",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8bd0",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 b0 dd 71 08 04 1d 72 08 b0 3a 72 08 e8 03 c0 08 f4 03 c0 08",
+          "target": "0x723ab0",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0x723ab0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x731b10",
+      "end_offset_exclusive": "0x731b20",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "VALENCIA ISLAND",
+      "extent_sha256": "9e239dfb4e3447cc2e47b4559ab21579668aed6c0ded818de40058299b2e1a3a",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8b24",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "71 08 e8 f1 3e 08 f8 f1 3e 08 10 1b 73 08 3c bf 71 08 e0 e6 72 08",
+          "target": "0x731b10",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0x731b10",
+        "0x92e6d8"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x7720d9",
+      "end_offset_exclusive": "0x7721ac",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "This game is a remake of POKéMON\nCrystal which has Johto, Kanto and\nValencia Island completed. \nReport bugs at http://romhack.me/\npokemonliquidcrystal\n\nEnjoy the game and I’ll leave the \nrest to PROF. OAK!.....",
+      "extent_sha256": "b66099cdfb842981a618206133ec796ba08443e67828a699807a2b1724b1bf7b",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x462ef8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "03 00 04 5a 1c 08 11 a7 74 08 d9 20 77 08 74 2b 46 08 00 04 01 10",
+          "target": "0x7720d9",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x915ea6",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "30 09 c7 77 77 64 66 77 5f 77 03 21 77 08 ea 09 0f 12 1f 19 07 4c",
+          "target": "0x772103",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "OTHER_RAW_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Raw pointer-backed game-information text; it is not a script execution witness.",
+      "facts": {
+        "kind": "game_information"
+      },
+      "exact_raw_copies_including_self": [
+        "0x7720d9"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x8c4ef1",
+      "end_offset_exclusive": "0x8c4fcb",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON\nBATTLE.\n......................\n.....................\nZANE: .......................\n............\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "extent_sha256": "9265f796d50e0ed4facc843d912047c581ee72e17a1bfe28b16498936636f082",
+      "existing_pointer_evidence": [],
+      "classification": "PRECEDING_MSGBOX_TARGET_WITH_PREFIX_ANOMALY",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "A msgbox-shaped operand targets four bytes before the old suffix. COLOR 08 is followed by glyph byte 08, rejected by strict English; rendering and execution remain unknown.",
+      "facts": {
+        "pointer_target": "0x8c4eed",
+        "pointer_operand_site": "0x8c4d7e",
+        "command_start": "0x8c4d7c",
+        "prefix_hex": "fc 01 08 08",
+        "unvalidated_english_glyph_offset": "0x8c4ef0"
+      },
+      "exact_raw_copies_including_self": [
+        "0x8c4ef1",
+        "0x8c52ae"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x8c52ae",
+      "end_offset_exclusive": "0x8c5388",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "rivell: Well if you don’t mind then\nWere going to have our POKéMON\nBATTLE.\n......................\n.....................\nZANE: .......................\n............\n\nrivell: Ok. That sounds like a good\nidea. Lets do it!",
+      "extent_sha256": "9265f796d50e0ed4facc843d912047c581ee72e17a1bfe28b16498936636f082",
+      "existing_pointer_evidence": [],
+      "classification": "PRECEDING_MSGBOX_TARGET_WITH_PREFIX_ANOMALY",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "A msgbox-shaped operand targets four bytes before the old suffix. COLOR 08 is followed by glyph byte 08, rejected by strict English; rendering and execution remain unknown.",
+      "facts": {
+        "pointer_target": "0x8c52aa",
+        "pointer_operand_site": "0x8c513c",
+        "command_start": "0x8c513a",
+        "prefix_hex": "fc 01 08 08",
+        "unvalidated_english_glyph_offset": "0x8c52ad"
+      },
+      "exact_raw_copies_including_self": [
+        "0x8c4ef1",
+        "0x8c52ae"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x8e5fbc",
+      "end_offset_exclusive": "0x8e6007",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " CELADON POKéMON GYM\nLEADER: ERIKA\nWINNING TRAINERS:\n{RIVAL}, ZANE, AXEL and {PLAYER}",
+      "extent_sha256": "953ace2cd3286fa7d72ec249ffc83b52b863cd83b8821f2133c1efe21c1ccdae",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x8e5fbc"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9031ae",
+      "end_offset_exclusive": "0x9031e6",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "LEADER: BUGSY\nWINNING TRAINERS: \nrival , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "f6a74e8053b994017c26d794fe08b57afe84b63cef8ab0a9f99db6220dcef0c1",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9031ae"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90321d",
+      "end_offset_exclusive": "0x903255",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS: rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "d5dbf88926e2c4f29558feeadde072ac897a0df8a5578985b100819d4eee46ed",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90321d"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x903255",
+      "end_offset_exclusive": "0x90328f",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: JASMINE\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "e40b224c8cab90501bd9f735b35cd68c50785c88ee2b9b48ecbf295d3cf57301",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x903255"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90328f",
+      "end_offset_exclusive": "0x9032c7",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "9b3648fe3cee7e7b2512c9964f19c3d3f871885f43d2feb3555f57d07b757f5b",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90328f",
+        "0x9032c7"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9032c7",
+      "end_offset_exclusive": "0x9032ff",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:\nrivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "9b3648fe3cee7e7b2512c9964f19c3d3f871885f43d2feb3555f57d07b757f5b",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90328f",
+        "0x9032c7"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9032ff",
+      "end_offset_exclusive": "0x903334",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: PRYCE\nWINNING TRAINERS:\n{RIVAL} , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "49e4b1d80ef11cd96518d099e4e5192f2c5e48703a83c275badb2fbfb6c9f704",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9032ff"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90b2da",
+      "end_offset_exclusive": "0x90b30e",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: BUGSY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "4d9f69e4c9da52e1b407a08bd8a021b98c13b357e876fc169f4a35cb4ab5bbcd",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b2da"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x9033d6",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x80bc8d",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "0f 00 95 bc 80 08 09 06 0f 00 d6 33 90 08 09 06 6c 02 bb d4 bb c6",
+              "command_offset": "0x80bc8b",
+              "callstd_index": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x90b30e",
+      "end_offset_exclusive": "0x90b345",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: WHITNEY\nWINNING TRAINERS: {RIVAL}, AXEL, ZANE, {PLAYER} ",
+      "extent_sha256": "a4773bfb32eca077d91426537ee3f84f414d51e7f09467bddc76b3432eef7863",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b30e"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x9031e7",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x812b3a",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "0f 00 42 2b 81 08 09 06 0f 00 e7 31 90 08 09 06 6c 02 c1 c9 c6 be",
+              "command_offset": "0x812b38",
+              "callstd_index": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x90b345",
+      "end_offset_exclusive": "0x90b37e",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "f875c6118f181f45c45f9061eaae72764cc3a19d4adfe06e5d196b1bf934dc14",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b345",
+        "0x90b3b9"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90b37e",
+      "end_offset_exclusive": "0x90b3b9",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: JASMINE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "37c41632b0934c585c8f3bffc8ea74df91744c3103e9ce04219abab941620dab",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b37e"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90b3b9",
+      "end_offset_exclusive": "0x90b3f2",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: MORTY\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "f875c6118f181f45c45f9061eaae72764cc3a19d4adfe06e5d196b1bf934dc14",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b345",
+        "0x90b3b9"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90b3f2",
+      "end_offset_exclusive": "0x90b42b",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: PRYCE\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "f6df32fa013408f886d38079b61c82e15addbb49905411a262883ec88baa1851",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b3f2"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x90b42b",
+      "end_offset_exclusive": "0x90b464",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " LEADER: CLAIR\nWINNING TRAINERS:  rivel , AXEL, ZANE, {PLAYER}",
+      "extent_sha256": "4b4762ade5e33b54ea0e6c216d5e474d8aee5e8779c16ebb72016e87427855be",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x90b42b"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x918e17",
+      "end_offset_exclusive": "0x918eb8",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "\nMISTER G: Erm... Aha we got you...\nOh you’re er not him.\nPity. W-well, d-don’t interrupt\nwe’re dealing with an important\nmatter, not for little kids got\nthat?!",
+      "extent_sha256": "f85894f5ff63f271064e8e855816a0d83c93c1fdd180de1792e1b54217b64118",
+      "existing_pointer_evidence": [],
+      "classification": "ADJACENT_BINARY_PREFIX_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Nearby pointer targets movement bytes. The old suffix includes movement terminator FE as a newline; it is not a recovered text pointer.",
+      "facts": {
+        "data_kind": "applymovement_shape",
+        "command_start": "0x918d71",
+        "data_pointer_operand_site": "0x918d74",
+        "data_target": "0x918e14",
+        "data_hex": "12 12 12 fe",
+        "text_start_candidate": "0x918e18",
+        "text": "MISTER G: Erm... Aha we got you...\nOh you’re er not him.\nPity. W-well, d-don’t interrupt\nwe’re dealing with an important\nmatter, not for little kids got\nthat?!",
+        "exact_text_start_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0x918e17"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x91934b",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x919332",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 f0 93 91 08 51 00 00 0f 00 4b 93 91 08 09 02 4f 04 00 f4 93 91",
+              "command_offset": "0x919330",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x919432",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x919416",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 2c 94 91 08 51 00 00 0f 00 32 94 91 08 09 02 4f 04 00 db 94 91",
+              "command_offset": "0x919414",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x92ed6e",
+      "end_offset_exclusive": "0x92ee0e",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER. MISTER G and\nMISTER H?",
+      "extent_sha256": "00c956a5a7bbe2d84aab73aaafe482e182a5b33bd45280d7ed79d05f70c1f769",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x92ed6e"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x9194ff",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x9194f6",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "08 09 02 29 af 16 02 ff 0f 00 ff 94 91 08 09 02 6c 02 ff c7 c3 cd",
+              "command_offset": "0x9194f4",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x93030b",
+      "end_offset_exclusive": "0x93055f",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "Scientist: Hey, thanks for\ngetting rid of those guys.\nI’m from the Science Complex just\nnorth of here.\nI don’t think I’ve seen your face\nbefore, are you new?\nAs a thanks I can tell you about\nthe situation here.\nThese guys calling themself Team\nNexus just suddenly arrived here\nand took over the city.\nThe Police Station was completly\noverun and had to be cleared out,\nso there’s nobody to take back\ncontrol of the city.\nI watched you battle and I can\ntell, you’re good.\nWhy not drive these guys out?\nEither way, thanks for helping us\nout, we should be getting back to\nthe Science Complex now.",
+      "extent_sha256": "2d42164364f1747bf39654dbe892e637987febdfced1be61248707347a3242a7",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0xe5bd5",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "d1 07 9a 40 c2 07 92 05 9b 01 33 05 93 08 9e 04 2e cd dd 05 9f 00",
+          "target": "0x930533",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "UNCLASSIFIED_INTERIOR_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Only unclassified raw interior pointer hits support this extent. Keep the dialogue and its separately referenced variant; no use/unused conclusion follows.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x93030b"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x93082c",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x9307f6",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 8b 0a 93 08 28 40 00 0f 00 2c 08 93 08 09 02 4f 0c 00 23 08 93",
+              "command_offset": "0x9307f4",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x9363e6",
+      "end_offset_exclusive": "0x936449",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Watering flowers all day is fun.\nI love it!\nEspecially becuase this is PROF. IVY’s private garden!",
+      "extent_sha256": "8181b4da85a3a1c6f64f9d4c68a7466c88e2bb91a02b1cb8338d5ebd493c6c7a",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9363e6"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9393ff",
+      "end_offset_exclusive": "0x939420",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "WINNING TRAINERS:\nAXEL, ZANE, {RIVAL}",
+      "extent_sha256": "9c1b873bde77e6dc1a9c7861a3bce686fb155a2c20fb344fe83d6def230197c5",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9393ff"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x95252c",
+      "end_offset_exclusive": "0x95258f",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "JIN: (sigh) You did good\ntoday, {PLAYER}.\nHopfully i’ll see you around\nVALENCIA ISLAND at some point.",
+      "extent_sha256": "894f47959c9210f068cf3dafb32991e2737bedec7911549fbfa65affe19cd161",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x945271",
+        "0x945654",
+        "0x95109c",
+        "0x9514a0",
+        "0x951cfc",
+        "0x952127",
+        "0x95252c",
+        "0x955c4a"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x945271",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x945230",
+              "aligned_4": true,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 d6 52 94 08 51 00 00 0f 00 71 52 94 08 09 02 4f 05 00 e1 52 94",
+              "command_offset": "0x94522e",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x945654",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x945613",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 b9 56 94 08 51 00 00 0f 00 54 56 94 08 09 02 4f 05 00 c4 56 94",
+              "command_offset": "0x945611",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x95109c",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x95105b",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 01 11 95 08 51 00 00 0f 00 9c 10 95 08 09 02 4f 05 00 0c 11 95",
+              "command_offset": "0x951059",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x9514a0",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x951458",
+              "aligned_4": true,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 05 15 95 08 51 00 00 0f 00 a0 14 95 08 09 02 4f 05 00 0e 15 95",
+              "command_offset": "0x951456",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x951cfc",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x951c94",
+              "aligned_4": true,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 61 1d 95 08 51 00 00 0f 00 fc 1c 95 08 09 02 4f 05 00 69 1d 95",
+              "command_offset": "0x951c92",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x952127",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x9520b5",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 8c 21 95 08 51 00 00 0f 00 27 21 95 08 09 02 4f 05 00 94 21 95",
+              "command_offset": "0x9520b3",
+              "callstd_index": 2
+            }
+          ]
+        },
+        {
+          "offset": "0x955c4a",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x955bcc",
+              "aligned_4": true,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 af 5c 95 08 51 00 00 0f 00 4a 5c 95 08 09 02 4f 05 00 b7 5c 95",
+              "command_offset": "0x955bca",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x96823a",
+      "end_offset_exclusive": "0x9682d9",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER.\nMISTER G and MISTER H?",
+      "extent_sha256": "6261b1815c5d0bfdc7f6ef9ccfa7ce80298062b288a06d2ef8ab71bc4048abe0",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x96823a"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x9194ff",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x9194f6",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "08 09 02 29 af 16 02 ff 0f 00 ff 94 91 08 09 02 6c 02 ff c7 c3 cd",
+              "command_offset": "0x9194f4",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x96999a",
+      "end_offset_exclusive": "0x969bba",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "t it’s to\nvaluable to ship over here and I\ncan’t leave this LAB to get it...\nThat’s why I need your help.\nYou’ve traveled far with your\nPOKéMON {PLAYER}!\nI would like you to go and fetch the\nBALL for me.\nIt shouldn’t be a problem for you and\nyour POKéMON.\nYou will need to get your SS.TICKET\nstamped to be able to travel to the\nORANGE ISLANDS.\nHere you go.\nPROF.OAK stamps the back of\n{PLAYER}’s SS.TICKET!\nThe boat leaves from VERMILION CITY\nonly.\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you\nbetter watch your step!\nGood luck!",
+      "extent_sha256": "f58006d387649c5fc746e91e1f14b7232c077f9d19164cc8fd421c3937487faa",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x442d5c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "aa 38 aa 96 00 03 00 ee 40 03 9a 99 96 08 aa cc cc 56 00 03 66 a5",
+          "target": "0x96999a",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "INTERIOR_POINTER_SELECTED_TRUNCATED_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Pointer-first selection chose a raw interior hit and discarded coherent earlier text. The fuller candidate is complete strict English; the raw pointer has no recognized text-operand shape.",
+      "facts": {
+        "fuller_start_candidate": "0x969854",
+        "fuller_end_exclusive": "0x969bba",
+        "fuller_text": "OAK: Ah! There you are {PLAYER}!\nIt’s good that you could make it.\nI need you to help me out.\nI have a friend called PROF. IVY\nwho lives out on VALENCIA ISLAND\nwhich is part of the ORANGE ISLANDS.\nShe recently obtained a mysterious\nPOKé BALL and can’t make head or\ntail of it.\nI agreed to take a look at the BALL\nwith my scanners but it’s to\nvaluable to ship over here and I\ncan’t leave this LAB to get it...\nThat’s why I need your help.\nYou’ve traveled far with your\nPOKéMON {PLAYER}!\nI would like you to go and fetch the\nBALL for me.\nIt shouldn’t be a problem for you and\nyour POKéMON.\nYou will need to get your SS.TICKET\nstamped to be able to travel to the\nORANGE ISLANDS.\nHere you go.\nPROF.OAK stamps the back of\n{PLAYER}’s SS.TICKET!\nThe boat leaves from VERMILION CITY\nonly.\nThe TRAINERS over in the ORANGE\nISLANDS are quite powerful so you\nbetter watch your step!\nGood luck!",
+        "fuller_start_pointer_sites": [],
+        "old_pointer_start_is_interior": true
+      },
+      "exact_raw_copies_including_self": [
+        "0x96999a"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x974464",
+      "end_offset_exclusive": "0x9744a4",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "MISTER R: Alright then.\nZANE: Excellent you won’t regret it.",
+      "extent_sha256": "c27bfa1e398bce0f3250fc981e1e936424e2d245a7361b65966a86bef2b07f5c",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x974464"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x997e34",
+      "end_offset_exclusive": "0x997e83",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "   Welcome to FAST SHIP S.S.AQUA.\nWould you like travel to VALENCIA ISLAND?",
+      "extent_sha256": "68795fc64a8116c7b1a506ddbfb430920310d8926935c78da78bc11c8e8cbb71",
+      "existing_pointer_evidence": [],
+      "classification": "ADJACENT_BINARY_PREFIX_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Nearby pointer targets a one-item u16 inventory with zero terminator. Three data bytes were decoded as leading spaces before the dialogue.",
+      "facts": {
+        "data_kind": "pokemart_shape",
+        "command_start": "0x997de8",
+        "data_pointer_operand_site": "0x997de9",
+        "data_target": "0x997e33",
+        "item_u16": "0x62",
+        "terminator_u16": 0,
+        "text_start_candidate": "0x997e37",
+        "text": "Welcome to FAST SHIP S.S.AQUA.\nWould you like travel to VALENCIA ISLAND?",
+        "exact_text_start_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0x997e34"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x968d35",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x92e287",
+              "aligned_4": false,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "00 b3 7e 99 08 51 00 00 0f 00 35 8d 96 08 09 05 21 0d 80 01 00 06",
+              "command_offset": "0x92e285",
+              "callstd_index": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x99c03c",
+      "end_offset_exclusive": "0x99c050",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "            GS BALL",
+      "extent_sha256": "bcc254570b33d769fe94fc9d1200d8e824c8cdf7ed91ef60b5705a576bd47747",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "The old suffix includes 12 padding/previous-record bytes before the GS BALL name field.",
+      "facts": {
+        "kind": "item_name",
+        "table_base": "0x9990ac",
+        "record_stride_bytes": 44,
+        "record_index": "0x115",
+        "name_start": "0x99c048",
+        "name": "GS BALL",
+        "candidate_includes_bytes_before_name": 12,
+        "table_base_pointer_sites": [
+          "0x9a8d8"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0x99c03c"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9ad8f9",
+      "end_offset_exclusive": "0x9ad934",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " ROUTE 48\n← ESSENCE TOWN\n↑ ORIENTAL CITY\n→ PROF. IVY’S LAB",
+      "extent_sha256": "d284ab3ab0b62541b016b4c694879c1a44077a3fb1e0e063430997f38ace5695",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9ad8f9"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9b33f0",
+      "end_offset_exclusive": "0x9b34e4",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "OFFICER: Thank you for getting rid of those gang members. What?!? They took some CORSOLA and are planning to experiment on them? Thats awful. The leader of this group must be found! You say his name is ZANE? Thank you for your co-operation.",
+      "extent_sha256": "6c3d8f7fad0c2004a08c49aacbc0f0208f83cb8efe1448354f700012377f8d76",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9b33f0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9ba36f",
+      "end_offset_exclusive": "0x9ba4b0",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "  MISTER R: You know we could have\namounted to more than this me and\nmy comrades.\nYou probably met them in the other\nareas of MT. SILVER.\nMISTER G and MISTER H?\nWhy don’t you run along now, RED\ncould show up any minute, and we\nneed to be ready.\nHeh, since you fought the ELITE FOUR\nonce, why not go and fight them again?",
+      "extent_sha256": "19969a96319f364c84d0cfecf8bb3d786a44ab9408ba03275f1ba2f43d8e5fcb",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9ba36f"
+      ],
+      "normalized_referenced_copy_witnesses": [
+        {
+          "offset": "0x97aaac",
+          "comparison": "plain text with collapsed whitespace",
+          "typed_operand_shapes": [
+            {
+              "offset": "0x919734",
+              "aligned_4": true,
+              "kind": "MSGBOX_SHAPE",
+              "context_hex": "08 09 02 29 af 16 02 ff 0f 00 ac aa 97 08 09 02 6c 02 ff ff ff ff",
+              "command_offset": "0x919732",
+              "callstd_index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "offset": "0x9c294b",
+      "end_offset_exclusive": "0x9c2972",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "\n\nLinkandzelda\nZeikku\nMister Glitch\n\n\n",
+      "extent_sha256": "2f46f51e8e98d39522becd46a3e54e90704ec9f7a94274fd9799728b7a5e0e8e",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x414644",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "41 08 00 00 00 00 f0 d4 41 08 4b 29 9c 08 01 00 00 00 43 2c 9c 08",
+          "target": "0x9c294b",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "OTHER_RAW_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Credits contain Mister Glitch, a lexical Mister G hit without evidence of an in-game character event.",
+      "facts": {
+        "kind": "credits_names"
+      },
+      "exact_raw_copies_including_self": [
+        "0x9c294b"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9c3e12",
+      "end_offset_exclusive": "0x9c3e8a",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "  ZANE: Thanks for finding that\nkid’s DOLL.\nI wouldn’t of been able to get\nto the GYM otherwise!\nI’ll see you later {PLAYER}!",
+      "extent_sha256": "6cd6e597e771d592fcd6474f772dbfe7b6abf7342261b9db9da02678f7d8cd28",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9c3e12"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9d6aa1",
+      "end_offset_exclusive": "0x9d6b0e",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " TRAINER TIPS\nHave you come to meet PROF. IVY?\nHer lab is located down from here,\nand up the mountain path. ",
+      "extent_sha256": "189da9e8eb5bc432a7acacb88e7cfafa33b59dc9593aa96925a4b0e11c1268e2",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9d6aa1"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0x9d6b53",
+      "end_offset_exclusive": "0x9d6be2",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " TRAINER TIPS\nWhile in the ORANGE ISLANDS you\nmay experience some strong\ncurrents.\nTherfore you will need a strong\nPOKéMON to be able to SURF.",
+      "extent_sha256": "0c32fc0d8a294d5f8f5af4356060784abbc8307f9e3e867cdb051e877c771cbd",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0x9d6b53"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xa142bd",
+      "end_offset_exclusive": "0xa143b2",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " OFFICER: Thank you for\ngetting rid of those gang\nmembers. What?!? They took some\nCORSOLA and are planning to\nexperiment on them? Thats awful.\nThe leader of this group must be\nfound! You say his name is ZANE?\nThank you for your co-operation.",
+      "extent_sha256": "64c17a0bcc361a7ad5e41fd4edf85a46021962d61dac64be3e85e5d0de57ab0b",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0xa142bd"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xa175e4",
+      "end_offset_exclusive": "0xa175f2",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "VALENCIA PORT",
+      "extent_sha256": "c20ded1c2dcfe6ca02b0133969d391953d37acf9f7171dd6c3dcebc6c9734c71",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8b7c",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "a1 08 a6 75 a1 08 70 de 71 08 e4 75 a1 08 f4 75 a1 08 83 77 a1 08",
+          "target": "0xa175e4",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0xa175e4"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xa9b695",
+      "end_offset_exclusive": "0xa9b6f7",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "A rusty, old looking key for the\nOld Warehouse on Mandarin Island.\nLooks untouched for centuries.",
+      "extent_sha256": "93abf08b83a4eb87bc5e0d4c7b4d87c1c21ec8edb5665e6a001944f65c6141b2",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x3de004",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 16 01 00 00 00 00 95 b6 a9 08 01 00 02 04 39 22 0a 08",
+          "target": "0xa9b695",
+          "interior": false,
+          "target_at_token_start": true
+        },
+        {
+          "offset": "0x99c088",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "00 00 00 00 16 01 00 00 00 00 95 b6 a9 08 01 00 02 04 39 22 0a 08",
+          "target": "0xa9b695",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Item-description pointers are data fields, so message-opcode recognition is not expected.",
+      "facts": {
+        "kind": "item_description",
+        "record_stride_bytes": 44,
+        "description_field_offset": 20,
+        "records": [
+          {
+            "table_base": "0x3db028",
+            "record_index": "0x116",
+            "record_start": "0x3ddff0",
+            "description_pointer_site": "0x3de004",
+            "name": "SCANNER",
+            "stored_item_id": "0x116"
+          },
+          {
+            "table_base": "0x9990ac",
+            "record_index": "0x116",
+            "record_start": "0x99c074",
+            "description_pointer_site": "0x99c088",
+            "name": "OLD KEY",
+            "stored_item_id": "0x116"
+          }
+        ]
+      },
+      "exact_raw_copies_including_self": [
+        "0xa9b695"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xaaaa35",
+      "end_offset_exclusive": "0xaaaa7b",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "ute 55,\nSandway Town.\nA large circle is placed around West\nVale Port.",
+      "extent_sha256": "212f47e22d1cff66e2bd1b528a229bced7c1dc11839f3c948dcff08f547f5e8d",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0xe1c95f",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "25 22 ff ff 00 ff 33 a5 aa f5 35 aa aa 08 f9 3f aa ff 30 03 95 99",
+          "target": "0xaaaa35",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "INTERIOR_POINTER_SELECTED_TRUNCATED_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Pointer-first selection chose a raw interior hit and discarded coherent earlier text. The fuller candidate is complete strict English; the raw pointer has no recognized text-operand shape.",
+      "facts": {
+        "fuller_start_candidate": "0xaaa9dc",
+        "fuller_end_exclusive": "0xaaaa7b",
+        "fuller_text": "It’s a map of Sunburst Island.\nServeral locations are marked down.\nRoute 53, Route 54, Route 55,\nSandway Town.\nA large circle is placed around West\nVale Port.",
+        "fuller_start_pointer_sites": [],
+        "old_pointer_start_is_interior": true
+      },
+      "exact_raw_copies_including_self": [
+        "0xaaaa35"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xabb58a",
+      "end_offset_exclusive": "0xabb851",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "Mister G: ...\nYou, kid, what’s your name?\n{PLAYER}?\nHmm, so my suspicions are confirmed.\nYou’re the rascal that took out Team\nRocket and Team Saturn, correct?\nI have failed here today, though I\ndo not regret my actions.\nBecoming a member of Team Nexus and\nthe Nexus 4, I was able to fulfill\nmy duty as originally agreed.\nOne of my other orders from Mister Z\nwas, upon beating me I must step\ndown and award my Commanding Rank\nto you.\nA Commanding Rank is a unique item\ngiven to all of the Nexus 4 to show\nthey are fit to hold the position.\nThis item was designed to work as a\nkey, to turn off the Nexus One.\nOnly a member of the Nexus 4 is able\nto disable it.\nWith the Commanding Rank keys anyone\ncan disable them.",
+      "extent_sha256": "f45348964a8912840c2f4fce9aeecf9bb42edc5d6509a29ca22a570f16f5ba03",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0xe578ed",
+          "aligned_4": false,
+          "kind": "RAW_POINTER",
+          "context_hex": "0f 76 02 cf 00 76 ff bf bb ab ff b7 ab 08 aa ff bb aa 20 03 7f 66",
+          "target": "0xabb7ff",
+          "interior": true,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "UNCLASSIFIED_INTERIOR_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Only unclassified raw interior pointer hits support this extent. Keep the dialogue and its separately referenced variant; no use/unused conclusion follows.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0xabb58a"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac03a0",
+      "end_offset_exclusive": "0xac03a6",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Danny",
+      "extent_sha256": "dc98271ced8c938142a6344241dcba572e34563b19b4bf3e5d6528a75108e8cf",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x27",
+        "record_start": "0xac039c",
+        "record_header_hex": "00 33 08 5a",
+        "name_start": "0xac03a0",
+        "name": "Danny",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac03a0",
+        "0xac5940",
+        "0xac8528"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac3320",
+      "end_offset_exclusive": "0xac3325",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x157",
+        "record_start": "0xac331c",
+        "record_header_hex": "00 00 27 27",
+        "name_start": "0xac3320",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac3370",
+      "end_offset_exclusive": "0xac3375",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x159",
+        "record_start": "0xac336c",
+        "record_header_hex": "03 00 27 27",
+        "name_start": "0xac3370",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac3398",
+      "end_offset_exclusive": "0xac339d",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x15a",
+        "record_start": "0xac3394",
+        "record_header_hex": "03 00 27 27",
+        "name_start": "0xac3398",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac3410",
+      "end_offset_exclusive": "0xac3415",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x15d",
+        "record_start": "0xac340c",
+        "record_header_hex": "01 00 6c 27",
+        "name_start": "0xac3410",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac53a0",
+      "end_offset_exclusive": "0xac53a5",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x227",
+        "record_start": "0xac539c",
+        "record_header_hex": "03 00 0b 27",
+        "name_start": "0xac53a0",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac5940",
+      "end_offset_exclusive": "0xac5946",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Danny",
+      "extent_sha256": "dc98271ced8c938142a6344241dcba572e34563b19b4bf3e5d6528a75108e8cf",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x24b",
+        "record_start": "0xac593c",
+        "record_header_hex": "00 19 00 1d",
+        "name_start": "0xac5940",
+        "name": "Danny",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac03a0",
+        "0xac5940",
+        "0xac8528"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac5dc8",
+      "end_offset_exclusive": "0xac5dcd",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x268",
+        "record_start": "0xac5dc4",
+        "record_header_hex": "01 00 01 27",
+        "name_start": "0xac5dc8",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac5df0",
+      "end_offset_exclusive": "0xac5df5",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Zane",
+      "extent_sha256": "ee68e9e5fda9806d7962359fce2d7abdfc8abdc81ccf3da2063a646690a4fe4b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x269",
+        "record_start": "0xac5dec",
+        "record_header_hex": "03 00 01 27",
+        "name_start": "0xac5df0",
+        "name": "Zane",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac3320",
+        "0xac3370",
+        "0xac3398",
+        "0xac3410",
+        "0xac53a0",
+        "0xac5dc8",
+        "0xac5df0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac8050",
+      "end_offset_exclusive": "0xac805b",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "4 Mister G",
+      "extent_sha256": "34cf8751629be7bf3d68d4dc52621c22a50f19c38644ebd09c5e7abea3262a7b",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x345",
+        "record_start": "0xac804c",
+        "record_header_hex": "03 38 00 19",
+        "name_start": "0xac8050",
+        "name": "4 Mister G",
+        "candidate_contains_preceding_record_fields": false,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac8050"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xac8525",
+      "end_offset_exclusive": "0xac852e",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "<MN> éDanny",
+      "extent_sha256": "de476988bd71013f06a646d90c5a2caf876a7b638927ec70e6355fd1c151cfff",
+      "existing_pointer_evidence": [],
+      "classification": "INLINE_NAME_FIELD",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Name occupies the +4 field of a 40-byte trainer record. The old suffix starts three bytes early, inside the trainer header.",
+      "facts": {
+        "kind": "trainer_name",
+        "table_base": "0xabfd84",
+        "record_stride_bytes": 40,
+        "record_index": "0x364",
+        "record_start": "0xac8524",
+        "record_header_hex": "03 54 00 1b",
+        "name_start": "0xac8528",
+        "name": "Danny",
+        "candidate_contains_preceding_record_fields": true,
+        "table_base_pointer_sites": [
+          "0xfc00",
+          "0xfc80",
+          "0x1133c",
+          "0x113bc",
+          "0x116c4",
+          "0x15728",
+          "0x25920",
+          "0x259dc",
+          "0x37e6c",
+          "0x38040",
+          "0x43694",
+          "0x43884",
+          "0x44028",
+          "0x7fe88",
+          "0x7ffb8",
+          "0xc6f40",
+          "0xd809c",
+          "0x113810",
+          "0x115230",
+          "0x12c048",
+          "0x8423a4"
+        ],
+        "exact_name_pointer_sites": []
+      },
+      "exact_raw_copies_including_self": [
+        "0xac8525"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xad3d04",
+      "end_offset_exclusive": "0xad3d3b",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "Nexus One Status: Activated.\nGlobal power level: {STR_VAR_1}0%.",
+      "extent_sha256": "b7c985238fb28d75e7d48c6f35d09243fcf09b90f06465ad47dda8be753f1b58",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0xad3d04"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xafc29e",
+      "end_offset_exclusive": "0xafc309",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": " Inserting G Rank into Nexus One.\nInsufficient in G Rank to activate\nSystem Console.\nPlease charge G Rank.",
+      "extent_sha256": "6738c395f6926c4abad73a2ffae62636d0d59d9ac8dc4a85a7b3a36fc8a8b527",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open.",
+      "facts": {},
+      "exact_raw_copies_including_self": [
+        "0xafc29e"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xb01bb0",
+      "end_offset_exclusive": "0xb01c4f",
+      "original_reference_status": "NO_ABSOLUTE_POINTER_FOUND",
+      "plain_text": "’aDanny: Hey, {PLAYER}, you’re back\nfor another race?\nI hope you listened to what I said\nand have improved the bond between\nyou and your Pokémon.\nSo, are you ready?",
+      "extent_sha256": "ec693085c8719864af4e6be24b7e8385b5a921244e58bb5d63189f0440686e61",
+      "existing_pointer_evidence": [],
+      "classification": "NO_ABSOLUTE_POINTER_DIALOGUE_CANDIDATE",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "No absolute pointer to this parsed text extent was found. Indirect/native uses, edited duplicates, and map/script ownership remain open. A cleaner Danny dialogue start is two bytes later; the apostrophe/a prefix adjoins nontext bytes, so the original boundary is uncertain.",
+      "facts": {
+        "cleaner_start_candidate": "0xb01bb2",
+        "cleaner_text": "Danny: Hey, {PLAYER}, you’re back\nfor another race?\nI hope you listened to what I said\nand have improved the bond between\nyou and your Pokémon.\nSo, are you ready?",
+        "old_prefix_hex": "b4 d5"
+      },
+      "exact_raw_copies_including_self": [
+        "0xb01bb0"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xc04ea4",
+      "end_offset_exclusive": "0xc04eb2",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "MANDARIN CITY",
+      "extent_sha256": "1ddd9ff2b2ce3dc241f0b7e0e9f12a07fc4def27ef32554beea9b1d5756d4aad",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8be4",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 ac 15 c0 08 a8 41 c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08",
+          "target": "0xc04ea4",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0xc04ea4"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xc05294",
+      "end_offset_exclusive": "0xc0529d",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "ROUTE 59",
+      "extent_sha256": "90314920cbb9c4ddd3e85e774a256fab319db80754b8c6036e3f1c37d79978b4",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8be8",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 a8 41 c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08 60 f5 71 08",
+          "target": "0xc05294",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0xc05294"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    },
+    {
+      "offset": "0xc05304",
+      "end_offset_exclusive": "0xc05314",
+      "original_reference_status": "RAW_POINTER_ONLY",
+      "plain_text": "SCIENCE COMPLEX",
+      "extent_sha256": "d6ac7b1c8762bc44b840b525f7be7627e6b7e669ae643a15d91969e5b69d7c52",
+      "existing_pointer_evidence": [
+        {
+          "offset": "0x2c8bec",
+          "aligned_4": true,
+          "kind": "RAW_POINTER",
+          "context_hex": "c0 08 a4 4e c0 08 94 52 c0 08 04 53 c0 08 60 f5 71 08 60 f5 71 08",
+          "target": "0xc05304",
+          "interior": false,
+          "target_at_token_start": true
+        }
+      ],
+      "classification": "TABLE_POINTER_TEXT",
+      "evidence": "CONFIRMED_IN_ROM",
+      "interpretation": "STRONGLY_INFERRED; no runtime or native consumer validation",
+      "reachability": "UNKNOWN",
+      "unused_status": "UNKNOWN",
+      "note": "Place label has an aligned entry in the shared contiguous string-pointer region; owner/lookup semantics remain unverified.",
+      "facts": {
+        "kind": "place_label",
+        "pointer_region": "0x2c8b00..0x2c8bf0 (exclusive; inspected slice, not table bounds)"
+      },
+      "exact_raw_copies_including_self": [
+        "0xc05304"
+      ],
+      "normalized_referenced_copy_witnesses": []
+    }
+  ]
+}

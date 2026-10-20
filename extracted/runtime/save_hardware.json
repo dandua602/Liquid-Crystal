@@ -1,0 +1,33 @@
+{
+  "source_rom_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "source_save_sha256": "eaf085c0f9ff36b45dcd773139a91804d504176c1b448014cd258fb529b6a9e6",
+  "embedded_window": {
+    "start": 13107200,
+    "end_exclusive": 13238272,
+    "bytes": 131072,
+    "sha256": "ce2bace08fb36ed0e41b900f7af5e8033f1f76b4095c7f46f6754aeff65f5fb7",
+    "equals_source_save_payload": true
+  },
+  "native_signatures": [
+    {
+      "offset": 1959976,
+      "hex": "c046"
+    },
+    {
+      "offset": 1960000,
+      "hex": "0121c708"
+    },
+    {
+      "offset": 13050172,
+      "hex": "00000009"
+    },
+    {
+      "offset": 890696,
+      "hex": "4121c708"
+    }
+  ],
+  "bank_port": 150994944,
+  "sram_window": 234881024,
+  "interpretation": "Image-specific cartridge conversion: boot restores embedded NOR save into banked SRAM; game saving updates SRAM then programs the embedded NOR window. Not a claim about unmodified Liquid Crystal releases.",
+  "adapter_limits": "Functional immediate writes for the observed AMD fallback NOR command path, with a private in-memory save window and disposable file. Not hardware, timing, chip-ID or every flashcart protocol certification."
+}

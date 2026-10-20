@@ -1,0 +1,13 @@
+{
+  "kind": "Artificial native-earned victory fixture saved safely outside the P002-only map",
+  "location": {
+    "x": 12,
+    "y": 14,
+    "group": 6,
+    "map": 31,
+    "warp": 0
+  },
+  "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "party": "Boosted generated Mewtwo; not personal progress",
+  "rollback_ready": true
+}

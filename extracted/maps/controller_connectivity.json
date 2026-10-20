@@ -1,0 +1,6500 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "scope": "One hop from ten controller-owner maps. Target outbound records are retained only as landing/return evidence, not recursively added to the graph. Physical pointer prefixes are inspection bounds, not native counts. Script transitions, collision, metatiles, flags, native hooks and saved dynamic state are not resolved; all gameplay reachability remains UNKNOWN.",
+  "interpretation": "CONFIRMED_IN_ROM: raw bytes and pointer chains. STRONGLY_INFERRED: field meanings and dynamic/connection behavior from pinned FireRed references. LC runtime semantics have not been fully compared or tested.",
+  "lookup": {
+    "function": 348728,
+    "literal_site": 348748,
+    "table": 3483304,
+    "raw_hex": "00 04 09 04 03 4a 80 0b 80 18 00 68 89 0b 09 18 08 68 70 47 a8 26 35 08"
+  },
+  "layout_lookup": {
+    "function": 348528,
+    "literal_site": 348564,
+    "table": 12778544,
+    "raw_hex": "00 b5 03 48 00 68 41 8e 00 29 03 d1 00 20 06 e0 08 50 00 03 03 48 01 39 89 00 09 18 08 68 02 bc 08 47 00 00 30 fc c2 08"
+  },
+  "group_physical_prefix": {
+    "start": 3483304,
+    "end": 3483476,
+    "stop": "non-ROM-pointer word",
+    "terminator_hex": "ff ff ff ff ff ff ff ff"
+  },
+  "layout_table_scope": "Sparse table; only each selected layoutId-1 pointer slot is validated. Zero entries do not end the table. Saved/script layout overrides are untested.",
+  "inspected_bank_physical_prefixes": {
+    "0": {
+      "start": 3481604,
+      "end": 3481624,
+      "stop": "non-ROM-pointer word",
+      "terminator_hex": "ff ff ff ff ff ff ff ff"
+    },
+    "1": {
+      "start": 7914144,
+      "end": 7914704,
+      "stop": "non-ROM-pointer word",
+      "terminator_hex": "f7 f7 f7 f7 01 5c 00 00"
+    },
+    "3": {
+      "start": 12758792,
+      "end": 12759240,
+      "stop": "non-ROM-pointer word",
+      "terminator_hex": "f7 f7 f7 f7 ff ff ff ff"
+    },
+    "5": {
+      "start": 12724248,
+      "end": 12724780,
+      "stop": "non-ROM-pointer word",
+      "terminator_hex": "f7 f7 f7 f7 ff ff ff ff"
+    },
+    "6": {
+      "start": 12664504,
+      "end": 12664632,
+      "stop": "non-ROM-pointer word",
+      "terminator_hex": "f7 f7 f7 f7 ff ff ff ff"
+    }
+  },
+  "summary": {
+    "seed_maps": 10,
+    "maps_in_one_hop_scope": 32,
+    "validated_map_structures": 32,
+    "warp_edges": 58,
+    "connection_edges": 13,
+    "warp_statuses": {
+      "warp_record_validated": 58
+    },
+    "warp_return_relations": {
+      "another_map": 20,
+      "dynamic_return": 11,
+      "exact_return": 26,
+      "source_map_different_warp": 1
+    },
+    "connections_with_inverse_returns": 7,
+    "connections_without_inverse_returns": 6
+  },
+  "maps": [
+    {
+      "id": "0:0",
+      "group": 0,
+      "map": 0,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483304,
+      "bank_start": 3481604,
+      "map_pointer_site": 3481604,
+      "header": 3469704,
+      "layout": 7481936,
+      "width": 14,
+      "height": 9,
+      "map_blocks": 7481684,
+      "map_scripts": 1442936,
+      "connection_structure": null,
+      "music": 0,
+      "layout_id": 47,
+      "section_id": 195,
+      "map_type": 0,
+      "events": {
+        "offset": 7482036,
+        "counts": [
+          1,
+          2,
+          2,
+          0
+        ],
+        "arrays": [
+          7481964,
+          7481988,
+          7482004,
+          7482036
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "50 2a 72 08 b4 2a 72 08 78 04 16 08 00 00 00 00 00 00 2f 00 c3 00 00 00 00 00 00 00",
+      "section_label": {
+        "text": "NOT USED",
+        "pointer_site": 2919212,
+        "target": 7530208,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12778728,
+      "indexed_layout": 7481936,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        {
+          "index": 1,
+          "offset": 7481996,
+          "x": 7,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "07 00 08 00 03 7f 7f 7f"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "1:99",
+      "group": 1,
+      "map": 99,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483308,
+      "bank_start": 7914144,
+      "map_pointer_site": 7914540,
+      "header": 3472616,
+      "layout": 10718828,
+      "width": 155,
+      "height": 20,
+      "map_blocks": 10712628,
+      "map_scripts": 12584036,
+      "connection_structure": null,
+      "music": 326,
+      "layout_id": 283,
+      "section_id": 161,
+      "map_type": 8,
+      "events": {
+        "offset": 9438776,
+        "counts": [
+          20,
+          40,
+          2,
+          0
+        ],
+        "arrays": [
+          9437944,
+          9438424,
+          9438744,
+          9438776
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "6c 8e a3 08 38 06 90 08 64 04 c0 08 00 00 00 00 46 01 1b 01 a1 00 00 08 00 07 00 00",
+      "section_label": {
+        "text": "LIGHTHOUSE",
+        "pointer_site": 2919076,
+        "target": 4124750,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12779672,
+      "indexed_layout": 10718828,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 9438424,
+          "x": 10,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 31,
+          "destination_warp": 8,
+          "raw_hex": "0a 00 11 00 00 08 1f 01"
+        },
+        {
+          "index": 1,
+          "offset": 9438432,
+          "x": 11,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 31,
+          "destination_warp": 8,
+          "raw_hex": "0b 00 11 00 00 08 1f 01"
+        },
+        {
+          "index": 2,
+          "offset": 9438440,
+          "x": 3,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 3,
+          "raw_hex": "03 00 0b 00 00 03 63 01"
+        },
+        {
+          "index": 3,
+          "offset": 9438448,
+          "x": 28,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 2,
+          "raw_hex": "1c 00 0d 00 00 02 63 01"
+        },
+        {
+          "index": 4,
+          "offset": 9438456,
+          "x": 30,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 15,
+          "raw_hex": "1e 00 03 00 00 0f 63 01"
+        },
+        {
+          "index": 5,
+          "offset": 9438464,
+          "x": 17,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "11 00 0d 00 00 00 00 00"
+        },
+        {
+          "index": 6,
+          "offset": 9438472,
+          "x": 16,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "10 00 0d 00 00 00 00 00"
+        },
+        {
+          "index": 7,
+          "offset": 9438480,
+          "x": 97,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "61 00 09 00 00 00 00 00"
+        },
+        {
+          "index": 8,
+          "offset": 9438488,
+          "x": 83,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 31,
+          "raw_hex": "53 00 07 00 00 1f 63 01"
+        },
+        {
+          "index": 9,
+          "offset": 9438496,
+          "x": 65,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 26,
+          "raw_hex": "41 00 03 00 00 1a 63 01"
+        },
+        {
+          "index": 10,
+          "offset": 9438504,
+          "x": 96,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "60 00 09 00 00 00 00 00"
+        },
+        {
+          "index": 11,
+          "offset": 9438512,
+          "x": 68,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "44 00 0b 00 00 00 00 00"
+        },
+        {
+          "index": 12,
+          "offset": 9438520,
+          "x": 41,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 6,
+          "raw_hex": "29 00 0f 00 00 06 63 01"
+        },
+        {
+          "index": 13,
+          "offset": 9438528,
+          "x": 69,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "45 00 0b 00 00 00 00 00"
+        },
+        {
+          "index": 14,
+          "offset": 9438536,
+          "x": 42,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "2a 00 0d 00 00 00 00 00"
+        },
+        {
+          "index": 15,
+          "offset": 9438544,
+          "x": 57,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 4,
+          "raw_hex": "39 00 03 00 00 04 63 01"
+        },
+        {
+          "index": 16,
+          "offset": 9438552,
+          "x": 61,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 23,
+          "raw_hex": "3d 00 05 00 00 17 63 01"
+        },
+        {
+          "index": 17,
+          "offset": 9438560,
+          "x": 143,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 30,
+          "raw_hex": "8f 00 0f 00 00 1e 63 01"
+        },
+        {
+          "index": 18,
+          "offset": 9438568,
+          "x": 88,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 27,
+          "raw_hex": "58 00 05 00 00 1b 63 01"
+        },
+        {
+          "index": 19,
+          "offset": 9438576,
+          "x": 41,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "29 00 0d 00 00 00 00 00"
+        },
+        {
+          "index": 20,
+          "offset": 9438584,
+          "x": 42,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 5,
+          "raw_hex": "2a 00 0f 00 00 05 63 01"
+        },
+        {
+          "index": 21,
+          "offset": 9438592,
+          "x": 69,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 14,
+          "raw_hex": "45 00 0d 00 00 0e 63 01"
+        },
+        {
+          "index": 22,
+          "offset": 9438600,
+          "x": 68,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 19,
+          "raw_hex": "44 00 0d 00 00 13 63 01"
+        },
+        {
+          "index": 23,
+          "offset": 9438608,
+          "x": 89,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 16,
+          "raw_hex": "59 00 07 00 00 10 63 01"
+        },
+        {
+          "index": 24,
+          "offset": 9438616,
+          "x": 89,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 36,
+          "raw_hex": "59 00 09 00 00 24 63 01"
+        },
+        {
+          "index": 25,
+          "offset": 9438624,
+          "x": 89,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 29,
+          "raw_hex": "59 00 05 00 00 1d 63 01"
+        },
+        {
+          "index": 26,
+          "offset": 9438632,
+          "x": 93,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 9,
+          "raw_hex": "5d 00 05 00 00 09 63 01"
+        },
+        {
+          "index": 27,
+          "offset": 9438640,
+          "x": 60,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3c 00 03 00 00 00 00 00"
+        },
+        {
+          "index": 28,
+          "offset": 9438648,
+          "x": 96,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 11,
+          "raw_hex": "60 00 0b 00 00 0b 63 01"
+        },
+        {
+          "index": 29,
+          "offset": 9438656,
+          "x": 61,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3d 00 03 00 00 00 00 00"
+        },
+        {
+          "index": 30,
+          "offset": 9438664,
+          "x": 116,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 17,
+          "raw_hex": "74 00 0f 00 00 11 63 01"
+        },
+        {
+          "index": 31,
+          "offset": 9438672,
+          "x": 110,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 8,
+          "raw_hex": "6e 00 05 00 00 08 63 01"
+        },
+        {
+          "index": 32,
+          "offset": 9438680,
+          "x": 123,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "7b 00 05 00 00 00 00 00"
+        },
+        {
+          "index": 33,
+          "offset": 9438688,
+          "x": 97,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 13,
+          "raw_hex": "61 00 0b 00 00 0d 63 01"
+        },
+        {
+          "index": 34,
+          "offset": 9438696,
+          "x": 124,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 7,
+          "raw_hex": "7c 00 07 00 00 07 63 01"
+        },
+        {
+          "index": 35,
+          "offset": 9438704,
+          "x": 123,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 10,
+          "raw_hex": "7b 00 07 00 00 0a 63 01"
+        },
+        {
+          "index": 36,
+          "offset": 9438712,
+          "x": 116,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 24,
+          "raw_hex": "74 00 07 00 00 18 63 01"
+        },
+        {
+          "index": 37,
+          "offset": 9438720,
+          "x": 151,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 39,
+          "raw_hex": "97 00 05 00 00 27 63 01"
+        },
+        {
+          "index": 38,
+          "offset": 9438728,
+          "x": 150,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 32,
+          "raw_hex": "96 00 05 00 00 20 63 01"
+        },
+        {
+          "index": 39,
+          "offset": 9438736,
+          "x": 124,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "7c 00 05 00 00 00 00 00"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:60",
+      "group": 3,
+      "map": 60,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [
+        "Null events pointer; exported empty event set is not runtime safety evidence",
+        "Connection array includes CONNECTION_NONE (0), not a cardinal transition"
+      ],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759032,
+      "header": 3476648,
+      "layout": 3339188,
+      "width": 30,
+      "height": 56,
+      "map_blocks": 8207768,
+      "map_scripts": 1477440,
+      "connection_structure": 3485288,
+      "music": 333,
+      "layout_id": 252,
+      "section_id": 195,
+      "map_type": 3,
+      "events": {
+        "offset": null,
+        "counts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "arrays": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "contiguous_event_geometry": false,
+      "header_raw_hex": "b4 f3 32 08 00 00 00 00 40 8b 16 08 68 2e 35 08 4d 01 fc 00 c3 00 02 03 01 06 00 00",
+      "section_label": {
+        "text": "NOT USED",
+        "pointer_site": 2919212,
+        "target": 7530208,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12779548,
+      "indexed_layout": 3339188,
+      "layout_pointer_matches_indexed": true,
+      "warps": [],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 3485252,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": -17,
+          "destination_group": 1,
+          "destination_map": 31,
+          "raw_hex": "04 00 00 00 ef ff ff ff 01 1f 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 3485264,
+          "direction": 1,
+          "direction_name": "south",
+          "displacement": 40,
+          "destination_group": 3,
+          "destination_map": 18,
+          "raw_hex": "01 00 00 00 28 00 00 00 03 12 00 00"
+        },
+        {
+          "index": 2,
+          "offset": 3485276,
+          "direction": 0,
+          "direction_name": "none",
+          "displacement": 80,
+          "destination_group": 3,
+          "destination_map": 61,
+          "raw_hex": "00 00 00 00 50 00 00 00 03 3d 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:98",
+      "group": 3,
+      "map": 98,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759184,
+      "header": 11635056,
+      "layout": 11639124,
+      "width": 42,
+      "height": 48,
+      "map_blocks": 11635092,
+      "map_scripts": 7475704,
+      "connection_structure": 7631356,
+      "music": 336,
+      "layout_id": 810,
+      "section_id": 230,
+      "map_type": 2,
+      "events": {
+        "offset": 8690736,
+        "counts": [
+          10,
+          8,
+          3,
+          5
+        ],
+        "arrays": [
+          8690324,
+          8690564,
+          8690628,
+          8690676
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "54 99 b1 08 30 9c 84 08 f8 11 72 08 fc 71 74 08 50 01 2a 03 e6 00 00 02 01 06 00 00",
+      "section_label": {
+        "text": "WEST VALE PORT",
+        "pointer_site": 2919352,
+        "target": 7452172,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781780,
+      "indexed_layout": 11639124,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 8690564,
+          "x": 19,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 82,
+          "destination_warp": 1,
+          "raw_hex": "13 00 04 00 00 01 52 05"
+        },
+        {
+          "index": 1,
+          "offset": 8690572,
+          "x": 11,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 82,
+          "destination_warp": 0,
+          "raw_hex": "0b 00 08 00 00 00 52 05"
+        },
+        {
+          "index": 2,
+          "offset": 8690580,
+          "x": 6,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 0,
+          "raw_hex": "06 00 15 00 00 00 56 05"
+        },
+        {
+          "index": 3,
+          "offset": 8690588,
+          "x": 17,
+          "y": 28,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 84,
+          "destination_warp": 1,
+          "raw_hex": "11 00 1c 00 00 01 54 05"
+        },
+        {
+          "index": 4,
+          "offset": 8690596,
+          "x": 22,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 81,
+          "destination_warp": 0,
+          "raw_hex": "16 00 07 00 00 00 51 05"
+        },
+        {
+          "index": 5,
+          "offset": 8690604,
+          "x": 30,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 80,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 0f 00 00 00 50 05"
+        },
+        {
+          "index": 6,
+          "offset": 8690612,
+          "x": 28,
+          "y": 22,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 85,
+          "destination_warp": 1,
+          "raw_hex": "1c 00 16 00 00 01 55 05"
+        },
+        {
+          "index": 7,
+          "offset": 8690620,
+          "x": 28,
+          "y": 28,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 79,
+          "destination_warp": 0,
+          "raw_hex": "1c 00 1c 00 00 00 4f 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7631308,
+          "direction": 1,
+          "direction_name": "south",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 99,
+          "raw_hex": "01 00 00 00 00 00 00 00 03 63 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7631320,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 60,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 3c 00 00"
+        },
+        {
+          "index": 2,
+          "offset": 7631332,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 60,
+          "raw_hex": "02 00 00 00 00 00 00 00 03 3c 00 00"
+        },
+        {
+          "index": 3,
+          "offset": 7631344,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 97,
+          "raw_hex": "03 00 00 00 00 00 00 00 03 61 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:99",
+      "group": 3,
+      "map": 99,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759188,
+      "header": 11659420,
+      "layout": 11663488,
+      "width": 42,
+      "height": 48,
+      "map_blocks": 11659456,
+      "map_scripts": 7473844,
+      "connection_structure": 7477572,
+      "music": 333,
+      "layout_id": 819,
+      "section_id": 231,
+      "map_type": 2,
+      "events": {
+        "offset": 12593540,
+        "counts": [
+          14,
+          1,
+          0,
+          6
+        ],
+        "arrays": [
+          12593124,
+          12593460,
+          12593468,
+          12593468
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "80 f8 b1 08 84 29 c0 08 b4 0a 72 08 44 19 72 08 4d 01 33 03 e7 00 00 02 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 53",
+        "pointer_site": 2919356,
+        "target": 7459720,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781816,
+      "indexed_layout": 11663488,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12593460,
+          "x": 33,
+          "y": 18,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 93,
+          "destination_warp": 0,
+          "raw_hex": "21 00 12 00 00 00 5d 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7477548,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 98,
+          "raw_hex": "02 00 00 00 00 00 00 00 03 62 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7477560,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 18,
+          "destination_group": 3,
+          "destination_map": 100,
+          "raw_hex": "04 00 00 00 12 00 00 00 03 64 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:100",
+      "group": 3,
+      "map": 100,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759192,
+      "header": 11702576,
+      "layout": 12616440,
+      "width": 100,
+      "height": 36,
+      "map_blocks": 12609240,
+      "map_scripts": 12588344,
+      "connection_structure": 7635192,
+      "music": 309,
+      "layout_id": 820,
+      "section_id": 232,
+      "map_type": 2,
+      "events": {
+        "offset": 12602188,
+        "counts": [
+          17,
+          7,
+          10,
+          8
+        ],
+        "arrays": [
+          12601468,
+          12601876,
+          12601932,
+          12602092
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "f8 82 c0 08 4c 4b c0 08 38 15 c0 08 f8 80 74 08 35 01 34 03 e8 00 02 02 01 06 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781820,
+      "indexed_layout": 12616440,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12601876,
+          "x": 34,
+          "y": 20,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 90,
+          "destination_warp": 1,
+          "raw_hex": "22 00 14 00 00 01 5a 05"
+        },
+        {
+          "index": 1,
+          "offset": 12601884,
+          "x": 42,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 91,
+          "destination_warp": 1,
+          "raw_hex": "2a 00 17 00 00 01 5b 05"
+        },
+        {
+          "index": 2,
+          "offset": 12601892,
+          "x": 27,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 92,
+          "destination_warp": 2,
+          "raw_hex": "1b 00 03 00 00 02 5c 05"
+        },
+        {
+          "index": 3,
+          "offset": 12601900,
+          "x": 14,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 88,
+          "destination_warp": 0,
+          "raw_hex": "0e 00 11 00 00 00 58 05"
+        },
+        {
+          "index": 4,
+          "offset": 12601908,
+          "x": 22,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 89,
+          "destination_warp": 1,
+          "raw_hex": "16 00 15 00 00 01 59 05"
+        },
+        {
+          "index": 5,
+          "offset": 12601916,
+          "x": 48,
+          "y": 22,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 87,
+          "destination_warp": 0,
+          "raw_hex": "30 00 16 00 00 00 57 05"
+        },
+        {
+          "index": 6,
+          "offset": 12601924,
+          "x": 89,
+          "y": 14,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 103,
+          "destination_warp": 0,
+          "raw_hex": "59 00 0e 00 00 00 67 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7635156,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": -18,
+          "destination_group": 3,
+          "destination_map": 99,
+          "raw_hex": "03 00 00 00 ee ff ff ff 03 63 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7635168,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": 8,
+          "destination_group": 3,
+          "destination_map": 60,
+          "raw_hex": "02 00 00 00 08 00 00 00 03 3c 00 00"
+        },
+        {
+          "index": 2,
+          "offset": 7635180,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 104,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 68 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:101",
+      "group": 3,
+      "map": 101,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759196,
+      "header": 11733896,
+      "layout": 11748940,
+      "width": 68,
+      "height": 42,
+      "map_blocks": 11743228,
+      "map_scripts": 7477872,
+      "connection_structure": 7607252,
+      "music": 333,
+      "layout_id": 830,
+      "section_id": 234,
+      "map_type": 3,
+      "events": {
+        "offset": 12593840,
+        "counts": [
+          9,
+          2,
+          0,
+          4
+        ],
+        "arrays": [
+          12593560,
+          12593776,
+          12593792,
+          12593792
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "4c 46 b3 08 b0 2a c0 08 70 1a 72 08 d4 13 74 08 4d 01 3e 03 ea 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 54",
+        "pointer_site": 2919368,
+        "target": 7462320,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781860,
+      "indexed_layout": 11748940,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12593776,
+          "x": 9,
+          "y": 18,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 95,
+          "destination_warp": 2,
+          "raw_hex": "09 00 12 00 00 02 5f 05"
+        },
+        {
+          "index": 1,
+          "offset": 12593784,
+          "x": 27,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 96,
+          "destination_warp": 0,
+          "raw_hex": "1b 00 09 00 00 00 60 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7607228,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 28,
+          "destination_group": 3,
+          "destination_map": 101,
+          "raw_hex": "03 00 00 00 1c 00 00 00 03 65 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7607240,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": 2,
+          "destination_group": 3,
+          "destination_map": 102,
+          "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:102",
+      "group": 3,
+      "map": 102,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759200,
+      "header": 11837696,
+      "layout": 11843444,
+      "width": 42,
+      "height": 68,
+      "map_blocks": 11837732,
+      "map_scripts": 7478584,
+      "connection_structure": 7607384,
+      "music": 333,
+      "layout_id": 832,
+      "section_id": 235,
+      "map_type": 3,
+      "events": {
+        "offset": 12600088,
+        "counts": [
+          12,
+          1,
+          0,
+          4
+        ],
+        "arrays": [
+          12599744,
+          12600032,
+          12600040,
+          12600040
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "74 b7 b4 08 18 43 c0 08 38 1d 72 08 58 14 74 08 4d 01 40 03 eb 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 55",
+        "pointer_site": 2919372,
+        "target": 7478532,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781868,
+      "indexed_layout": 11843444,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12600032,
+          "x": 16,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 97,
+          "destination_warp": 0,
+          "raw_hex": "10 00 17 00 00 00 61 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7607360,
+          "direction": 1,
+          "direction_name": "south",
+          "displacement": -2,
+          "destination_group": 3,
+          "destination_map": 101,
+          "raw_hex": "01 00 00 00 fe ff ff ff 03 65 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7607372,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 103,
+          "raw_hex": "03 00 00 00 00 00 00 00 03 67 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:103",
+      "group": 3,
+      "map": 103,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759204,
+      "header": 11606576,
+      "layout": 12622288,
+      "width": 42,
+      "height": 35,
+      "map_blocks": 12619348,
+      "map_scripts": 7478636,
+      "connection_structure": 12583984,
+      "music": 333,
+      "layout_id": 834,
+      "section_id": 235,
+      "map_type": 3,
+      "events": {
+        "offset": 12599380,
+        "counts": [
+          9,
+          1,
+          0,
+          2
+        ],
+        "arrays": [
+          12599132,
+          12599348,
+          12599356,
+          12599356
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "d0 99 c0 08 54 40 c0 08 6c 1d 72 08 30 04 c0 08 4d 01 42 03 eb 00 02 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 55",
+        "pointer_site": 2919372,
+        "target": 7478532,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781876,
+      "indexed_layout": 12622288,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12599348,
+          "x": 12,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 98,
+          "destination_warp": 0,
+          "raw_hex": "0c 00 09 00 00 00 62 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12583960,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 102,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 66 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 12583972,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": -2,
+          "destination_group": 3,
+          "destination_map": 105,
+          "raw_hex": "03 00 00 00 fe ff ff ff 03 69 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:104",
+      "group": 3,
+      "map": 104,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759208,
+      "header": 12634380,
+      "layout": 12640128,
+      "width": 68,
+      "height": 42,
+      "map_blocks": 12634416,
+      "map_scripts": 12584272,
+      "connection_structure": 12589424,
+      "music": 281,
+      "layout_id": 843,
+      "section_id": 237,
+      "map_type": 3,
+      "events": {
+        "offset": 12600836,
+        "counts": [
+          12,
+          2,
+          0,
+          4
+        ],
+        "arrays": [
+          12600484,
+          12600772,
+          12600788,
+          12600788
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "80 df c0 08 04 46 c0 08 50 05 c0 08 70 19 c0 08 19 01 4b 03 ed 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 56",
+        "pointer_site": 2919380,
+        "target": 12583912,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781912,
+      "indexed_layout": 12640128,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12600772,
+          "x": 8,
+          "y": 27,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 104,
+          "destination_warp": 1,
+          "raw_hex": "08 00 1b 00 00 01 68 05"
+        },
+        {
+          "index": 1,
+          "offset": 12600780,
+          "x": 22,
+          "y": 16,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 105,
+          "destination_warp": 0,
+          "raw_hex": "16 00 10 00 00 00 69 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12589412,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 106,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 6a 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:106",
+      "group": 3,
+      "map": 106,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759216,
+      "header": 12671784,
+      "layout": 12721244,
+      "width": 160,
+      "height": 36,
+      "map_blocks": 12709724,
+      "map_scripts": 12599732,
+      "connection_structure": 12593884,
+      "music": 294,
+      "layout_id": 857,
+      "section_id": 239,
+      "map_type": 3,
+      "events": {
+        "offset": 12663784,
+        "counts": [
+          10,
+          2,
+          90,
+          2
+        ],
+        "arrays": [
+          12662064,
+          12662304,
+          12662320,
+          12663760
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "5c 1c c2 08 e8 3b c1 08 b4 41 c0 08 dc 2a c0 08 26 01 59 03 ef 00 02 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 57",
+        "pointer_site": 2919388,
+        "target": 12588460,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781968,
+      "indexed_layout": 12721244,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12662304,
+          "x": 87,
+          "y": 28,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 117,
+          "destination_warp": 1,
+          "raw_hex": "57 00 1c 00 00 01 75 05"
+        },
+        {
+          "index": 1,
+          "offset": 12662312,
+          "x": 88,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 117,
+          "destination_warp": 2,
+          "raw_hex": "58 00 17 00 00 02 75 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12593860,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 104,
+          "raw_hex": "03 00 00 00 00 00 00 00 03 68 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 12593872,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 108,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 6c 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:107",
+      "group": 3,
+      "map": 107,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759220,
+      "header": 12732792,
+      "layout": 12738540,
+      "width": 68,
+      "height": 42,
+      "map_blocks": 12732828,
+      "map_scripts": 7477872,
+      "connection_structure": 7607252,
+      "music": 333,
+      "layout_id": 860,
+      "section_id": 234,
+      "map_type": 3,
+      "events": {
+        "offset": 12738848,
+        "counts": [
+          9,
+          2,
+          0,
+          4
+        ],
+        "arrays": [
+          12738568,
+          12738784,
+          12738800,
+          12738800
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "ec 5f c2 08 20 61 c2 08 70 1a 72 08 d4 13 74 08 4d 01 5c 03 ea 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 54",
+        "pointer_site": 2919368,
+        "target": 7462320,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781980,
+      "indexed_layout": 12738540,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12738784,
+          "x": 9,
+          "y": 18,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 95,
+          "destination_warp": 2,
+          "raw_hex": "09 00 12 00 00 02 5f 05"
+        },
+        {
+          "index": 1,
+          "offset": 12738792,
+          "x": 27,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 96,
+          "destination_warp": 0,
+          "raw_hex": "1b 00 09 00 00 00 60 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 7607228,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 28,
+          "destination_group": 3,
+          "destination_map": 101,
+          "raw_hex": "03 00 00 00 1c 00 00 00 03 65 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 7607240,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": 2,
+          "destination_group": 3,
+          "destination_map": 102,
+          "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "3:109",
+      "group": 3,
+      "map": 109,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759228,
+      "header": 12778508,
+      "layout": 12818572,
+      "width": 108,
+      "height": 42,
+      "map_blocks": 12809500,
+      "map_scripts": 12604072,
+      "connection_structure": 12628056,
+      "music": 334,
+      "layout_id": 864,
+      "section_id": 241,
+      "map_type": 3,
+      "events": {
+        "offset": 12724228,
+        "counts": [
+          27,
+          10,
+          4,
+          9
+        ],
+        "arrays": [
+          12723328,
+          12723976,
+          12724056,
+          12724120
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "8c 98 c3 08 04 28 c2 08 a8 52 c0 08 58 b0 c0 08 4e 01 60 03 f1 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "MANDARIN CITY",
+        "pointer_site": 2919396,
+        "target": 12603044,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781996,
+      "indexed_layout": 12818572,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12723976,
+          "x": 21,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 24,
+          "destination_warp": 0,
+          "raw_hex": "15 00 15 00 00 00 18 06"
+        },
+        {
+          "index": 1,
+          "offset": 12723984,
+          "x": 31,
+          "y": 27,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 122,
+          "destination_warp": 0,
+          "raw_hex": "1f 00 1b 00 00 00 7a 05"
+        },
+        {
+          "index": 2,
+          "offset": 12723992,
+          "x": 11,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 28,
+          "destination_warp": 0,
+          "raw_hex": "0b 00 05 00 00 00 1c 06"
+        },
+        {
+          "index": 3,
+          "offset": 12724000,
+          "x": 11,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 126,
+          "destination_warp": 0,
+          "raw_hex": "0b 00 15 00 00 00 7e 05"
+        },
+        {
+          "index": 4,
+          "offset": 12724008,
+          "x": 21,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 23,
+          "destination_warp": 0,
+          "raw_hex": "15 00 0b 00 00 00 17 06"
+        },
+        {
+          "index": 5,
+          "offset": 12724016,
+          "x": 36,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 125,
+          "destination_warp": 0,
+          "raw_hex": "24 00 0a 00 00 00 7d 05"
+        },
+        {
+          "index": 6,
+          "offset": 12724024,
+          "x": 21,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 124,
+          "destination_warp": 0,
+          "raw_hex": "15 00 04 00 00 00 7c 05"
+        },
+        {
+          "index": 7,
+          "offset": 12724032,
+          "x": 40,
+          "y": 25,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 121,
+          "destination_warp": 1,
+          "raw_hex": "28 00 19 00 00 01 79 05"
+        },
+        {
+          "index": 8,
+          "offset": 12724040,
+          "x": 54,
+          "y": 16,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "36 00 10 00 00 00 00 00"
+        },
+        {
+          "index": 9,
+          "offset": 12724048,
+          "x": 59,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 123,
+          "destination_warp": 0,
+          "raw_hex": "3b 00 04 00 00 00 7b 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12628008,
+          "direction": 1,
+          "direction_name": "south",
+          "displacement": -47,
+          "destination_group": 3,
+          "destination_map": 108,
+          "raw_hex": "01 00 00 00 d1 ff ff ff 03 6c 00 00"
+        },
+        {
+          "index": 1,
+          "offset": 12628020,
+          "direction": 3,
+          "direction_name": "west",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 109,
+          "raw_hex": "03 00 00 00 00 00 00 00 03 6d 00 00"
+        },
+        {
+          "index": 2,
+          "offset": 12628032,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 0,
+          "destination_group": 3,
+          "destination_map": 109,
+          "raw_hex": "04 00 00 00 00 00 00 00 03 6d 00 00"
+        },
+        {
+          "index": 3,
+          "offset": 12628044,
+          "direction": 2,
+          "direction_name": "north",
+          "displacement": -43,
+          "destination_group": 3,
+          "destination_map": 110,
+          "raw_hex": "02 00 00 00 d5 ff ff ff 03 6e 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:110",
+      "group": 3,
+      "map": 110,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759232,
+      "header": 12818600,
+      "layout": 12850908,
+      "width": 90,
+      "height": 70,
+      "map_blocks": 12838308,
+      "map_scripts": null,
+      "connection_structure": 12627940,
+      "music": 327,
+      "layout_id": 884,
+      "section_id": 242,
+      "map_type": 3,
+      "events": {
+        "offset": 12770712,
+        "counts": [
+          22,
+          5,
+          3,
+          18
+        ],
+        "arrays": [
+          12769880,
+          12770408,
+          12770448,
+          12770496
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "dc 16 c4 08 98 dd c2 08 00 00 00 00 e4 af c0 08 47 01 74 03 f2 00 00 03 01 06 00 00",
+      "section_label": {
+        "text": "ROUTE 59",
+        "pointer_site": 2919400,
+        "target": 12604052,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12782076,
+      "indexed_layout": 12850908,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12770408,
+          "x": 11,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 31,
+          "destination_warp": 0,
+          "raw_hex": "0b 00 17 00 00 00 1f 06"
+        },
+        {
+          "index": 1,
+          "offset": 12770416,
+          "x": 64,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 30,
+          "destination_warp": 0,
+          "raw_hex": "40 00 17 00 00 00 1e 06"
+        },
+        {
+          "index": 2,
+          "offset": 12770424,
+          "x": 50,
+          "y": 41,
+          "elevation": 3,
+          "destination_group": 6,
+          "destination_map": 29,
+          "destination_warp": 0,
+          "raw_hex": "32 00 29 00 03 00 1d 06"
+        },
+        {
+          "index": 3,
+          "offset": 12770432,
+          "x": 54,
+          "y": 67,
+          "elevation": 3,
+          "destination_group": 6,
+          "destination_map": 28,
+          "destination_warp": 1,
+          "raw_hex": "36 00 43 00 03 01 1c 06"
+        },
+        {
+          "index": 4,
+          "offset": 12770440,
+          "x": 19,
+          "y": 54,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 30,
+          "destination_warp": 1,
+          "raw_hex": "13 00 36 00 00 01 1e 06"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12627928,
+          "direction": 1,
+          "direction_name": "south",
+          "displacement": 43,
+          "destination_group": 3,
+          "destination_map": 109,
+          "raw_hex": "01 00 00 00 2b 00 00 00 03 6d 00 00"
+        }
+      ],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "3:111",
+      "group": 3,
+      "map": 111,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483316,
+      "bank_start": 12758792,
+      "map_pointer_site": 12759236,
+      "header": 12784592,
+      "layout": 12788660,
+      "width": 42,
+      "height": 48,
+      "map_blocks": 12784628,
+      "map_scripts": 7473844,
+      "connection_structure": 12604156,
+      "music": 327,
+      "layout_id": 889,
+      "section_id": 243,
+      "map_type": 2,
+      "events": {
+        "offset": 12789104,
+        "counts": [
+          14,
+          1,
+          0,
+          6
+        ],
+        "arrays": [
+          12788688,
+          12789024,
+          12789032,
+          12789032
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "b4 23 c3 08 70 25 c3 08 b4 0a 72 08 fc 52 c0 08 47 01 79 03 f3 00 00 02 01 06 00 00",
+      "section_label": {
+        "text": "SCIENCE COMPLEX",
+        "pointer_site": 2919404,
+        "target": 12604164,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12782096,
+      "indexed_layout": 12788660,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12789024,
+          "x": 33,
+          "y": 18,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 93,
+          "destination_warp": 0,
+          "raw_hex": "21 00 12 00 00 00 5d 05"
+        }
+      ],
+      "connections": [
+        {
+          "index": 0,
+          "offset": 12604144,
+          "direction": 4,
+          "direction_name": "east",
+          "displacement": 14,
+          "destination_group": 3,
+          "destination_map": 110,
+          "raw_hex": "04 00 00 00 0e 00 00 00 03 6e 00 00"
+        }
+      ],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "5:86",
+      "group": 5,
+      "map": 86,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724592,
+      "header": 11696312,
+      "layout": 11702548,
+      "width": 155,
+      "height": 20,
+      "map_blocks": 11696348,
+      "map_scripts": 7462596,
+      "connection_structure": null,
+      "music": 326,
+      "layout_id": 818,
+      "section_id": 230,
+      "map_type": 8,
+      "events": {
+        "offset": 12588164,
+        "counts": [
+          20,
+          40,
+          5,
+          2
+        ],
+        "arrays": [
+          12587260,
+          12587740,
+          12588060,
+          12588140
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "14 91 b2 08 84 14 c0 08 c4 de 71 08 00 00 00 00 46 01 32 03 e6 00 00 08 00 07 00 00",
+      "section_label": {
+        "text": "WEST VALE PORT",
+        "pointer_site": 2919352,
+        "target": 7452172,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781812,
+      "indexed_layout": 11702548,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12587740,
+          "x": 9,
+          "y": 19,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 98,
+          "destination_warp": 2,
+          "raw_hex": "09 00 13 00 00 02 62 03"
+        },
+        {
+          "index": 1,
+          "offset": 12587748,
+          "x": 10,
+          "y": 19,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 98,
+          "destination_warp": 2,
+          "raw_hex": "0a 00 13 00 00 02 62 03"
+        },
+        {
+          "index": 2,
+          "offset": 12587756,
+          "x": 7,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 3,
+          "raw_hex": "07 00 07 00 00 03 56 05"
+        },
+        {
+          "index": 3,
+          "offset": 12587764,
+          "x": 32,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 2,
+          "raw_hex": "20 00 06 00 00 02 56 05"
+        },
+        {
+          "index": 4,
+          "offset": 12587772,
+          "x": 29,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 15,
+          "raw_hex": "1d 00 11 00 00 0f 56 05"
+        },
+        {
+          "index": 5,
+          "offset": 12587780,
+          "x": 7,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "07 00 0b 00 00 00 00 00"
+        },
+        {
+          "index": 6,
+          "offset": 12587788,
+          "x": 6,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "06 00 0b 00 00 00 00 00"
+        },
+        {
+          "index": 7,
+          "offset": 12587796,
+          "x": 89,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "59 00 08 00 00 00 00 00"
+        },
+        {
+          "index": 8,
+          "offset": 12587804,
+          "x": 88,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 31,
+          "raw_hex": "58 00 09 00 00 1f 63 01"
+        },
+        {
+          "index": 9,
+          "offset": 12587812,
+          "x": 67,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 26,
+          "raw_hex": "43 00 03 00 00 1a 56 05"
+        },
+        {
+          "index": 10,
+          "offset": 12587820,
+          "x": 88,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "58 00 08 00 00 00 00 00"
+        },
+        {
+          "index": 11,
+          "offset": 12587828,
+          "x": 56,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "38 00 06 00 00 00 00 00"
+        },
+        {
+          "index": 12,
+          "offset": 12587836,
+          "x": 29,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 6,
+          "raw_hex": "1d 00 0b 00 00 06 56 05"
+        },
+        {
+          "index": 13,
+          "offset": 12587844,
+          "x": 57,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "39 00 06 00 00 00 00 00"
+        },
+        {
+          "index": 14,
+          "offset": 12587852,
+          "x": 30,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 0a 00 00 00 00 00"
+        },
+        {
+          "index": 15,
+          "offset": 12587860,
+          "x": 56,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 4,
+          "raw_hex": "38 00 11 00 00 04 56 05"
+        },
+        {
+          "index": 16,
+          "offset": 12587868,
+          "x": 55,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 23,
+          "raw_hex": "37 00 0b 00 00 17 56 05"
+        },
+        {
+          "index": 17,
+          "offset": 12587876,
+          "x": 143,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 30,
+          "raw_hex": "8f 00 0f 00 00 1e 63 01"
+        },
+        {
+          "index": 18,
+          "offset": 12587884,
+          "x": 87,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 27,
+          "raw_hex": "57 00 08 00 00 1b 63 01"
+        },
+        {
+          "index": 19,
+          "offset": 12587892,
+          "x": 29,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "1d 00 0a 00 00 00 00 00"
+        },
+        {
+          "index": 20,
+          "offset": 12587900,
+          "x": 30,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 5,
+          "raw_hex": "1e 00 0b 00 00 05 56 05"
+        },
+        {
+          "index": 21,
+          "offset": 12587908,
+          "x": 57,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 14,
+          "raw_hex": "39 00 08 00 00 0e 56 05"
+        },
+        {
+          "index": 22,
+          "offset": 12587916,
+          "x": 56,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 19,
+          "raw_hex": "38 00 08 00 00 13 56 05"
+        },
+        {
+          "index": 23,
+          "offset": 12587924,
+          "x": 83,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 16,
+          "raw_hex": "53 00 0c 00 00 10 56 05"
+        },
+        {
+          "index": 24,
+          "offset": 12587932,
+          "x": 89,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 36,
+          "raw_hex": "59 00 09 00 00 24 63 01"
+        },
+        {
+          "index": 25,
+          "offset": 12587940,
+          "x": 87,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 29,
+          "raw_hex": "57 00 09 00 00 1d 63 01"
+        },
+        {
+          "index": 26,
+          "offset": 12587948,
+          "x": 95,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 9,
+          "raw_hex": "5f 00 04 00 00 09 56 05"
+        },
+        {
+          "index": 27,
+          "offset": 12587956,
+          "x": 60,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3c 00 03 00 00 00 00 00"
+        },
+        {
+          "index": 28,
+          "offset": 12587964,
+          "x": 84,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 11,
+          "raw_hex": "54 00 07 00 00 0b 56 05"
+        },
+        {
+          "index": 29,
+          "offset": 12587972,
+          "x": 61,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3d 00 03 00 00 00 00 00"
+        },
+        {
+          "index": 30,
+          "offset": 12587980,
+          "x": 112,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 32,
+          "raw_hex": "70 00 04 00 00 20 56 05"
+        },
+        {
+          "index": 31,
+          "offset": 12587988,
+          "x": 123,
+          "y": 1,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 8,
+          "raw_hex": "7b 00 01 00 00 08 63 01"
+        },
+        {
+          "index": 32,
+          "offset": 12587996,
+          "x": 85,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 30,
+          "raw_hex": "55 00 03 00 00 1e 56 05"
+        },
+        {
+          "index": 33,
+          "offset": 12588004,
+          "x": 85,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 13,
+          "raw_hex": "55 00 07 00 00 0d 56 05"
+        },
+        {
+          "index": 34,
+          "offset": 12588012,
+          "x": 124,
+          "y": 2,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 7,
+          "raw_hex": "7c 00 02 00 00 07 63 01"
+        },
+        {
+          "index": 35,
+          "offset": 12588020,
+          "x": 123,
+          "y": 2,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 10,
+          "raw_hex": "7b 00 02 00 00 0a 63 01"
+        },
+        {
+          "index": 36,
+          "offset": 12588028,
+          "x": 124,
+          "y": 1,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 24,
+          "raw_hex": "7c 00 01 00 00 18 63 01"
+        },
+        {
+          "index": 37,
+          "offset": 12588036,
+          "x": 151,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 39,
+          "raw_hex": "97 00 05 00 00 27 63 01"
+        },
+        {
+          "index": 38,
+          "offset": 12588044,
+          "x": 150,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 32,
+          "raw_hex": "96 00 05 00 00 20 63 01"
+        },
+        {
+          "index": 39,
+          "offset": 12588052,
+          "x": 124,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "7c 00 03 00 00 00 00 00"
+        }
+      ],
+      "connections": [],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "5:87",
+      "group": 5,
+      "map": 87,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724596,
+      "header": 8361172,
+      "layout": 8361468,
+      "width": 13,
+      "height": 10,
+      "map_blocks": 8361208,
+      "map_scripts": 1499763,
+      "connection_structure": null,
+      "music": 309,
+      "layout_id": 821,
+      "section_id": 232,
+      "map_type": 8,
+      "events": {
+        "offset": 7782656,
+        "counts": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "arrays": [
+          7782600,
+          7782648,
+          7782656,
+          7782656
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "fc 95 7f 08 00 c1 76 08 73 e2 16 08 00 00 00 00 35 01 35 03 e8 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781824,
+      "indexed_layout": 8361468,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 7782648,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 5,
+          "raw_hex": "04 00 08 00 03 05 64 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:88",
+      "group": 5,
+      "map": 88,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724600,
+      "header": 8663228,
+      "layout": 8663524,
+      "width": 13,
+      "height": 10,
+      "map_blocks": 8663264,
+      "map_scripts": 1499763,
+      "connection_structure": null,
+      "music": 309,
+      "layout_id": 822,
+      "section_id": 232,
+      "map_type": 8,
+      "events": {
+        "offset": 8663608,
+        "counts": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "arrays": [
+          8663552,
+          8663600,
+          8663608,
+          8663608
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "e4 31 84 08 38 32 84 08 73 e2 16 08 00 00 00 00 35 01 36 03 e8 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781828,
+      "indexed_layout": 8663524,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 8663600,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 3,
+          "raw_hex": "04 00 08 00 03 03 64 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:89",
+      "group": 5,
+      "map": 89,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724604,
+      "header": 8921200,
+      "layout": 8921556,
+      "width": 16,
+      "height": 10,
+      "map_blocks": 8921236,
+      "map_scripts": 7506600,
+      "connection_structure": null,
+      "music": 303,
+      "layout_id": 823,
+      "section_id": 232,
+      "map_type": 0,
+      "events": {
+        "offset": 8921760,
+        "counts": [
+          5,
+          4,
+          0,
+          2
+        ],
+        "arrays": [
+          8921584,
+          8921704,
+          8921736,
+          8921736
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "d4 21 88 08 a0 22 88 08 a8 8a 72 08 00 00 00 00 2f 01 37 03 e8 00 00 00 00 00 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781832,
+      "indexed_layout": 8921556,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 8921704,
+          "x": 6,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 2,
+          "destination_warp": 5,
+          "raw_hex": "06 00 08 00 00 05 02 03"
+        },
+        {
+          "index": 1,
+          "offset": 8921712,
+          "x": 7,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 4,
+          "raw_hex": "07 00 08 00 03 04 64 03"
+        },
+        {
+          "index": 2,
+          "offset": 8921720,
+          "x": 8,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 2,
+          "destination_warp": 5,
+          "raw_hex": "08 00 08 00 00 05 02 03"
+        },
+        {
+          "index": 3,
+          "offset": 8921728,
+          "x": 1,
+          "y": 6,
+          "elevation": 4,
+          "destination_group": 6,
+          "destination_map": 6,
+          "destination_warp": 0,
+          "raw_hex": "01 00 06 00 04 00 06 06"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:90",
+      "group": 5,
+      "map": 90,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724608,
+      "header": 8878828,
+      "layout": 8924556,
+      "width": 18,
+      "height": 12,
+      "map_blocks": 8924124,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 309,
+      "layout_id": 824,
+      "section_id": 232,
+      "map_type": 8,
+      "events": {
+        "offset": 8106492,
+        "counts": [
+          6,
+          3,
+          0,
+          3
+        ],
+        "arrays": [
+          8106288,
+          8106432,
+          8106456,
+          8106456
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "8c 2d 88 08 fc b1 7b 08 00 00 00 00 00 00 00 00 35 01 38 03 e8 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781836,
+      "indexed_layout": 8924556,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 8106432,
+          "x": 3,
+          "y": 7,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 83,
+          "destination_warp": 7,
+          "raw_hex": "03 00 07 00 03 07 53 03"
+        },
+        {
+          "index": 1,
+          "offset": 8106440,
+          "x": 4,
+          "y": 7,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 0,
+          "raw_hex": "04 00 07 00 03 00 64 03"
+        },
+        {
+          "index": 2,
+          "offset": 8106448,
+          "x": 5,
+          "y": 7,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 10,
+          "destination_warp": 7,
+          "raw_hex": "05 00 07 00 03 07 0a 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:91",
+      "group": 5,
+      "map": 91,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724612,
+      "header": 9760960,
+      "layout": 9761896,
+      "width": 18,
+      "height": 25,
+      "map_blocks": 9760996,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 275,
+      "layout_id": 825,
+      "section_id": 232,
+      "map_type": 8,
+      "events": {
+        "offset": 12627108,
+        "counts": [
+          5,
+          16,
+          3,
+          2
+        ],
+        "arrays": [
+          12626788,
+          12626908,
+          12627036,
+          12627084
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "68 f4 94 08 a4 ac c0 08 00 00 00 00 00 00 00 00 13 01 39 03 e8 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "SANDWAY TOWN",
+        "pointer_site": 2919360,
+        "target": 7462288,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781840,
+      "indexed_layout": 9761896,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12626908,
+          "x": 11,
+          "y": 13,
+          "elevation": 3,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0b 00 0d 00 03 04 2a 05"
+        },
+        {
+          "index": 1,
+          "offset": 12626916,
+          "x": 9,
+          "y": 23,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 1,
+          "raw_hex": "09 00 17 00 03 01 64 03"
+        },
+        {
+          "index": 2,
+          "offset": 12626924,
+          "x": 11,
+          "y": 14,
+          "elevation": 3,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0b 00 0e 00 03 04 2a 05"
+        },
+        {
+          "index": 3,
+          "offset": 12626932,
+          "x": 10,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0a 00 0d 00 00 04 2a 05"
+        },
+        {
+          "index": 4,
+          "offset": 12626940,
+          "x": 16,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "10 00 15 00 00 00 00 00"
+        },
+        {
+          "index": 5,
+          "offset": 12626948,
+          "x": 13,
+          "y": 14,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0d 00 0e 00 00 04 2a 05"
+        },
+        {
+          "index": 6,
+          "offset": 12626956,
+          "x": 13,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0d 00 0f 00 00 04 2a 05"
+        },
+        {
+          "index": 7,
+          "offset": 12626964,
+          "x": 7,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "07 00 0a 00 00 04 2a 05"
+        },
+        {
+          "index": 8,
+          "offset": 12626972,
+          "x": 7,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "07 00 0b 00 00 04 2a 05"
+        },
+        {
+          "index": 9,
+          "offset": 12626980,
+          "x": 9,
+          "y": 14,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "09 00 0e 00 00 04 2a 05"
+        },
+        {
+          "index": 10,
+          "offset": 12626988,
+          "x": 10,
+          "y": 14,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "0a 00 0e 00 00 04 2a 05"
+        },
+        {
+          "index": 11,
+          "offset": 12626996,
+          "x": 5,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "05 00 09 00 00 04 2a 05"
+        },
+        {
+          "index": 12,
+          "offset": 12627004,
+          "x": 5,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "05 00 0a 00 00 04 2a 05"
+        },
+        {
+          "index": 13,
+          "offset": 12627012,
+          "x": 4,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "04 00 09 00 00 04 2a 05"
+        },
+        {
+          "index": 14,
+          "offset": 12627020,
+          "x": 4,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "04 00 0a 00 00 04 2a 05"
+        },
+        {
+          "index": 15,
+          "offset": 12627028,
+          "x": 4,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 42,
+          "destination_warp": 4,
+          "raw_hex": "04 00 0b 00 00 04 2a 05"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:92",
+      "group": 5,
+      "map": 92,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724616,
+      "header": 11712068,
+      "layout": 11720024,
+      "width": 55,
+      "height": 72,
+      "map_blocks": 11712104,
+      "map_scripts": 12584340,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 826,
+      "section_id": 233,
+      "map_type": 4,
+      "events": {
+        "offset": 12589972,
+        "counts": [
+          15,
+          6,
+          6,
+          3
+        ],
+        "arrays": [
+          12589432,
+          12589792,
+          12589840,
+          12589936
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "58 d5 b2 08 94 1b c0 08 94 05 c0 08 00 00 00 00 20 01 3a 03 e9 00 0b 04 00 07 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781844,
+      "indexed_layout": 11720024,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12589792,
+          "x": 5,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 93,
+          "destination_warp": 1,
+          "raw_hex": "05 00 0a 00 00 01 5d 05"
+        },
+        {
+          "index": 1,
+          "offset": 12589800,
+          "x": 39,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 95,
+          "destination_warp": 1,
+          "raw_hex": "27 00 06 00 00 01 5f 05"
+        },
+        {
+          "index": 2,
+          "offset": 12589808,
+          "x": 9,
+          "y": 65,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 2,
+          "raw_hex": "09 00 41 00 00 02 64 03"
+        },
+        {
+          "index": 3,
+          "offset": 12589816,
+          "x": 30,
+          "y": 32,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 94,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 20 00 00 00 5e 05"
+        },
+        {
+          "index": 4,
+          "offset": 12589824,
+          "x": 31,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 94,
+          "destination_warp": 1,
+          "raw_hex": "1f 00 0b 00 00 01 5e 05"
+        },
+        {
+          "index": 5,
+          "offset": 12589832,
+          "x": 36,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 95,
+          "destination_warp": 0,
+          "raw_hex": "24 00 0f 00 00 00 5f 05"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:93",
+      "group": 5,
+      "map": 93,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724620,
+      "header": 8388992,
+      "layout": 8389820,
+      "width": 22,
+      "height": 18,
+      "map_blocks": 8389028,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 827,
+      "section_id": 233,
+      "map_type": 4,
+      "events": {
+        "offset": 7650296,
+        "counts": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "arrays": [
+          7650256,
+          7650280,
+          7650296,
+          7650296
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "bc 04 80 08 f8 bb 74 08 00 00 00 00 00 00 00 00 20 01 3b 03 e9 00 0b 04 00 07 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781848,
+      "indexed_layout": 8389820,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 7650280,
+          "x": 4,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 99,
+          "destination_warp": 0,
+          "raw_hex": "04 00 0c 00 00 00 63 03"
+        },
+        {
+          "index": 1,
+          "offset": 7650288,
+          "x": 16,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 92,
+          "destination_warp": 0,
+          "raw_hex": "10 00 0d 00 00 00 5c 05"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:95",
+      "group": 5,
+      "map": 95,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724628,
+      "header": 11437072,
+      "layout": 11439148,
+      "width": 34,
+      "height": 30,
+      "map_blocks": 11437108,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 829,
+      "section_id": 233,
+      "map_type": 4,
+      "events": {
+        "offset": 12584504,
+        "counts": [
+          5,
+          3,
+          0,
+          0
+        ],
+        "arrays": [
+          12584360,
+          12584480,
+          12584504,
+          12584504
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "2c 8c ae 08 38 06 c0 08 00 00 00 00 00 00 00 00 20 01 3d 03 e9 00 02 04 00 07 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781856,
+      "indexed_layout": 11439148,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12584480,
+          "x": 5,
+          "y": 24,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 92,
+          "destination_warp": 5,
+          "raw_hex": "05 00 18 00 00 05 5c 05"
+        },
+        {
+          "index": 1,
+          "offset": 12584488,
+          "x": 12,
+          "y": 19,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 92,
+          "destination_warp": 1,
+          "raw_hex": "0c 00 13 00 00 01 5c 05"
+        },
+        {
+          "index": 2,
+          "offset": 12584496,
+          "x": 27,
+          "y": 20,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 0,
+          "raw_hex": "1b 00 14 00 00 00 65 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:96",
+      "group": 5,
+      "map": 96,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724632,
+      "header": 8393012,
+      "layout": 8393308,
+      "width": 13,
+      "height": 10,
+      "map_blocks": 8393048,
+      "map_scripts": 1499763,
+      "connection_structure": null,
+      "music": 333,
+      "layout_id": 831,
+      "section_id": 234,
+      "map_type": 8,
+      "events": {
+        "offset": 7664884,
+        "counts": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "arrays": [
+          7664852,
+          7664876,
+          7664884,
+          7664884
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "5c 12 80 08 f4 f4 74 08 73 e2 16 08 00 00 00 00 4d 01 3f 03 ea 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "ROUTE 54",
+        "pointer_site": 2919368,
+        "target": 7462320,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781864,
+      "indexed_layout": 8393308,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 7664876,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 1,
+          "raw_hex": "04 00 08 00 03 01 65 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:97",
+      "group": 5,
+      "map": 97,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724636,
+      "header": 8222792,
+      "layout": 8927800,
+      "width": 16,
+      "height": 12,
+      "map_blocks": 8927416,
+      "map_scripts": 1499763,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 833,
+      "section_id": 233,
+      "map_type": 8,
+      "events": {
+        "offset": 8223148,
+        "counts": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "arrays": [
+          8223116,
+          8223140,
+          8223148,
+          8223148
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "38 3a 88 08 ac 79 7d 08 73 e2 16 08 00 00 00 00 20 01 41 03 e9 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781872,
+      "indexed_layout": 8927800,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 8223140,
+          "x": 8,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 102,
+          "destination_warp": 0,
+          "raw_hex": "08 00 08 00 03 00 66 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:99",
+      "group": 5,
+      "map": 99,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724644,
+      "header": 11535892,
+      "layout": 11538728,
+      "width": 40,
+      "height": 35,
+      "map_blocks": 11535928,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 307,
+      "layout_id": 836,
+      "section_id": 236,
+      "map_type": 8,
+      "events": {
+        "offset": 12585560,
+        "counts": [
+          19,
+          13,
+          0,
+          32
+        ],
+        "arrays": [
+          12584616,
+          12585072,
+          12585176,
+          12585176
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "28 11 b0 08 58 0a c0 08 00 00 00 00 00 00 00 00 33 01 44 03 ec 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "NEXUS LABORATORY",
+        "pointer_site": 2919376,
+        "target": 7486128,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781884,
+      "indexed_layout": 11538728,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12585072,
+          "x": 20,
+          "y": 33,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 98,
+          "destination_warp": 2,
+          "raw_hex": "14 00 21 00 00 02 62 05"
+        },
+        {
+          "index": 1,
+          "offset": 12585080,
+          "x": 14,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 100,
+          "destination_warp": 0,
+          "raw_hex": "0e 00 03 00 00 00 64 05"
+        },
+        {
+          "index": 2,
+          "offset": 12585088,
+          "x": 30,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 102,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 08 00 00 00 66 05"
+        },
+        {
+          "index": 3,
+          "offset": 12585096,
+          "x": 31,
+          "y": 22,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 6,
+          "raw_hex": "1f 00 16 00 00 06 63 05"
+        },
+        {
+          "index": 4,
+          "offset": 12585104,
+          "x": 21,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 9,
+          "raw_hex": "15 00 07 00 00 09 63 05"
+        },
+        {
+          "index": 5,
+          "offset": 12585112,
+          "x": 25,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 10,
+          "raw_hex": "19 00 0c 00 00 0a 63 05"
+        },
+        {
+          "index": 6,
+          "offset": 12585120,
+          "x": 20,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 3,
+          "raw_hex": "14 00 0c 00 00 03 63 05"
+        },
+        {
+          "index": 7,
+          "offset": 12585128,
+          "x": 21,
+          "y": 19,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 8,
+          "raw_hex": "15 00 13 00 00 08 63 05"
+        },
+        {
+          "index": 8,
+          "offset": 12585136,
+          "x": 7,
+          "y": 14,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 7,
+          "raw_hex": "07 00 0e 00 00 07 63 05"
+        },
+        {
+          "index": 9,
+          "offset": 12585144,
+          "x": 6,
+          "y": 22,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 4,
+          "raw_hex": "06 00 16 00 00 04 63 05"
+        },
+        {
+          "index": 10,
+          "offset": 12585152,
+          "x": 11,
+          "y": 23,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 5,
+          "raw_hex": "0b 00 17 00 00 05 63 05"
+        },
+        {
+          "index": 11,
+          "offset": 12585160,
+          "x": 11,
+          "y": 27,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 100,
+          "destination_warp": 9,
+          "raw_hex": "0b 00 1b 00 00 09 64 05"
+        },
+        {
+          "index": 12,
+          "offset": 12585168,
+          "x": 15,
+          "y": 27,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 100,
+          "destination_warp": 5,
+          "raw_hex": "0f 00 1b 00 00 05 64 05"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:102",
+      "group": 5,
+      "map": 102,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724656,
+      "header": 12585580,
+      "layout": 12586216,
+      "width": 20,
+      "height": 15,
+      "map_blocks": 12585616,
+      "map_scripts": 12584312,
+      "connection_structure": null,
+      "music": 307,
+      "layout_id": 840,
+      "section_id": 236,
+      "map_type": 8,
+      "events": {
+        "offset": 12589316,
+        "counts": [
+          3,
+          1,
+          0,
+          12
+        ],
+        "arrays": [
+          12589092,
+          12589164,
+          12589172,
+          12589172
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "e8 0c c0 08 04 19 c0 08 78 05 c0 08 00 00 00 00 33 01 48 03 ec 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "NEXUS LABORATORY",
+        "pointer_site": 2919376,
+        "target": 7486128,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781900,
+      "indexed_layout": 12586216,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12589164,
+          "x": 9,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 99,
+          "destination_warp": 2,
+          "raw_hex": "09 00 0d 00 00 02 63 05"
+        }
+      ],
+      "connections": [],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    },
+    {
+      "id": "5:103",
+      "group": 5,
+      "map": 103,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724660,
+      "header": 12616468,
+      "layout": 12618904,
+      "width": 40,
+      "height": 30,
+      "map_blocks": 12616504,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 841,
+      "section_id": 233,
+      "map_type": 4,
+      "events": {
+        "offset": 12584252,
+        "counts": [
+          6,
+          2,
+          1,
+          0
+        ],
+        "arrays": [
+          12584076,
+          12584220,
+          12584236,
+          12584252
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "98 8c c0 08 3c 05 c0 08 00 00 00 00 00 00 00 00 20 01 49 03 e9 00 0b 04 00 07 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781904,
+      "indexed_layout": 12618904,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12584220,
+          "x": 4,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 6,
+          "raw_hex": "04 00 07 00 00 06 64 03"
+        },
+        {
+          "index": 1,
+          "offset": 12584228,
+          "x": 21,
+          "y": 24,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 104,
+          "destination_warp": 0,
+          "raw_hex": "15 00 18 00 00 00 68 05"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:104",
+      "group": 5,
+      "map": 104,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724664,
+      "header": 12622340,
+      "layout": 12624776,
+      "width": 40,
+      "height": 30,
+      "map_blocks": 12622376,
+      "map_scripts": 12583896,
+      "connection_structure": null,
+      "music": 288,
+      "layout_id": 842,
+      "section_id": 233,
+      "map_type": 4,
+      "events": {
+        "offset": 12586372,
+        "counts": [
+          4,
+          2,
+          1,
+          0
+        ],
+        "arrays": [
+          12586244,
+          12586340,
+          12586356,
+          12586372
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "88 a3 c0 08 84 0d c0 08 d8 03 c0 08 00 00 00 00 20 01 4a 03 e9 00 00 04 00 07 00 00",
+      "section_label": {
+        "text": "CRYSTAL CAVES",
+        "pointer_site": 2919364,
+        "target": 7462304,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781908,
+      "indexed_layout": 12624776,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12586340,
+          "x": 18,
+          "y": 24,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 103,
+          "destination_warp": 1,
+          "raw_hex": "12 00 18 00 00 01 67 05"
+        },
+        {
+          "index": 1,
+          "offset": 12586348,
+          "x": 34,
+          "y": 24,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 104,
+          "destination_warp": 0,
+          "raw_hex": "22 00 18 00 00 00 68 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "5:105",
+      "group": 5,
+      "map": 105,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483324,
+      "bank_start": 12724248,
+      "map_pointer_site": 12724668,
+      "header": 12600108,
+      "layout": 8005328,
+      "width": 12,
+      "height": 11,
+      "map_blocks": 8005064,
+      "map_scripts": 1499763,
+      "connection_structure": null,
+      "music": 281,
+      "layout_id": 844,
+      "section_id": 237,
+      "map_type": 8,
+      "events": {
+        "offset": 12600464,
+        "counts": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "arrays": [
+          12600432,
+          12600456,
+          12600464,
+          12600464
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "d0 26 7a 08 90 44 c0 08 73 e2 16 08 00 00 00 00 19 01 4c 03 ed 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "ROUTE 56",
+        "pointer_site": 2919380,
+        "target": 12583912,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12781916,
+      "indexed_layout": 8005328,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12600456,
+          "x": 4,
+          "y": 9,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 104,
+          "destination_warp": 1,
+          "raw_hex": "04 00 09 00 03 01 68 03"
+        }
+      ],
+      "connections": [],
+      "seed": false,
+      "graph_outgoing_scope": "not expanded; records retained for landing/return checks only"
+    },
+    {
+      "id": "6:23",
+      "group": 6,
+      "map": 23,
+      "status": "structure_validated",
+      "reachability": "UNKNOWN",
+      "observations": [],
+      "group_pointer_site": 3483328,
+      "bank_start": 12664504,
+      "map_pointer_site": 12664596,
+      "header": 12684004,
+      "layout": 12684640,
+      "width": 20,
+      "height": 15,
+      "map_blocks": 12684040,
+      "map_scripts": null,
+      "connection_structure": null,
+      "music": 275,
+      "layout_id": 878,
+      "section_id": 241,
+      "map_type": 8,
+      "events": {
+        "offset": 12684892,
+        "counts": [
+          3,
+          1,
+          0,
+          12
+        ],
+        "arrays": [
+          12684668,
+          12684740,
+          12684748,
+          12684748
+        ]
+      },
+      "contiguous_event_geometry": true,
+      "header_raw_hex": "60 8d c1 08 5c 8e c1 08 00 00 00 00 00 00 00 00 13 01 6e 03 f1 00 00 08 00 00 00 00",
+      "section_label": {
+        "text": "MANDARIN CITY",
+        "pointer_site": 2919396,
+        "target": 12603044,
+        "status": "section label; individual room/floor identity unverified"
+      },
+      "indexed_layout_pointer_site": 12782052,
+      "indexed_layout": 12684640,
+      "layout_pointer_matches_indexed": true,
+      "warps": [
+        {
+          "index": 0,
+          "offset": 12684740,
+          "x": 9,
+          "y": 13,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 109,
+          "destination_warp": 4,
+          "raw_hex": "09 00 0d 00 00 04 6d 03"
+        }
+      ],
+      "connections": [],
+      "seed": true,
+      "graph_outgoing_scope": "all static warp/connection records"
+    }
+  ],
+  "edges": [
+    {
+      "id": "warp:3:99:0",
+      "kind": "warp",
+      "source_map": "3:99",
+      "index": 0,
+      "offset": 12593460,
+      "x": 33,
+      "y": 18,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 93,
+      "destination_warp": 0,
+      "raw_hex": "21 00 12 00 00 00 5d 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:93",
+        "landing": {
+          "index": 0,
+          "offset": 7650280,
+          "x": 4,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 99,
+          "destination_warp": 0,
+          "raw_hex": "04 00 0c 00 00 00 63 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:99:0",
+      "kind": "connection",
+      "source_map": "3:99",
+      "index": 0,
+      "offset": 7477548,
+      "direction": 2,
+      "direction_name": "north",
+      "displacement": 0,
+      "destination_group": 3,
+      "destination_map": 98,
+      "raw_hex": "02 00 00 00 00 00 00 00 03 62 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:98",
+        "opposite_direction_returns": [
+          {
+            "index": 0,
+            "offset": 7631308,
+            "direction": 1,
+            "direction_name": "south",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 99,
+            "raw_hex": "01 00 00 00 00 00 00 00 03 63 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 0,
+            "offset": 7631308,
+            "direction": 1,
+            "direction_name": "south",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 99,
+            "raw_hex": "01 00 00 00 00 00 00 00 03 63 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "width",
+          "start_inclusive": 0,
+          "end_exclusive": 42,
+          "tiles": 42,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:99:1",
+      "kind": "connection",
+      "source_map": "3:99",
+      "index": 1,
+      "offset": 7477560,
+      "direction": 4,
+      "direction_name": "east",
+      "displacement": 18,
+      "destination_group": 3,
+      "destination_map": 100,
+      "raw_hex": "04 00 00 00 12 00 00 00 03 64 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:100",
+        "opposite_direction_returns": [
+          {
+            "index": 0,
+            "offset": 7635156,
+            "direction": 3,
+            "direction_name": "west",
+            "displacement": -18,
+            "destination_group": 3,
+            "destination_map": 99,
+            "raw_hex": "03 00 00 00 ee ff ff ff 03 63 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 0,
+            "offset": 7635156,
+            "direction": 3,
+            "direction_name": "west",
+            "displacement": -18,
+            "destination_group": 3,
+            "destination_map": 99,
+            "raw_hex": "03 00 00 00 ee ff ff ff 03 63 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 18,
+          "end_exclusive": 48,
+          "tiles": 30,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:100:0",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 0,
+      "offset": 12601876,
+      "x": 34,
+      "y": 20,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 90,
+      "destination_warp": 1,
+      "raw_hex": "22 00 14 00 00 01 5a 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:90",
+        "landing": {
+          "index": 1,
+          "offset": 8106440,
+          "x": 4,
+          "y": 7,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 0,
+          "raw_hex": "04 00 07 00 03 00 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:1",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 1,
+      "offset": 12601884,
+      "x": 42,
+      "y": 23,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 91,
+      "destination_warp": 1,
+      "raw_hex": "2a 00 17 00 00 01 5b 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:91",
+        "landing": {
+          "index": 1,
+          "offset": 12626916,
+          "x": 9,
+          "y": 23,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 1,
+          "raw_hex": "09 00 17 00 03 01 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:2",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 2,
+      "offset": 12601892,
+      "x": 27,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 92,
+      "destination_warp": 2,
+      "raw_hex": "1b 00 03 00 00 02 5c 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:92",
+        "landing": {
+          "index": 2,
+          "offset": 12589808,
+          "x": 9,
+          "y": 65,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 2,
+          "raw_hex": "09 00 41 00 00 02 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:3",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 3,
+      "offset": 12601900,
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 88,
+      "destination_warp": 0,
+      "raw_hex": "0e 00 11 00 00 00 58 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:88",
+        "landing": {
+          "index": 0,
+          "offset": 8663600,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 3,
+          "raw_hex": "04 00 08 00 03 03 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:4",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 4,
+      "offset": 12601908,
+      "x": 22,
+      "y": 21,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 89,
+      "destination_warp": 1,
+      "raw_hex": "16 00 15 00 00 01 59 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:89",
+        "landing": {
+          "index": 1,
+          "offset": 8921712,
+          "x": 7,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 4,
+          "raw_hex": "07 00 08 00 03 04 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:5",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 5,
+      "offset": 12601916,
+      "x": 48,
+      "y": 22,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 87,
+      "destination_warp": 0,
+      "raw_hex": "30 00 16 00 00 00 57 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:87",
+        "landing": {
+          "index": 0,
+          "offset": 7782648,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 5,
+          "raw_hex": "04 00 08 00 03 05 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:100:6",
+      "kind": "warp",
+      "source_map": "3:100",
+      "index": 6,
+      "offset": 12601924,
+      "x": 89,
+      "y": 14,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 103,
+      "destination_warp": 0,
+      "raw_hex": "59 00 0e 00 00 00 67 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:103",
+        "landing": {
+          "index": 0,
+          "offset": 12584220,
+          "x": 4,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 100,
+          "destination_warp": 6,
+          "raw_hex": "04 00 07 00 00 06 64 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:100:0",
+      "kind": "connection",
+      "source_map": "3:100",
+      "index": 0,
+      "offset": 7635156,
+      "direction": 3,
+      "direction_name": "west",
+      "displacement": -18,
+      "destination_group": 3,
+      "destination_map": 99,
+      "raw_hex": "03 00 00 00 ee ff ff ff 03 63 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:99",
+        "opposite_direction_returns": [
+          {
+            "index": 1,
+            "offset": 7477560,
+            "direction": 4,
+            "direction_name": "east",
+            "displacement": 18,
+            "destination_group": 3,
+            "destination_map": 100,
+            "raw_hex": "04 00 00 00 12 00 00 00 03 64 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 1,
+            "offset": 7477560,
+            "direction": 4,
+            "direction_name": "east",
+            "displacement": 18,
+            "destination_group": 3,
+            "destination_map": 100,
+            "raw_hex": "04 00 00 00 12 00 00 00 03 64 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 0,
+          "end_exclusive": 30,
+          "tiles": 30,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:100:1",
+      "kind": "connection",
+      "source_map": "3:100",
+      "index": 1,
+      "offset": 7635168,
+      "direction": 2,
+      "direction_name": "north",
+      "displacement": 8,
+      "destination_group": 3,
+      "destination_map": 60,
+      "raw_hex": "02 00 00 00 08 00 00 00 03 3c 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:60",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "width",
+          "start_inclusive": 8,
+          "end_exclusive": 38,
+          "tiles": 30,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:100:2",
+      "kind": "connection",
+      "source_map": "3:100",
+      "index": 2,
+      "offset": 7635180,
+      "direction": 4,
+      "direction_name": "east",
+      "displacement": 0,
+      "destination_group": 3,
+      "destination_map": 104,
+      "raw_hex": "04 00 00 00 00 00 00 00 03 68 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:104",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 0,
+          "end_exclusive": 36,
+          "tiles": 36,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:101:0",
+      "kind": "warp",
+      "source_map": "3:101",
+      "index": 0,
+      "offset": 12593776,
+      "x": 9,
+      "y": 18,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 95,
+      "destination_warp": 2,
+      "raw_hex": "09 00 12 00 00 02 5f 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:95",
+        "landing": {
+          "index": 2,
+          "offset": 12584496,
+          "x": 27,
+          "y": 20,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 0,
+          "raw_hex": "1b 00 14 00 00 00 65 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:101:1",
+      "kind": "warp",
+      "source_map": "3:101",
+      "index": 1,
+      "offset": 12593784,
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 96,
+      "destination_warp": 0,
+      "raw_hex": "1b 00 09 00 00 00 60 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:96",
+        "landing": {
+          "index": 0,
+          "offset": 7664876,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 1,
+          "raw_hex": "04 00 08 00 03 01 65 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:101:0",
+      "kind": "connection",
+      "source_map": "3:101",
+      "index": 0,
+      "offset": 7607228,
+      "direction": 3,
+      "direction_name": "west",
+      "displacement": 28,
+      "destination_group": 3,
+      "destination_map": 101,
+      "raw_hex": "03 00 00 00 1c 00 00 00 03 65 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:101",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 28,
+          "end_exclusive": 42,
+          "tiles": 14,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:101:1",
+      "kind": "connection",
+      "source_map": "3:101",
+      "index": 1,
+      "offset": 7607240,
+      "direction": 2,
+      "direction_name": "north",
+      "displacement": 2,
+      "destination_group": 3,
+      "destination_map": 102,
+      "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:102",
+        "opposite_direction_returns": [
+          {
+            "index": 0,
+            "offset": 7607360,
+            "direction": 1,
+            "direction_name": "south",
+            "displacement": -2,
+            "destination_group": 3,
+            "destination_map": 101,
+            "raw_hex": "01 00 00 00 fe ff ff ff 03 65 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 0,
+            "offset": 7607360,
+            "direction": 1,
+            "direction_name": "south",
+            "displacement": -2,
+            "destination_group": 3,
+            "destination_map": 101,
+            "raw_hex": "01 00 00 00 fe ff ff ff 03 65 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "width",
+          "start_inclusive": 2,
+          "end_exclusive": 44,
+          "tiles": 42,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:102:0",
+      "kind": "warp",
+      "source_map": "3:102",
+      "index": 0,
+      "offset": 12600032,
+      "x": 16,
+      "y": 23,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 97,
+      "destination_warp": 0,
+      "raw_hex": "10 00 17 00 00 00 61 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:97",
+        "landing": {
+          "index": 0,
+          "offset": 8223140,
+          "x": 8,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 102,
+          "destination_warp": 0,
+          "raw_hex": "08 00 08 00 03 00 66 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:102:0",
+      "kind": "connection",
+      "source_map": "3:102",
+      "index": 0,
+      "offset": 7607360,
+      "direction": 1,
+      "direction_name": "south",
+      "displacement": -2,
+      "destination_group": 3,
+      "destination_map": 101,
+      "raw_hex": "01 00 00 00 fe ff ff ff 03 65 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:101",
+        "opposite_direction_returns": [
+          {
+            "index": 1,
+            "offset": 7607240,
+            "direction": 2,
+            "direction_name": "north",
+            "displacement": 2,
+            "destination_group": 3,
+            "destination_map": 102,
+            "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 1,
+            "offset": 7607240,
+            "direction": 2,
+            "direction_name": "north",
+            "displacement": 2,
+            "destination_group": 3,
+            "destination_map": 102,
+            "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "width",
+          "start_inclusive": 0,
+          "end_exclusive": 42,
+          "tiles": 42,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:102:1",
+      "kind": "connection",
+      "source_map": "3:102",
+      "index": 1,
+      "offset": 7607372,
+      "direction": 3,
+      "direction_name": "west",
+      "displacement": 0,
+      "destination_group": 3,
+      "destination_map": 103,
+      "raw_hex": "03 00 00 00 00 00 00 00 03 67 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:103",
+        "opposite_direction_returns": [
+          {
+            "index": 0,
+            "offset": 12583960,
+            "direction": 4,
+            "direction_name": "east",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 102,
+            "raw_hex": "04 00 00 00 00 00 00 00 03 66 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 0,
+            "offset": 12583960,
+            "direction": 4,
+            "direction_name": "east",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 102,
+            "raw_hex": "04 00 00 00 00 00 00 00 03 66 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 0,
+          "end_exclusive": 35,
+          "tiles": 35,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:104:0",
+      "kind": "warp",
+      "source_map": "3:104",
+      "index": 0,
+      "offset": 12600772,
+      "x": 8,
+      "y": 27,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 104,
+      "destination_warp": 1,
+      "raw_hex": "08 00 1b 00 00 01 68 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:104",
+        "landing": {
+          "index": 1,
+          "offset": 12586348,
+          "x": 34,
+          "y": 24,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 104,
+          "destination_warp": 0,
+          "raw_hex": "22 00 18 00 00 00 68 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:104:1",
+      "kind": "warp",
+      "source_map": "3:104",
+      "index": 1,
+      "offset": 12600780,
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 105,
+      "destination_warp": 0,
+      "raw_hex": "16 00 10 00 00 00 69 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:105",
+        "landing": {
+          "index": 0,
+          "offset": 12600456,
+          "x": 4,
+          "y": 9,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 104,
+          "destination_warp": 1,
+          "raw_hex": "04 00 09 00 03 01 68 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:104:0",
+      "kind": "connection",
+      "source_map": "3:104",
+      "index": 0,
+      "offset": 12589412,
+      "direction": 4,
+      "direction_name": "east",
+      "displacement": 0,
+      "destination_group": 3,
+      "destination_map": 106,
+      "raw_hex": "04 00 00 00 00 00 00 00 03 6a 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:106",
+        "opposite_direction_returns": [
+          {
+            "index": 0,
+            "offset": 12593860,
+            "direction": 3,
+            "direction_name": "west",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 104,
+            "raw_hex": "03 00 00 00 00 00 00 00 03 68 00 00"
+          }
+        ],
+        "inverse_displacement_returns": [
+          {
+            "index": 0,
+            "offset": 12593860,
+            "direction": 3,
+            "direction_name": "west",
+            "displacement": 0,
+            "destination_group": 3,
+            "destination_map": 104,
+            "raw_hex": "03 00 00 00 00 00 00 00 03 68 00 00"
+          }
+        ],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 0,
+          "end_exclusive": 36,
+          "tiles": 36,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:107:0",
+      "kind": "warp",
+      "source_map": "3:107",
+      "index": 0,
+      "offset": 12738784,
+      "x": 9,
+      "y": 18,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 95,
+      "destination_warp": 2,
+      "raw_hex": "09 00 12 00 00 02 5f 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:95",
+        "landing": {
+          "index": 2,
+          "offset": 12584496,
+          "x": 27,
+          "y": 20,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 0,
+          "raw_hex": "1b 00 14 00 00 00 65 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:3:107:1",
+      "kind": "warp",
+      "source_map": "3:107",
+      "index": 1,
+      "offset": 12738792,
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 96,
+      "destination_warp": 0,
+      "raw_hex": "1b 00 09 00 00 00 60 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:96",
+        "landing": {
+          "index": 0,
+          "offset": 7664876,
+          "x": 4,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 3,
+          "destination_map": 101,
+          "destination_warp": 1,
+          "raw_hex": "04 00 08 00 03 01 65 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:107:0",
+      "kind": "connection",
+      "source_map": "3:107",
+      "index": 0,
+      "offset": 7607228,
+      "direction": 3,
+      "direction_name": "west",
+      "displacement": 28,
+      "destination_group": 3,
+      "destination_map": 101,
+      "raw_hex": "03 00 00 00 1c 00 00 00 03 65 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:101",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 28,
+          "end_exclusive": 42,
+          "tiles": 14,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "connection:3:107:1",
+      "kind": "connection",
+      "source_map": "3:107",
+      "index": 1,
+      "offset": 7607240,
+      "direction": 2,
+      "direction_name": "north",
+      "displacement": 2,
+      "destination_group": 3,
+      "destination_map": 102,
+      "raw_hex": "02 00 00 00 02 00 00 00 03 66 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:102",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "width",
+          "start_inclusive": 2,
+          "end_exclusive": 44,
+          "tiles": 42,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:3:111:0",
+      "kind": "warp",
+      "source_map": "3:111",
+      "index": 0,
+      "offset": 12789024,
+      "x": 33,
+      "y": 18,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 93,
+      "destination_warp": 0,
+      "raw_hex": "21 00 12 00 00 00 5d 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:93",
+        "landing": {
+          "index": 0,
+          "offset": 7650280,
+          "x": 4,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 3,
+          "destination_map": 99,
+          "destination_warp": 0,
+          "raw_hex": "04 00 0c 00 00 00 63 03"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "connection:3:111:0",
+      "kind": "connection",
+      "source_map": "3:111",
+      "index": 0,
+      "offset": 12604144,
+      "direction": 4,
+      "direction_name": "east",
+      "displacement": 14,
+      "destination_group": 3,
+      "destination_map": 110,
+      "raw_hex": "04 00 00 00 0e 00 00 00 03 6e 00 00",
+      "destination": {
+        "status": "connection_record_validated",
+        "target_map": "3:110",
+        "opposite_direction_returns": [],
+        "inverse_displacement_returns": [],
+        "geometric_overlap": {
+          "source_axis": "height",
+          "start_inclusive": 14,
+          "end_exclusive": 48,
+          "tiles": 34,
+          "collision_and_crossing_behavior": "UNKNOWN"
+        }
+      },
+      "reachability": "UNKNOWN"
+    },
+    {
+      "id": "warp:5:86:0",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 0,
+      "offset": 12587740,
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "destination_group": 3,
+      "destination_map": 98,
+      "destination_warp": 2,
+      "raw_hex": "09 00 13 00 00 02 62 03",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "3:98",
+        "landing": {
+          "index": 2,
+          "offset": 8690580,
+          "x": 6,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 0,
+          "raw_hex": "06 00 15 00 00 00 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:1",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 1,
+      "offset": 12587748,
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "destination_group": 3,
+      "destination_map": 98,
+      "destination_warp": 2,
+      "raw_hex": "0a 00 13 00 00 02 62 03",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "3:98",
+        "landing": {
+          "index": 2,
+          "offset": 8690580,
+          "x": 6,
+          "y": 21,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 0,
+          "raw_hex": "06 00 15 00 00 00 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "source_map_different_warp"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:2",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 2,
+      "offset": 12587756,
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 3,
+      "raw_hex": "07 00 07 00 00 03 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 3,
+          "offset": 12587764,
+          "x": 32,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 2,
+          "raw_hex": "20 00 06 00 00 02 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:3",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 3,
+      "offset": 12587764,
+      "x": 32,
+      "y": 6,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 2,
+      "raw_hex": "20 00 06 00 00 02 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 2,
+          "offset": 12587756,
+          "x": 7,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 3,
+          "raw_hex": "07 00 07 00 00 03 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:4",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 4,
+      "offset": 12587772,
+      "x": 29,
+      "y": 17,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 15,
+      "raw_hex": "1d 00 11 00 00 0f 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 15,
+          "offset": 12587860,
+          "x": 56,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 4,
+          "raw_hex": "38 00 11 00 00 04 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:5",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 5,
+      "offset": 12587780,
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "07 00 0b 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:6",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 6,
+      "offset": 12587788,
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "06 00 0b 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:7",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 7,
+      "offset": 12587796,
+      "x": 89,
+      "y": 8,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "59 00 08 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:8",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 8,
+      "offset": 12587804,
+      "x": 88,
+      "y": 9,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 31,
+      "raw_hex": "58 00 09 00 00 1f 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 31,
+          "offset": 9438672,
+          "x": 110,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 8,
+          "raw_hex": "6e 00 05 00 00 08 63 01"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:9",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 9,
+      "offset": 12587812,
+      "x": 67,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 26,
+      "raw_hex": "43 00 03 00 00 1a 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 26,
+          "offset": 12587948,
+          "x": 95,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 9,
+          "raw_hex": "5f 00 04 00 00 09 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:10",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 10,
+      "offset": 12587820,
+      "x": 88,
+      "y": 8,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "58 00 08 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:11",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 11,
+      "offset": 12587828,
+      "x": 56,
+      "y": 6,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "38 00 06 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:12",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 12,
+      "offset": 12587836,
+      "x": 29,
+      "y": 11,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 6,
+      "raw_hex": "1d 00 0b 00 00 06 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 6,
+          "offset": 12587788,
+          "x": 6,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "06 00 0b 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:13",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 13,
+      "offset": 12587844,
+      "x": 57,
+      "y": 6,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "39 00 06 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:14",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 14,
+      "offset": 12587852,
+      "x": 30,
+      "y": 10,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "1e 00 0a 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:15",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 15,
+      "offset": 12587860,
+      "x": 56,
+      "y": 17,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 4,
+      "raw_hex": "38 00 11 00 00 04 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 4,
+          "offset": 12587772,
+          "x": 29,
+          "y": 17,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 15,
+          "raw_hex": "1d 00 11 00 00 0f 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:16",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 16,
+      "offset": 12587868,
+      "x": 55,
+      "y": 11,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 23,
+      "raw_hex": "37 00 0b 00 00 17 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 23,
+          "offset": 12587924,
+          "x": 83,
+          "y": 12,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 16,
+          "raw_hex": "53 00 0c 00 00 10 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:17",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 17,
+      "offset": 12587876,
+      "x": 143,
+      "y": 15,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 30,
+      "raw_hex": "8f 00 0f 00 00 1e 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 30,
+          "offset": 9438664,
+          "x": 116,
+          "y": 15,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 17,
+          "raw_hex": "74 00 0f 00 00 11 63 01"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:18",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 18,
+      "offset": 12587884,
+      "x": 87,
+      "y": 8,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 27,
+      "raw_hex": "57 00 08 00 00 1b 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 27,
+          "offset": 9438640,
+          "x": 60,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3c 00 03 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:19",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 19,
+      "offset": 12587892,
+      "x": 29,
+      "y": 10,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "1d 00 0a 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:20",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 20,
+      "offset": 12587900,
+      "x": 30,
+      "y": 11,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 5,
+      "raw_hex": "1e 00 0b 00 00 05 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 5,
+          "offset": 12587780,
+          "x": 7,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "07 00 0b 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:21",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 21,
+      "offset": 12587908,
+      "x": 57,
+      "y": 8,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 14,
+      "raw_hex": "39 00 08 00 00 0e 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 14,
+          "offset": 12587852,
+          "x": 30,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 0a 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:22",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 22,
+      "offset": 12587916,
+      "x": 56,
+      "y": 8,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 19,
+      "raw_hex": "38 00 08 00 00 13 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 19,
+          "offset": 12587892,
+          "x": 29,
+          "y": 10,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "1d 00 0a 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:23",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 23,
+      "offset": 12587924,
+      "x": 83,
+      "y": 12,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 16,
+      "raw_hex": "53 00 0c 00 00 10 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 16,
+          "offset": 12587868,
+          "x": 55,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 23,
+          "raw_hex": "37 00 0b 00 00 17 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:24",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 24,
+      "offset": 12587932,
+      "x": 89,
+      "y": 9,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 36,
+      "raw_hex": "59 00 09 00 00 24 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 36,
+          "offset": 9438712,
+          "x": 116,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 24,
+          "raw_hex": "74 00 07 00 00 18 63 01"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:25",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 25,
+      "offset": 12587940,
+      "x": 87,
+      "y": 9,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 29,
+      "raw_hex": "57 00 09 00 00 1d 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 29,
+          "offset": 9438656,
+          "x": 61,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "3d 00 03 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:26",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 26,
+      "offset": 12587948,
+      "x": 95,
+      "y": 4,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 9,
+      "raw_hex": "5f 00 04 00 00 09 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 9,
+          "offset": 12587812,
+          "x": 67,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 26,
+          "raw_hex": "43 00 03 00 00 1a 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:27",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 27,
+      "offset": 12587956,
+      "x": 60,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "3c 00 03 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:28",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 28,
+      "offset": 12587964,
+      "x": 84,
+      "y": 7,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 11,
+      "raw_hex": "54 00 07 00 00 0b 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 11,
+          "offset": 12587828,
+          "x": 56,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "38 00 06 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:29",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 29,
+      "offset": 12587972,
+      "x": 61,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "3d 00 03 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:30",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 30,
+      "offset": 12587980,
+      "x": 112,
+      "y": 4,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 32,
+      "raw_hex": "70 00 04 00 00 20 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 32,
+          "offset": 12587996,
+          "x": 85,
+          "y": 3,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 30,
+          "raw_hex": "55 00 03 00 00 1e 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:31",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 31,
+      "offset": 12587988,
+      "x": 123,
+      "y": 1,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 8,
+      "raw_hex": "7b 00 01 00 00 08 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 8,
+          "offset": 9438488,
+          "x": 83,
+          "y": 7,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 31,
+          "raw_hex": "53 00 07 00 00 1f 63 01"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:32",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 32,
+      "offset": 12587996,
+      "x": 85,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 30,
+      "raw_hex": "55 00 03 00 00 1e 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 30,
+          "offset": 12587980,
+          "x": 112,
+          "y": 4,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 86,
+          "destination_warp": 32,
+          "raw_hex": "70 00 04 00 00 20 56 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:33",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 33,
+      "offset": 12588004,
+      "x": 85,
+      "y": 7,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 86,
+      "destination_warp": 13,
+      "raw_hex": "55 00 07 00 00 0d 56 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:86",
+        "landing": {
+          "index": 13,
+          "offset": 12587844,
+          "x": 57,
+          "y": 6,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "39 00 06 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:34",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 34,
+      "offset": 12588012,
+      "x": 124,
+      "y": 2,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 7,
+      "raw_hex": "7c 00 02 00 00 07 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 7,
+          "offset": 9438480,
+          "x": 97,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "61 00 09 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:35",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 35,
+      "offset": 12588020,
+      "x": 123,
+      "y": 2,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 10,
+      "raw_hex": "7b 00 02 00 00 0a 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 10,
+          "offset": 9438504,
+          "x": 96,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "60 00 09 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:36",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 36,
+      "offset": 12588028,
+      "x": 124,
+      "y": 1,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 24,
+      "raw_hex": "7c 00 01 00 00 18 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 24,
+          "offset": 9438616,
+          "x": 89,
+          "y": 9,
+          "elevation": 0,
+          "destination_group": 1,
+          "destination_map": 99,
+          "destination_warp": 36,
+          "raw_hex": "59 00 09 00 00 24 63 01"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:37",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 37,
+      "offset": 12588036,
+      "x": 151,
+      "y": 5,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 39,
+      "raw_hex": "97 00 05 00 00 27 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 39,
+          "offset": 9438736,
+          "x": 124,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "7c 00 05 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:38",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 38,
+      "offset": 12588044,
+      "x": 150,
+      "y": 5,
+      "elevation": 0,
+      "destination_group": 1,
+      "destination_map": 99,
+      "destination_warp": 32,
+      "raw_hex": "96 00 05 00 00 20 63 01",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "1:99",
+        "landing": {
+          "index": 32,
+          "offset": 9438680,
+          "x": 123,
+          "y": 5,
+          "elevation": 0,
+          "destination_group": 0,
+          "destination_map": 0,
+          "destination_warp": 0,
+          "raw_hex": "7b 00 05 00 00 00 00 00"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "another_map"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:86:39",
+      "kind": "warp",
+      "source_map": "5:86",
+      "index": 39,
+      "offset": 12588052,
+      "x": 124,
+      "y": 3,
+      "elevation": 0,
+      "destination_group": 0,
+      "destination_map": 0,
+      "destination_warp": 0,
+      "raw_hex": "7c 00 03 00 00 00 00 00",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "0:0",
+        "landing": {
+          "index": 0,
+          "offset": 7481988,
+          "x": 6,
+          "y": 8,
+          "elevation": 3,
+          "destination_group": 127,
+          "destination_map": 127,
+          "destination_warp": 127,
+          "raw_hex": "06 00 08 00 03 7f 7f 7f"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "dynamic_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:5:102:0",
+      "kind": "warp",
+      "source_map": "5:102",
+      "index": 0,
+      "offset": 12589164,
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "destination_group": 5,
+      "destination_map": 99,
+      "destination_warp": 2,
+      "raw_hex": "09 00 0d 00 00 02 63 05",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "5:99",
+        "landing": {
+          "index": 2,
+          "offset": 12585088,
+          "x": 30,
+          "y": 8,
+          "elevation": 0,
+          "destination_group": 5,
+          "destination_map": 102,
+          "destination_warp": 0,
+          "raw_hex": "1e 00 08 00 00 00 66 05"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    },
+    {
+      "id": "warp:6:23:0",
+      "kind": "warp",
+      "source_map": "6:23",
+      "index": 0,
+      "offset": 12684740,
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "destination_group": 3,
+      "destination_map": 109,
+      "destination_warp": 4,
+      "raw_hex": "09 00 0d 00 00 04 6d 03",
+      "destination": {
+        "status": "warp_record_validated",
+        "target_map": "3:109",
+        "landing": {
+          "index": 4,
+          "offset": 12724008,
+          "x": 21,
+          "y": 11,
+          "elevation": 0,
+          "destination_group": 6,
+          "destination_map": 23,
+          "destination_warp": 0,
+          "raw_hex": "15 00 0b 00 00 00 17 06"
+        },
+        "landing_coordinates_in_layout": true,
+        "return_relation": "exact_return"
+      },
+      "reachability": "UNKNOWN",
+      "source_coordinates_in_layout": true
+    }
+  ]
+}

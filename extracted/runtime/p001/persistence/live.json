@@ -1,0 +1,14 @@
+{
+  "label": "persisted_real_victory",
+  "iteration": 100,
+  "script_pc": 135942107,
+  "callback": 134287617,
+  "enemy_species": 248,
+  "enemy_hp": 321,
+  "seen": [
+    169,
+    197,
+    229,
+    248
+  ]
+}

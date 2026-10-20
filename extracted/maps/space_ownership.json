@@ -1,0 +1,57 @@
+{
+  "source_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+  "status": "BOUNDED_STATIC_CERTIFICATE_FOR_DESIGN_REVIEW",
+  "rom_interval": {
+    "start": 12185344,
+    "end_exclusive": 12187392,
+    "bytes": 2048,
+    "guard": 256,
+    "incoming_shape_hits": [],
+    "expected_bytes": "FF repeated 2048 times",
+    "expected_sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8"
+  },
+  "adjacent_owners": {
+    "left_table": {
+      "start": 12181512,
+      "conservative_end_exclusive": 12181816,
+      "scan_rows": 38,
+      "direct_getter_maximum_id": 37,
+      "note": "Scan includes trailing FF records; this audit does not fix the existing bound discrepancy."
+    },
+    "right_table": {
+      "start": 12189408,
+      "index_source": "LDRB, then unsigned shift left by 3",
+      "stride": 8,
+      "minimum_address": 12189408,
+      "maximum_index": 255
+    },
+    "native_signatures": [
+      {
+        "offset": 785488,
+        "raw_hex": "10b50004040c0904090c0023054a00201056a04208d101201056884204d1581c07e0000008e0b90808320133252beed9002010bc02bc084700b50004000c0904090cfff7ddff002806d0c0000149401803e0000000e0b908002002bc0847000000b5002808d0252806d8c0000149401803e0000000e0b908002002bc08470000"
+      },
+      {
+        "offset": 12189536,
+        "raw_hex": "0fb4184b16495a78d200891808791a78824202da01321a7006e000221a704a795a700868104912df"
+      }
+    ]
+  },
+  "nearby_raw_shape": {
+    "site": 6162961,
+    "word": 146402679,
+    "classification": "inherited encoded audio payload",
+    "asset": [
+      6161496,
+      6165274
+    ],
+    "sample_count": 7264,
+    "tone_pointer_sites": [
+      4772496,
+      4777152
+    ],
+    "entire_asset_matches_reference": true
+  },
+  "trainer_929_direct_command_shapes": [],
+  "scope": "All raw ROM-alias targets plus positive bounds of the inspected adjacent native tables and inherited-audio classification. Trainer battle catalogue and persistence are separate retained evidence.",
+  "limits": "Unknown unindexed/native computed owners and real hardware remain outside this certificate. Proposed addresses are unallocated until architecture review. No story script or ROM is generated."
+}

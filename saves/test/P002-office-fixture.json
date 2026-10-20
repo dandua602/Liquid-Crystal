@@ -1,0 +1,13 @@
+{
+  "kind": "Artificial research fixture, earned native victory after P001 save upgrade",
+  "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "location": {
+    "x": 4,
+    "y": 7,
+    "group": 6,
+    "map": 32,
+    "warp": 255
+  },
+  "party": "Generated boosted level100 Mewtwo/Surf/Lum Berry; not personal progress or balance proof",
+  "rollback": "Exit new room to warehouse and save before using a P001-only/original ROM"
+}
