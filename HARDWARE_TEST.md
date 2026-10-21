@@ -7,6 +7,10 @@ warning on boot, followed by a saving hang. Screenshot confirms FlashGBX5.0.1,
 GBxCart RWv1.4a/b/c family, AGB-E20-30/S29GL256N10TFI01 (or compatible),
 32 MiB and Unknown FLASH save chip0x8209. Root cause is still unknown. Do not treat the emulator checks as hardware acceptance.
 
+**Direct save file:** [P002-warehouse-test.sav](downloads/P002-warehouse-test.sav)
+(Download raw file). This explicitly requested generated test fixture matches
+the embedded save and is not a verified fix for the hang.
+
 The [v3 offline tool](patches/P002/P002-easy-cartridge-test-v3.zip) can download
 the exact matching raw `.sav`: select the already-generated warehouse test ROM,
 click Create, then **Download matching P002-warehouse-test.sav**. That is the same

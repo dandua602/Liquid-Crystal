@@ -15,6 +15,7 @@ Main Office floors, later islands and the ending remain future work.
 warning and hung on Saving. See [hardware status](HARDWARE_TEST.md). A matching
 save download is now available; restoring it is not a confirmed repair.
 
+- [Direct generated test save download](downloads/P002-warehouse-test.sav)
 - [Real-console cartridge test instructions](HARDWARE_TEST.md) and [public patch/helper kit](patches/P002/P002-cartridge-tools.zip)
 - [Player walkthrough with directions, route map and screenshots](WALKTHROUGH.md)
 - [P002 implementation and exact test scope](research/P002_implementation.md)

@@ -1,0 +1,11 @@
+{
+  "file": "P002-warehouse-test.sav",
+  "bytes": 131072,
+  "sha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+  "kind": "Generated artificial pre-puzzle test save, not original personal progress",
+  "matches_embedded_payload_of": "P002-warehouse-test.gba",
+  "raw_payload_without_FlashGBX_footer": true,
+  "native_checksum_sections_valid": 28,
+  "hardware_save_hang_fix_verified": false,
+  "delivery_authorization": "User explicitly requested a direct save-file download after the browser-patcher workflow."
+}

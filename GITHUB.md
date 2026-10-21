@@ -7,6 +7,9 @@ Repository: https://github.com/dandua602/Liquid-Crystal
   the Route59 map, puzzle, battle, Office entry/return and saving.
 - **Download the current patch:** [P002-prototype.zip](patches/P002/P002-prototype.zip).
   Open that file and choose **Download raw file**, or use its download button.
+- **Direct requested test save:** [P002-warehouse-test.sav](downloads/P002-warehouse-test.sav)
+  (Download raw file). This generated128 KiB fixture matches the embedded test
+  save; it is not a verified repair for the hardware Saving hang.
 - **Easy warehouse test download:** [P002-easy-cartridge-test-v3.zip](patches/P002/P002-easy-cartridge-test-v3.zip).
   Choose Download raw file, extract, open Make-Test-ROM.html, select your original
   Liquid Crystal ROM, then click Create and download test ROM. No Python needed.
@@ -44,7 +47,10 @@ walkthrough updates and versioned patch-only downloads. Verify the remote after
 each push. Never force-push or overwrite someone else's work; reconcile new
 remote commits normally. Preserve existing changes and original source files.
 
-Source `.gba` ROMs, `.sav` files and ignored local builds remain outside Git.
+Source `.gba` ROMs, personal/source `.sav` files and ignored local builds remain
+outside Git. After explicitly asking for a direct save download, the user has
+one generated test fixture at `downloads/P002-warehouse-test.sav`. This narrow
+artifact exception does not authorize uploading other saves or any game ROM.
 The small patch-only deliverable is copied into `patches/P002/` so it is visible
 and downloadable on GitHub. A GitHub clone does not include the user's ROM/save
 inputs; reproducing builds/tests still requires those exact local files.

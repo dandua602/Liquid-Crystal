@@ -79,7 +79,11 @@ NOR model still does not model physical timing/chip IDs/protocols fully. See
 extracted/runtime/cartridge/hardware_failure_audit.json and tests/save_compatibility.md.
 
 V3 offline download adds a persistent matching raw128 KiB `.sav` link, generated
-locally from the fully hash-verified output ROM. No save is committed to GitHub.
+locally from the fully hash-verified output ROM. The user subsequently explicitly
+requested a direct save-file download. The single generated QA fixture is now
+at downloads/P002-warehouse-test.sav, with metadata/checksum. Source/personal
+saves and all game ROMs remain excluded. This direct-artifact exception is
+limited to the requested test fixture; do not broaden it to other inputs.
 The user may select the already-generated P002-warehouse-test.gba; no original
 save input is required in that exact-output case. No FlashGBX metadata trailer
 is fabricated or attached. The save is identical to the embedded payload, not
@@ -118,7 +122,8 @@ persistent explicit download link resolve the user screenshot failure. The
 actual selected file version remains unknown until user retries/shares details.
 No Python, server, source upload or network request is involved. Direct BPS is
 also included, applying original upload straight to the warehouse test image.
-No ROM or save file is committed. A real Chromium test rejects wrong input and
+The patcher ZIP contains no ROM/save files; the later explicitly requested
+generated-save download is separate under downloads/. A real Chromium test rejects wrong input and
 FireRed, downloads the exact already-tested warehouse ROM, makes no application
 network requests and leaves source unchanged. Sixteen browser checks pass, including P001/P002, changed save with correct/incorrect backup, changed-code rejection, persistent link and already-correct output. The managed
 cloud browser blocks file URLs; this test served the shipped HTML through an
