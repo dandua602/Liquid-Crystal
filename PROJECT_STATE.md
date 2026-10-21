@@ -60,14 +60,21 @@ bounded certificate; runtime still requires the supplied-image adapter.
 
 The user cannot download workspace file links. Do not offer `/workspace/...`
 links as downloadable ROM/save artifacts again. GitHub now provides
-`patches/P002/P002-easy-cartridge-test.zip`: a small offline HTML patcher with an
+`patches/P002/P002-easy-cartridge-test-v2.zip` (also canonical easy ZIP): a small offline HTML patcher with an
 embedded BPS delta. The user extracts it, opens Make-Test-ROM.html, chooses their
-exact original Liquid Crystal ROM and downloads P002-warehouse-test.gba locally.
+original Liquid Crystal ROM or exact P001/P002 and downloads P002-warehouse-test.gba locally.
+V2 accepts changed-save dumps only when all code/driver bytes match a pinned
+source and the original five-badge save backup matches its payload hash. It
+normalizes only the embedded save in a memory copy, rechecks the exact full source
+hash, applies that source-specific BPS and verifies the exact tested output.
+Unknown versions/modified code stay rejected. File size/SHA diagnostics and a
+persistent explicit download link resolve the user screenshot failure. The
+actual selected file version remains unknown until user retries/shares details.
 No Python, server, source upload or network request is involved. Direct BPS is
 also included, applying original upload straight to the warehouse test image.
 No ROM or save file is committed. A real Chromium test rejects wrong input and
 FireRed, downloads the exact already-tested warehouse ROM, makes no application
-network requests and leaves source unchanged. Six browser checks pass. The managed
+network requests and leaves source unchanged. Sixteen browser checks pass, including P001/P002, changed save with correct/incorrect backup, changed-code rejection, persistent link and already-correct output. The managed
 cloud browser blocks file URLs; this test served the shipped HTML through an
 intercepted secure test URL without a server or outbound connection. Opening the
 local HTML on the user's computer remains to be confirmed.

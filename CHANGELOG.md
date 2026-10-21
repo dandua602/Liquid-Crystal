@@ -1,5 +1,14 @@
 # Change ledger
 
+- Offline patcher v2: the user's screenshot showed a source-hash rejection,
+  not a completed build. Added actual file size/SHA diagnostics, a persistent
+  download link and source-specific patches for exact P001/P002. Changed-save
+  cart dumps are accepted only after whole game/driver hash validation plus the
+  original five-badge save backup, then full normalized source/target hashes.
+  Sixteen real-browser checks pass. Unsupported code remains rejected; no force
+  patch, new story behavior or changed hardware-test output. Added versioned ZIP
+  so the user can distinguish the updated tool from the earlier extracted page.
+
 - Download delivery fix: workspace links were inaccessible to the user. Added
   a GitHub-hosted patch-only ZIP with an offline HTML patcher and direct BPS.
   Selecting the original upload creates the exact previously tested warehouse

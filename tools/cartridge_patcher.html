@@ -13,16 +13,26 @@
   button:disabled { cursor: default; }
   #status { min-height: 3em; padding: 14px; border: 1px solid #888; border-radius: 6px; }
   .note { font-size: .9rem; }
+  #download { display: inline-block; padding: 12px 18px; margin-bottom: 16px; }
+  #download[hidden] { display: none; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8rem; }
 </style>
 <h1>Make your Liquid Crystal cartridge test ROM</h1>
-<p>Choose the original Liquid Crystal ROM you supplied for this project. This
+<p class="note">Patcher v2 · original, P001/P002 and compatible cart dumps</p>
+<p>Choose your original Liquid Crystal ROM, or an exact P001/P002 build. This
 page creates <strong>P002-warehouse-test.gba</strong> on your computer.</p>
 <p>It starts beside the warehouse puzzle with a generated level-100 team,
 Iron Tail and Surf. The separate test progress is already embedded in the ROM.</p>
-<label for="rom">Your original POKEMON Liquid Crystal.gba</label>
+<label for="rom">Your Liquid Crystal .gba file</label>
 <input id="rom" type="file" accept=".gba">
+<label for="save">Original five-badge .sav backup (optional)</label>
+<input id="save" type="file" accept=".sav">
+<p class="note">Only needed if your cart dump contains newer progress. Use the
+original save you uploaded, not a newer save. Both files stay on your computer.</p>
 <button id="create" disabled>Create and download test ROM</button>
 <p id="status" role="status" aria-live="polite">Choose your original ROM to begin.</p>
+<a id="download" hidden>Download P002-warehouse-test.gba</a>
+<details id="diagnostics" hidden><summary>File details for troubleshooting</summary><pre id="file-details"></pre></details>
 <p class="note">Your ROM stays on your computer. This page works offline and makes
 no network requests. It keeps your original file unchanged.</p>
 <p class="note">After downloading, use FlashGBX <strong>Write ROM</strong> with your
@@ -34,12 +44,20 @@ needs your console test.</p>
 'use strict';
 const config = JSON.parse(document.getElementById('patch-data').textContent);
 const picker = document.getElementById('rom');
+const savePicker = document.getElementById('save');
 const createButton = document.getElementById('create');
 const status = document.getElementById('status');
-picker.addEventListener('change', () => {
+const downloadLink = document.getElementById('download');
+let downloadURL;
+function resetSelection() {
+  if (downloadURL) URL.revokeObjectURL(downloadURL);
+  downloadURL = undefined; downloadLink.hidden = true;
+  document.getElementById('diagnostics').hidden = true;
   createButton.disabled = !picker.files.length;
   status.textContent = picker.files.length ? 'Ready. Click Create and download test ROM.' : 'Choose your original ROM to begin.';
-});
+}
+picker.addEventListener('change', resetSelection);
+savePicker.addEventListener('change', resetSelection);
 const crcTable = Array.from({length: 256}, (_, n) => {
   for (let bit = 0; bit < 8; ++bit) n = n & 1 ? 0xEDB88320 ^ (n >>> 1) : n >>> 1;
   return n >>> 0;
@@ -93,22 +111,45 @@ function applyPatch(source, patch) {
 }
 createButton.addEventListener('click', async () => {
   createButton.disabled = true;
+  if (downloadURL) URL.revokeObjectURL(downloadURL);
+  downloadURL = undefined; downloadLink.hidden = true;
   try {
-    status.textContent = 'Checking your original ROM…';
-    const source = new Uint8Array(await picker.files[0].arrayBuffer());
-    if (source.length !== config.sourceBytes || await sha256(source) !== config.sourceSha256) {
-      throw Error('Choose the exact original Liquid Crystal ROM you uploaded. FireRed, an already patched ROM, or a later cart dump will not match.');
+    status.textContent = 'Checking your ROM…';
+    let source = new Uint8Array(await picker.files[0].arrayBuffer());
+    const digest = await sha256(source);
+    document.getElementById('diagnostics').hidden = false;
+    document.getElementById('file-details').textContent = 'Patcher version: ' + config.version + '\nFile: ' + picker.files[0].name + '\nBytes: ' + source.length + '\nSHA256: ' + digest;
+    if (source.length !== config.sourceBytes) {
+      throw Error('This file has the wrong size: ' + source.length + ' bytes. The supported ROM is 16 MiB (16777216 bytes). Select the original .gba file or share the File details below.');
     }
-    status.textContent = 'Creating and verifying the warehouse test ROM…';
-    const patch = Uint8Array.from(atob(config.patchBase64), c => c.charCodeAt(0));
-    if (await sha256(patch) !== config.patchSha256) throw Error('The embedded patch is damaged. Download the ZIP again.');
-    const output = applyPatch(source, patch);
+    let output;
+    if (digest === config.targetSha256) output = source;
+    else {
+      let known = config.sources.find(row => row.sha256 === digest);
+      if (!known) {
+        const game = new Uint8Array(source.length - (config.saveEnd - config.saveStart));
+        game.set(source.subarray(0, config.saveStart)); game.set(source.subarray(config.saveEnd), config.saveStart);
+        const gameHash = await sha256(game);
+        known = config.sources.find(row => row.gameSha256 === gameHash);
+        if (!known) throw Error('This ROM version does not match the uploaded game, P001 or P002. A filename change will not fix it. Open File details below and share the size and SHA256 so this version can be identified.');
+        if (!savePicker.files.length) throw Error('The game matches ' + known.name + ', but its built-in save has changed. Select your original five-badge .sav backup above, then click Create again. Your input files will stay unchanged.');
+        const save = new Uint8Array(await savePicker.files[0].arrayBuffer());
+        if (![131072, 131088].includes(save.length) || await sha256(save.subarray(0, 131072)) !== config.originalSaveSha256) {
+          throw Error('That save is not the original five-badge backup you uploaded. Select that original .sav file (its optional FlashGBX footer is accepted).');
+        }
+        source = new Uint8Array(source); source.set(save.subarray(0, 131072), config.saveStart);
+        if (await sha256(source) !== known.sha256) throw Error('The normalized ROM still does not match. Share the File details below.');
+      }
+      status.textContent = 'Creating and verifying the warehouse test ROM…';
+      const patch = Uint8Array.from(atob(known.patchBase64), c => c.charCodeAt(0));
+      if (await sha256(patch) !== known.patchSha256) throw Error('The embedded patch is damaged. Download the ZIP again.');
+      output = applyPatch(source, patch);
+    }
     if (await sha256(output) !== config.targetSha256) throw Error('The test ROM checksum failed.');
-    const url = URL.createObjectURL(new Blob([output], {type: 'application/octet-stream'}));
-    const link = document.createElement('a'); link.href = url; link.download = config.outputName;
-    document.body.appendChild(link); link.click(); link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 60000);
-    status.textContent = 'Created ' + config.outputName + '. Check your browser Downloads. Flash this file with FlashGBX; its warehouse test save is included.';
+    downloadURL = URL.createObjectURL(new Blob([output], {type: 'application/octet-stream'}));
+    downloadLink.href = downloadURL; downloadLink.download = config.outputName; downloadLink.hidden = false;
+    downloadLink.click();
+    status.textContent = 'Created ' + config.outputName + '. Check Downloads, or click Download P002-warehouse-test.gba below if downloading did not start. Its warehouse test save is included.';
   } catch (error) {
     status.textContent = error.message;
   } finally {

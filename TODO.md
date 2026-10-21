@@ -52,3 +52,5 @@
 - [ ] Record cart/flasher/profile/console and user hardware test results from HARDWARE_TEST.md.
 
 - [x] Fix inaccessible workspace downloads with a GitHub offline browser patcher; exact-ROM download verified in Chromium.
+
+- [x] Offline patcher v2: diagnose mismatched source, support verified changed-save dumps/exact P001/P002 and keep a visible download link.

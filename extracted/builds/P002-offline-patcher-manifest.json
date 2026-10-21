@@ -5,6 +5,30 @@
   "targetBytes": 16777216,
   "outputName": "P002-warehouse-test.gba",
   "patchSha256": "2af818bff2b5be72d60434d8a12df4814c4fe2605df19c9b115d0151a3235eda",
+  "saveStart": 13107200,
+  "saveEnd": 13238272,
+  "originalSaveSha256": "ce2bace08fb36ed0e41b900f7af5e8033f1f76b4095c7f46f6754aeff65f5fb7",
+  "version": 2,
+  "sources": [
+    {
+      "name": "original upload",
+      "sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+      "gameSha256": "e1f9c0e386196c1fd520880d2c935c83dd0cdb67c32b2e94e8e060f3f5bc2f57",
+      "patchSha256": "eba80fab3d510a56caad9560f443a0d2878261cadce34e3eabe318d048125fbf"
+    },
+    {
+      "name": "P001",
+      "sha256": "b2c3d4e3fb6f196de90bd9d88cbdcd850e429dce919034c48326d924ae413e92",
+      "gameSha256": "a06b0f0e65799d0199d7a58ad39b40d67b9095844486c804fea41b1390e82900",
+      "patchSha256": "355b1bbb52f359bff23ff1c53ce2823bdee54c7822a0ce43c3e2ce91f4fa4d38"
+    },
+    {
+      "name": "P002",
+      "sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "gameSha256": "fdb8056ae6ca2f71fd756efc892d1957312e93907d9bda5f0239d17c111bccb8",
+      "patchSha256": "49e14dba7c8aa3c994c6bd55c2a22a911bd8ac94b9eaf26d6d2d7695e916f60d"
+    }
+  ],
   "contains_rom_or_save": false,
   "hardware_verified": false
 }

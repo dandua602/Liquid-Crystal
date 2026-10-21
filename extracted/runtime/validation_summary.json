@@ -42,10 +42,10 @@
     "run": 155,
     "passed": 155,
     "failed": 0,
-    "seconds": 7.773,
+    "seconds": 7.445,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/Cartridge-unittest.log",
-    "log_sha256": "d8aad6edde8b86a8f8fc8ee5c9d3ca533f6239dff0638d134d5891dc81f0a2d6"
+    "log": "extracted/builds/Offline-patcher-v2-unittest.log",
+    "log_sha256": "3e05c8658738778edf0fa8cae4a7acc92115847880a674060767c123b9b3a516"
   },
   "runtime": {
     "smoke": {
@@ -427,19 +427,29 @@
     "source_inputs_and_standard_P002_unchanged": true,
     "private_package": "builds/P002-cartridge-test.zip",
     "public_helper_kit": "patches/P002/P002-cartridge-tools.zip",
-    "private_zip_sha256": "7005fe4995fe13adb4e8c70738c3e5fee999c789964c1caad36d92df20f44105",
-    "public_zip_sha256": "e1f8f3bc8b40563efc8a66b0f80b2626f16f7575b70ffb3f417107ec811474e6",
+    "private_zip_sha256": "7810823128007e31fc010dce7e71103e5d88957b759b843fa4652b3cfdff77d1",
+    "public_zip_sha256": "bab9c02abd60d39bf345adfb61b8b5599110e52fe203c5f47f0c99f21d745d59",
     "sources_reverified_against_original_baseline": true,
     "flashing_software": "FlashGBX",
     "physical_reader_cart_profile_confirmed": false
   },
   "offline_patcher": {
-    "public_zip": "patches/P002/P002-easy-cartridge-test.zip",
-    "zip_sha256": "9afa96951fcfac0d49d8fcb02ddbb67f0fa2afd8668ee7e816373c98b06aad2a",
-    "browser_checks": 6,
+    "public_zip": "patches/P002/P002-easy-cartridge-test-v2.zip",
+    "zip_sha256": "9d122574b435faa4a57fb5aa88d3a95d3d6bb553280b2ddab8c387da03c9b9a0",
+    "browser_checks": 16,
     "browser_report": "extracted/builds/P002-offline-browser-validation.json",
     "target_exactly_matches_previously_tested_warehouse_image": true,
     "workspace_links_downloadable": false,
-    "hardware_verified": false
+    "hardware_verified": false,
+    "version": 2,
+    "source_modes": [
+      "exact original",
+      "exact P001",
+      "exact P002",
+      "known unchanged game/driver plus original save backup",
+      "already-correct output"
+    ],
+    "unknown_game_code_still_rejected": true,
+    "user_selected_file_identity": "unknown; screenshot shows rejection but no hash"
   }
 }
