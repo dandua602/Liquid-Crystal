@@ -64,8 +64,10 @@ Saving. They ask for a matching `.sav`. Physical hardware acceptance has FAILED
 as reported; no root cause is established. FlashGBX software is confirmed;
 the screenshot now confirms FlashGBX5.0.1, GBxCart RWv1.4a/b/c family,
 AGB-E20-30 with S29GL256N10TFI01 (or compatible), detected32 MiB ROM and
-Unknown FLASH save chip0x8209. Whether the original saves on this same cart
-and a failed-attempt readback remain pending. Request a full readback from the failed test before reflashing
+Unknown FLASH save chip0x8209. The user explicitly confirmed that the original
+unmodified Liquid Crystal ROM saved successfully on this exact cartridge.
+Do not ask them to repeat that baseline test. The failed-attempt readback is
+still pending. Request a full readback from the failed test before reflashing
 so the actual game/driver/NOR bytes and sector data can be compared. Do not
 recommend another blind flash or a generic FlashGBX Write Save as a proven fix.
 
@@ -94,8 +96,8 @@ See extracted/runtime/cartridge/geometry/summary.json. Other chip IDs/timing/ban
 mapping remain unresolved. Do not set either diagnostic env flag globally.
 
 Next required evidence: FlashGBX Backup ROM of the whole detected32 MiB from
-the failed cart, before any further flash/save restore, plus same-cart original
-saving baseline. tools/inspect_cartridge_readback.py supports16/32 MiB dumps
+the failed cart, before any further flash/save restore. Same-cart original
+saving is confirmed by the user. tools/inspect_cartridge_readback.py supports16/32 MiB dumps
 without silently truncating/writing them; it reports upper-half shape separately.
 No physical ROM fix is claimed or made. Await actual readback before proposing
 cart-specific driver changes; this is not a new story implementation approval.

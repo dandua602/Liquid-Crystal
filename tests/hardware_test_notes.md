@@ -3,8 +3,9 @@
 P002 is built and emulator-tested. Physical cartridge/console validation is
 FAILED as reported: boot corruption/previous-save warning, then stuck Saving.
 The user flashes cartridges with FlashGBX and has backups. Root cause unknown.
-Collect profile/reader/cart details, an unmodified-ROM saving baseline on the
-same cart and a full readback from this failed attempt before further flashing.
+The user confirmed the original unmodified ROM saves successfully on this same
+cartridge. Preserve that baseline; the remaining evidence is a full readback
+from this failed attempt before further flashing.
 
 Use [HARDWARE_TEST.md](../HARDWARE_TEST.md) for image selection, flashing/readback,
 puzzle/battle/Office instructions and the power-off/save/reload checks. Screenshot confirms FlashGBX5.0.1, GBxCart RWv1.4a/b/c family,
@@ -20,4 +21,4 @@ when hardware results arrive. ROM reflashing resets the included starting save.
 
 The official profile uses128 KiB NOR sectors. Controlled64/128 KiB model tests
 both save with28 valid sections; geometry alone does not reproduce the fault.
-Read back the full32 MiB failed cart and confirm original-ROM saving baseline.
+Read back the full32 MiB failed cart; original-ROM saving on this cart is confirmed.

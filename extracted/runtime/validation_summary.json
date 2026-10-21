@@ -466,7 +466,7 @@
     ],
     "cart_profile": "AGB-E20-30 with S29GL256N10TFI01 (or compatible)",
     "reader_model": "GBxCart RW v1.4a/b/c family (screenshot)",
-    "same_cart_original_saving_baseline": "pending",
+    "same_cart_original_saving_baseline": "works on this exact cartridge, explicitly confirmed by user",
     "actual_ROM_readback": "requested before another flash",
     "root_cause": "unknown",
     "fixture_native_checksums": "28/28 valid in each of original and generated test payloads",

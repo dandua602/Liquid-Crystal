@@ -20,9 +20,9 @@ includes both the warehouse chapter and the new Office service room. See
    Save/reload, upgrades and rollback before packaging. Do not restart broad scans.
 3. **Investigate the failed console save test.** User reports corruption/previous
    save recovery and stuck Saving. Screenshot gives FlashGBX5.0.1, GBxCart RWv1.4a/b/c and AGB-E20-30/S29GL256N;
-   unknown save ID0x8209 remains. Need whether the original
-   saves on the same cart, and a readback from the failed attempt before further
-   writes. Both prepared save slots pass native LC checksums; v3 exports the same
+   unknown save ID0x8209 remains. The user confirmed the original saves
+   successfully on this exact cart. Need the failed-attempt readback before further
+   writes; do not ask for the baseline again. Both prepared save slots pass native LC checksums; v3 exports the same
    raw test save for diagnosis, without claiming a fix.
 
    **Prepared console files:** [Hardware guide](../HARDWARE_TEST.md) and

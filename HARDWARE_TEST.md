@@ -48,9 +48,9 @@ Apply it directly to the original upload, not an already patched ROM.
 In FlashGBX5.0.1 choose **Backup ROM**, retain the detected **32 MiB** size, and
 save the complete dump. Upload that dump (ZIP if needed). Do not overwrite the
 original backup or reflash between the failure and this readback. We need to
-compare the full cartridge image, not just the raw `.sav`. Also confirm whether
-the original unmodified ROM saves on this exact cart; a screenshot of detection
-alone does not establish that baseline.
+compare the full cartridge image, not just the raw `.sav`. The user has confirmed
+that the original unmodified ROM saves successfully on this exact cart; that
+baseline does not need to be repeated.
 
 The official FlashGBX5.0.1 [profile](https://github.com/lesserkuma/FlashGBX/blob/5.0.1/FlashGBX/config/fc_AGB_S29GL256.txt)
 uses32 MiB capacity and128 KiB erase sectors. The old software adapter used64 KiB
@@ -184,9 +184,9 @@ you download them; a repository clone cannot restore them without your inputs.
 ## Current hardware result and software evidence
 
 The user reported a corruption/previous-save warning and stuck Saving. A fresh
-readback, FlashGBX cart profile, reader/cart model and whether the unmodified
-ROM saves on this same cart are needed to distinguish a flash/readback/driver
-problem from save-data behavior. Do not repeat a write as a substitute for
+readback is needed to distinguish a flash/readback/driver problem from save-data
+behavior. Reader/profile details are recorded above; the user confirmed that
+the original unmodified ROM saves on this same cart. Do not repeat a write as a substitute for
 collecting that evidence. The original and test payloads both pass all28 section
 checksums using the native LC layout at3FEC94; this does not prove what hardware
 read. See [failure audit](extracted/runtime/cartridge/hardware_failure_audit.json).

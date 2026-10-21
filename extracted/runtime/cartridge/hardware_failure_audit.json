@@ -1,8 +1,9 @@
 {
   "user_hardware_report": "Boot corruption/previous-save warning, then stuck on Saving",
-  "root_cause": "Unknown; actual failed-cart readback and same-cart original saving baseline needed",
+  "root_cause": "Unknown; original saves on the same cart (user confirmed); actual failed-cart readback needed",
   "hardware": "FlashGBX5.0.1; GBxCart RWv1.4a/b/c family; AGB-E20-30/S29GL256N10TFI01 (or compatible);32 MiB; unknown save ID0x8209",
   "hardware_acceptance": "failed as reported",
+  "same_cart_original_saving_baseline": "works, user confirmed",
   "source_save": {
     "save_sha256": "ce2bace08fb36ed0e41b900f7af5e8033f1f76b4095c7f46f6754aeff65f5fb7",
     "native_layout_table": 4189332,

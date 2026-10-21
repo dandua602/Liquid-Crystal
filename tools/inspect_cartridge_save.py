@@ -48,9 +48,9 @@ def audit(rom, save):
 def main():
     rom = (ROOT/'builds/dev/Liquid Crystal P002.gba').read_bytes()
     result = {'user_hardware_report': 'Boot corruption/previous-save warning, then stuck on Saving',
-              'root_cause': 'Unknown; actual failed-cart readback and same-cart original saving baseline needed',
+              'root_cause': 'Unknown; original saves on the same cart (user confirmed); actual failed-cart readback needed',
               'hardware': 'FlashGBX5.0.1; GBxCart RWv1.4a/b/c family; AGB-E20-30/S29GL256N10TFI01 (or compatible);32 MiB; unknown save ID0x8209',
-              'hardware_acceptance': 'failed as reported',
+              'hardware_acceptance': 'failed as reported', 'same_cart_original_saving_baseline': 'works, user confirmed',
               'source_save': audit(rom, (ROOT/'saves/source/POKEMON Liquid Crystal DD 5 badge.sav').read_bytes()),
               'packaged_warehouse_save': audit(rom, (ROOT/'saves/test/P002-cart-puzzle.sav').read_bytes())}
     if not all(result[k]['all_28_sections_valid'] for k in ('source_save', 'packaged_warehouse_save')):
