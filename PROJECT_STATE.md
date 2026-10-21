@@ -58,6 +58,18 @@ bounded certificate; runtime still requires the supplied-image adapter.
 
 ## P002a safety fix for the reported stadium encounter
 
+**Latest cart uploads inspected:** see research/hardware/user_readback_01.md and
+extracted/runtime/cartridge/user_readback_01.json. The32 MiB ROM differs at startup
+and shows a suspicious forced low-lane bit6 from0x7B400 onward; actual native
+layout identity fails and the expected embedded-save window is FF. Do not patch
+or replace its potentially different conversion with our old driver by assumption.
+Need clean repeat readbacks to separate configuration from read corruption. The
+separate128 KiB save is exactly the old pre-puzzle fixture (all28 checksums valid),
+not the Mister R victory. Asked whether it was freshly exported or an old file;
+no answer yet. Uploads preserved outside git; no new ROM/save published or edited.
+Read-only inspector now accepts unknown layouts and optional separate saves.
+Both new focused checks and the full161-test suite pass.
+
 The user reports getting the cart working, beating Mister R, entering a stadium
 and sitting down, then a girl opponent/question-mark Pokemon/no PP/garbled text.
 Exact exit and last saved location are uncertain. Do not assert a damaged save.

@@ -46,13 +46,13 @@
     "python3 tools/check_p002a.py"
   ],
   "project_tests": {
-    "run": 159,
-    "passed": 159,
+    "run": 161,
+    "passed": 161,
     "failed": 0,
-    "seconds": 8.076,
+    "seconds": 8.117,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/P002a-unittest.log",
-    "log_sha256": "e82c4aa4e07c703a2e87e15092542a1064e193bc185d7a97c26fbd79c05a8ce6"
+    "log": "extracted/builds/cart-readback-unittest.log",
+    "log_sha256": "f84b44cf4adabdd91d49c84a96c52200099cfff4ff7eb2c1c4606a9de668caba"
   },
   "runtime": {
     "smoke": {
@@ -471,7 +471,7 @@
     "cart_profile": "AGB-E20-30 with S29GL256N10TFI01 (or compatible)",
     "reader_model": "GBxCart RW v1.4a/b/c family (screenshot)",
     "same_cart_original_saving_baseline": "works on this exact cartridge, explicitly confirmed by user",
-    "actual_ROM_readback": "requested before another flash",
+    "actual_ROM_readback": "Received32 MiB readback; forced low-lane bit6 and unknown layout require clean repeat captures before adaptation",
     "root_cause": "unknown",
     "fixture_native_checksums": "28/28 valid in each of original and generated test payloads",
     "audit": "extracted/runtime/cartridge/hardware_failure_audit.json",
@@ -488,7 +488,8 @@
     "save_chip_photo": "Dedicated SST/MPF flash device visible on right; exact marking not independently confirmed",
     "logical_game_save_type": "1M FLASH (128 KiB /1024 Kbit); capacity from native LC save layout, not proof of board protocol",
     "save_id_0x8209_resolved": false,
-    "latest_user_report": "Got cart working and beat Mister R; saving-resolution method and fresh power-cycle persistence not separately supplied"
+    "latest_user_report": "Got cart working and beat Mister R; saving-resolution method and fresh power-cycle persistence not separately supplied",
+    "latest_separate_save": "Exact old pre-puzzle fixture; current-save-export origin asked, awaiting answer"
   },
   "stadium_safety_fix": {
     "id": "P002a",
@@ -507,5 +508,15 @@
     "browser_html_sha256": "6a32d33532bcd685aa6f9aadb8cb39133053600cfa742168ea79536a835cf80c",
     "zip_member_checksums_verified": true,
     "guide_image_links_verified": true
+  },
+  "user_cart_readback": {
+    "artifact": "extracted/runtime/cartridge/user_readback_01.json",
+    "sha256": "697aed6518f9ede5d7ca88e991e0028bf65d0125018c0aac1ee44f2a969a2ce3",
+    "source_uploads_unchanged": true,
+    "suspicious_read_pattern": true,
+    "alternative_configuration_not_overwritten": true,
+    "new_ROM_or_save_created": false,
+    "repeat_ROM_and_current_save_needed": true,
+    "focused_diagnostic_checks_passed": 2
   }
 }

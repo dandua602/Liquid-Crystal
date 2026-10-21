@@ -1,5 +1,12 @@
 # P002 cartridge test
 
+**Current cart-backup finding:** the newly supplied ROM has a suspicious forced
+bit pattern across most game data and cannot yet serve as a verified patch base.
+Its startup also differs, so preserve its possible cart-specific configuration.
+The supplied separate save exactly matches the old pre-puzzle test fixture; it
+does not contain the reported victory. See [findings and clean-read steps](research/hardware/user_readback_01.md).
+Do not overwrite the current cart using this suspect read or the old save.
+
 P002 adds the warehouse rock puzzle, Mister R battle and Office service room.
 The [walkthrough](WALKTHROUGH.md) covers the story steps. P003 is still a design
 proposal. **Hardware saving failed in the user's reported test:** corruption/previous-save

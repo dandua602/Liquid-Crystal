@@ -1,0 +1,580 @@
+{
+  "readback_bytes": 33554432,
+  "full_readback_sha256": "5ea09f6bb4c7362ff32c3adc6edb0f4ab5948e4cbe290e6018b89ecc5ab9d817",
+  "first_16MiB_comparison": {
+    "passed": false,
+    "mode": "after_play_allow_embedded_save_changes",
+    "exact_match": false,
+    "game_and_cartridge_driver_match": false,
+    "embedded_save_changed": true,
+    "reference_sha256": "95b843528313c413f9c42aaf0e4984e94d51bc7f5eaaf75abfc40e32b50949f6",
+    "readback_sha256": "4bcefbd91319189a293a2be472053867b76145c0d5c824b94c86c6c4f97945bb",
+    "allowed_save_window": {
+      "start": 13107200,
+      "end_exclusive": 13238272
+    }
+  },
+  "embedded_save_audit_assuming_expected_game_layout": {
+    "save_sha256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+    "native_layout_table": 4189332,
+    "consumer_literal_site": 893500,
+    "section_lengths": [
+      3876,
+      4080,
+      4080,
+      4080,
+      3480,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      1104
+    ],
+    "driver_signatures_match": true,
+    "slots": [
+      {
+        "slot": 0,
+        "all_ids_once": false,
+        "all_checksums_and_signatures_valid": false,
+        "generations": [
+          4294967295
+        ],
+        "sections": [
+          {
+            "physical_sector": 0,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 1,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 2,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 3,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 4,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 5,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 6,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 7,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 8,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 9,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 10,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 11,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 12,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 13,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "all_ids_once": false,
+        "all_checksums_and_signatures_valid": false,
+        "generations": [
+          4294967295
+        ],
+        "sections": [
+          {
+            "physical_sector": 14,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 15,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 16,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 17,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 18,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 19,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 20,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 21,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 22,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 23,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 24,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 25,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 26,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          },
+          {
+            "physical_sector": 27,
+            "id": 65535,
+            "generation": 4294967295,
+            "stored_checksum": 65535,
+            "calculated_checksum": null,
+            "valid": false
+          }
+        ]
+      }
+    ],
+    "all_28_sections_valid": false,
+    "limits": "Static native-layout checksum/driver check. Does not show what a real cartridge read or programmed, certify native timing/chip compatibility, or repair data."
+  },
+  "actual_readback_native_layout_audit": {
+    "native_layout_recognized": false,
+    "reason": "Unexpected native save-layout identity"
+  },
+  "low_lane_bit6": {
+    "mask": 64,
+    "first_even_offset_after_last_clear": 504832,
+    "suffix_bytes": 16272384,
+    "suffix_has_varied_data": true,
+    "reference_clear_words_in_suffix": 4019838,
+    "suspicious_pattern": true,
+    "interpretation": "A long varied-data suffix forces the low-byte bit high; not proof of stored-ROM corruption, transport error or a particular chip fault."
+  },
+  "hardware_root_cause_proven": false,
+  "limits": "First 16 MiB compared explicitly with the shipped 16 MiB image. A 32 MiB dump is retained whole; upper-half hashes/shape do not certify board mapping or protocols.",
+  "separate_save_against_expected_layout": {
+    "save_sha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+    "native_layout_table": 4189332,
+    "consumer_literal_site": 893500,
+    "section_lengths": [
+      3876,
+      4080,
+      4080,
+      4080,
+      3480,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      4080,
+      1104
+    ],
+    "driver_signatures_match": true,
+    "slots": [
+      {
+        "slot": 0,
+        "all_ids_once": true,
+        "all_checksums_and_signatures_valid": true,
+        "generations": [
+          38
+        ],
+        "sections": [
+          {
+            "physical_sector": 0,
+            "id": 10,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 1,
+            "id": 11,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 2,
+            "id": 12,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 3,
+            "id": 13,
+            "generation": 38,
+            "stored_checksum": 61745,
+            "calculated_checksum": 61745,
+            "valid": true
+          },
+          {
+            "physical_sector": 4,
+            "id": 0,
+            "generation": 38,
+            "stored_checksum": 4330,
+            "calculated_checksum": 4330,
+            "valid": true
+          },
+          {
+            "physical_sector": 5,
+            "id": 1,
+            "generation": 38,
+            "stored_checksum": 8466,
+            "calculated_checksum": 8466,
+            "valid": true
+          },
+          {
+            "physical_sector": 6,
+            "id": 2,
+            "generation": 38,
+            "stored_checksum": 34752,
+            "calculated_checksum": 34752,
+            "valid": true
+          },
+          {
+            "physical_sector": 7,
+            "id": 3,
+            "generation": 38,
+            "stored_checksum": 44776,
+            "calculated_checksum": 44776,
+            "valid": true
+          },
+          {
+            "physical_sector": 8,
+            "id": 4,
+            "generation": 38,
+            "stored_checksum": 41050,
+            "calculated_checksum": 41050,
+            "valid": true
+          },
+          {
+            "physical_sector": 9,
+            "id": 5,
+            "generation": 38,
+            "stored_checksum": 64376,
+            "calculated_checksum": 64376,
+            "valid": true
+          },
+          {
+            "physical_sector": 10,
+            "id": 6,
+            "generation": 38,
+            "stored_checksum": 53112,
+            "calculated_checksum": 53112,
+            "valid": true
+          },
+          {
+            "physical_sector": 11,
+            "id": 7,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 12,
+            "id": 8,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 13,
+            "id": 9,
+            "generation": 38,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "all_ids_once": true,
+        "all_checksums_and_signatures_valid": true,
+        "generations": [
+          37
+        ],
+        "sections": [
+          {
+            "physical_sector": 14,
+            "id": 11,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 15,
+            "id": 12,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 16,
+            "id": 13,
+            "generation": 37,
+            "stored_checksum": 61745,
+            "calculated_checksum": 61745,
+            "valid": true
+          },
+          {
+            "physical_sector": 17,
+            "id": 0,
+            "generation": 37,
+            "stored_checksum": 22900,
+            "calculated_checksum": 22900,
+            "valid": true
+          },
+          {
+            "physical_sector": 18,
+            "id": 1,
+            "generation": 37,
+            "stored_checksum": 38866,
+            "calculated_checksum": 38866,
+            "valid": true
+          },
+          {
+            "physical_sector": 19,
+            "id": 2,
+            "generation": 37,
+            "stored_checksum": 55179,
+            "calculated_checksum": 55179,
+            "valid": true
+          },
+          {
+            "physical_sector": 20,
+            "id": 3,
+            "generation": 37,
+            "stored_checksum": 44776,
+            "calculated_checksum": 44776,
+            "valid": true
+          },
+          {
+            "physical_sector": 21,
+            "id": 4,
+            "generation": 37,
+            "stored_checksum": 18739,
+            "calculated_checksum": 18739,
+            "valid": true
+          },
+          {
+            "physical_sector": 22,
+            "id": 5,
+            "generation": 37,
+            "stored_checksum": 64376,
+            "calculated_checksum": 64376,
+            "valid": true
+          },
+          {
+            "physical_sector": 23,
+            "id": 6,
+            "generation": 37,
+            "stored_checksum": 53112,
+            "calculated_checksum": 53112,
+            "valid": true
+          },
+          {
+            "physical_sector": 24,
+            "id": 7,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 25,
+            "id": 8,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 26,
+            "id": 9,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          },
+          {
+            "physical_sector": 27,
+            "id": 10,
+            "generation": 37,
+            "stored_checksum": 0,
+            "calculated_checksum": 0,
+            "valid": true
+          }
+        ]
+      }
+    ],
+    "all_28_sections_valid": true,
+    "limits": "Static native-layout checksum/driver check. Does not show what a real cartridge read or programmed, certify native timing/chip compatibility, or repair data."
+  },
+  "separate_save_matches_expected_embedded_payload": true,
+  "separate_save_matches_readback_window": false,
+  "upper_16MiB": {
+    "sha256": "dffab0dd410657cb30c7b2fd7f2586a4792e8472e58882b3532581f8111a646d",
+    "identical_to_lower_half": false,
+    "all_ff": true,
+    "all_zero": false
+  }
+}

@@ -1,5 +1,10 @@
 # Change ledger
 
+- Inspect newly uploaded cart ROM/save read-only. Record unknown startup conversion,
+  forced low-lane bit6 from0x7B400, unrecognized layout and separate save's exact
+  match to old pre-puzzle fixture. Keep P002a input guards; no ROM repair/reset.
+  Extend readback inspector for unknown layouts/separate saves and test diagnostics.
+
 - P002a stadium safety fix: user reports winning Mister R then invalid stadium
   battle data. Traced unchanged old warehouse stair to unused link Colosseum0:0;
   original/P002 native seating replay stalls, exact hardware garbling unreproduced.

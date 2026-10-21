@@ -60,3 +60,5 @@
 
 - [x] Investigate unsafe stadium route; build P002a single-word stair seal, native regressions and current-save-preserving offline tool.
 - [ ] User validates P002a on hardware; if saved in the stadium, obtain actual save for recovery.
+- [x] Inspect uploaded32 MiB ROM/save without changing either; record forced-bit read pattern and exact old-fixture save match.
+- [ ] Obtain clean repeated ROM reads and actual current save export; preserve any verified alternative cartridge conversion before adapting P002a.

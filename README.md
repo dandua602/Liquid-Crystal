@@ -16,6 +16,9 @@ Main Office floors, later islands and the ending remain future work.
 then encountered a broken stadium interaction. P002a blocks the unsafe old stair.
 The earlier saving failure remains recorded in [hardware status](HARDWARE_TEST.md);
 the method that resolved it was not supplied. P002a still needs a console test.
+The latest uploaded cart ROM has a suspicious read pattern and different startup;
+[clean readback is needed](research/hardware/user_readback_01.md) before adapting
+the fix to that image. Its supplied save is the old pre-puzzle fixture.
 
 - [P002a: block the unsafe stadium staircase](research/P002a_safety_fix.md) and [offline safety-fix download](patches/P002a/P002a-safety-fix.zip)
 - [Direct generated test save download](downloads/P002-warehouse-test.sav)
