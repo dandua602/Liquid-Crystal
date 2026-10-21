@@ -479,6 +479,10 @@
     "geometry_comparison": "64/128 KiB simplified models both return to field with28 valid save sections; size alone did not reproduce failure",
     "geometry_artifact": "extracted/runtime/cartridge/geometry/summary.json",
     "flashgbx_profile_reference": "research/hardware/flashgbx_profile_source.json",
-    "required_readback_size_bytes": 33554432
+    "required_readback_size_bytes": 33554432,
+    "physical_pcb": "RTC FLASHCART v1.1, user identified with front/back photos",
+    "save_chip_photo": "Dedicated SST/MPF flash device visible on right; exact marking not independently confirmed",
+    "logical_game_save_type": "1M FLASH (128 KiB /1024 Kbit); capacity from native LC save layout, not proof of board protocol",
+    "save_id_0x8209_resolved": false
   }
 }

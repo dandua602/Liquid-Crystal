@@ -71,6 +71,14 @@ still pending. Request a full readback from the failed test before reflashing
 so the actual game/driver/NOR bytes and sector data can be compared. Do not
 recommend another blind flash or a generic FlashGBX Write Save as a proven fix.
 
+The user now identifies the physical PCB as RTC FLASHCARTv1.1 and provides
+front/back photos, with an SST/MPF flash device visible on the right. The
+AGB-E20-30/S29GL256N name is the detected ROM-programming profile, not the PCB
+silkscreen. Liquid Crystal's logical save format is1M FLASH (128 KiB/1024 Kbit).
+This capacity does not prove that a generic FlashGBX restore protocol supports
+the physical save device; unknown ID0x8209 remains unresolved. Do not infer
+batteryless SRAM hardware merely from the uploaded ROM's conversion driver.
+
 Both original and packaged test payloads have two complete native-checksum-valid
 slots (28 sections). Native layout table3FEC94 is pinned through its consumer
 atDA1DA/DA23C andDA20C. LC lengths differ from vanilla FireRed: F24, FF0x3, D98,
