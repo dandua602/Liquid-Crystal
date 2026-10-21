@@ -39,7 +39,7 @@ def main():
               'outputName': 'P002-warehouse-test.gba', 'patchSha256': sha(patch),
               'patchBase64': base64.b64encode(patch).decode(), 'sources': source_cases,
               'saveStart': start, 'saveEnd': end, 'originalSaveSha256': sha(source[start:end]),
-              'version': 2}
+              'targetSaveSha256': sha(target[start:end]), 'version': 3}
     html = (ROOT/'tools/cartridge_patcher.html').read_text().replace('__PATCH_DATA__', json.dumps(config))
     readme = '''LIQUID CRYSTAL — MAKE THE WAREHOUSE CARTRIDGE TEST ROM
 
@@ -50,11 +50,18 @@ def main():
    those and you also select your original 5-badge .sav backup. The page checks
    that backup before normalizing the embedded save in a memory-only copy.
 4. Click Create and download test ROM. Find P002-warehouse-test.gba in Downloads.
-5. In FlashGBX use Write ROM and your existing correct cart profile, then verify.
-6. Boot the console and Continue. You start beside the warehouse rock puzzle.
+5. Keep these files for diagnosis. The user's physical saving test failed.
+6. Before another write, use FlashGBX Backup ROM at the detected 32 MiB and
+   preserve the failed cart's complete readback for comparison.
 
 If automatic downloading does not start, click the visible Download ROM link.
 If rejected, open File details and copy the size/hash for troubleshooting.
+V3 also offers Download matching P002-warehouse-test.sav (128 KiB raw payload,
+without a FlashGBX metadata trailer). It is identical to the embedded test save.
+You can select an already-generated P002-warehouse-test.gba to obtain this save.
+The real-cart test reported a corruption warning and stuck Saving. A separate
+save download is for diagnosis, not a confirmed fix. Cart/profile and a full ROM
+readback after the failed attempt are needed before recommending a save restore.
 
 No Python or separate patcher installation needed. Everything runs offline on
 your computer. No ROM or save file is uploaded. Original files are unchanged.
@@ -76,7 +83,8 @@ This ZIP contains patches, the offline tool and instructions; no ROM/save files.
 '''
     manifest = {k: v for k, v in config.items() if k not in ('patchBase64', 'sources')}
     manifest['sources'] = [{k: v for k, v in row.items() if k != 'patchBase64'} for row in source_cases]
-    manifest.update(contains_rom_or_save=False, hardware_verified=False)
+    manifest.update(contains_rom_or_save=False, hardware_verified=False,
+                    hardware_status='User reported boot corruption/previous-save warning and stuck Saving; root cause unresolved')
     files = {'Make-Test-ROM.html': html.encode(), 'P002-warehouse-test.bps': patch,
              'README.txt': readme.encode(), 'MANIFEST.json': (json.dumps(manifest, indent=2)+'\n').encode()}
     files['SHA256SUMS.txt'] = ''.join(f'{sha(data)}  {name}\n' for name, data in sorted(files.items())).encode()
@@ -88,7 +96,7 @@ This ZIP contains patches, the offline tool and instructions; no ROM/save files.
     with zipfile.ZipFile(path) as archive:
         if archive.testzip() is not None or any(n.endswith(('.gba', '.sav')) for n in archive.namelist()):
             raise ValueError('Invalid public ZIP')
-    (folder/'P002-easy-cartridge-test-v2.zip').write_bytes(path.read_bytes())
+    (folder/f'P002-easy-cartridge-test-v{config["version"]}.zip').write_bytes(path.read_bytes())
     (ROOT/'extracted/builds/P002-offline-patcher-manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
     print(json.dumps({'zip': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size,
                       'patch_bytes': len(patch), 'target_sha256': sha(target)}, indent=2))

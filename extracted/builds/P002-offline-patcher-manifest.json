@@ -8,7 +8,8 @@
   "saveStart": 13107200,
   "saveEnd": 13238272,
   "originalSaveSha256": "ce2bace08fb36ed0e41b900f7af5e8033f1f76b4095c7f46f6754aeff65f5fb7",
-  "version": 2,
+  "targetSaveSha256": "e5f8ea3973dfbc23fe7a63830d8f142554975d8b39b1b215e7777fbe56c6c8d8",
+  "version": 3,
   "sources": [
     {
       "name": "original upload",
@@ -30,5 +31,6 @@
     }
   ],
   "contains_rom_or_save": false,
-  "hardware_verified": false
+  "hardware_verified": false,
+  "hardware_status": "User reported boot corruption/previous-save warning and stuck Saving; root cause unresolved"
 }

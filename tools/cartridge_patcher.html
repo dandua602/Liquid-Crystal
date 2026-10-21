@@ -15,10 +15,14 @@
   .note { font-size: .9rem; }
   #download { display: inline-block; padding: 12px 18px; margin-bottom: 16px; }
   #download[hidden] { display: none; }
+  #save-download { display: inline-block; margin-bottom: 16px; padding: 12px 18px; }
+  #save-download[hidden] { display: none; }
   pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8rem; }
 </style>
 <h1>Make your Liquid Crystal cartridge test ROM</h1>
-<p class="note">Patcher v2 · original, P001/P002 and compatible cart dumps</p>
+<p class="note">Patcher v3 · ROM and matching save downloads</p>
+<p class="note">A real-cartridge saving hang has been reported. The matching
+save is available for diagnosis; restoring it is not a confirmed fix.</p>
 <p>Choose your original Liquid Crystal ROM, or an exact P001/P002 build. This
 page creates <strong>P002-warehouse-test.gba</strong> on your computer.</p>
 <p>It starts beside the warehouse puzzle with a generated level-100 team,
@@ -32,13 +36,15 @@ original save you uploaded, not a newer save. Both files stay on your computer.<
 <button id="create" disabled>Create and download test ROM</button>
 <p id="status" role="status" aria-live="polite">Choose your original ROM to begin.</p>
 <a id="download" hidden>Download P002-warehouse-test.gba</a>
+<a id="save-download" hidden>Download matching P002-warehouse-test.sav</a>
 <details id="diagnostics" hidden><summary>File details for troubleshooting</summary><pre id="file-details"></pre></details>
 <p class="note">Your ROM stays on your computer. This page works offline and makes
 no network requests. It keeps your original file unchanged.</p>
-<p class="note">After downloading, use FlashGBX <strong>Write ROM</strong> with your
-existing working cart profile, verify the write, and select Continue on the console.
-No separate save restore is needed for this test. Hardware compatibility still
-needs your console test.</p>
+<p class="note">Keep the output for diagnosis. Before another write on the failing cart, use
+FlashGBX <strong>Backup ROM</strong> to preserve the full detected32 MiB image.
+The ROM already contains the matching save. The separate download is a raw
+128 KiB copy, without a FlashGBX metadata trailer. Hardware saving is currently
+unresolved; confirm the correct cart/save profile before restoring it.</p>
 <script id="patch-data" type="application/json">__PATCH_DATA__</script>
 <script>
 'use strict';
@@ -48,10 +54,12 @@ const savePicker = document.getElementById('save');
 const createButton = document.getElementById('create');
 const status = document.getElementById('status');
 const downloadLink = document.getElementById('download');
-let downloadURL;
+const saveDownloadLink = document.getElementById('save-download');
+let downloadURL, saveURL;
 function resetSelection() {
   if (downloadURL) URL.revokeObjectURL(downloadURL);
-  downloadURL = undefined; downloadLink.hidden = true;
+  if (saveURL) URL.revokeObjectURL(saveURL);
+  downloadURL = saveURL = undefined; downloadLink.hidden = saveDownloadLink.hidden = true;
   document.getElementById('diagnostics').hidden = true;
   createButton.disabled = !picker.files.length;
   status.textContent = picker.files.length ? 'Ready. Click Create and download test ROM.' : 'Choose your original ROM to begin.';
@@ -112,7 +120,8 @@ function applyPatch(source, patch) {
 createButton.addEventListener('click', async () => {
   createButton.disabled = true;
   if (downloadURL) URL.revokeObjectURL(downloadURL);
-  downloadURL = undefined; downloadLink.hidden = true;
+  if (saveURL) URL.revokeObjectURL(saveURL);
+  downloadURL = saveURL = undefined; downloadLink.hidden = saveDownloadLink.hidden = true;
   try {
     status.textContent = 'Checking your ROM…';
     let source = new Uint8Array(await picker.files[0].arrayBuffer());
@@ -148,6 +157,10 @@ createButton.addEventListener('click', async () => {
     if (await sha256(output) !== config.targetSha256) throw Error('The test ROM checksum failed.');
     downloadURL = URL.createObjectURL(new Blob([output], {type: 'application/octet-stream'}));
     downloadLink.href = downloadURL; downloadLink.download = config.outputName; downloadLink.hidden = false;
+    const matchingSave = output.slice(config.saveStart, config.saveEnd);
+    if (await sha256(matchingSave) !== config.targetSaveSha256) throw Error('The matching save checksum failed.');
+    saveURL = URL.createObjectURL(new Blob([matchingSave], {type: 'application/octet-stream'}));
+    saveDownloadLink.href = saveURL; saveDownloadLink.download = 'P002-warehouse-test.sav'; saveDownloadLink.hidden = false;
     downloadLink.click();
     status.textContent = 'Created ' + config.outputName + '. Check Downloads, or click Download P002-warehouse-test.gba below if downloading did not start. Its warehouse test save is included.';
   } catch (error) {

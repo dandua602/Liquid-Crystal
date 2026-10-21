@@ -2,12 +2,22 @@
 
 P002 adds the warehouse rock puzzle, Mister R battle and Office service room.
 The [walkthrough](WALKTHROUGH.md) covers the story steps. P003 is still a design
-proposal. **No physical-console results have been reported yet.**
+proposal. **Hardware saving failed in the user's reported test:** corruption/previous-save
+warning on boot, followed by a saving hang. Screenshot confirms FlashGBX5.0.1,
+GBxCart RWv1.4a/b/c family, AGB-E20-30/S29GL256N10TFI01 (or compatible),
+32 MiB and Unknown FLASH save chip0x8209. Root cause is still unknown. Do not treat the emulator checks as hardware acceptance.
+
+The [v3 offline tool](patches/P002/P002-easy-cartridge-test-v3.zip) can download
+the exact matching raw `.sav`: select the already-generated warehouse test ROM,
+click Create, then **Download matching P002-warehouse-test.sav**. That is the same
+128 KiB payload already embedded in the ROM, not a confirmed fix. Confirm the
+cart/save profile before a separate save restore. Preserve a full ROM readback
+from the failed attempt before reflashing so the actual bytes can be checked.
 
 ## Download a working test ROM on your computer
 
 Workspace ZIP links cannot be downloaded in this chat. Instead download the
-[small offline patcher ZIP from GitHub](patches/P002/P002-easy-cartridge-test-v2.zip)
+[small offline patcher ZIP from GitHub](patches/P002/P002-easy-cartridge-test-v3.zip)
 using **Download raw file**, then:
 
 1. Extract it and open **Make-Test-ROM.html** in Chrome, Edge or Firefox.
@@ -19,7 +29,9 @@ using **Download raw file**, then:
    **P002-warehouse-test.gba**, including the pre-puzzle test save. A persistent
    **Download P002-warehouse-test.gba** link remains available if automatic
    downloading does not start.
-4. Use FlashGBX **Write ROM** with your existing working cart profile and verify.
+4. Keep the output for diagnosis. Before another write on the failing cart,
+   collect the full readback described below. Writing a separate save is not
+   established as a fix.
 
 No Python or separate patcher installation is required. Your source ROM stays
 on your computer and the page makes no network requests. The output is byte for
@@ -30,6 +42,28 @@ will reject unsupported game/driver changes rather than force an unverified ROM.
 
 The ZIP also contains a direct BPS patch for people who prefer a BPS patcher.
 Apply it directly to the original upload, not an already patched ROM.
+
+## Read back the failed cart before another write
+
+In FlashGBX5.0.1 choose **Backup ROM**, retain the detected **32 MiB** size, and
+save the complete dump. Upload that dump (ZIP if needed). Do not overwrite the
+original backup or reflash between the failure and this readback. We need to
+compare the full cartridge image, not just the raw `.sav`. Also confirm whether
+the original unmodified ROM saves on this exact cart; a screenshot of detection
+alone does not establish that baseline.
+
+The official FlashGBX5.0.1 [profile](https://github.com/lesserkuma/FlashGBX/blob/5.0.1/FlashGBX/config/fc_AGB_S29GL256.txt)
+uses32 MiB capacity and128 KiB erase sectors. The old software adapter used64 KiB
+sectors. A focused comparison now tests both geometries: both return to field
+and retain28 valid save sections. Thus erase size alone did not reproduce the
+reported hang; chip IDs/timing/bank circuitry remain outside the model. The ROM
+profile does not identify the unknown save chip0x8209 or prove a save restore
+method. No new ROM/driver patch has been made on that speculation.
+
+`tools/inspect_cartridge_readback.py` accepts16 or32 MiB dumps read-only, explicitly
+compares the first16 MiB to the expected image, audits the embedded save using
+native LC lengths, and records the upper half separately. It never truncates or
+rewrites the user's dump. See [geometry evidence](extracted/runtime/cartridge/geometry/summary.json).
 
 ## Choose your image
 
@@ -60,7 +94,8 @@ that supports the uploaded conversion.
 
 The user confirmed **FlashGBX** as the flashing software. Use the same compatible
 cartridge and FlashGBX cart-type/profile that worked with the original dump. The
-physical reader, cartridge model and profile are still unconfirmed. This package
+screenshot identifies the GBxCart RWv1.4a/b/c reader family and
+AGB-E20-30/S29GL256N10TFI01 (or compatible) profile; save ID0x8209 is unrecognized. This package
 preserves that dump's bank selector,
 NOR save driver, game size and header; it is not an EverDrive/EZ-Flash conversion.
 
@@ -146,7 +181,15 @@ The private ROM/save ZIP stays outside GitHub. The public helper kit, walkthroug
 and hardware report contain no ROM or save files. Keep private artifacts when
 you download them; a repository clone cannot restore them without your inputs.
 
-## What has passed here
+## Current hardware result and software evidence
+
+The user reported a corruption/previous-save warning and stuck Saving. A fresh
+readback, FlashGBX cart profile, reader/cart model and whether the unmodified
+ROM saves on this same cart are needed to distinguish a flash/readback/driver
+problem from save-data behavior. Do not repeat a write as a substitute for
+collecting that evidence. The original and test payloads both pass all28 section
+checksums using the native LC layout at3FEC94; this does not prove what hardware
+read. See [failure audit](extracted/runtime/cartridge/hardware_failure_audit.json).
 
 Software checks booted all three selected images with blank emulated SRAM,
 using the ROM's actual embedded save rather than injecting a sidecar. The

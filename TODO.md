@@ -54,3 +54,6 @@
 - [x] Fix inaccessible workspace downloads with a GitHub offline browser patcher; exact-ROM download verified in Chromium.
 
 - [x] Offline patcher v2: diagnose mismatched source, support verified changed-save dumps/exact P001/P002 and keep a visible download link.
+
+- [x] Record reported hardware failure, audit native save checksums and offer matching .sav via offline v3.
+- [ ] Diagnose physical saving hang from cart/profile/baseline and failed-test ROM readback; do not claim a separate save is a confirmed fix.

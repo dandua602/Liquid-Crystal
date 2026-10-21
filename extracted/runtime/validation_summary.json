@@ -36,16 +36,19 @@
     "python3 tools/package_cartridge.py",
     "Packaged cartridge helper CLI: patch/embed, initial/post-play readback and overwrite refusal; both ZIP member checksums",
     "python3 tools/package_offline_patcher.py",
-    "python3 tools/check_offline_patcher.py"
+    "python3 tools/check_offline_patcher.py",
+    "python3 tools/inspect_cartridge_save.py",
+    "python3 tools/cartridge_geometry_probe.py",
+    "Read-only readback inspector:16/32 MiB plus corrupted save/code differences"
   ],
   "project_tests": {
-    "run": 155,
-    "passed": 155,
+    "run": 157,
+    "passed": 157,
     "failed": 0,
-    "seconds": 7.445,
+    "seconds": 8.241,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/Offline-patcher-v2-unittest.log",
-    "log_sha256": "3e05c8658738778edf0fa8cae4a7acc92115847880a674060767c123b9b3a516"
+    "log": "extracted/builds/Hardware-failure-triage-unittest.log",
+    "log_sha256": "8164e7296288b599e3ac6d90d2875f3e799ed0d1b81c2c561bb54f8347a0b505"
   },
   "runtime": {
     "smoke": {
@@ -427,21 +430,21 @@
     "source_inputs_and_standard_P002_unchanged": true,
     "private_package": "builds/P002-cartridge-test.zip",
     "public_helper_kit": "patches/P002/P002-cartridge-tools.zip",
-    "private_zip_sha256": "7810823128007e31fc010dce7e71103e5d88957b759b843fa4652b3cfdff77d1",
-    "public_zip_sha256": "bab9c02abd60d39bf345adfb61b8b5599110e52fe203c5f47f0c99f21d745d59",
+    "private_zip_sha256": "a1610ae2fa3e91f8187d49856e6ba421b02b2a9e2299d6c8f5a924b399343c36",
+    "public_zip_sha256": "e724b0e1e76131fef5cabb5b701bd1c688a171f036fdfef8e143a59e718dd029",
     "sources_reverified_against_original_baseline": true,
     "flashing_software": "FlashGBX",
     "physical_reader_cart_profile_confirmed": false
   },
   "offline_patcher": {
-    "public_zip": "patches/P002/P002-easy-cartridge-test-v2.zip",
-    "zip_sha256": "9d122574b435faa4a57fb5aa88d3a95d3d6bb553280b2ddab8c387da03c9b9a0",
-    "browser_checks": 16,
+    "public_zip": "patches/P002/P002-easy-cartridge-test-v3.zip",
+    "zip_sha256": "d8d28e1dc32bad4c4ba59c0b952017e4f4d03595d9a30fb9c033b025cf0baf0c",
+    "browser_checks": 17,
     "browser_report": "extracted/builds/P002-offline-browser-validation.json",
     "target_exactly_matches_previously_tested_warehouse_image": true,
     "workspace_links_downloadable": false,
     "hardware_verified": false,
-    "version": 2,
+    "version": 3,
     "source_modes": [
       "exact original",
       "exact P001",
@@ -450,6 +453,32 @@
       "already-correct output"
     ],
     "unknown_game_code_still_rejected": true,
-    "user_selected_file_identity": "unknown; screenshot shows rejection but no hash"
+    "user_selected_file_identity": "unknown; screenshot shows rejection but no hash",
+    "matching_raw_save_export_verified": true,
+    "matching_save_bytes": 131072,
+    "matching_save_is_confirmed_hardware_fix": false
+  },
+  "hardware_user_report": {
+    "status": "failed as reported",
+    "symptoms": [
+      "save corrupt/previous-save boot warning",
+      "stuck on Saving"
+    ],
+    "cart_profile": "AGB-E20-30 with S29GL256N10TFI01 (or compatible)",
+    "reader_model": "GBxCart RW v1.4a/b/c family (screenshot)",
+    "same_cart_original_saving_baseline": "pending",
+    "actual_ROM_readback": "requested before another flash",
+    "root_cause": "unknown",
+    "fixture_native_checksums": "28/28 valid in each of original and generated test payloads",
+    "audit": "extracted/runtime/cartridge/hardware_failure_audit.json",
+    "matching_raw_save_export": "offline v3; diagnostic copy, not a confirmed fix",
+    "flashing_software": "FlashGBX v5.0.1",
+    "detected_rom_size_bytes": 33554432,
+    "detected_save_type": "Unknown FLASH save chip (0x8209)",
+    "screenshot_received": true,
+    "geometry_comparison": "64/128 KiB simplified models both return to field with28 valid save sections; size alone did not reproduce failure",
+    "geometry_artifact": "extracted/runtime/cartridge/geometry/summary.json",
+    "flashgbx_profile_reference": "research/hardware/flashgbx_profile_source.json",
+    "required_readback_size_bytes": 33554432
   }
 }

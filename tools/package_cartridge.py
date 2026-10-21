@@ -56,6 +56,8 @@ def main():
                 'save_mode': 'Existing embedded NOR save; original cartridge conversion retained',
                 'original_inputs_unchanged': True, 'private_bundle_contains_rom_and_save': True,
                 'public_helper_kit_contains_rom_or_save': False}
+    if (ROOT/'extracted/runtime/cartridge/hardware_failure_audit.json').exists():
+        manifest['hardware_status'] = 'User reported corruption/previous-save boot warning and stuck Saving; root cause unresolved'
     common = {'HARDWARE_TEST.md': (ROOT/'HARDWARE_TEST.md').read_bytes(),
               'WALKTHROUGH.md': (ROOT/'WALKTHROUGH.md').read_bytes(),
               'MANIFEST.json': (json.dumps(manifest, indent=2)+'\n').encode(),
@@ -74,6 +76,8 @@ def main():
              '](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002/P002-easy-cartridge-test.zip)')
     guide = guide.replace('](patches/P002/P002-easy-cartridge-test-v2.zip)',
              '](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002/P002-easy-cartridge-test-v2.zip)')
+    guide = guide.replace('](patches/P002/P002-easy-cartridge-test-v3.zip)',
+             '](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002/P002-easy-cartridge-test-v3.zip)')
     common['HARDWARE_TEST.md'] = guide.encode()
     private.update(common)
     private['SHA256SUMS.txt'] = ''.join(f'{sha(data)}  {name}\n' for name, data in sorted(private.items())).encode()

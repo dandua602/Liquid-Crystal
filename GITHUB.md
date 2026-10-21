@@ -7,11 +7,13 @@ Repository: https://github.com/dandua602/Liquid-Crystal
   the Route59 map, puzzle, battle, Office entry/return and saving.
 - **Download the current patch:** [P002-prototype.zip](patches/P002/P002-prototype.zip).
   Open that file and choose **Download raw file**, or use its download button.
-- **Easy warehouse test download:** [P002-easy-cartridge-test-v2.zip](patches/P002/P002-easy-cartridge-test-v2.zip).
+- **Easy warehouse test download:** [P002-easy-cartridge-test-v3.zip](patches/P002/P002-easy-cartridge-test-v3.zip).
   Choose Download raw file, extract, open Make-Test-ROM.html, select your original
   Liquid Crystal ROM, then click Create and download test ROM. No Python needed.
   It creates the tested warehouse image with test progress embedded, entirely offline.
-  V2 also accepts exact P001/P002. A changed-save cart dump needs the original
+  V3 also offers the matching raw save download; hardware saving is currently
+  failing as reported, so this is a diagnostic copy, not a promised fix.
+  The browser also accepts exact P001/P002. A changed-save cart dump needs the original
   five-badge save backup; unsupported code changes show size/hash diagnostics.
 - **Real cartridge testing:** [HARDWARE_TEST.md](HARDWARE_TEST.md) and
   [P002-cartridge-tools.zip](patches/P002/P002-cartridge-tools.zip). The helper kit

@@ -1,5 +1,18 @@
 # Change ledger
 
+- Hardware failure triage: user reports corruption/previous-save boot warning
+  and hang on Saving after flashing the test ROM. Hardware acceptance marked
+  failed, root cause pending cart/profile/baseline/readback. Recovered/pinned
+  native LC sector layout3FEC94; original and test saves both pass28 checks.
+  Added corruption-detection/driver-separation regressions. V3 exports the exact
+  matching raw save locally from verified output; it does not repair the save
+  or claim to fix physical writing. Screenshot identifies FlashGBX5.0.1/GBxCart RW
+  v1.4a/b/c, AGB-E20-30/S29GL256N,32 MiB and unknown save ID0x8209. Official
+  profile has128 KiB erase sectors; focused64/128 KiB model comparison passes
+  both, so size alone did not reproduce the hang. Added a read-only16/32 MiB
+  readback inspector. Same-cart baseline and actual failed-cart readback pending.
+  Existing v2 artifact remains unchanged.
+
 - Offline patcher v2: the user's screenshot showed a source-hash rejection,
   not a completed build. Added actual file size/SHA diagnostics, a persistent
   download link and source-specific patches for exact P001/P002. Changed-save

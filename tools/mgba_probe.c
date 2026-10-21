@@ -22,6 +22,8 @@
 static bool banked, dirty;
 static unsigned bank, bank_writes, sram_writes, nor_programs, nor_erases;
 static bool program_armed, erase_armed;
+static unsigned nor_erase_bytes = 0x10000;
+static uint32_t nor_erase_targets[8];
 static struct mCore *mapper_core;
 #define SAVE_ROM_ADDRESS 0x08C80000U
 #define SAVE_ROM_SIZE 0x20000U
@@ -68,8 +70,10 @@ static bool nor_write(uint32_t address, uint16_t value) {
         program_armed=false; dirty=true; ++nor_programs; return true;
     }
     if (erase_armed && target && value==0x30) {
-        uint32_t base=normalized & ~0xFFFFU;
-        for (unsigned n=0;n<0x10000;n+=2) mapper_core->rawWrite16(mapper_core,base+n,-1,0xFFFF);
+        uint32_t base=normalized & ~(nor_erase_bytes-1U);
+        if (base < SAVE_ROM_ADDRESS || base+nor_erase_bytes > SAVE_ROM_ADDRESS+SAVE_ROM_SIZE) return true;
+        if (nor_erases < 8) nor_erase_targets[nor_erases] = normalized;
+        for (unsigned n=0;n<nor_erase_bytes;n+=2) mapper_core->rawWrite16(mapper_core,base+n,-1,0xFFFF);
         erase_armed=false; dirty=true; ++nor_erases; return true;
     }
     if (value==0xA0 && (normalized==0x08000AAA || normalized==0x08000555)) program_armed=true;
@@ -102,6 +106,11 @@ static void quiet(struct mLogger *logger, int category, enum mLogLevel level,
 
 int main(int argc, char **argv) {
     if (argc != 3) return 2;
+    const char *erase_setting = getenv("LC_PROBE_NOR_ERASE_BYTES");
+    if (erase_setting) {
+        if (!strcmp(erase_setting, "131072")) nor_erase_bytes = 0x20000;
+        else if (strcmp(erase_setting, "65536")) return 11;
+    }
     struct mLogger logger = {.log = quiet};
     mLogSetDefaultLogger(&logger);
     struct mCore *core = mCoreFind(argv[1]);
@@ -192,7 +201,9 @@ int main(int argc, char **argv) {
             if (!ok) return 7;
             puts("{\"state\":true}");
         } else if (line[0] == 'm') {
-            printf("{\"banked_sram\":%s,\"embedded_nor_save\":%s,\"bank\":%u,\"bank_selects\":%u,\"sram_writes\":%u,\"nor_programs\":%u,\"nor_erases\":%u}\n",banked ? "true" : "false",banked ? "true" : "false",bank,bank_writes,sram_writes,nor_programs,nor_erases);
+            printf("{\"banked_sram\":%s,\"embedded_nor_save\":%s,\"bank\":%u,\"bank_selects\":%u,\"sram_writes\":%u,\"nor_programs\":%u,\"nor_erases\":%u,\"nor_erase_bytes\":%u,\"nor_erase_targets\":[",banked ? "true" : "false",banked ? "true" : "false",bank,bank_writes,sram_writes,nor_programs,nor_erases,nor_erase_bytes);
+            for (unsigned i=0; i<nor_erases && i<8; ++i) printf("%s%u", i ? "," : "", nor_erase_targets[i]);
+            puts("]}");
         } else if (line[0] == 'q') break;
         else return 8;
         fflush(stdout);

@@ -1,6 +1,6 @@
 # Liquid Crystal completion project
 
-**[Make the cartridge test ROM—offline patcher v2](patches/P002/P002-easy-cartridge-test-v2.zip)** ·
+**[Make the cartridge test ROM—offline patcher v3](patches/P002/P002-easy-cartridge-test-v3.zip)** ·
 **[Download P002](patches/P002/P002-prototype.zip)** ·
 **[Read the walkthrough](WALKTHROUGH.md)** ·
 **[Where everything is on GitHub](GITHUB.md)**
@@ -10,6 +10,10 @@ puzzle, six-member Mister R battle and a new Office Block service room reached
 after victory. Its normal door returns to the warehouse. It also fixes the
 cleared rock respawning after movement. Original inputs remain unchanged.
 Main Office floors, later islands and the ending remain future work.
+
+**Hardware issue reported:** the test cart showed a corruption/previous-save
+warning and hung on Saving. See [hardware status](HARDWARE_TEST.md). A matching
+save download is now available; restoring it is not a confirmed repair.
 
 - [Real-console cartridge test instructions](HARDWARE_TEST.md) and [public patch/helper kit](patches/P002/P002-cartridge-tools.zip)
 - [Player walkthrough with directions, route map and screenshots](WALKTHROUGH.md)

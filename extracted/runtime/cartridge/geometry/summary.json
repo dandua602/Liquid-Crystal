@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "cases": {
+    "65536": {
+      "error": null,
+      "save_returned_to_field": true,
+      "mapper": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 132,
+        "sram_writes": 245760,
+        "nor_programs": 65536,
+        "nor_erases": 2,
+        "nor_erase_bytes": 65536,
+        "nor_erase_targets": [
+          147324928,
+          147390464
+        ]
+      },
+      "all_28_save_sections_valid": true
+    },
+    "131072": {
+      "error": null,
+      "save_returned_to_field": true,
+      "mapper": {
+        "banked_sram": true,
+        "embedded_nor_save": true,
+        "bank": 0,
+        "bank_selects": 132,
+        "sram_writes": 245760,
+        "nor_programs": 65536,
+        "nor_erases": 2,
+        "nor_erase_bytes": 131072,
+        "nor_erase_targets": [
+          147324928,
+          147390464
+        ]
+      },
+      "all_28_save_sections_valid": true
+    }
+  },
+  "limits": "Only erase alignment/size varies. Same simplified AMD command handling and SRAM bank model; no actual chip-ID/timing/board certification. A model failure is not proof of the physical root cause."
+}

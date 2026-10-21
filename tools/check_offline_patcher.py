@@ -93,6 +93,15 @@ def main():
             checks.append('altered game code rejected even when the correct save backup is selected')
             page.locator('#rom').set_input_files(str(ROOT/'builds/cartridge/P002-warehouse-test.gba'))
             download_and_check('already-correct warehouse test image can be downloaded directly')
+            assert page.locator('#save-download').is_visible()
+            with page.expect_download(timeout=60000) as save_event:
+                page.locator('#save-download').click()
+            save_download = save_event.value
+            assert save_download.suggested_filename == 'P002-warehouse-test.sav'
+            save_output = temp/'downloaded.sav'; save_download.save_as(save_output)
+            assert len(save_output.read_bytes()) == 131072
+            assert save_output.read_bytes() == (ROOT/'saves/test/P002-cart-puzzle.sav').read_bytes()
+            checks.append('matching raw save download is exactly the embedded tested 128 KiB payload, without footer')
             assert network == [test_url], network
             assert not errors, errors
             checks.append('no application HTTP/HTTPS requests after the intercepted initial document, or script errors')

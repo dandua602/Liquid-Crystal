@@ -35,17 +35,18 @@
     }
   },
   "project_tests": {
-    "run": 155,
-    "passed": 155,
+    "run": 157,
+    "passed": 157,
     "failed": 0,
-    "seconds": 7.773,
+    "seconds": 8.241,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/Cartridge-unittest.log",
-    "log_sha256": "d8aad6edde8b86a8f8fc8ee5c9d3ca533f6239dff0638d134d5891dc81f0a2d6"
+    "log": "extracted/builds/Hardware-failure-triage-unittest.log",
+    "log_sha256": "8164e7296288b599e3ac6d90d2875f3e799ed0d1b81c2c561bb54f8347a0b505"
   },
   "emulator_expectations": 19,
   "save_mode": "Existing embedded NOR save; original cartridge conversion retained",
   "original_inputs_unchanged": true,
   "private_bundle_contains_rom_and_save": true,
-  "public_helper_kit_contains_rom_or_save": false
+  "public_helper_kit_contains_rom_or_save": false,
+  "hardware_status": "User reported corruption/previous-save boot warning and stuck Saving; root cause unresolved"
 }

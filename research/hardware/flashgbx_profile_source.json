@@ -1,0 +1,12 @@
+{
+  "source_repository": "https://github.com/lesserkuma/FlashGBX",
+  "tag": "5.0.1",
+  "commit": "3cf83f3ac9fb555d2a9c7ce6ac4fa70d4a3cacf8",
+  "profile_path": "FlashGBX/config/fc_AGB_S29GL256.txt",
+  "profile_sha256": "78707d5c150b6b43050eab6af2a14593bd3b3aa53fa40654e05f1c0099f46d02",
+  "profile_url": "https://github.com/lesserkuma/FlashGBX/blob/5.0.1/FlashGBX/config/fc_AGB_S29GL256.txt",
+  "reported_flash_size_bytes": 33554432,
+  "reported_erase_sector_bytes": 131072,
+  "source_access": "Read-only official tagged source; no flasher/device execution",
+  "limits": "ROM programming profile only; does not identify or certify the actual save chip/bank circuit. Unknown FLASH save ID0x8209 remains unresolved."
+}

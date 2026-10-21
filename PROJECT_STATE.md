@@ -36,7 +36,7 @@ departure to avoid its original empty text branch. Read research/P003_review.md
 and walkthrough/P003-preview.md. Ten new native fixture expectations pass on
 unchanged P002; they are original branch/visibility evidence, not P003 runtime
 acceptance. The preview fits133/192 script bytes and224/320 text bytes, with a
-new512-byte bounded space screen. The current project suite passes155 tests.
+new512-byte bounded space screen. The current project suite passes157 tests.
 No P003 ROM/patch or implementation approval exists. The kickoff requires review before that next ROM change.
 
 Visual review caught a P001 flagless rock respawn after movement that immediate
@@ -55,6 +55,50 @@ checks are retained, not freshly rerun for this P002 milestone. New P002 journey
 has a boosted native-generated Mewtwo fixture and actual combat outcomes; it is
 not human balance proof. Unknown computed owners/map uses remain outside the
 bounded certificate; runtime still requires the supplied-image adapter.
+
+## Reported hardware failure — investigate before further writes
+
+The user successfully downloaded/generated the test ROM with v2, flashed it,
+then reported a save-corrupt/load-previous warning followed by being stuck on
+Saving. They ask for a matching `.sav`. Physical hardware acceptance has FAILED
+as reported; no root cause is established. FlashGBX software is confirmed;
+the screenshot now confirms FlashGBX5.0.1, GBxCart RWv1.4a/b/c family,
+AGB-E20-30 with S29GL256N10TFI01 (or compatible), detected32 MiB ROM and
+Unknown FLASH save chip0x8209. Whether the original saves on this same cart
+and a failed-attempt readback remain pending. Request a full readback from the failed test before reflashing
+so the actual game/driver/NOR bytes and sector data can be compared. Do not
+recommend another blind flash or a generic FlashGBX Write Save as a proven fix.
+
+Both original and packaged test payloads have two complete native-checksum-valid
+slots (28 sections). Native layout table3FEC94 is pinned through its consumer
+atDA1DA/DA23C andDA20C. LC lengths differ from vanilla FireRed: F24, FF0x3, D98,
+FF0x8,450. No checksum repair or source-save change was performed. The software
+NOR model still does not model physical timing/chip IDs/protocols fully. See
+extracted/runtime/cartridge/hardware_failure_audit.json and tests/save_compatibility.md.
+
+V3 offline download adds a persistent matching raw128 KiB `.sav` link, generated
+locally from the fully hash-verified output ROM. No save is committed to GitHub.
+The user may select the already-generated P002-warehouse-test.gba; no original
+save input is required in that exact-output case. No FlashGBX metadata trailer
+is fabricated or attached. The save is identical to the embedded payload, not
+a newly repaired save or a confirmed hardware fix. Latest checks:157 project
+tests and17 browser checks pass. Versioned v2 ZIP stays intact.
+
+Official FlashGBX5.0.1 source (tag commit3cf83f3ac9fb555d2a9c7ce6ac4fa70d4a3cacf8)
+profile research/hardware/flashgbx-5.0.1-s29gl256-profile.txt says32 MiB, AMD command
+set and128 KiB sectors. This is a ROM programming profile, not save-chip proof.
+The optional LC_PROBE_NOR_ERASE_BYTES=65536|131072 diagnostic now compares both
+sizes while retaining the historical default64 KiB. Both simplified models save
+and return with28 valid sections; erase size alone does not reproduce the hang.
+See extracted/runtime/cartridge/geometry/summary.json. Other chip IDs/timing/bank
+mapping remain unresolved. Do not set either diagnostic env flag globally.
+
+Next required evidence: FlashGBX Backup ROM of the whole detected32 MiB from
+the failed cart, before any further flash/save restore, plus same-cart original
+saving baseline. tools/inspect_cartridge_readback.py supports16/32 MiB dumps
+without silently truncating/writing them; it reports upper-half shape separately.
+No physical ROM fix is claimed or made. Await actual readback before proposing
+cart-specific driver changes; this is not a new story implementation approval.
 
 ## Download delivery correction
 
@@ -100,7 +144,7 @@ Three ROM-embedded-save boots passed with blank emulated SRAM and no sidecar
 injection. Nineteen expectations cover those cases, native NOR Save and a fresh
 process using updated NOR bytes. Native team preparation is separately recorded.
 The optional LC_PROBE_ROM_SAVE_BOOT frontend mode supports these checks; default
-P001/P002 behavior stays unchanged. Full current suite155 passes. Package CLI
+P001/P002 behavior stays unchanged. Full current suite157 passes. Package CLI
 patch/embed/readback, overwrite refusal, ZIP integrity and member hashes pass.
 No physical flash timing, chip/profile compatibility or hardware success is
 claimed. Await user console power-off/save/reload and gameplay results. Reflashing

@@ -16,6 +16,7 @@
     "save backup and changed cart dump remain unchanged",
     "altered game code rejected even when the correct save backup is selected",
     "already-correct warehouse test image can be downloaded directly",
+    "matching raw save download is exactly the embedded tested 128 KiB payload, without footer",
     "no application HTTP/HTTPS requests after the intercepted initial document, or script errors",
     "original input unchanged"
   ],
