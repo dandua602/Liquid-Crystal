@@ -1,0 +1,198 @@
+{
+  "legacy_stair_warp": {
+    "site": 12783456,
+    "source_hex": "1400070000000000",
+    "p002_hex": "1400070000000000"
+  },
+  "stadium_map": {
+    "id": "0:0",
+    "group": 0,
+    "map": 0,
+    "status": "structure_validated",
+    "reachability": "UNKNOWN",
+    "observations": [],
+    "group_pointer_site": 3483304,
+    "bank_start": 3481604,
+    "map_pointer_site": 3481604,
+    "header": 3469704,
+    "layout": 7481936,
+    "width": 14,
+    "height": 9,
+    "map_blocks": 7481684,
+    "map_scripts": 1442936,
+    "connection_structure": null,
+    "music": 0,
+    "layout_id": 47,
+    "section_id": 195,
+    "map_type": 0,
+    "events": {
+      "offset": 7482036,
+      "counts": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "arrays": [
+        7481964,
+        7481988,
+        7482004,
+        7482036
+      ]
+    },
+    "contiguous_event_geometry": true,
+    "header_raw_hex": "50 2a 72 08 b4 2a 72 08 78 04 16 08 00 00 00 00 00 00 2f 00 c3 00 00 00 00 00 00 00",
+    "section_label": {
+      "text": "NOT USED",
+      "pointer_site": 2919212,
+      "target": 7530208,
+      "status": "section label; individual room/floor identity unverified"
+    },
+    "indexed_layout_pointer_site": 12778728,
+    "indexed_layout": 7481936,
+    "layout_pointer_matches_indexed": true,
+    "warps": [
+      {
+        "index": 0,
+        "offset": 7481988,
+        "x": 6,
+        "y": 8,
+        "elevation": 3,
+        "destination_group": 127,
+        "destination_map": 127,
+        "destination_warp": 127,
+        "raw_hex": "06 00 08 00 03 7f 7f 7f"
+      },
+      {
+        "index": 1,
+        "offset": 7481996,
+        "x": 7,
+        "y": 8,
+        "elevation": 3,
+        "destination_group": 127,
+        "destination_map": 127,
+        "destination_warp": 127,
+        "raw_hex": "07 00 08 00 03 7f 7f 7f"
+      }
+    ],
+    "connections": []
+  },
+  "events": [
+    {
+      "id": "0:0:object:0",
+      "map_id": "0:0",
+      "kind": "object",
+      "index": 0,
+      "offset": 7481964,
+      "x": 9,
+      "y": 3,
+      "coordinates_in_default_layout": true,
+      "raw_hex": "01 42 00 00 09 00 03 00 03 09 00 00 00 00 00 00 af b9 1b 08 00 00 00 00",
+      "reachability": "UNKNOWN",
+      "local_id": 1,
+      "graphics_id": 66,
+      "object_kind": 0,
+      "raw_script_word": 136034735,
+      "visibility_flag": 0,
+      "pointer_site": 7481980,
+      "script_target": 1817007,
+      "script_status": "ROM_script_candidate",
+      "elevation": 3,
+      "movement_type": 9,
+      "trainer_type": 0,
+      "trainer_range": 0
+    },
+    {
+      "id": "0:0:coordinate:0",
+      "map_id": "0:0",
+      "kind": "coordinate",
+      "index": 0,
+      "offset": 7482004,
+      "x": 3,
+      "y": 5,
+      "coordinates_in_default_layout": true,
+      "raw_hex": "03 00 05 00 03 00 00 40 00 00 00 00 c3 b8 1b 08",
+      "reachability": "UNKNOWN",
+      "elevation": 3,
+      "trigger_operand": 16384,
+      "trigger_value_raw": 0,
+      "trigger_value_compared_low_byte": 0,
+      "pointer_site": 7482016,
+      "raw_script_word": 136034499,
+      "script_target": 1816771,
+      "script_status": "ROM_script_candidate",
+      "activation_reference": "VarGet(trigger_operand) == low byte of trigger_value_raw"
+    },
+    {
+      "id": "0:0:coordinate:1",
+      "map_id": "0:0",
+      "kind": "coordinate",
+      "index": 1,
+      "offset": 7482020,
+      "x": 10,
+      "y": 5,
+      "coordinates_in_default_layout": true,
+      "raw_hex": "0a 00 05 00 03 00 00 40 00 00 00 00 cf b8 1b 08",
+      "reachability": "UNKNOWN",
+      "elevation": 3,
+      "trigger_operand": 16384,
+      "trigger_value_raw": 0,
+      "trigger_value_compared_low_byte": 0,
+      "pointer_site": 7482032,
+      "raw_script_word": 136034511,
+      "script_target": 1816783,
+      "script_status": "ROM_script_candidate",
+      "activation_reference": "VarGet(trigger_operand) == low byte of trigger_value_raw"
+    }
+  ],
+  "seat_scripts": [
+    {
+      "site": 1816771,
+      "hex": "1605800000c7032520002702",
+      "same_as_original": true
+    },
+    {
+      "site": 1816783,
+      "hex": "1605800100c7032520002702",
+      "same_as_original": true
+    }
+  ],
+  "native_seat_special": {
+    "index": 32,
+    "function": 134748617,
+    "reference": "EnterColosseumPlayerSpot; pinned reference special index, not a trainer-table encounter"
+  },
+  "cases": {
+    "original": {
+      "rom_sha256": "c69446ff635eeb69c4285c6b76e99c291fee1dc2e54342040bce37b5cdc7e7cf",
+      "complete": true,
+      "checks_passed": 3,
+      "after_seat": {
+        "callback": 134747753,
+        "script_pc": 0,
+        "player_battlemon_hex": "410049003c00890094006200690032003c005e00673b050e06060606060606061c0e0e001d14060d8a0035e98a000000bbe0d5dfd5eed5e1ff3d00c3bbffffffffffffff892d0200f01b6aca0000000000000000bd74f55b",
+        "enemy_battlemon_hex": "00000000000000000000000000000000000000000000000006060606060606060000000000000000000000000000000000000000000000000000ff0000000000000000ff0000000000000000000000000000000000000000",
+        "battle_outcome": 1
+      }
+    },
+    "p002": {
+      "rom_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+      "complete": true,
+      "checks_passed": 3,
+      "after_seat": {
+        "callback": 134747753,
+        "script_pc": 0,
+        "player_battlemon_hex": "410049003c00890094006200690032003c005e00673b050e06060606060606061c0e0e001d14060d8a0035e98a000000bbe0d5dfd5eed5e1ff3d00c3bbffffffffffffff892d0200f01b6aca0000000000000000bd74f55b",
+        "enemy_battlemon_hex": "00000000000000000000000000000000000000000000000006060606060606060000000000000000000000000000000000000000000000000000ff0000000000000000ff0000000000000000000000000000000000000000",
+        "battle_outcome": 1
+      }
+    },
+    "p002a": {
+      "rom_sha256": "9b0304e19a33df9a229eaad9cee975b9c01bcac8ba217142e8a36e6b240c1d31",
+      "complete": true,
+      "checks_passed": 26,
+      "after_seat": null
+    }
+  },
+  "limits": "User route/last save uncertain. Native original/P002 replay reaches legacy link room and stalls after seat input; exact physical garbled battle not reproduced. P002a blocks that stair only, not saved-room recovery or global link-room repair."
+}

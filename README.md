@@ -1,5 +1,6 @@
 # Liquid Crystal completion project
 
+**[P002a safety fix—keep your current save](patches/P002a/P002a-safety-fix.zip)** ·
 **[Make the cartridge test ROM—offline patcher v3](patches/P002/P002-easy-cartridge-test-v3.zip)** ·
 **[Download P002](patches/P002/P002-prototype.zip)** ·
 **[Read the walkthrough](WALKTHROUGH.md)** ·
@@ -11,10 +12,12 @@ after victory. Its normal door returns to the warehouse. It also fixes the
 cleared rock respawning after movement. Original inputs remain unchanged.
 Main Office floors, later islands and the ending remain future work.
 
-**Hardware issue reported:** the test cart showed a corruption/previous-save
-warning and hung on Saving. See [hardware status](HARDWARE_TEST.md). A matching
-save download is now available; restoring it is not a confirmed repair.
+**Latest console report:** the user got the cart working and beat Mister R,
+then encountered a broken stadium interaction. P002a blocks the unsafe old stair.
+The earlier saving failure remains recorded in [hardware status](HARDWARE_TEST.md);
+the method that resolved it was not supplied. P002a still needs a console test.
 
+- [P002a: block the unsafe stadium staircase](research/P002a_safety_fix.md) and [offline safety-fix download](patches/P002a/P002a-safety-fix.zip)
 - [Direct generated test save download](downloads/P002-warehouse-test.sav)
 - [Real-console cartridge test instructions](HARDWARE_TEST.md) and [public patch/helper kit](patches/P002/P002-cartridge-tools.zip)
 - [Player walkthrough with directions, route map and screenshots](WALKTHROUGH.md)

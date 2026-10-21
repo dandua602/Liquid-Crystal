@@ -57,3 +57,6 @@
 
 - [x] Record reported hardware failure, audit native save checksums and offer matching .sav via offline v3.
 - [ ] Diagnose physical saving hang from cart/profile/baseline and failed-test ROM readback; do not claim a separate save is a confirmed fix.
+
+- [x] Investigate unsafe stadium route; build P002a single-word stair seal, native regressions and current-save-preserving offline tool.
+- [ ] User validates P002a on hardware; if saved in the stadium, obtain actual save for recovery.

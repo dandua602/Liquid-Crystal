@@ -1,6 +1,8 @@
 # Liquid Crystal continuation walkthrough
 
-**Playable version: P002 — warehouse puzzle/battle plus Office Block service-room access.**
+**Playable story: P002; recommended safety fix: P002a.**
+[P002a download](https://github.com/dandua602/Liquid-Crystal/blob/main/patches/P002a/P002a-safety-fix.zip) blocks the old staircase into an unsafe multiplayer stadium.
+Use a fresh backup of your current save with its offline tool to keep earned progress.
 This guide covers the newly added path and the verified nearby approach. It is
 not a complete walkthrough of the original Johto, Kanto or Orange Islands story.
 Each released story slice extends this guide. P002 includes the complete P001
@@ -127,6 +129,20 @@ The warehouse battle is complete. You receive ordinary trainer prize money;
 this encounter adds no badge, rank or quest item. Continue below for P002's new
 Office service entrance. The city front door and Route60 remain unchanged.
 
+## Avoid the old stadium staircase
+
+The warehouse's east-facing stairs near the upper-right side lead to an unused
+multiplayer stadium. Sitting there can trigger a broken link interaction; it
+is **not the next story fight**. P002a blocks that stair. The other old top exit
+is also outside this added story route.
+
+![The unsafe stair is blocked by P002a](walkthrough/images/stair-closed.png)
+
+If you entered the stadium without saving, load your last good save and follow
+step7 below. If you saved inside it, preserve that save and request recovery.
+Do not overwrite your backup trying to play through a question-mark/garbled battle.
+The P002a tool checks for a stadium save and stops rather than resetting it.
+
 ## 7. Enter the Office Block service room
 
 1. After winning, stand to the **right of the damaged warehouse sign**, face
@@ -174,6 +190,7 @@ the new room cannot be loaded by a P001-only or original ROM.
 
 | What you see | What to do |
 | --- | --- |
+| Stadium fight has question marks, missing PP or garbled text | Use the last good save; follow the damaged sign passage. P002a seals the old stair. If saved inside the stadium, keep that save for recovery. |
 | Mister R vanished after his introduction | Go to the cracked rock beside the damaged sign. |
 | The rock asks for a move | Put a non-egg Iron Tail or Rock Smash knower in your party and interact again. |
 | The rock is gone but Mister R is absent | Face the damaged sign and press A; read the clue and accept the retry offer. |

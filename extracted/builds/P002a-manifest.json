@@ -1,0 +1,37 @@
+{
+  "id": "P002a",
+  "kind": "Safety bugfix for reported invalid stadium encounter, not a new story chapter",
+  "input_sha256": "9224cec2f142c5bb514fb24e6883ae4cc11df1e452778937fa3a21fe78513a70",
+  "output_sha256": "9b0304e19a33df9a229eaad9cee975b9c01bcac8ba217142e8a36e6b240c1d31",
+  "writes": [
+    {
+      "site": 12782636,
+      "before": "5d32",
+      "after": "5d3e",
+      "cell": [
+        20,
+        7
+      ],
+      "map": [
+        6,
+        31
+      ],
+      "role": "collision0 to3; preserve tile art and elevation"
+    }
+  ],
+  "new_state_allocated": false,
+  "save_data_changed": false,
+  "hardware_tested": false,
+  "block_ownership_evidence": {
+    "block_pointer_site": 12783376,
+    "map_block_array": 12782148,
+    "retained_validated_map_associations": [
+      [
+        6,
+        31
+      ]
+    ],
+    "scope": "Raw08/0A/0C pointer shapes and retained valid-header inventory; unknown computed users excluded"
+  },
+  "limits": "Prevents normal walking into the legacy stair; does not repair a saved game already in map0:0 or damaged battle data."
+}

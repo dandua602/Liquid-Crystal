@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liquid Crystal P002a safety fix</title>
+<style>body{font:17px/1.5 system-ui;max-width:700px;margin:5vh auto;padding:24px;color-scheme:light dark}label{display:block;margin-top:24px;font-weight:bold}button,a{margin:20px 0;padding:12px;display:inline-block}a[hidden]{display:none}#status{border:1px solid #888;padding:16px;white-space:pre-wrap}</style>
+<h1>Block the broken stadium staircase</h1>
+<p>P002a keeps the warehouse’s old stairs from entering the unused multiplayer room.
+The intended route after Mister R is the <strong>damaged sign → Office service room</strong>.</p>
+<p>First use FlashGBX to back up your <strong>current working cartridge ROM and save</strong>. This tool uses that
+save, not the pre-puzzle test save. Keep both original backups.</p>
+<label for="rom">Fresh ROM backup from your current working cart (.gba)</label><input id="rom" type="file" accept=".gba">
+<label for="save">Your current save backup (.sav)</label><input id="save" type="file" accept=".sav">
+<button id="build" disabled>Create safety fix with this save</button>
+<p id="status" role="status">Choose both files. Everything stays on your computer.</p>
+<a id="download" hidden>Download P002a-keep-progress.gba</a>
+<a id="save-download" hidden>Download matching save copy</a>
+<p>This fixes entry into the stadium; it does not repair a battle already in progress.
+If your save is inside the stadium or has invalid sections, the tool will stop for recovery.
+If your last save was before beating Mister R, that is the progress it can preserve.</p>
+<p>Use your existing working FlashGBX cart/save procedure. The driver and save format are
+unchanged. Keep the current save backup for any separate save restore your cart requires.</p>
+<script id="config" type="application/json">__CONFIG__</script>
+<script>
+'use strict';
+const config=JSON.parse(document.getElementById('config').textContent);
+const romPicker=document.getElementById('rom'),savePicker=document.getElementById('save'),buildButton=document.getElementById('build');
+const status=document.getElementById('status'),romLink=document.getElementById('download'),saveLink=document.getElementById('save-download');
+let urls=[];
+function reset(){urls.forEach(URL.revokeObjectURL);urls=[];romLink.hidden=saveLink.hidden=true;buildButton.disabled=!(romPicker.files.length&&savePicker.files.length);status.textContent='Ready when both files are selected.';}
+romPicker.onchange=savePicker.onchange=reset;
+async function hash(data){if(!crypto.subtle)throw Error('Use a current Chrome, Edge or Firefox browser.');return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data)),b=>b.toString(16).padStart(2,'0')).join('');}
+async function gameHash(data){const out=new Uint8Array(0x1000000-0x20000);out.set(data.subarray(0,0xC80000));out.set(data.subarray(0xCA0000,0x1000000),0xC80000);return hash(out);}
+function inspectSave(save){
+ const sizes=[0xF24,0xFF0,0xFF0,0xFF0,0xD98,0xFF0,0xFF0,0xFF0,0xFF0,0xFF0,0xFF0,0xFF0,0xFF0,0x450];
+ const view=new DataView(save.buffer,save.byteOffset,save.byteLength),slots=[];
+ for(let slot=0;slot<2;slot++){
+  const ids=new Set(),generations=new Set();let location;
+  for(let i=0;i<14;i++){
+   const start=(slot*14+i)*4096,id=view.getUint16(start+0xFF4,true),stored=view.getUint16(start+0xFF6,true);
+   if(id>=14||ids.has(id)||view.getUint32(start+0xFF8,true)!==0x08012025)throw Error('This save has invalid sections. Keep it unchanged and send a copy for recovery.');
+   ids.add(id);generations.add(view.getUint32(start+0xFFC,true));let sum=0;
+   for(let j=0;j<sizes[id];j+=4)sum=(sum+view.getUint32(start+j,true))>>>0;
+   if((((sum>>>16)+(sum&65535))&65535)!==stored)throw Error('This save has a checksum mismatch. Keep it unchanged and send a copy for recovery.');
+   if(id===1)location={group:save[start+4],map:save[start+5]};
+  }
+  if(generations.size!==1)throw Error('This save has mixed section generations. Keep it for recovery.');
+  slots.push({generation:[...generations][0],location});
+ }
+ const newest=((slots[0].generation-slots[1].generation)>>>0)<0x80000000?slots[0]:slots[1];
+ if(newest.location.group===0&&newest.location.map===0)throw Error('Your latest save is inside the broken stadium. This entry-blocking fix cannot move it out. Keep the backup and send a copy for recovery; no output was created.');
+ return newest.location;
+}
+buildButton.onclick=async()=>{
+ reset();buildButton.disabled=true;
+ try{
+  status.textContent='Checking the ROM and both save slots…';
+  const input=new Uint8Array(await romPicker.files[0].arrayBuffer());
+  if(![0x1000000,0x2000000].includes(input.length))throw Error('Choose a full16 or32 MiB P002 ROM/cart dump.');
+  const sourceHash=await gameHash(input);
+  if(![config.p002GameSha256,config.p002aGameSha256].includes(sourceHash))throw Error('Game/driver bytes do not match P002 or P002a. No output was created; send the file details for investigation.');
+  const saveFile=new Uint8Array(await savePicker.files[0].arrayBuffer());
+  if(![131072,131088].includes(saveFile.length))throw Error('Choose a128 KiB save backup (its16-byte FlashGBX trailer is accepted).');
+  const save=saveFile.slice(0,131072);inspectSave(save);
+  const output=new Uint8Array(input);output.set([0x5D,0x3E],0xC30C2C);output.set(save,0xC80000);
+  if(await gameHash(output)!==config.p002aGameSha256)throw Error('Safety-fix verification failed.');
+  const exported=output.slice(0xC80000,0xCA0000);
+  if(await hash(exported)!==await hash(save))throw Error('Save preservation check failed.');
+  const romURL=URL.createObjectURL(new Blob([output],{type:'application/octet-stream'})),saveURL=URL.createObjectURL(new Blob([save],{type:'application/octet-stream'}));urls=[romURL,saveURL];
+  romLink.href=romURL;romLink.download='P002a-keep-progress.gba';romLink.hidden=false;
+  saveLink.href=saveURL;saveLink.download='P002a-keep-progress.sav';saveLink.hidden=false;
+  status.textContent='Ready. Click Download P002a-keep-progress.gba. The broken stair is blocked; your supplied save payload is unchanged. ROM size: '+output.length+' bytes. Keep your current backup.';
+ }catch(error){status.textContent=error.message;}
+ finally{buildButton.disabled=!(romPicker.files.length&&savePicker.files.length);}
+};
+</script></html>

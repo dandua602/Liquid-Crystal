@@ -2,6 +2,10 @@
 
 Repository: https://github.com/dandua602/Liquid-Crystal
 
+- **Current-player safety fix:** [P002a-safety-fix.zip](patches/P002a/P002a-safety-fix.zip)
+  blocks the old warehouse stair into the broken link stadium. Use a fresh current
+  save backup with its offline tool to keep your earned progress. It stops if
+  your newest save is inside the stadium or has invalid data.
 - **Start here:** the repository's [README](README.md).
 - **Play instructions:** [WALKTHROUGH.md](WALKTHROUGH.md), including screenshots,
   the Route59 map, puzzle, battle, Office entry/return and saving.

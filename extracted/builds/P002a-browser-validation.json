@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "checks_passed": [
+    "requires both ROM and current save",
+    "16MiB output changes only collision word and embeds supplied current save; upper bytes preserved",
+    "32MiB output changes only collision word and embeds supplied current save; upper bytes preserved",
+    "exported winning save is byte exact",
+    "invalid save rejected without output",
+    "valid save inside stadium held for recovery, no silent teleport/reset",
+    "unrecognized game/driver rejected",
+    "no application network requests",
+    "source winning save unchanged"
+  ],
+  "html_sha256": "6a32d33532bcd685aa6f9aadb8cb39133053600cfa742168ea79536a835cf80c",
+  "browser": "Chromium through intercepted secure document; cloud policy blocks file URLs",
+  "physical_hardware_tested": false
+}

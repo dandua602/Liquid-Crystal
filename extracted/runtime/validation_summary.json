@@ -39,16 +39,20 @@
     "python3 tools/check_offline_patcher.py",
     "python3 tools/inspect_cartridge_save.py",
     "python3 tools/cartridge_geometry_probe.py",
-    "Read-only readback inspector:16/32 MiB plus corrupted save/code differences"
+    "Read-only readback inspector:16/32 MiB plus corrupted save/code differences",
+    "python3 tools/build_p002a.py",
+    "python3 tools/stadium_route_audit.py",
+    "python3 tools/package_p002a.py",
+    "python3 tools/check_p002a.py"
   ],
   "project_tests": {
-    "run": 157,
-    "passed": 157,
+    "run": 159,
+    "passed": 159,
     "failed": 0,
-    "seconds": 8.241,
+    "seconds": 8.076,
     "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "log": "extracted/builds/Hardware-failure-triage-unittest.log",
-    "log_sha256": "8164e7296288b599e3ac6d90d2875f3e799ed0d1b81c2c561bb54f8347a0b505"
+    "log": "extracted/builds/P002a-unittest.log",
+    "log_sha256": "e82c4aa4e07c703a2e87e15092542a1064e193bc185d7a97c26fbd79c05a8ce6"
   },
   "runtime": {
     "smoke": {
@@ -370,10 +374,10 @@
   "current_P002_or_guide_publication_verified": true,
   "walkthrough": {
     "artifact": "WALKTHROUGH.md",
-    "playable_version": "P002 including P001",
+    "playable_version": "P002 story including P001; P002a safety fix recommended",
     "future_preview": "walkthrough/P003-preview.md (not released)",
     "requirement": "Update clear player directions, prerequisites, puzzles, battle/retry/save instructions, rewards/endpoints and screenshots with every newly released story slice.",
-    "sha256": "538a222d4cb858efd8ea22a4c9d5f07c39c7706c85932974dc0ed382b7dc14c4",
+    "sha256": "baccf1c02845acd38e5f7ce6920041e4de11e89e936b5e7338da26d9848ad820",
     "packaged_relative_links_verified": true,
     "archived_p001": "walkthrough/P001.md"
   },
@@ -483,6 +487,25 @@
     "physical_pcb": "RTC FLASHCART v1.1, user identified with front/back photos",
     "save_chip_photo": "Dedicated SST/MPF flash device visible on right; exact marking not independently confirmed",
     "logical_game_save_type": "1M FLASH (128 KiB /1024 Kbit); capacity from native LC save layout, not proof of board protocol",
-    "save_id_0x8209_resolved": false
+    "save_id_0x8209_resolved": false,
+    "latest_user_report": "Got cart working and beat Mister R; saving-resolution method and fresh power-cycle persistence not separately supplied"
+  },
+  "stadium_safety_fix": {
+    "id": "P002a",
+    "kind": "single collision-word safety fix, no new story",
+    "manifest": "extracted/builds/P002a-manifest.json",
+    "runtime_evidence": "extracted/runtime/stadium/summary.json",
+    "affected_expectations_passed": 26,
+    "original_and_P002_route_expectations": 6,
+    "browser_checks_passed": 9,
+    "public_zip": "patches/P002a/P002a-safety-fix.zip",
+    "actual_user_route_and_last_save": "uncertain",
+    "exact_garbled_battle_reproduced": false,
+    "link_room_transition_and_seat_stall_reproduced_in_original_and_P002": true,
+    "physical_hotfix_tested": false,
+    "zip_sha256": "9256a56f51ccc03044dd24c252ca19ce3bd1b9a6fa2af887201558a26c910ae7",
+    "browser_html_sha256": "6a32d33532bcd685aa6f9aadb8cb39133053600cfa742168ea79536a835cf80c",
+    "zip_member_checksums_verified": true,
+    "guide_image_links_verified": true
   }
 }

@@ -36,7 +36,7 @@ departure to avoid its original empty text branch. Read research/P003_review.md
 and walkthrough/P003-preview.md. Ten new native fixture expectations pass on
 unchanged P002; they are original branch/visibility evidence, not P003 runtime
 acceptance. The preview fits133/192 script bytes and224/320 text bytes, with a
-new512-byte bounded space screen. The current project suite passes157 tests.
+new512-byte bounded space screen. The current project suite passes159 tests.
 No P003 ROM/patch or implementation approval exists. The kickoff requires review before that next ROM change.
 
 Visual review caught a P001 flagless rock respawn after movement that immediate
@@ -55,6 +55,40 @@ checks are retained, not freshly rerun for this P002 milestone. New P002 journey
 has a boosted native-generated Mewtwo fixture and actual combat outcomes; it is
 not human balance proof. Unknown computed owners/map uses remain outside the
 bounded certificate; runtime still requires the supplied-image adapter.
+
+## P002a safety fix for the reported stadium encounter
+
+The user reports getting the cart working, beating Mister R, entering a stadium
+and sitting down, then a girl opponent/question-mark Pokemon/no PP/garbled text.
+Exact exit and last saved location are uncertain. Do not assert a damaged save.
+The resolution of the prior hardware saving issue and fresh power-cycle saving
+have not been separately described; current report confirms playable Mister R.
+
+Known matching route: old warehouse stair20,7 → unused multiplayer Colosseum0:0.
+Its warp, map and seat scripts are unchanged original→P002. Native walking/seat
+replay in both reaches the link room and stalls/black-screens; exact physical
+battle garbling was not reproduced. Prior exit QA checked the destination but
+not the seat interaction, leaving the unsafe route open. Top warp26,2 leads
+Goldenrod Dept2:40, not a new Office continuation. User route is still uncertain.
+
+P002a is a minimal safety bugfix, not P003/story implementation: change only
+warehouse collision word C30C2C,325D→3E5D (tile/elevation preserved). No state,
+trainer, script allocation, driver or save-format change. New standard ROM SHA
+9b0304e19a33df9a229eaad9cee975b9c01bcac8ba217142e8a36e6b240c1d31.
+P001/P002 and source files remain unchanged. Both approaches/states, puzzle,
+cleared rock, completed tag/trainer bit Save/fresh load, Office entry/return
+and Route59 exit pass26 focused expectations; original/P002 route probes add6.
+The current suite passes159 tests, plus9 browser hotfix checks.
+
+Use patches/P002a/P002a-safety-fix.zip. Its offline page accepts a current P002
+16/32 MiB ROM and FRESH CURRENT save backup, verifies game/driver hashes and
+both LC slot checksums, and embeds that supplied save in the sealed-stair copy.
+Upper bank and ROM size are retained. Its save export is byte exact. Do not
+send the pre-puzzle fixture as a substitute for the user's MrR-winning save.
+If latest save is inside0:0 or invalid, no output is created: actual save copy
+needed for recovery, no silent teleport/reset. Unsaved progress is unavailable.
+Read research/P002a_safety_fix.md and updated WALKTHROUGH.md. Correct next route:
+face the damaged sign, accept Office passage; attendant is current story endpoint.
 
 ## Reported hardware failure — investigate before further writes
 

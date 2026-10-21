@@ -18,11 +18,20 @@ includes both the warehouse chapter and the new Office service room. See
    or runtime acceptance exists yet. Apply the kickoff review requirement to this
    concrete proposal, then test actual interactions, earned access, city aftermath,
    Save/reload, upgrades and rollback before packaging. Do not restart broad scans.
-3. **Investigate the failed console save test.** User reports corruption/previous
+3. **Use P002a for the newly reported stadium issue.**
+   [Fix/evidence](P002a_safety_fix.md) seals the original unsafe stair into0:0.
+   [Offline download](../patches/P002a/P002a-safety-fix.zip) uses current ROM/save
+   backups without resetting earned progress; saved-inside-stadium or invalid
+   data stops for recovery. User is unsure of exact route/last save. Native
+   affected checks26, project tests159 and browser checks9 pass. Hardware hotfix
+   validation and any actual saved-room recovery remain outstanding.
+4. **Earlier console saving issue.** User now says the cart works and they beat
+   Mister R; the exact save fix method/power-cycle verification was not provided.
+   Historical evidence follows. **If saving fails again, investigate the failed console save test.** User reported corruption/previous
    save recovery and stuck Saving. Screenshot gives FlashGBX5.0.1, GBxCart RWv1.4a/b/c and AGB-E20-30/S29GL256N;
    unknown save ID0x8209 remains. The user confirmed the original saves
-   successfully on this exact cart. Need the failed-attempt readback before further
-   writes; do not ask for the baseline again. Both prepared save slots pass native LC checksums; v3 exports the same
+   successfully on this exact cart. If that failure recurs, preserve a failed-attempt
+   readback before diagnostic writes; do not ask for the baseline again. Both prepared save slots pass native LC checksums; v3 exports the same
    raw test save for diagnosis, without claiming a fix.
 
    **Prepared console files:** [Hardware guide](../HARDWARE_TEST.md) and
@@ -31,7 +40,7 @@ includes both the warehouse chapter and the new Office service room. See
    embedded-ROM boots and native NOR Save/fresh boot pass in software; current
    suite155 passes. FlashGBX software confirmed; await reader/cart/profile/console and real power-off/save/
    reload results. Reflashing resets the selected starting save.
-4. **Human playtest and broad progression.** P002 passes actual victory,
+5. **Human playtest and broad progression.** P002 passes actual victory,
    loss, old-save upgrade, movement persistence, entry/return, new-map save/reload
    and safe P001 downgrade. These controlled fixtures do not certify difficulty,
    stock-emulator conversion, real hardware or ordinary full-game progression.

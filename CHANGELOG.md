@@ -1,5 +1,14 @@
 # Change ledger
 
+- P002a stadium safety fix: user reports winning Mister R then invalid stadium
+  battle data. Traced unchanged old warehouse stair to unused link Colosseum0:0;
+  original/P002 native seating replay stalls, exact hardware garbling unreproduced.
+  Seal the stair with one collision-word change, preserving all state/driver/
+  save-format bytes.26 affected runtime checks pass (plus6 route probes),159
+  project tests and9 browser checks. Offline tool preserves current supplied
+  saves and16/32 MiB upper banks; invalid/stadium saves stop for recovery. Updated
+  player walkthrough and packaged it. No new story or P003 implementation.
+
 - Hardware failure triage: user reports corruption/previous-save boot warning
   and hang on Saving after flashing the test ROM. Hardware acceptance marked
   failed, root cause pending cart/profile/baseline/readback. Recovered/pinned
